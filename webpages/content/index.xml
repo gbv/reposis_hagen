@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Willkommen bei &lt;intR&gt;²Dok!">
+    <div class="jumbotwo">
+      <div class="row">
+        <div class="col-md-4" lang="de">
+          <h3>
+            <a href="brand/who.xml">WER wir sind</a>
+          </h3>
+          <p>
+            Das mit Unterstützung der Deutschen Forschungsgemeinschaft realisierte disziplinäre Repositorium &lt;intR&gt;²Dok
+            ist die zentrale Publikationsplattform des an der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
+            angesiedelten Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung.
+            <a style="color:#9E1B34" title="mehr erfahren" href="brand/who.xml">[...]</a>
+          </p>
+        </div>
+        <div class="col-md-4" lang="de">
+          <h3>
+            <a href="brand/what.xml">WAS wir sammeln</a>
+          </h3>
+          <p>
+            Als erstes rechtswissenschaftliches Fachrepositorium in Deutschland ist &lt;intR&gt;²Dok dem Ziel verpflichtet,
+            offenen und kostenfreien Zugang zu qualitätsgesicherten wissenschaftlichen Originalbeiträgen und Zweitveröffentlichungen
+            aus allen Bereichen der internationalen und interdisziplinären Rechtsforschung dauerhaft sicherzustellen.
+            <a style="color:#9E1B34" title="mehr erfahren" href="brand/what.xml">[...]</a>
+          </p>
+        </div>
+        <div class="col-md-4" lang="de">
+          <h3>
+            <a href="brand/how.xml">WIE es geht</a>
+          </h3>
+          <p>
+            Als Serviceangebot des Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist das
+            Publizieren auf &lt;intR&gt;²Dok an eine Registrierung gebunden, die vorrangig dem wissenschaftlichen Personal
+            universitärer wie außeruniversitärer Forschungseinrichtungen in Deutschland offen steht.
+            <a style="color:#9E1B34" title="mehr erfahren" href="brand/how.xml">[...]</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2014-05-23" time="21:37" />
+  </meta>
+</MyCoReWebPage>

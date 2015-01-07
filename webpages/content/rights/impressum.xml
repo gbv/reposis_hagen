@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="&lt;intR&gt;²Dok - Impressum">
+    <div>
+      <h2>Impressum</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Die nachstehenden Informationen enthalten die gesetzlich vorgesehenen Pflichtangaben zur Anbieterkennzeichnung, sowie wichtige rechtliche Hinweise zur Internetpräsenz von &lt;intR&gt;²Dok.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Anbieter</h3>
+          <p>
+            Anbieter dieser Internetpräsenz ist im Rechtssinne die Stiftung Preußischer Kulturbesitz: Staatsbibliothek zu Berlin.
+          </p>
+          <p>
+            Stiftung Preußischer Kulturbesitz<br />
+            Staatsbibliothek zu Berlin<br />
+            Unter den Linden 8<br />
+            D-10117 Berlin
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Vertreter</h3>
+          <p>
+            Die Stiftung Preußischer Kulturbesitz wird gesetzlich vertreten durch ihren Präsidenten, Herrn Prof. Dr. Dr. hc. mult. Hermann Parzinger. Dieser wird vertreten durch die Generaldirektorin der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz, Frau Barbara Schneider-Kempf.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Umsatzsteueridentifikationsnummer</h3>
+          <p>
+            Die Umsatzsteueridentifikationsnummer der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz lautet: DE 81 117 697 6
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Redaktion</h3>
+          <p>
+            Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung<br />
+            Staatsbibliothek zu Berlin – Preußischer Kulturbesitz<br />
+            Potsdamer Straße 33<br />
+            D-10785 Berlin
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Technischer Betrieb</h3>
+          <p>
+            Verbundzentrale des GBV (VZG)<br />
+            Platz der Göttinger Sieben 1<br />
+            D-37073 Göttingen
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2014-05-23" time="23:42" />
+  </meta>
+</MyCoReWebPage>

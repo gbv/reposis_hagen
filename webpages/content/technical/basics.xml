@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="&lt;intR&gt;²Dok - Technische Grundlage">
+    <div>
+      <h2>Technische Grundlage</h2>
+      <p>
+        &lt;intR&gt;²Dok wird auf Basis des Software-Frameworks MyCoRe
+        <sup>
+          <a href="http://www.mycore.de/">[1]</a>
+        </sup>
+        von der Verbundzentrale des Gemeinsamen Bibliotheksverbunds
+        <sup>
+          <a href="http://www.gbv.de/Verbundzentrale">[2]</a>
+        </sup>
+        betrieben, die auch die Langzeitarchivierung der eingestellten Inhalte für mindestens fünf Jahre garantiert. In Kooperation mit der Deutschen Nationalbibliothek
+        <sup>
+          <a href="http://www.dnb.de/DE/Netzpublikationen/URNService/urnservice_node.html">[3]</a>
+        </sup>
+        werden die auf &lt;intR&gt;²Dok veröffentlichten elektronischen Dokumente mit individuellen persistenten Identifikatoren – so genannten Uniform Resource Names – versehen, die eine zuverlässige Referenzierung von digitalen Objekten und damit deren dauerhafte Zitierfähigkeit garantieren. Als Dataprovider im Rahmen der Open Archives Initiative exponiert &lt;intR&gt;²Dok die formalen und inhaltsbezogenen Metadaten zu den veröffentlichten Beiträgen über eine standardisierte Schnittstelle (OAI-PMH 2.0), die bei den etablierten wissenschaftlichen Suchmaschinen – darunter OAIster
+        <sup>
+          <a href="http://www.oaister.org/">[4]</a>
+        </sup>
+        , BASE
+        <sup>
+          <a href="http://www.base-search.net/">[5]</a>
+        </sup>
+        sowie der disziplinspezifische &lt;intR&gt;²DiscoveryService
+        <sup>
+          <a href="http://eds.b.ebscohost.com/eds/">[6]</a>
+        </sup>
+        – registriert ist. Die internationale Sichtbarkeit der auf &lt;intR&gt;²Dok veröffentlichten Beiträge wird zudem über eine Indexierung durch google.scholar
+        <sup>
+          <a href="http://scholar.google.de/">[7]</a>
+        </sup>
+        weiter erhöht.
+      </p>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="cmathieu" date="2014-09-22" time="15:59" />
+  </meta>
+</MyCoReWebPage>

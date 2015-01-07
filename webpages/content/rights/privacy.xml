@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="&lt;intR&gt;²Dok - Datenschutz">
+    <div>
+      <h2>Datenschutz (Privacy Policy)</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Als Trägerin des der Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist es der Staatsbibliothek zu Berlin – Preußischer Kulturbesitz ein wichtiges Anliegen, verantwortungsvoll mit Ihren persönlichen Daten umzugehen. Im Folgenden erläutern wir daher die datenschutzrechtlich relevanten Aspekte unseres Webangebotes.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Warum setzt die Staatsbibliothek zu Berlin eine Nutzungsanalyse-Software ein?</h3>
+          <p>Wir analysieren die Nutzung unserer Website. Dadurch erhalten wir wertvolle Informationen, um unser Webangebot zu verbessern. Dazu zählt zum Beispiel das Wissen, wie oft bestimmte Inhalte aufgerufen wurden oder mit welchem Browser auf welchen (mobilen) Geräten die Website betrachtet wurde. Die gespeicherten Daten verwendet die Stiftung Preußischer Kulturbesitz ausschließlich zu statistischen Zwecken. Eine andere Nutzung der Daten oder eine Weitergabe an Dritte erfolgt nicht.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Anonymisierte Nutzungsanalyse mit Piwik und dem Plugin AnonymizeIP</h3>
+          <p>Für die Optimierung unserer Angebote liefern personenbezogene Daten keinerlei Mehrwert. Für die Webanalyse setzten wir daher die von Datenschützern empfohlene Nutzungsanalyse-Software Piwik ein. Durch eine automatische Anonymisierung der IP-Adressen mit dem Plugin AnonymizeIP können die erhobenen Daten nicht mehr bestimmten Personen zugeordnet werden. Damit ist ausgeschlossen, dass Nutzungsdaten oder Nutzungsprofile mit personenbezogenen Daten in Verbindung gebracht werden.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Welche Daten werden mit Hilfe die Nutzungsanalyse-Software Piwik gespeichert?</h3>
+          <p>Bei jedem Zugriff auf eine Website im Internet und bei jedem Abruf einer Datei werden von Browsern üblicherweise Daten übertragen. Von den Daten, die übermittelt werden, wenn Sie diese Website besuchen, speichern wir anonymisiert folgende Informationen:</p>
+          <ul>
+            <li>Browsertyp / -version</li>
+            <li>Bildschirmauflösung</li>
+            <li>Betriebssystem</li>
+            <li>Referrer-URL (die weiterleitende Seite)</li>
+            <li>Uhrzeit der Serveranfrage</li>
+            <li>Aufgerufene Seite/n und Datei/en</li>
+            <li>Anonymisierte IP-Adresse</li>
+            <li>Herkunftsland</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Widerspruch der Datenerfassung durch die Webanalyse-Software Piwik</h3>
+          <p>Sie können sich hier entscheiden, ob Sie mit der Erfassung und Analyse oben beschriebener statistischer Daten durch die Staatsbibliothek zu Berlin – Preußischer Kulturbesitz einverstanden sind. Wenn Sie das Feld hingegen deaktivieren, findet keinerlei Erfassung oder Speicherung Ihrer Daten statt. Bitte beachten Sie: Wenn Sie in Ihrem Browser das automatische Löschen der Cookies aktiviert haben, wird beim Beenden des Programms auch der Deaktivierungs-Cookie gelöscht. In diesem Fall müssen Sie beim nächsten Aufruf dieser Website der Datenerfassung erneut widersprechen. Auch wenn Sie einen anderen Computer oder einen anderen Webbrowser verwenden, müssen Sie der Erfassung Ihrer Daten erneut widersprechen.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Welche Cookies setzt diese Website ein?</h3>
+          <p>Cookies sind kleine Textdateien, die beim Besuch einer Website auf Ihrem Computer gespeichert werden. Über Cookies können Informationen zwischen Computerprogrammen ausgetauscht oder für einen beschränkten Zeitraum gespeichert werden. Cookies können nur gespeichert werden, wenn Sie dies in den Einstellungen Ihres Browsers erlaubt haben. Diese Website verwendet Cookies sehr sparsam. Das bedeutet, dass Sie diese Website grundsätzlich auch ohne Cookies betrachten können. Die auf dieser Website eingesetzten Cookies haben zwei unterschiedliche Funktionen:</p>
+          <p>Ein Teil der eingesetzten Cookies gewährleistet, dass die Website einwandfrei funktioniert und angezeigt wird. Die Gültigkeit dieser Cookies ist auf den Websitebesuch beschränkt. Sobald Sie Ihren Browser beenden, werden diese sogenannten „Session-Cookies“ gelöscht. Eine Ausnahme bildet der Cookie, der die Anzeige des Datenschutzhinweises steuert. Damit Ihnen der Hinweis nicht bei jedem Besuch erneut angezeigt wird, bleibt dieser Cookie drei Monate gültig. Die anderen auf dieser Website eingesetzten Cookies gehören zur Nutzungsanalyse-Software Piwik (siehe oben). Je nachdem, ob Sie der Datenerhebung zugestimmt oder ihr widersprochen haben, werden entweder zwei Webanalyse-Cookies oder ein Piwik-Deaktivierungs-Cookie auf Ihrem Rechner gespeichert. Die Webanalyse-Cookies verfallen, wenn Sie den Browser schließen. Der Piwik-Deaktivierungs-Cookie bleibt zwei Jahre gültig, wenn Sie ihn nicht vorher löschen.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Deutsche Bibliotheksstatistik</h3>
+          <p>
+            Die Staatsbibliothek zu Berlin – Preußischer Kulturbesitz nutzt im Rahmen ihrer Teilnahme an der Deutschen Bibliotheksstatistik ein Verfahren zur Zählung der Besuche auf ihrer Internetseite. Beim Aufruf der Homepage und/oder der Katalogseite werden eine Kennung der Bibliothek und der betreffenden Seite, der Zeitpunkt des Aufrufs und eine Signatur des aufrufenden Rechners gespeichert. Die Signatur wird mittels einer Einwegfunktion aus IP-Adresse, Browserkennung und Proxy-Information gebildet. Die Erhebung, Speicherung und Auswertung dieser Daten erfolgt in pseudonymisierter Form, d.h. die Signatur ist nicht bestimmten Personen zuzuordnen. Eine Speicherung insbesondere der IP-Adresse findet hierbei nicht statt. Die pseudonymen Einzeldaten werden nach spätestens 24 Stunden aufsummiert und damit vollständig anonymisiert. Mit der technischen und organisatorischen Umsetzung des Verfahrens ist die Hochschule der Medien Stuttgart beauftragt. Sie hat das Verfahren nach den Maßgaben der gesetzlichen Bestimmungen der Datenschutzgesetze und des Telemediengesetzes (TMG) entwickelt und sich zu deren Einhaltung verpflichtet. Sie haben die Möglichkeit, der Erhebung, Verarbeitung und Nutzung der vorbezeichneten Daten Ihrer Besuche zu dem genannten Zweck zu widersprechen. Klicken Sie dazu bitte auf den folgenden externen Link.
+            <sup>
+              <a href="http://dbspixel.hbz-nrw.de/widerspruch.html">[1]</a>
+            </sup>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Welche Daten werden bei elektronischen Anfragen per Mail oder Formular gespeichert?</h3>
+          <p>Bei Anfragen per Mail oder über ein Web-Formular müssen Sie bestimmte Daten angeben, wir mit Ihnen Kontakt aufnehmen können. Wenn Sie uns bei Anfragen oder Bestellungen personenbezogene Daten übermitteln, so werden diese Daten nur für die jeweilige Korrespondenz oder zu dem im Formular angegebenen Zweck genutzt.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Datenschutzerklärung</h3>
+          <p>Ihre personenbezogenen Daten (Name, E-Mail-Adresse) werden ausschließlich zu Zwecken der Bereitstellung dieses Auskunftsdienstes und zu dessen Weiterentwicklung durch Nutzungsanalysen verwendet.</p>
+          <p>
+            Hierzu übermittelt die Staatsbibliothek zu Berlin Ihre personenbezogenen Daten an die Bibliotheksorganisation OCLC
+            <sup>
+              <a href="http://oclc.org/">[2]</a>
+            </sup>
+            , die sämtliche Datenbestände auf einem vertrauenswürdigen Server speichert. Die Übermittlung erfolgt auf Grundlage der „Standardvertragsklauseln für die Übermittlung personenbezogener Daten aus der Gemeinschaft in Drittländer“ der Europäischen Union.
+          </p>
+          <p>Außer zu den genannten Zwecken erfolgt eine Weitergabe Ihrer Daten durch die Staatsbibliothek zu Berlin oder OCLC nur in den gesetzlich vorgeschriebenen Fällen. Die von Ihnen angegebenen personenbezogenen Daten bleiben bis zur Löschung der gesamten Sitzung auf dem Server gespeichert. Dies gilt nicht für die in den Feldern „Name“ und „E-Mail-Adresse“ eingegebenen Daten. Letztere werden nach 90 Tagen automatisch vom Server gelöscht.</p>
+          <p>Sollten Sie mit den genannten Bedingungen nicht einverstanden sein, nutzen Sie bitte eine der anderen Kontaktmöglichkeiten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="cmathieu" date="2014-09-22" time="15:49" />
+  </meta>
+</MyCoReWebPage>
