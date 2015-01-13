@@ -5,58 +5,29 @@
       <h2>WIE geht es</h2>
       <div class="row">
         <div class="col-md-12">
-          <p>Als Serviceangebot des Fachinformationsdiensts für internationale und interdisziplinäre Rechtsforschung ist das Publizieren auf &lt;intR&gt;²Dok an eine Registrierung gebunden, die vorrangig dem wissenschaftlichen Personal universitärer wie außeruniversitärer Forschungseinrichtungen in Deutschland offen steht.</p>
-          <p>
-            Sollten Sie aktuell mit einer entsprechenden Institution affiliiert sein und der Schwerpunkt Ihrer wissenschaftlichen Aktivitäten auf den Feldern der internationalen und interdisziplinären Rechtsforschung liegen, so bietet Ihnen &lt;intR&gt;²Dok die Möglichkeit, wissenschaftliche Originalbeiträge sowie Zweitpublikationen bereits an anderer Stelle erschienener Texte nach den Prinzipien des Open Access
-            <sup>
-              <a href="http://www.open-access.net/">[1]</a>
-            </sup>
-            zu veröffentlichen.
-          </p>
+          <p>Text wie es geht</p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h3>Registrierung</h3>
+          <h3>Account</h3>
           <p>
-            Vor der erstmaligen Nutzung des Publikationsservices ist allerdings eine Registrierung obligatorisch. Zu diesem Zweck vervollständigen Sie bitte dieses Anmeldeformular
-            <sup>
-              <a href="#">[2]</a>
-            </sup>
-            oder senden alternativ eine formlose E-Mail mit Ihren Kontaktdaten sowie Angaben zur Forschungseinrichtung, der Sie gegenwärtig angehören, an:
-            <a href="mailto:intr2dok@sbb.spk-berlin.de">intR2dok@sbb.spk-berlin.de</a>
-            . Bitte verwenden Sie nach Möglichkeit in beiden Fällen Ihre dienstliche E-Mail-Adresse. Nach Bearbeitung Ihres Antrags durch das Team von &lt;intR&gt;²Dok wird Ihnen ein Link an die angegebene E-Mail-Adresse zugesendet, durch dessen Aktivierung Sie den Registrierungsvorgang unter Angabe eines mindestens acht Zeichen umfassenden Passworts abschließen können.
+            Registrieren oder LDAP
           </p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Dokumenten-Upload</h3>
-          <p>
-            Nach erfolgter Registrierung haben Sie als Inhaberin bzw. als Inhaber der jeweiligen Urheberrechte die Möglichkeit, in Übereinstimmung mit den verbindlichen Publikationsleitlinien
-            <sup>
-              <a href="#">[3]</a>
-            </sup>
-            beliebig viele Texte auf &lt;intR&gt;²Dok zu veröffentlichen. Dabei tragen Sie die Verantwortung dafür, dass keine Urheberrechte Dritter verletzt werden – etwa im Kontext von Gemeinschaftspublikationen. Mit dem Upload Ihres Dokuments im Dateiformat .pdf (Portable Document Format) sowie auf Grundlage eines schriftlichen Publikationsvertrags wird &lt;intR&gt;²Dok ein einfaches Nutzungsrecht zur öffentlichen Zugänglichmachung des Werks im Internet übertragen sowie ergänzend das Recht, insbesondere für Zwecke der Langzeitarchivierung Änderungen am jeweiligen Dateiformat vorzunehmen. Inhaltliche Modifikationen an bereits auf &lt;intR&gt;²Dok veröffentlichten Beiträgen sind dagegen ausschließlich durch Upload einer aktualisierten Version möglich. Handelt es sich bei dem zur Publikation auf &lt;intR&gt;²Dok vorgesehenen Dokument um eine Erstveröffentlichung, so verbleibt das ausschließliche Nutzungsrecht auch weiterhin bei Ihnen, weshalb Sie beliebig anderweitig über das von Ihnen geschaffene Werk verfügen können. Bitte beachten Sie in diesem Zusammenhang auch die ausführlichen Hinweise zu den urheberrechtlichen Rahmenbedingungen des Open Access-Publizierens auf &lt;intR&gt;²Dok.
-            <sup>
-              <a href="../rights/rights.xml">[4]</a>
-            </sup>
-          </p>
-        </div>
-      </div>
+      
       <div class="row">
         <div class="col-md-12">
           <h3>Rückfragen und Kontakt</h3>
           <p>
-            Sollten Sie Rückfragen haben oder technische Schwierigkeit während des Registrierungsvorgangs auftreten, so stehen wir Ihnen jederzeit gerne zur Verfügung (
-            <a href="../social/contact.xml">Kontaktdaten</a>
-            ). Der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung behält es sich vor, die Registrierung bei &lt;intR&gt;²Dok wie auch die Veröffentlichung einzelner Beiträge in begründeten Ausnahmefällen zu verweigern.
+            Kontakt
           </p>
         </div>
       </div>
     </div>
   </section>
   <meta>
-    <log lastEditor="cmathieu" date="2014-09-22" time="15:48" />
+    <log lastEditor="administrator" date="2014-09-22" time="15:48" />
   </meta>
 </MyCoReWebPage>

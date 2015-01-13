@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="&lt;intR&gt;²Dok - Fragen Sie uns">
+  <section xml:lang="de" title="deposit::hagen - Fragen Sie uns">
     <div>
       <h2>Fragen Sie uns</h2>
       <div class="row">
@@ -73,6 +73,6 @@
     </div>
   </section>
   <meta>
-    <log lastEditor="administrator" date="2014-05-23" time="23:35" />
+    <log lastEditor="administrator" date="2014-01-07" time="23:35" />
   </meta>
 </MyCoReWebPage>

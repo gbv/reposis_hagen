@@ -1,13 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
 
 h3 > a {
-  color: #9E1B34;
+  color: #4645A4;
 }
 
 .mir-main-nav {
   box-shadow: none;
   background-color: #797979;
-  color: #9E1B34;
+  color: #4645A4;
 }
 
 #main_content{
@@ -15,7 +15,7 @@ h3 > a {
 }
 
 a #logo_mir,a #logo_slogan{
-  color:#9E1B34
+  color:#4645A4
 }
 
 .jumbotron{
@@ -28,19 +28,19 @@ a #logo_mir,a #logo_slogan{
 }
 
 .jumbotron h1{
-    color:#9E1B34;
+    color:#4645A4;
     font-weight: bold;
     text-shadow: 0px 0px 10px #fff;
 }
 
 .jumbotron h2{
-    color:#9E1B34;
+    color:#4645A4;
     font-size:110%;
 }
 
 .jumbotwo h3 span{
   padding-right:30px;
-    color: #9E1B34;
+    color: #4645A4;
 }
 
 .flatmir-footer{
@@ -49,7 +49,7 @@ a #logo_mir,a #logo_slogan{
 }
 
 .flatmir-footer h4{
-  color:#9E1B34
+  color:#4645A4
 }
 
 .intR2Dok_logo_small {
@@ -225,7 +225,7 @@ p.three_column {
     border-left: 1px solid #f3f3f3;
 }
 .btn-flat {
-    color: #bb0734;
+    color: #4645A4;
     background-color: #a9a9a9;
     border-none;
     border-radius: 0;
@@ -255,7 +255,7 @@ p.three_column {
 
 .jumboHome {
     height: 225px;
-    border-bottom: 1px solid #bb0734;
+    border-bottom: 1px solid #4645A4;
 
 }
 .jumboHome h1 {
@@ -265,7 +265,7 @@ p.three_column {
 }
 .jumboHome h2 {
     margin-top: 67px;
-    color: #bb0734;
+    color: #4645A4;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: .180em;

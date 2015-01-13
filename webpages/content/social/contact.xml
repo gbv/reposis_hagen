@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="&lt;intR&gt;²Dok - Kontakt">
+  <section xml:lang="de" title="deposit::hagen - Kontakt">
     <div>
       <h2>Kontakt</h2>
       <div class="row">
         <div class="col-md-12">
           <p>
-            Publikationsservice &lt;intR&gt;²Dok
-            <br />
-            Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung
-            <br />
-            Staatsbibliothek zu Berlin – Preußischer Kulturbesitz
-            <br />
-            Potsdamer Straße 33
-            <br />
-            D-10785 Berlin
-            <br />
-            E-Mail:
-            <a href="mailto:intR2dok@sbb.spk-berlin.de">intR2dok@sbb.spk-berlin.de</a>
-            <br />
-            <a href="http://www.vifa-recht.de/">http://www.vifa-recht.de/</a>
-          </p>
+            <h3> Allgemeine Informationen, Datenformate, Procedere etc. </h3>
+            
+            N.N. <br />
+            <span style="font-weight:bold;"> Gebäude: </span> AVZ, C 040 <br />
+            <span style="font-weight:bold;">Fon: </span> 0 23 31 / 987 - 1162 <br />
+            <span style="font-weight:bold;">Fax: </span>0 23 31 / 987 - 3 46 <br />
+            <span style="font-weight:bold;">e-mail:</span> N.N. <br />
+            
+            <h3>Hilfestellungen bei Dissertationen und Abschlussarbeiten</h3>
+
+            Annette Frerichs <br />
+            <span style="font-weight:bold;">Gebäude: </span> AVZ, C 247 <br />
+            <span style="font-weight:bold;">Fon: </span> 0 23 31 / 987 - 2892 <br />
+            <span style="font-weight:bold;">Fax: </span> 0 23 31 / 987 - 346 <br /> 
+            <span style="font-weight:bold;">e-mail: </span> annette.frerichs@fernuni-hagen.de <br />
+          </p>    
         </div>
       </div>
     </div>
   </section>
   <meta>
-    <log lastEditor="cmathieu" date="2014-09-22" time="15:52" />
+    <log lastEditor="administrator" date="2015-01-07" time="15:52" />
   </meta>
 </MyCoReWebPage>

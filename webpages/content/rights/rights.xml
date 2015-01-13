@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-12">
           <h3>Urheberrechtliche Rahmenbedingungen</h3>
-          <p>Während die Erstpublikation von Originalbeiträgen auf &lt;intR&gt;²Dok unter urheberrechtlichem Aspekt in aller Regel unproblematisch ist, ergeben sich bei der Zweitveröffentlichung zuvor bereits in gedruckter oder elektronischer Form in monographischen Sammelwerken und abonnementpflichtigen Zeitschriften erschienener Aufsätze regelmäßig Fragen nach der Zulässigkeit.</p>
+          <p>Während die Erstpublikation von Originalbeiträgen auf deposit::hagen unter urheberrechtlichem Aspekt in aller Regel unproblematisch ist, ergeben sich bei der Zweitveröffentlichung zuvor bereits in gedruckter oder elektronischer Form in monographischen Sammelwerken und abonnementpflichtigen Zeitschriften erschienener Aufsätze regelmäßig Fragen nach der Zulässigkeit.</p>
         </div>
       </div>
       <div class="row">
@@ -57,10 +57,6 @@
             <sup>
               <a href="http://www.nationallizenzen.de/open-access">[5]</a>
             </sup>
-            Ob die von Ihnen zur Zweitveröffentlichung auf &lt;intR&gt;²Dok vorgesehenen Zeitschriftaufsätze in den Geltungsbereich der Open Access-Komponente der Allianz- und Nationallizenzen fallen, überprüfen Sie bitte unverbindlich anhand dieser speziell für den Bereich der internationalen und interdisziplinären Rechtsforschung zusammengestellten Liste.
-            <sup>
-              <a href="rechtszeitschriften_oa.pdf">[6]</a>
-            </sup>
             Eine vollständige, alle Disziplinen umfassende Übersicht der mit Open Access-Rechten ausgestatteten Allianz- und Nationallizenzpakete finden Sie bitte hier.
             <sup>
               <a href="http://www.nationallizenzen.de/open-access/open-access-rechte.xls/view">[7]</a>
@@ -70,11 +66,10 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h3>Publikations- und Lizenzvertrag mit &lt;intR&gt;²Dok</h3>
+          <h3>Autorenvertrag mit deposit::hagen</h3>
           <p>
-            Mit Upload des Dokuments sowie auf Grundlage eines
-            <a href="vertrag.pdf">schriftlichen Publikationsvertrags</a>
-            räumen Sie &lt;intR&gt;²Dok ein einfaches Nutzungsrecht zur öffentlichen Zugänglichmachung des Werks im Internet ein sowie ergänzend das Recht, insbesondere für Zwecke der Langzeitarchivierung Änderungen am jeweiligen Dateiformat vorzunehmen. Auf Grundlage dieses Publikationsvertrags ist eine Nutzung Ihres auf &lt;intR&gt;²Dok veröffentlichten Beitrags durch Dritte allerdings nur im Rahmen der im deutschen Urheberrecht vorgesehen Schranken möglich – vor allem in Hinblick auf eine Vervielfältigung zum privaten und sonstigen eigenen Gebrauch (§ 53 UrhG).
+            Mit dem Autorenvertrag, der ihnen nach dem Upload des Dokuments zugesendet wird
+            räumen Sie der Universitätsbibliothek der Feruniversität in Hagen ein einfaches Nutzungsrecht zur öffentlichen Zugänglichmachung des Werks im Internet ein sowie ergänzend das Recht, insbesondere für Zwecke der Langzeitarchivierung Änderungen am jeweiligen Dateiformat vorzunehmen. Auf Grundlage dieses Publikationsvertrags ist eine Nutzung Ihres auf deposit::hagen veröffentlichten Beitrags durch Dritte allerdings nur im Rahmen der im deutschen Urheberrecht vorgesehen Schranken möglich – vor allem in Hinblick auf eine Vervielfältigung zum privaten und sonstigen eigenen Gebrauch (§ 53 UrhG).
             <sup>
               <a href="http://www.gesetze-im-internet.de/urhg/__53.html">[8]</a>
             </sup>
@@ -94,7 +89,7 @@
         <div class="col-md-12">
           <h3>Unterstützung und Kontakt</h3>
           <p>
-            Auf Wunsch unterstützt Sie das Team von &lt;intR&gt;²Dok bei der Klärung Ihrer Zweitveröffentlichungsrechte und steht Ihnen überdies bei allen Fragen zum Open Access-Publizieren gerne zur Verfügung (
+            Auf Wunsch unterstützt Sie das Team von deposit::hagen bei der Klärung Ihrer Zweitveröffentlichungsrechte und steht Ihnen überdies bei allen Fragen zum Open Access-Publizieren gerne zur Verfügung (
             <a href="../social/contact.xml">Kontaktdaten</a>
             ). Unabhängig von der Inanspruchnahme dieses Beratungsangebots sind Sie vor einer Veröffentlichung auf &lt;intR&gt;²Dok in jedem Fall dazu verpflichtet, sich sorgfältig zu vergewissern, dass die dem Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung einzuräumenden Nutzungsrechte insbesondere zur öffentlichen Zugänglichmachung Ihres Werks auch tatsächlich bei Ihnen liegen.
           </p>
