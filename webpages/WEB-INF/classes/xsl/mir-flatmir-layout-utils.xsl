@@ -17,7 +17,7 @@
             </span>
           </button>
           <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}" class="navbar-brand">
-            <img src="{$WebApplicationBaseURL}content/images/logo_intR2Dok_small.png" title="IntR2Dok - Logo" class="intR2Dok_logo_small" alt="&lt;intR&gt;²Dok [§]" />
+            <img src="{$WebApplicationBaseURL}content/images/hagenlogo.gif" title="Hagen - Logo" class="intR2Dok_logo_small" alt="deposit_hagen" />
             <!-- span id="logo_modul">Repositorium</span -->
             <!-- span id="logo_slogan">mods institutional repository</span -->
           </a>
