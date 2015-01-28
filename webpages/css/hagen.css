@@ -190,6 +190,32 @@ p.three_column {
           column-gap: 52px;
 }
 
+
+#header_box {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 10px;
+}
+
+
+#project_logo_box a {
+	background-image: url("../content/images/hagenlogo.gif");
+	background-repeat: no-repeat;
+	display:block;
+	width:220px; 
+	height:60px;
+}
+
+#logo_mir {
+	display: none;
+}
+#logo_modul {
+	display: none;
+}
+#logo_slogan {
+	display: none;
+}
+
 /* Logo nur 2 statt 15 Pixel vom Rand entfernt
    Flucht liegt bei 13px vom linken Logo-Rand */
 .navbar-brand {
@@ -197,7 +223,7 @@ p.three_column {
 }
 /* Anmeldenknopf ohne rechten (und linken) Rand*/
 .nav > li > a#loginURL {
-    padding: 20px 0px;
+    padding: 0px 0px;
 }
 /* Hauptmenü ohne linken (und rechten) Rand*/
 .mir-main-nav .navbar-form {
@@ -213,17 +239,7 @@ p.three_column {
 .mir-main-nav .navbar-form {
     width: 360px;
 }
-#searchInput {
-    color: #f3f3f3;
-    background-color: #a9a9a9;
-    border-radius: 0;
-    border: none;
-    margin: 0;
-    padding: 0 20px 0 20px;
-    height: 60px;
-    width: 300px;
-    border-left: 1px solid #f3f3f3;
-}
+
 .btn-flat {
     color: #4645A4;
     background-color: #a9a9a9;

@@ -51,10 +51,10 @@
           <div class="jumboHome">
               <div class="container">
                   <div class="col-md-6">
-                      <h1><img alt="deposit_hagen" class="hagen_logo" title="desposit_hagen - Logo" src="images/hagenlogo.gif" /></h1>
+                      <h1><img style="width: 80%;height: auto;" alt="deposit_hagen" class="hagen_logo" title="desposit_hagen - Logo" src="images/hagenlogo.gif" /></h1>
                   </div>
                   <div class="col-md-6">
-                      <h2>Fachinformationsdienst für <br />internationale und interdisziplinäre<br /> Rechtsforschung</h2>
+                      <h2>Ihre Plattform für <br /> wissenschaftliche <br /> Veröffentlichungen </h2>
                   </div>
               </div>
           </div>
@@ -100,23 +100,13 @@
               <div class="col-md-2">
                 <h4>Soziales</h4>
                 <ul class="social_links">
-                    <li><a href="http://twitter.com/vifarecht"><img src="{$WebApplicationBaseURL}/content/images/logo_twitter.png" style="margin-right:5px;float:left;" />#vifarecht</a></li>
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
-              <div class="col-md-4">
-                <h4>Institutionelles</h4>
-                <ul class="internal_links">
-                  <li><a href="http://www.staatsbibliothek-berlin.de/"><img style="margin:0 0 10px 27px;" src="{$WebApplicationBaseURL}/content/images/logo_sbb.png" /></a></li>
-                  <li><a href="http://dfg.de/"><img style="margin:0 0 10px 0px;" src="{$WebApplicationBaseURL}/content/images/logo_dfg.png" /></a></li>
-                  <li><a href="http://www.open-access.net/"><img style="margin:0 0 0px 10px;" src="{$WebApplicationBaseURL}/content/images/logo_oa.png" /></a></li>
-                </ul>
+              <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+              <div class="col-md-2">
+                <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="{$mcr_version}" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
               </div>
-            </div>
-            <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-            <div class="row">
-              <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="{$mcr_version}" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
-              <!-- div id="mcr_version"><xsl:value-of select="$mcr_version" /></div -->
             </div>
           </div>
         </footer>

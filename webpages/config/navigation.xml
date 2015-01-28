@@ -111,6 +111,10 @@
             <label xml:lang="de">Publizieren</label>
             <label xml:lang="en">Publish</label>
         </item>
+        <item href="/servlets/MCRActionMappingServlet/mods/create" type="intern">
+          <label xml:lang="de">Admineditor</label>
+          <label xml:lang="en">Admineditor</label>
+        </item>
     </menu>
     <menu id="user">
         <label xml:lang="de">Nutzermenü</label>
