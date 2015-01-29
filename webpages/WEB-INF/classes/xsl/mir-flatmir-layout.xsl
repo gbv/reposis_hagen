@@ -103,13 +103,16 @@
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
-              <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-              <div class="col-md-2">
-                <div id="powered_by"  class="pull-right"><a href="http://www.mycore.de"><img title="{$mcr_version}" src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" /></a></div>
-              </div>
             </div>
           </div>
         </footer>
+        
+        <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
+        <div id="powered_by">
+          <a href="http://www.mycore.de">
+            <img src="{$WebApplicationBaseURL}mir-flatmir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+          </a>
+        </div>
 
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->

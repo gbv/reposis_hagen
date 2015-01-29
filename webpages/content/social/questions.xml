@@ -6,68 +6,9 @@
       <div class="row">
         <div class="col-md-12">
           <p>
-            Bitte beachten Sie, dass der Fachinformationsdienst für internationale und interdisziplinäre Rechtsforschung keine
-            Rechtsberatung anbietet.
+            Hier könnte ein Kontaktformular sein.
           </p>
-          <script language="JavaScript" src="http://www.questionpoint.org/crs/html/admin/patronform.js"></script>
-          <script language="JavaScript" src="http://www.questionpoint.org/crs/html/admin/patron.js"></script>
-          <script language="JavaScript">
-            message = new Object();
-            message.invalidemail='E-Mail ungültig.';
-            message.toolong='Sie haben die maximale Anzahl der Zeichen für dieses Feld überschritten:';
-            message.missingmsg='Bitte überprüfen Sie Ihre Eingaben.';
-            message.missingmsg2='Folgende Felder sind fehlerhaft:';
-            function validate() {
-              if(document.entryform1.termsofuse.checked != true)
-                alert('Die Nutzungsbedingungen wurden nicht akzeptiert.');
-              else
-                submitForm(document.entryform1);
-            }
-          </script>
-          <form name="entryform1" action="https://www.questionpoint.org/crs/servlet/org.oclc.ask.AskPatronQuestion" method="post">
-            <input type="hidden" name="library" value="13388" />
-            <input type="hidden" name="language" value="10" />
-            <input type="hidden" name="assign" value="15" />
-            <input type="hidden" name="formtype" value="1" />
-            <input type="hidden" id="requiredfields" name="requiredfields" value="name email question" />
-            <input type="hidden" id="requiredintfields" name="requiredintfields" value="" />
-            <b>* Ihre Frage:</b>
-            <br />
-            <textarea desc="Frage" name="question" wrap="virtual" ROWS="8" COLS="45"></textarea>
-            <br />
-            <br />
-            <b>* Name, Vorname:</b>
-            <br />
-            <input type="text" desc="Name" name="name" wrap="virtual" size="50" />
-            <br />
-            <br />
-            <b>Ort:</b>
-            <br />
-            <input type="hidden" name="label38" value="Ort" />
-            <input type="hidden" name="type38" value="2" />
-            <input type="hidden" name="fieldlist" value="38" />
-            <input type="text" desc="Ort" name="field38" wrap="virtual" size="50" />
-            <br />
-            <br />
-            <b>* E-Mail:</b>
-            <br />
-            <input type="text" desc="E-Mail" name="email" size="50" maxlength="100" />
-            <input id="validateemail" type="hidden" name="validateemail" value="true" />
-            <br />
-            <br />
-            Fragen mit * sind Pflichtfelder.
-            <br />
-            <br />
-            <input type="checkbox" name="termsofuse" style="display: inline" />
-            Ich habe die
-            <a href="qp-datenschutz.html" target="_blank">Datenschutzerklärung</a>
-            gelesen und erkenne sie an.
-            <br />
-            <br />
-            <br />
-            <input type="submit" value="Frage senden" onclick="validate(); return false" style="display: inline; margin: 0 1em 0 0" />
-            <input type="reset" value="Formular leeren" style="display: inline" />
-          </form>
+          
         </div>
       </div>
     </div>

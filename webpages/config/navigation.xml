@@ -79,7 +79,7 @@
             <label xml:lang="de">komplex</label>
             <label xml:lang="en">complex</label>
         </item>
-        <item href="/servlets/MCRActionMappingServlet/expert/search" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">expert</label>
             <label xml:lang="en">expert</label>
         </item>
@@ -105,15 +105,15 @@
         </item>
     </menu>
     <menu id="publish" dir="/content/publish">
-        <label xml:lang="de">Dokumente einreichen</label>
-        <label xml:lang="en">Submit Document</label>
+        <label xml:lang="de">Publizieren</label>
+        <label xml:lang="en">Publish</label>
         <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Publizieren</label>
-            <label xml:lang="en">Publish</label>
+            <label xml:lang="de">Dokument einreichen</label>
+            <label xml:lang="en">Submit Document</label>
         </item>
         <item href="/servlets/MCRActionMappingServlet/mods/create" type="intern">
-          <label xml:lang="de">Admineditor</label>
-          <label xml:lang="en">Admineditor</label>
+          <label xml:lang="de">Experteneditor</label>
+          <label xml:lang="en">Experteditor</label>
         </item>
     </menu>
     <menu id="user">
