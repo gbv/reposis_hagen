@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
+  <label xml:lang="de" text="Beispiel-Einrichtungen" description="Liste der Einrichtungen" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_institutes" />
+  <label xml:lang="en" text="Sample Institutions" description="A list of institutions" />
+  <categories>
+    <category ID="ksw">
+      <label xml:lang="de" text="Fakultät für Kultur- und Sozialwissenschaften" />
+      <label xml:lang="en" text="Faculty of Cultural and Social Sciences" />
+      <url xlink:href="www.fernuni-hagen.de/ksw" xlink:type="locator" />
+      <category ID="HistInst">
+        <label xml:lang="de" text="Historisches Institut" />
+        <label xml:lang="en" text="" />
+        <category ID="GesGegAlt">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas" />
+        </category>
+        <category ID="NeuDeuEurGes">
+          <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="NeuEurAusEurGes">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Neuere Europäische und Außereuropäische Geschichte" />
+        </category>
+      </category>
+      <category ID="InsBilMed">
+        <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
+        <label xml:lang="en" text="" />
+        <category ID="AllBilWiss">
+          <label xml:lang="de" text="Allgemeine Bildungswissenschaft" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="BilMedPad">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Bildungstheorie und Medienpädagogik" />
+        </category>
+        <category ID="EmpBilFor">
+          <label xml:lang="de" text="Empirische Bildungsforschung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="IntBilPro">
+          <label xml:lang="de" text="Internationalisierung von Bildungsprozessen" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="LebLanLer">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lebenslanges Lernen" />
+        </category>
+        <category ID="MedDid">
+          <label xml:lang="de" text="Mediendidaktik" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="3602ad19-982c-4635-93dd-7b337254c791">
+        <label xml:lang="de" text="Institut für Neuere deutsche Literatur- und Medienwissenschaft" />
+        <label xml:lang="en" text="" />
+        <category ID="121cb65b-c760-4297-8359-31f5f4e2c970">
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="6a0796a2-f618-48a1-a9b0-47d4babfae63">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Geschichte der Medienkulturen" />
+        </category>
+        <category ID="12c5b889-f636-4913-81bc-cccf63ca2595">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medienästhetik" />
+        </category>
+      </category>
+      <category ID="fffbb0fc-7535-4018-aae3-a87413863be1">
+        <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Institut für Philosophie" />
+        <category ID="63ebea15-fd7a-411d-baac-388040c4e511">
+          <label xml:lang="de" text="Philosophie I" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="11631822-d219-4f78-af16-5752a85013fe">
+          <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="1c3097d2-5566-4603-b07c-8453cccc64ba">
+          <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="632ee933-3b01-465a-bb60-384e7f9d83df">
+        <label xml:lang="de" text="Institut für Politikwissenschaft" />
+        <label xml:lang="en" text="" />
+        <category ID="feba6531-825a-4eb9-86c9-43e8e2d0c686">
+          <label xml:lang="de" text="Politikwissenschaft I: Staat und Regieren" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="a3d58986-f135-492e-bacd-1400bee12ffc">
+          <label xml:lang="de" text="Politikwissenschaft II: Internationale Politik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="0b0cb709-5eee-49c5-9ab3-f6b4ffcf9a99">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft III: Politikfeldanalyse" />
+        </category>
+        <category ID="34b51da1-c4b0-4e35-b853-8430fc86fc09">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft IV: Politik und Verwaltung" />
+        </category>
+        <category ID="c1b48720-c781-4992-971c-b7432a06e814">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft V: Vergleichende Politikwissenschaft" />
+        </category>
+      </category>
+      <category ID="83b02262-786f-42de-ab0c-b067cc7553a9">
+        <label xml:lang="de" text="Institut für Psychologie" />
+        <label xml:lang="en" text="" />
+        <category ID="e9b704fe-b38b-4a6d-b82d-e6af7f258187">
+          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="644a38bf-e5c5-461d-adf2-b049516a69d9">
+          <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="e3e9b309-2b66-47d6-b53a-b207eee6185e">
+          <label xml:lang="de" text="Bildungspsychologie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="0fe0ee4b-5a8a-46bb-9527-bcd19a91f9ed">
+          <label xml:lang="de" text="Community Psychology" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="47106c9d-2913-410d-b34f-78b60481cec9">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Gesundheitspsychologie" />
+        </category>
+        <category ID="f71ea876-b90e-4f2b-9b75-37add7f5fcab">
+          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="c0930fc1-2416-4f9d-b511-01e418dc0a99">
+          <label xml:lang="de" text="Psychologie des Erwachsenenalters" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="a4cc4df2-0a80-4d7a-9167-990ec05faf22">
+          <label xml:lang="de" text="Psychologische Methodenlehre, Diagnostik und Evaluation" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="b84b08da-68af-400c-afa5-6a6ae17bcccb">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Sozialpsychologie" />
+        </category>
+      </category>
+      <category ID="563a2df9-c320-40e5-96a9-062a7a19e6e0">
+        <label xml:lang="de" text="Institut für Soziologie" />
+        <label xml:lang="en" text="" />
+        <category ID="6799caa4-4c6e-4953-8664-5e9d3ff01998">
+          <label xml:lang="de" text="Soziologie I, Allgemeine Soziologie und Soziologische Theorie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="57563393-b6c4-43c0-9182-92017797232c">
+          <label xml:lang="de" text="Soziologie II, Soziologische Gegenwartsdiagnosen" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="8d6359fe-21a4-4829-9956-3227b91af9b5">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Soziologie III, Organisationssoziologie und qualitative Methoden" />
+        </category>
+        <category ID="3c4bfead-3ab2-47b4-be1e-59a4c8f45085">
+          <label xml:lang="de" text="Arbeitsbereich Stadt- und Regionalsoziologie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="f44d0a28-1388-4300-9599-d7b1bf50fa37">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ernsting's-family-Junior Stiftungsprofessur für Soziologie familialer Lebensformen, Netzwerke und Gemeinschaften" />
+        </category>
+      </category>
+      <category ID="aeda8725-3a43-4351-bcc4-2c1dabaec644">
+        <label xml:lang="de" text="Arbeitsbereich" />
+        <label xml:lang="en" text="" />
+        <category ID="103db438-56ac-4911-b197-44a72d17d8e4">
+          <label xml:lang="de" text="Arbeits- und Organisationspsychologie" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="3b501c27-cba9-4379-8477-b0edd57270b9">
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
+        <label xml:lang="en" text="" />
+        <category ID="b1d7159f-c3fb-49ee-b6cb-c9b71eed64fa">
+          <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+    </category>
+    <category ID="37d0f18e-8112-4d8f-a331-0ffc80430ea6">
+      <label xml:lang="en" text="Faculty of Mathematics and Computer Science" />
+      <label xml:lang="de" text="Fakultät für Mathematik und Informatik" />
+      <url xlink:href="http://www.fernuni-hagen.de/mathinf/" xlink:type="locator" />
+      <category ID="7633f32a-ba7e-4878-8737-f51451537db1">
+        <label xml:lang="de" text="Elektrotechnik" />
+        <label xml:lang="en" text="" />
+        <category ID="239cb1cb-a425-4c8e-afe7-2c98fea05412">
+          <label xml:lang="de" text="Elektrische Energietechnik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="a99c8117-a7bb-43d9-b50e-503b0d6070c4">
+          <label xml:lang="de" text="Informationstechnik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="dea14ad0-7ba7-49d7-b8ec-d0dfb4c41a84">
+          <label xml:lang="de" text="Kommunikationsnetze" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="d0143e73-ba38-43cf-8824-d8b6e2dbb077">
+          <label xml:lang="de" text="Mikro- und Nanophotonik (bisher: Optische Nachrichtentechnik)" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="7e9ebeef-9980-44d6-be42-4e11fdc88a9b">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Prozesssteuerung und Regelungstechnik" />
+        </category>
+        <category ID="8402e1ef-6440-4cc6-94eb-a0c7391fcb35">
+          <label xml:lang="de" text="Technologie- und Innovationsmanagement" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="3738b084-36f1-4392-a320-e99f6bb453e1">
+        <label xml:lang="de" text="Informatik" />
+        <label xml:lang="en" text="" />
+        <category ID="540e6f2d-4b65-4fba-8af7-8d316e7ba940">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Wissensbasierte Systeme" />
+        </category>
+        <category ID="255f0def-d443-4e29-994e-7eb4ff2bbb22">
+          <label xml:lang="de" text="Softwaretechnik und Theorie der Programmierung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="ae5dc99c-7f71-4708-a9c6-92cff1034f60">
+          <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="9ee7ed30-8e12-4270-84c5-a0152998f48f">
+          <label xml:lang="de" text="Kooperative Systeme" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="0c47844f-7866-4f71-a446-90265042e08b">
+          <label xml:lang="de" text="Multimedia und Internetanwendungen" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="0e4e531c-95e4-4b84-bd76-878b8c09953d">
+          <label xml:lang="de" text="Parallelität und VLSI" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="1b4ab656-dc1b-47b2-af6f-8aab9aee3344">
+          <label xml:lang="de" text="Unternehmensweite Softwaresysteme" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="0b93fa99-62ed-4d5e-99ba-b92196bef991">
+          <label xml:lang="de" text="Mensch-Computer-Interaktion" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="7966332d-63a5-4d6c-a639-7eb137c27c7f">
+          <label xml:lang="de" text="Rechnerarchitektur" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="817dada4-99dd-4b26-a3b3-50cc8d66f54f">
+          <label xml:lang="de" text="Programmiersysteme" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="c42f5076-1363-4c39-80f7-e5e1774ece0a">
+          <label xml:lang="de" text="Algorithmen und Komplexität" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="0cfbf171-862e-4a6b-810e-f7b7d0236fe0">
+        <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Mathematik" />
+        <category ID="7c36d162-aa73-4483-9a71-e8a37922f2a4">
+          <label xml:lang="de" text="Algebra" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="2d4362fe-3ed4-4b1b-9fcc-6558187e887e">
+          <label xml:lang="de" text="Analysis" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="dd2ddfbc-56e8-4739-aacc-dc304422e8b1">
+          <label xml:lang="de" text="Diskrete Mathematik und Optimierung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="2818ecea-5f9c-4091-9f61-9c114ab90aac">
+          <label xml:lang="de" text="Numerische Mathematik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="7f796ceb-77d8-4696-8dc6-ef49d1e9bac4">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Stochastik" />
+        </category>
+        <category ID="5012c590-fd70-4a3e-a535-257f63e3a245">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Angewandte Stochastik" />
+        </category>
+      </category>
+      <category ID="0d7e59e2-c7f0-4b17-9573-f364b2882667">
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
+        <label xml:lang="en" text="" />
+      </category>
+    </category>
+    <category ID="69974e73-37a6-413e-993b-316048b07c23">
+      <label xml:lang="de" text="Fakultät für Wirtschaftswissenschaft" />
+      <label xml:lang="en" text="Faculty of Business Administration and Economics" />
+      <url xlink:href="www.fernuni-hagen.de/wiwi" xlink:type="locator" />
+      <category ID="4d037e27-4950-400d-9ff9-dc7958bb8e2e">
+        <label xml:lang="de" text="Betriebswirtschaftslehre" />
+        <label xml:lang="en" text="" />
+        <category ID="29c8fb68-5d7e-4a83-bf30-e07c202f9b32">
+          <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="87fbbcaf-5794-45d8-b074-01d717508c1f">
+          <label xml:lang="de" text="Bank- und Finanzwirtschaft" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="edc8c967-3ba2-42f6-986f-ca6774dca14c">
+          <label xml:lang="de" text="Betriebliche Anwendungssysteme" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="cef883be-1039-4a59-940b-3e676f47bbb9">
+          <label xml:lang="de" text="Betriebswirtschaftliche Steuerlehre" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="8733e5ac-2373-4863-a3e9-8249f2ebd9a5">
+          <label xml:lang="de" text="Douglas-Stiftungslehrstuhl für Dienstleistungsmanagement" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="7a176c92-d0ff-4174-a8d2-5cc8c696514d">
+          <label xml:lang="de" text="Entwicklung von Informationssystemen" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="987a6754-1bde-44bf-ba26-5f0f840ea138">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Informationsmanagement" />
+        </category>
+        <category ID="d48ac816-3832-494f-bd2c-5336f549566f">
+          <label xml:lang="de" text="Investitionstheorie und Unternehmensbewertung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="853e2426-5536-4f39-8edf-121ed54ddfff">
+          <label xml:lang="de" text="Marketing" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="c61bb25c-3a98-4328-93a6-d10c204f7e1e">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Organisation und Planung" />
+        </category>
+        <category ID="2c18b735-31a7-4066-b076-1d716e66b9e2">
+          <label xml:lang="de" text="Personalführung und Organisation" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="4323773c-dd8a-48c8-9798-04afcbba2c15">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Produktion und Logistik" />
+        </category>
+        <category ID="0d633500-5938-446c-a7b0-4204995bf4f6">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Quantitative Methoden und Wirtschaftsmathematik" />
+        </category>
+        <category ID="eea7575a-6675-4c80-a3e6-50a49f2e7fbb">
+          <label xml:lang="de" text="Unternehmensrechnung und Controlling" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="a60936ce-3a05-4c68-8291-0f0bc5831459">
+          <label xml:lang="de" text="Wirtschaftsprüfung" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="f46c6544-1879-464d-9698-e0537c07d759">
+        <label xml:lang="de" text="Volkswirtschaftslehre" />
+        <label xml:lang="en" text="" />
+        <category ID="e59aefd4-2f83-49ce-96eb-70dfe0b35eae">
+          <label xml:lang="de" text="Finanzwissenschaft" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="b5cc90b6-7e8c-4a5a-bf22-b33ebf147f26">
+          <label xml:lang="de" text="Makroökonomik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="9496ab1a-4e8c-42b2-9b6e-6be062b2320c">
+          <label xml:lang="de" text="Wirtschaftspolitik" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="6548c3df-a9d2-4cc8-9c08-3c07d5f61ea2">
+          <label xml:lang="de" text="Wirtschaftstheorie" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="4468d8ed-c617-4420-a369-02b40ffee29a">
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
+        <label xml:lang="en" text="" />
+      </category>
+    </category>
+    <category ID="bde1b9c7-2f6e-4b01-9a67-ef38632c80e2">
+      <label xml:lang="de" text="Rechtswissenschaftliche Fakultät" />
+      <label xml:lang="en" text="Faculty of Law" />
+      <url xlink:href="www.fernuni-hagen.de/rewi" xlink:type="locator" />
+      <category ID="2eb2578d-4e12-4f3e-83e2-b90f8bfbbf9c">
+        <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Lehrstühle" />
+        <category ID="55918051-9708-45b4-bdb6-cc64878b1582">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="eb1957a7-8487-4036-b28e-fae6b82c26bb">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="W. P. Radt Stiftungslehrstuhl für Bürgerliches Recht, Gewerblichen Rechtsschutz, Internationales Privat- und Zivilprozessrecht" />
+        </category>
+        <category ID="9018bfaf-0113-46ba-9e98-8ae39c6ee49e">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="87b0bb80-c940-4622-8a44-ff5f3d072e9f">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="146d459c-a84c-4fe2-8a4e-10ed8cb01b25">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Zivilprozessrecht, Internationales Privatrecht und Rechtsvergleichung" />
+        </category>
+        <category ID="c76e53d7-b554-48e2-bf3d-1bb699572e36">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="31b3a989-5bb6-4fdb-b252-0bd07e56092b">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht" />
+        </category>
+        <category ID="99865514-587b-494e-8fae-73d32c6eeac8">
+          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="51da8daa-fa24-411c-ae21-ecb2735a0af7">
+          <label xml:lang="de" text="Lehrstuhl für Strafrecht und Strafrechtsgeschichte" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="c8b5eb7d-ef2f-42fe-b062-7ec8b6e080c7">
+          <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="f6c5a3b2-e0ea-4fef-baad-a55f78328b73">
+          <label xml:lang="de" text="Arbeitsbereich für Strafrecht und Strafprozessrecht" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="5fcfd843-a455-41f6-bbd8-b0199a8ad365">
+        <label xml:lang="de" text="Institute" />
+        <label xml:lang="en" text="" />
+        <category ID="571a8d02-a789-4bfb-b0c4-17ecadc9734d">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Contarini-Institut für Mediation" />
+        </category>
+        <category ID="a14c898e-d721-4419-8d79-8e71d1592ddf">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Dimitris-Tsatsos-Institut für Europäische Verfassungswissenschaften" />
+        </category>
+        <category ID="18631017-64e1-43f5-9020-ed4eeab9c214">
+          <label xml:lang="de" text="Institut für Japanisches Recht" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="eb4f7983-1450-4646-85c9-9f5c089c468b">
+          <label xml:lang="de" text="Institut für juristische Weiterbildung" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="03947884-17cd-4297-990b-e82aa5100d56">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Institut für juristische Zeitgeschichte" />
+        </category>
+        <category ID="e747801e-8cce-465b-b08d-8bc8993766a7">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Kurt-Haertel-Institut für geistiges Eigentum" />
+        </category>
+        <category ID="f112ee34-39a4-42e7-b236-02010b02e307">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Institut für deutsches und europäisches Arbeits- und Sozialrecht" />
+        </category>
+        <category ID="0a6b518a-f25f-4f2b-ab50-f87d3d3d9a83">
+          <label xml:lang="de" text="Forschungsinstitut für rechtliches Informationsmanagement - Firm GmbH" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="fca2bb4e-816d-4269-9d1e-38f3ae2e79ef">
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
+        <label xml:lang="en" text="" />
+      </category>
+    </category>
+  </categories>
+</mycoreclass>
