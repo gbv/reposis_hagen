@@ -50,19 +50,20 @@
         <xsl:if test="//div/@class='jumbotwo'">
           <div class="jumboHome">
               <div class="container">
-                  <div class="col-md-6">
-                      <h1><img style="width: 80%;height: auto;" alt="deposit_hagen" class="hagen_logo" title="desposit_hagen - Logo" src="images/hagenlogo.gif" /></h1>
+                  <div class="hidden-xs col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1"> 
+                      <h1><img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="images/feulogo.png" /></h1>
                   </div>
-                  <div class="col-md-6">
-                      <h2>Ihre Plattform für <br /> wissenschaftliche <br /> Veröffentlichungen </h2>
+                  <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1"> 
+                      <h1><img alt="deposit_hagen" class="img-responsive" title="desposit_hagen- Logo" src="images/deposit_hagen_logo_gross.png" /></h1>
                   </div>
               </div>
           </div>
+          <div class="clearfix visible-xs-block visible-sm-block"></div>
         </xsl:if>
 
         <div class="container" id="page">
           <div class="row">
-            <div class="col-md-12" id="main_content">
+            <div class="col-xs-12 col-sd-12 col-md-12" id="main_content">
               <xsl:call-template name="print.writeProtectionMessage" />
               <xsl:choose>
                 <xsl:when test="$readAccess='true'">
@@ -79,25 +80,25 @@
         <footer class="panel-footer flatmir-footer" role="contentinfo">
           <div class="container">
             <div class="row">
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Über uns</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Rechtliches</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Technisches</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
                 </ul>
               </div>
-              <div class="col-md-2">
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Soziales</h4>
                 <ul class="social_links">
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
