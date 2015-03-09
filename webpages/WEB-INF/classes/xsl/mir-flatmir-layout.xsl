@@ -12,14 +12,17 @@
   <xsl:include href="resource:xsl/mir-flatmir-layout-utils.xsl"/>
   <xsl:param name="MIR.DefaultLayout.CSS" select="'flatly.min'" />
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
+  <xsl:param name="MIR.CustomLayout.JS" select="''" />
+  <xsl:param name="MIR.Layout.Theme" select="'flatmir'" />
   <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.2.0'" />
+  <xsl:variable name="bootstrap.version" select="'3.3.1'" />
   <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
-  <xsl:variable name="fontawesome.version" select="'4.0.3'" />
-  <xsl:variable name="jquery.version" select="'1.11.0'" />
+  <xsl:variable name="fontawesome.version" select="'4.2.0'" />
+  <xsl:variable name="jquery.version" select="'2.1.1'" />
   <xsl:variable name="jquery.migrate.version" select="'1.2.1'" />
   <!-- End of various versions -->
   <xsl:variable name="PageTitle" select="/*/@title" />
+
   <xsl:template match="/site">
     <html lang="{$CurrentLang}" class="no-js">
       <head>
@@ -32,12 +35,16 @@
         </xsl:comment>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="//netdna.bootstrapcdn.com/font-awesome/{$fontawesome.version}/css/font-awesome.min.css" rel="stylesheet" />
-        <link href="{$WebApplicationBaseURL}mir-flatmir-layout/css/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
+        <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
+        <xsl:copy-of select="head/*" />
+        <link href="{$WebApplicationBaseURL}mir-layout/css/{$MIR.Layout.Theme}/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
           <link href="{$WebApplicationBaseURL}css/{$MIR.CustomLayout.CSS}" rel="stylesheet" />
         </xsl:if>
-        <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
+        <xsl:if test="string-length($MIR.CustomLayout.JS) &gt; 0">
+          <script type="text/javascript" src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
+        </xsl:if>
       </head>
 
       <body>
@@ -62,18 +69,16 @@
         </xsl:if>
 
         <div class="container" id="page">
-          <div class="row">
-            <div class="col-xs-12 col-sd-12 col-md-12" id="main_content">
-              <xsl:call-template name="print.writeProtectionMessage" />
-              <xsl:choose>
-                <xsl:when test="$readAccess='true'">
-                  <xsl:copy-of select="*" />
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:call-template name="printNotLoggedIn" />
-                </xsl:otherwise>
-              </xsl:choose>
-            </div>
+          <div id="main_content">
+            <xsl:call-template name="print.writeProtectionMessage" />
+            <xsl:choose>
+              <xsl:when test="$readAccess='true'">
+                <xsl:copy-of select="*[not(name()='head')]" />
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="printNotLoggedIn" />
+              </xsl:otherwise>
+            </xsl:choose>
           </div>
         </div>
 
@@ -134,7 +139,16 @@
             }
           });
         </script>
+        <!-- alco add placeholder for older browser -->
+        <script src="{$WebApplicationBaseURL}js/jquery.placeholder.min.js"></script>
+        <script>
+          jQuery("input[placeholder]").placeholder();
+          jQuery("textarea[placeholder]").placeholder();
+        </script>
       </body>
     </html>
+  </xsl:template>
+  <xsl:template match="/*[not(local-name()='site')]">
+    <xsl:message terminate="yes">This is not a site document, fix your properties.</xsl:message>
   </xsl:template>
 </xsl:stylesheet>
