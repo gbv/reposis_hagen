@@ -1,0 +1,828 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+
+  <xed:template id="in.out">
+    <xed:source uri="xslStyle:PPN-mods-simple,mycoreobject-editor,editor/mods2xeditor?parentId={$parentId}:http://unapi.gbv.de/?id=gvk:ppn:{$ppn}&amp;format=mods" />
+    <xed:source uri="xslStyle:PPN-mods-simple,mycoreobject-editor,editor/mods2xeditor:http://unapi.gbv.de/?id=gvk:ppn:{$ppn}&amp;format=mods" />
+    <xed:source uri="xslStyle:editor/mods2xeditor:{$sourceUri}"/>
+    <xed:source uri="xslStyle:asParent,editor/mods2xeditor:mcrobject:{$parentId}" />
+    <xed:source uri="xslStyle:asSeries,editor/mods2xeditor:mcrobject:{$seriesId}" />
+    <xed:source uri="xslStyle:mycoreobject-editor,editor/mods2xeditor:mcrobject:{$id}" />
+    <xed:cancel url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}" />
+    <xed:cancel url="{$cancelUrl}" />
+    <xed:cancel url="../index.html" />
+    <xed:post-processor xsl="editor/xeditor2mods.xsl" />
+  </xed:template>
+
+  <xed:template id="mycore.common">
+    <xed:bind xpath="@ID" initially="mir_mods_00000000" />
+  </xed:template>
+
+  <xed:template id="genre">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="component.mods.genre" />
+      </label>
+      <xed:repeat xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']" min="1" max="10">
+        <div class="col-md-6">
+          <div class="controls">
+            <xed:bind xpath="@valueURIxEditor">
+              <select class="form-control form-control-inline">
+                <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_genres" />
+              </select>
+            </xed:bind>
+          </div>
+        </div>
+        <mir:pmud />
+      </xed:repeat>
+    </div>
+  </xed:template>
+
+  <xed:template id="status">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="component.mods.metaData.dictionary.status" />
+      </label>
+      <xed:bind xpath="mods:classification[@displayLabel='status'][@authorityURI='http://www.mycore.org/classifications/mir_status']/@valueURIxEditor" initially="submitted">
+        <div class="col-md-6">
+          <div class="controls">
+            <select class="form-control form-control-inline">
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_status" />
+            </select>
+          </div>
+        </div>
+      </xed:bind>
+    </div>
+  </xed:template>
+
+  <xed:template id="title">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" class="required" />
+  </xed:template>
+
+  <xed:template id="title.abbreviated">
+    <mir:textfield xpath="mods:titleInfo[@type='abbreviated']/mods:title" label="mir.title.type.abbreviated" />
+  </xed:template>
+
+  <xed:template id="title.journal">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
+  </xed:template>
+
+  <xed:template id="title.newspaper">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" />
+  </xed:template>
+
+  <xed:template id="series.title">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" />
+  </xed:template>
+
+  <xed:template id="subtitle">
+    <mir:textfield xpath="mods:titleInfo/mods:subTitle" label="mir.title.subTitle" />
+  </xed:template>
+
+  <xed:template id="titles.thesis">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis.common" />
+  </xed:template>
+
+  <xed:template id="titles.thesis.common">
+    <div class="col-md-10 mir-form-group-head">
+      Originaltitel
+    </div>
+    <xed:bind xpath="mods:titleInfo">
+      <div class="mir-form-group-body">
+        <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" class="mir-form-group" />
+        <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" class="mir-form-group" />
+      </div>
+    </xed:bind>
+    <div class="col-md-10 mir-form-group-head">
+      Titelübersetzung
+    </div>
+    <xed:bind xpath="mods:titleInfo[2][@type='translated']">
+      <div class="mir-form-group-body">
+        <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title}" class="mir-form-group" />
+        <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" class="mir-form-group" />
+        <div class="form-group mir-form-group">
+          <label class="col-md-3 control-label mir-formgroup-label">Sprache:</label>
+          <div class="col-md-6">
+            <xed:bind xpath="@xml:lang" initially="de">
+              <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
+            </xed:bind>
+          </div>
+        </div>  
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="title.complex.repeated">
+    <xed:repeat xpath="mods:titleInfo" min="1" max="6">
+      <div class="form-group">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="mir.title.nonSort" />
+        </label>
+        <div class="col-md-6">
+          <div class="form-inline controls">
+            <xed:bind xpath="mods:nonSort">
+              <input type="text" size="10" class="form-control form-control-inline" placeholder="Der/Die/Das"/>
+            </xed:bind>
+            <xed:bind xpath="@xml:lang" initially="de">
+              <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
+            </xed:bind>
+            <xed:bind xpath="@type">
+              <select class="form-control form-control-inline">
+                <option value="">
+                  <xed:output i18n="mir.title.type.main" />
+                </option>
+                <option value="translated">
+                  <xed:output i18n="mir.title.type.translated" />
+                </option>
+                <option value="alternative">
+                  <xed:output i18n="mir.title.type.alternative" />
+                </option>
+                <option value="abbreviated">
+                  <xed:output i18n="mir.title.type.abbreviated" />
+                </option>
+                <option value="uniform">
+                  <xed:output i18n="mir.title.type.uniform" />
+                </option>
+              </select>
+            </xed:bind>
+          </div>
+        </div>
+        <mir:pmud />
+      </div>
+      <mir:textfield xpath="mods:title" label="mir.title" />
+      <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" />
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="author.repeated">
+    <mir:role.repeated role="aut" label="mir.role.author" class="required" />
+  </xed:template>
+
+  <xed:template id="editor.repeated">
+    <mir:role.repeated role="edt" label="mir.role.editor" />
+  </xed:template>
+
+  <xed:template id="inventor.repeated">
+    <mir:role.repeated role="inv" label="mir.role.inventor" />
+  </xed:template>
+
+  <xed:template id="advisor.repeated">
+    <mir:role.repeated role="ths" label="mir.role.advisor" />
+  </xed:template>
+
+  <xed:template id="editor.honoree.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='hnr']" />
+    <mir:person.repeated>
+      <option value="edt">
+        <xed:output i18n="mir.role.editor" />
+      </option>
+      <option value="hnr">
+        <xed:output i18n="mir.role.honoree" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="author.interviewee.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ive']" />
+    <mir:person.repeated>
+      <option value="aut">
+        <xed:output i18n="mir.role.author" />
+      </option>
+      <option value="ive">
+        <xed:output i18n="mir.role.interviewee" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="producer.speaker.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='pro']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='spk']" />
+    <mir:person.repeated>
+      <option value="pro">
+        <xed:output i18n="mir.role.producer" />
+      </option>
+      <option value="spk">
+        <xed:output i18n="mir.role.speaker" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="thesis.advisor.repeated">
+    <mir:role.repeated role="ths" label="mir.role.thesis" />
+    <mir:role.repeated role="aut" label="mir.role.advisor" />
+  </xed:template>
+
+  <xed:template id="thesis.advisor.reviewer.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated>
+      <option value="aut">
+        <xed:output i18n="mir.role.thesis" />
+      </option>
+      <option value="ths">
+        <xed:output i18n="mir.role.advisor" />
+      </option>
+      <option value="rev">
+        <xed:output i18n="mir.role.reviewer" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="thesisHabil.repeated">
+    <mir:role.repeated role="aut" label="mir.role.thesisHabil" />
+  </xed:template>
+
+  <xed:template id="thesisHabil.reviewer.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated>
+      <option value="aut">
+        <xed:output i18n="mir.role.thesisHabil" />
+      </option>
+      <option value="rev">
+        <xed:output i18n="mir.role.reviewer" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="name.repeated">
+    <mir:person.repeated>
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:marcrelator" />
+    </mir:person.repeated>
+  </xed:template>
+
+  <xed:template id="person.fields">
+    <div class="search-person">
+      <xed:bind xpath="mods:displayForm">
+        <input type="text" size="26" class="form-control form-control-inline"
+          data-search="searchPerson"
+          data-search-type="select"
+          data-search-output="#valueURIxEditor"
+          data-search-button="{i18n:button.search}"
+          data-search-button-loading="{i18n:button.loading}"
+          data-search-result-empty="{i18n:mir.searchIdentifier.noResult}"
+          data-target=".search-person"
+          placeholder="{i18n:mir.placeholder.name.family}, {i18n:mir.placeholder.name.given}"
+        />
+      </xed:bind>
+      <xed:bind xpath="@valueURIxEditor">
+        <input type="hidden" id="valueURIxEditor" />
+      </xed:bind>
+    </div>
+    <!-- ========== LSF subselect ==========
+    <button type="submit" class="btn btn-default" xed:target="subselect" xed:href="../lsfSearch.html?lastName={mods:namePart[@type='family']}">
+      <xed:output i18n="button.selectPerson" />
+    </button>
+    <xed:if test="mods:namePart">
+      <p class="form-control-static">
+        <xed:output value="concat(mods:namePart[@type='family'],', ',mods:namePart[@type='given'])" />
+      </p>
+    </xed:if>
+    <xed:if test="string-length(@valueURI) &gt; 0">
+      <p class="form-control-static">
+        <a href="{@valueURI}">
+          <xed:output value="concat(' (ID ',substring-after(@valueURI,'pid='),')')" />
+        </a>
+      </p>
+    </xed:if>
+    -->
+  </xed:template>
+
+  <xed:template id="conference">
+    <mir:textfield xpath="mods:name[@type='conference']/mods:namePart" label="mir.conference" placeholder="{i18n:mir.placeholder.conference}" />
+  </xed:template>
+
+  <xed:template id="year.issued">
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required"
+      placeholder="{i18n:mir.placeholder.year}" />
+  </xed:template>
+
+  <xed:template id="date.issued">
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" class="required"
+      placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="date.broadcasted">
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.broadcasted"
+      placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="date.accepted">
+    <mir:textfield xpath="mods:originInfo/mods:dateOther[@type='accepted'][@encoding='w3cdtf']" label="mir.date.accepted"
+      placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="date.acceptedHabil">
+    <mir:textfield xpath="mods:originInfo/mods:dateOther[@type='accepted'][@encoding='w3cdtf']" label="mir.date.acceptedHabil"
+      placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="date.submitted">
+    <mir:textfield xpath="mods:originInfo/mods:dateOther[@type='submitted'][@encoding='w3cdtf']" label="mir.date.submitted"
+      placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="identifier.patent">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.identifier.patent" />
+      </label>
+      <xed:repeat xpath="mods:identifier[@type='patent']" min="1" max="10">
+        <div class="col-md-6">
+          <div class="controls">
+            <input type="text" size="30" class="form-control form-control-inline" />
+          </div>
+        </div>
+        <mir:pmud />
+      </xed:repeat>
+    </div>
+  </xed:template>
+
+  <xed:template id="identifier.isbn">
+    <mir:textfield xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+  </xed:template>
+
+  <xed:template id="identifier.issn">
+    <mir:textfield xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
+  </xed:template>
+
+<xed:template id="identifier.zdbid">
+    <mir:textfield xpath="mods:identifier[@type='zdbid']" label="mir.identifier.zdbid" />
+  </xed:template>
+
+  <xed:template id="identifier.intern">
+    <mir:textfield xpath="mods:identifier[@type='intern']" label="mir.identifier.intern" />
+  </xed:template>
+
+  <xed:template id="identifier.project">
+    <mir:textfield xpath="mods:identifier[@type='project']" label="mir.identifier.project" />
+  </xed:template>
+
+  <xed:template id="identifier.repeated">
+    <xed:repeat xpath="mods:identifier" min="1" max="10">
+      <div class="form-group">
+        <div class="col-md-3" style="text-align:right; font-weight:bold;">
+          <xed:bind xpath="@type">
+            <select class="form-control">
+              <option value="isbn">
+                <xed:output i18n="mir.identifier.isbn" />
+              </option>
+              <option value="issn">
+                <xed:output i18n="mir.identifier.issn" />
+              </option>
+              <option value="zdbid">
+                <xed:output i18n="mir.identifier.zdbid" />
+              </option>
+              <option value="doi">
+                <xed:output i18n="mir.identifier.doi" />
+              </option>
+              <option value="hdl">
+                <xed:output i18n="mir.identifier.hdl" />
+              </option>
+              <option value="urn">
+                <xed:output i18n="mir.identifier.urn" />
+              </option>
+              <option value="uri">
+                <xed:output i18n="mir.identifier.uri" />
+              </option>
+              <option value="intern">
+                <xed:output i18n="mir.identifier.intern" />
+              </option>
+              <option value="project">
+                <xed:output i18n="mir.identifier.project" />
+              </option>
+              <option value="patent">
+                <xed:output i18n="mir.identifier.patent" />
+              </option>
+            </select>
+          </xed:bind>
+        </div>
+        <div class="col-md-6">
+          <input type="text" size="30" class="form-control form-control-inline {$xed-validation-marker}" />
+        </div>
+        <mir:pmud />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="doi.handle.urn.repeated">
+    <xed:repeat xpath="mods:identifier[contains(' doi hdl urn ',concat(' ',@type,' '))]" min="1" max="10" method="clone">
+      <div class="form-group">
+        <xed:bind xpath="@type">
+          <div class="col-md-3">
+            <select class="form-control" style="text-align:right; font-weight:bold;">
+              <option value="doi">
+                <xed:output i18n="mir.identifier.doi" />
+              </option>
+              <option value="hdl">
+                <xed:output i18n="mir.identifier.hdl" />
+              </option>
+              <option value="urn">
+                <xed:output i18n="mir.identifier.urn" />
+              </option>
+              <option value="uri">
+                <xed:output i18n="mir.identifier.uri" />
+              </option>
+            </select>
+          </div>
+        </xed:bind>
+        <div class="col-md-6">
+          <input type="text" size="20" class="form-control form-control-inline {$xed-validation-marker}" />
+        </div>
+        <mir:pmud />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="shelfmark">
+    <mir:textfield xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+
+  <xed:template id="link">
+    <mir:textfield xpath="mods:location/mods:url[@access='raw object']" label="mir.link.raw_object" />
+  </xed:template>
+
+  <xed:template id="link.repeated">
+    <xed:repeat xpath="mods:location/mods:url" min="1" max="5">
+      <div class="form-group">
+        <div class="col-md-3">
+          <xed:bind xpath="@access">
+            <select class="form-control" style="text-align:right; font-weight:bold;">
+              <option value="">
+                <xed:output i18n="mir.link" />
+              </option>
+              <option value="preview">
+                <xed:output i18n="mir.link.preview" />
+              </option>
+              <option value="raw object">
+                <xed:output i18n="mir.link.raw_object" />
+              </option>
+              <option value="object in context">
+                <xed:output i18n="mir.link.object_in_context" />
+              </option>
+            </select>
+          </xed:bind>
+        </div>
+        <div class="col-md-6">
+          <input type="text" size="50" class="form-control form-control-inline {$xed-validation-marker}" />
+        </div>
+        <mir:pmud />
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="place">
+    <mir:textfield xpath="mods:originInfo/mods:place/mods:placeTerm[@type='text']" label="mir.place" />
+  </xed:template>
+
+  <xed:template id="country">
+    <mir:textfield xpath="mods:originInfo/mods:place/mods:placeTerm[@type='text']" label="mir.place.country" />
+  </xed:template>
+
+  <xed:template id="publisher">
+    <mir:textfield xpath="mods:originInfo/mods:publisher" label="mir.publisher" />
+  </xed:template>
+
+  <xed:template id="station">
+    <mir:textfield xpath="mods:originInfo/mods:publisher" label="mir.publisher.station" />
+  </xed:template>
+
+  <xed:template id="edition">
+    <mir:textfield xpath="mods:originInfo/mods:edition" label="mir.edition" placeholder="{i18n:mir.placeholder.edition}" />
+  </xed:template>
+
+  <xed:template id="extent">
+    <mir:textfield xpath="mods:physicalDescription/mods:extent" label="mir.extent" placeholder="{i18n:mir.placeholder.extent}" />
+  </xed:template>
+
+  <xed:template id="series.volume">
+    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
+      placeholder="{i18n:mir.placeholder.series.volume}" />
+  </xed:template>
+
+  <xed:template id="host.volume">
+    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" />
+  </xed:template>
+
+  <xed:template id="host.issue">
+    <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.issue" />
+  </xed:template>
+
+  <xed:template id="host.pages">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.pages.from" />
+      </label>
+      <div class="col-md-6">
+        <div class="form-inline">
+          <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
+            <xed:bind xpath="mods:start">
+              <input type="text" size="10" class="form-control form-control-inline" />
+            </xed:bind>
+            <label>
+              <xed:output i18n="mir.pages.to" />
+            </label>
+            <xed:bind xpath="mods:end">
+              <input type="text" size="10" class="form-control form-control-inline" />
+            </xed:bind>
+          </xed:bind>
+        </div>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="language.simple">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.language" />
+      </label>
+      <div class="col-md-6">
+        <xed:bind xpath="mods:language/mods:languageTerm[@authority='rfc4646'][@type='code']" initially="de">
+          <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
+        </xed:bind>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="language.repeated">
+    <xed:repeat xpath="mods:language" max="5" >
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.language" />
+      </label>
+        <div class="col-md-6">
+          <xed:bind xpath="mods:languageTerm[@authority='rfc4646'][@type='code']" initially="de">
+          <div class="controls">
+            <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
+          </div>
+          </xed:bind>
+        </div>
+        <mir:pmud />
+    </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="lang.list">
+    <select class="form-control form-control-inline">
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:rfc4646" />
+    </select>
+  </xed:template>
+  
+  <xed:template id="lang.list.addon">
+    <select class="form-control form-control-inline input-group-addon">
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:rfc4646" />
+    </select>
+  </xed:template>
+
+  <xed:template id="rights">
+    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label required">
+          <xed:output i18n="mir.rights" />:
+        </label>
+        <div class="col-md-6">
+          <select  class="form-control form-control-inline">
+            <option value=""><xed:output i18n="mir.select" /></option>
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_rights" />
+          </select>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="embargo">
+    <mir:textfield xpath="mods:accessCondition[@type='embargo']" label="mir.embargo" placeholder="{i18n:mir.placeholder.date}" />
+  </xed:template>
+
+  <xed:template id="institutes">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.institution" />:
+      </label>
+      <div class="col-md-6">
+        <xed:bind xpath="mods:name[@type='corporate'][@authorityURI='http://www.mycore.org/classifications/mir_institutes']">
+          <xed:bind xpath="mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']" initially="his" /><!--  Host institution [his] -->
+          <xed:bind xpath="@valueURIxEditor">
+            <select class="form-control form-control-inline">
+              <option value=""><xed:output i18n="mir.select" /></option>
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_institutes" />
+            </select>
+          </xed:bind>
+        </xed:bind>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="editor.organization">
+    <div class="form-group">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.editorOrganization" />:
+      </label>
+      <div class="col-md-6">
+        <xed:bind xpath="mods:name[@type='corporate'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']"><!--  Editor [edt] -->
+          <div class="search-organization">
+            <xed:bind xpath="mods:displayForm">
+              <input type="text" size="26" class="form-control form-control-inline"
+                data-search="searchOrganization"
+                data-search-type="select"
+                data-search-output="#valueURIxEditor"
+                data-search-button="{i18n:button.search}"
+                data-search-button-loading="{i18n:button.loading}"
+                data-search-result-empty="{i18n:mir.searchIdentifier.noResult}"
+                data-target=".search-organization"
+                placeholder="{i18n:mir.placeholder.name.organization}"
+              />
+            </xed:bind>
+            <xed:bind xpath="@valueURIxEditor">
+              <input type="hidden" id="valueURIxEditor" />
+            </xed:bind>
+          </div>
+        </xed:bind>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="sdnb">
+    <xed:bind xpath="mods:classification[@authority='sdnb'][@displayLabel='sdnb']">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="editor.search.mir.sdnb" />:
+        </label>
+        <div class="col-md-6">
+          <select  class="form-control form-control-inline">
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:SDNB" />
+          </select>
+        </div>
+      </div>
+    </xed:bind>
+  </xed:template>
+
+  <xed:template id="abstract.simple">
+    <mir:textarea xpath="mods:abstract" label="mir.abstract.text" rows="5" />
+  </xed:template>
+  
+  <xed:template id="abstract.repeated">
+    <xed:repeat xpath="mods:abstract" min="1" max="3">
+      <div class="col-md-11 mir-form-group-head">
+        Abstract
+      </div>
+      <div class="mir-form-group-body">
+        <div class="form-group mir-form-group">
+          <label class="col-md-3 control-label">
+            <xed:output i18n="mir.abstract.in" />
+          </label>
+          <div class="col-md-6">
+            <xed:bind xpath="@xml:lang" initially="de">
+              <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
+            </xed:bind>
+          </div>
+          <mir:pmud class="mir-form-group-pmud"/>
+        </div>
+        <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" placeholder="{i18n:mir.placeholder.abstract.link}" class="mir-form-group" />
+        <mir:textarea xpath="." label="mir.abstract.ortext" rows="5" class="mir-form-group"/>
+      </div>
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="subject">
+    <mir:textfield xpath="mods:subject/mods:topic" label="mir.subject.topic" />
+  </xed:template>
+
+  <xed:template id="comment">
+    <mir:textarea xpath="mods:note" label="mir.comment" rows="2" />
+  </xed:template>
+
+  <xed:template id="related.item">
+    <xed:repeat xpath="mods:relatedItem" min="1" max="10">
+      <div class="form-group">
+        <div class="col-md-3">
+          <xed:bind xpath="@type">
+            <select class="form-control">
+              <option value="host">
+                <xed:output i18n="mir.relatedItem.host" />
+              </option>
+              <option value="series">
+                <xed:output i18n="mir.relatedItem.series" />
+              </option>
+              <option value="preceding">
+                <xed:output i18n="mir.relatedItem.preceding" />
+              </option>
+              <option value="original">
+                <xed:output i18n="mir.relatedItem.original" />
+              </option>
+              <option value="references">
+                <xed:output i18n="mir.relatedItem.references" />
+              </option>
+              <option value="reviewOf">
+                <xed:output i18n="mir.relatedItem.reviewOf" />
+              </option>
+            </select>
+          </xed:bind>
+        </div>
+        <div class="col-md-6">
+          <div class="controls form-inline">
+            <xed:bind xpath="@xlink:href">
+              <input type="text" class="form-control form-control-inline" size="25" placeholder="{i18n:mir.editing.related.id}" />
+            </xed:bind>
+            <button type="submit" class="btn btn-default" xed:target="subselect" xed:href="../../mir/search/search-advanced.xed">
+              <xed:output i18n="mir.editing.related.select" />
+            </button>
+          </div>
+          <xed:if test="string-length(@xlink:href) &gt; 0">
+            <div class="controls">
+              <xed:load-resource name="relatedItem" uri="notnull:mcrobject:{@xlink:href}" />
+              <p class="form-control-static">
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:nonSort" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:subTitle" />
+                <br />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='conference']/mods:namePart" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='family']" />
+                <xed:output value="$relatedItem/metadata/def.modsContainer/modsContainer/mods:mods/mods:name[@type='personal']/mods:namePart[@type='given']" />
+              </p>
+            </div>
+          </xed:if>
+        </div>
+        <mir:pmud />
+      </div>
+      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.volume" />
+      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.issue" />
+      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.pages" />
+    </xed:repeat>
+  </xed:template>
+
+  <xed:template id="cancel.submit">
+    <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.search-person.js"></script>
+
+    <div class="form-group">
+      <div class="col-md-offset-3 col-md-6">
+        <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
+        <button type="submit" class="btn btn-default" xed:target="cancel">
+          <xed:output i18n="button.cancel" />
+        </button>
+        <xed:choose>
+          <xed:when test="/mycoreobject/@ID = 'mir_mods_00000000'">
+            <button type="submit" class="btn btn-primary" xed:target="servlet" xed:href="CreateObjectServlet">
+              <xed:output i18n="button.save" />
+            </button>
+          </xed:when>
+          <xed:otherwise>
+            <button type="submit" class="btn btn-primary" xed:target="servlet" xed:href="UpdateObjectServlet">
+              <xed:output i18n="button.save" />
+            </button>
+          </xed:otherwise>
+        </xed:choose>
+      </div>
+    </div>
+  </xed:template>
+
+  <xed:template id="failed-validation-messages">
+    <xed:if test="$xed-validation-failed">
+      <div>
+        <h3>
+          <xed:output i18n="mir.validation.failed" />
+        </h3>
+        <ul class="mir-validation-messages">
+          <xed:display-validation-messages />
+        </ul>
+      </div>
+    </xed:if>
+  </xed:template>
+
+  <xed:template id="validation-rules">
+    <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <!-- don't validate author, date issued and rights for journal etc.  -->
+    <xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series']">
+      <!-- "required" checks if there is such an element which has text content, so we must validate mods:displayForm for the moment-->
+      <xed:choose>
+        <xed:when test="//mods:mods/mods:genre[@valueURIxEditor='collection']">
+          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
+        </xed:when>
+        <xed:otherwise>
+          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
+        </xed:otherwise>
+      </xed:choose>
+      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
+      <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
+    </xed:if>
+    <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />
+    <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" i18n="mir.validation.issn" display="global" />
+    <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" i18n="mir.validation.doi" display="global" />
+    <xed:validate xpath="//mods:identifier[@type='hdl']" matches="\S+/\S+" i18n="mir.validation.handle" display="global" />
+    <xed:validate xpath="//mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" i18n="mir.validation.urn" display="global" />
+    <xed:validate xpath="//mods:url|//mods:abstract/@xlink:href" matches="(ftp|http|https)://[\w\d.]+\S*" i18n="mir.validation.url" display="global" />
+    <xed:validate xpath="//mods:*[@encoding='w3cdtf']" matches="\d{4}(\-\d{2}(\-\d{2})?)?" type="datetime" format="yyyy;yyyy-MM;yyyy-MM-dd" i18n="mir.validation.date" display="global" />
+  </xed:template>
+
+  <xed:template id="cleanup-rules">
+    <xed:cleanup-rule xpath="//mods:*" relevant-if="(string-length(text()) &gt; 0) or mods:* or (string-length(@xlink:href) &gt; 0) or (string-length(@valueURIxEditor) &gt; 0)" />
+    <xed:cleanup-rule xpath="//mods:name" relevant-if="(mods:namePart|mods:displayForm) or (string-length(@valueURI) &gt; 0) or (string-length(@valueURIxEditor) &gt; 0)" />
+    <xed:cleanup-rule xpath="//mods:name/@authorityURI" relevant-if="(string-length(../@valueURI) &gt; 0) or (string-length(../@valueURIxEditor) &gt; 0)" />
+    <xed:cleanup-rule xpath="//mods:*/@xlink:type" relevant-if="text()!='simple'" />
+  </xed:template>
+
+</xed:template>

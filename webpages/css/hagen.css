@@ -299,6 +299,11 @@ h3 > a {
 .breadcrumb {
 	background-color: #C8C8FF;
 }
+.breadcrumb>li+li:before{
+	content:"/\00a0";
+	padding:0 5px;
+	color: #4D4D4D;
+}
 .breadcrumb > .active {
     color: #2C3E50;
 }
@@ -359,4 +364,57 @@ h3 > a {
 }
 .label-success {
     background-color: #5CE034;
+}
+.badges_block{
+	display:table;
+    width:100%;
+}
+.badges{
+	display:table-cell;
+	vertical-align:top
+}
+.mir-edit{
+	display:table-cell;
+	width:220px;
+	vertical-align:top
+}
+.mir-form-group-head {
+	border-style: solid; 
+	border-width: 0px 0px 2px 0px; 
+	border-color: #ccc; 
+	border-bottom-left-radius: 10px;
+	padding: 3px;
+	padding-left: 21px;
+	font-size:21px;
+}
+div.mir-form-group > div.col-md-6{
+	border-style: solid;
+	border-width: 0px 0px 0px 2px;
+	border-color: #ccc;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:13px;
+}
+div.mir-form-group > div.form-pmud{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+div.mir-form-group:last-child > div.col-md-6 {
+	padding-bottom:6px;
+	border-bottom-left-radius: 10px;
+}
+div.mir-form-group:first-child > div.col-md-6 {
+	padding-top:6px;
+}
+.mir-form-group-pmud {
+	border-style: solid;
+	border-width: 0px 0px 0px 2px;
+	border-color: #ccc;
+	border-bottom-left-radius: 10px;
+}
+.mir-form-group{
+	margin-bottom: 0px;
+}
+.mir-form-group-body {
+	margin-bottom: 12px;
 }
