@@ -4,24 +4,64 @@
     <div>
       <h2>WIE geht es</h2>
       <div class="row">
+      
+      
         <div class="col-md-12">
-          <p>Text wie es geht</p>
+          <p>
+            Als Serviceangebot der Universitätsbibliothek richtet sich deposit_hagen 
+            primär an Angehörige der FernUniversität in Hagen. 
+          </p>
+          <p>
+            Für den Upload von Dokumenten in das Repositorium ist ein persönlicher 
+            Account obligatorisch. 
+          </p>
+          <p>
+            Angehörige der FernUniversität werden innerhalb des Hochschulnetzes 
+            automatisch erkannt und eingeloggt. Außerhalb des Hochschulnetzes können
+            Sie Ihren hochschulweiten Account verwenden.
+          </p>
+          <p>
+            Externe Nutzer haben die Möglichkeit <a href="/authorization/new-author.xed?action=register"> einen Account zu beantragen </a>
+          </p>
+ 
         </div>
       </div>
       <div class="row">
         <div class="col-md-12">
-          <h3>Account</h3>
+          <h3>Einreichen von Dokumenten</h3>
           <p>
-            Registrieren oder LDAP
+            Nach dem Upload Ihrer Publikation überprüft ein Redakteur der
+            Universitätsbibliothek die Angaben hinsichtlich der formalen 
+            Richtigkeit und vergibt gegebenenfalls eine eindeutige Kennziffer (URN). 
+            Die Veröffentlichung erfolgt nach abgeschlossener Prüfung und Bearbeitung 
+            zum rechtlich frühestmöglichen Zeitpunkt. Je nach Publikation kann ein 
+            Embargo die Veröffentlichung verzögern.
           </p>
         </div>
       </div>
       
       <div class="row">
         <div class="col-md-12">
-          <h3>Rückfragen und Kontakt</h3>
+          <h3>Dissertationen und Abschlussarbeiten</h3>
           <p>
-            Kontakt
+            Bei der Abgabe ist eine schriftliche Erklärung beizufügen. 
+            Mit dieser Erklärung versichern Sie, dass Sie über die notwendigen 
+            Rechte am Werk verfügen und übertragen der Universitätsbibliothek 
+            das Recht, die elektronische Fassung Ihrer Arbeit auf Datenträger 
+            zu kopieren oder in Datennetze einzuspielen und in dieser Form für 
+            den wissenschaftlichen Bereich verfügbar zu machen (u.a. Die Deutsche 
+            Bibliothek und DFG Sondersammelgebiete).
+          </p>
+          <p>
+            Bei Dissertationen sind zusätzlich zur elektronischen Fassung  
+            weitere Exemplare in Printform zu Archivierungszwecken abzugeben 
+            (in der Regel 4 Exemplare). Näheres hierzu regelt die jeweilige 
+            Promotionsordnung.
+          </p>
+          <p>
+            Nur bei Abschlussarbeiten (Bachelor, Master, Diplom) ist für die 
+            Veröffentlichung auf deposit_hagen, als Qualitätsmerkmal, die vorherige 
+            Zustimmung des Prüfers notwendig.
           </p>
         </div>
       </div>
