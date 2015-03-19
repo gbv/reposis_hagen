@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="all" i18n="component.user2.admin.create.title">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+    <h2>Publizieren</h2>
+    <h3>1. Schritt: Publikationstyp festlegen </h3>
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <p>
+          Hier knnen Sie Ihre Publikation melden. ber diese Auswahl gelangen Sie zu
+          den gewnschten Eingabemasken, ber die Sie Ihre Publikationen eintragen knnen.
+          Bitte whlen Sie den Publikationstyp:
+        </p>
+      </div>
+    </div>  
+    
+    <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal" id="dynamic_editor">
+      <xed:bind xpath="/mycoreobject">
+        <input id="title" type="text" />
+        
+          <xed:include uri="classification:editor:-1:children:rfc4646" />
+        
+      </xed:bind>  
+    </xed:form> 
+  </section>
+</MyCoReWebPage>

@@ -418,3 +418,6 @@ div.mir-form-group:first-child > div.col-md-6 {
 .mir-form-group-body {
 	margin-bottom: 12px;
 }
+#powered_by {
+	background-color:#FFFFFF;
+}
