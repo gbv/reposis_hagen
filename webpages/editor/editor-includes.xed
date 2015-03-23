@@ -86,7 +86,7 @@
 
   <xed:template id="titles.thesis.common">
     <div class="col-md-10 mir-form-group-head">
-      Originaltitel
+      <xed:output i18n="mir.title.original" />
     </div>
     <xed:bind xpath="mods:titleInfo">
       <div class="mir-form-group-body">
@@ -95,7 +95,7 @@
       </div>
     </xed:bind>
     <div class="col-md-10 mir-form-group-head">
-      Titel�bersetzung
+      <xed:output i18n="mir.title.translated" />
     </div>
     <xed:bind xpath="mods:titleInfo[2][@type='translated']">
       <div class="mir-form-group-body">
@@ -225,6 +225,23 @@
       </option>
       <option value="ths">
         <xed:output i18n="mir.role.advisor" />
+      </option>
+      <option value="rev">
+        <xed:output i18n="mir.role.reviewer" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+  
+  <xed:template id="otherthesis.advisor.reviewer.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated>
+      <option value="aut">
+        Student:
+      </option>
+      <option value="ths">
+        Betreuer:
       </option>
       <option value="rev">
         <xed:output i18n="mir.role.reviewer" />
@@ -686,22 +703,28 @@
   </xed:template>
 
   <xed:template id="abstract.simple">
+    <div class="col-md-11 mir-form-group-head">
+      <xed:output i18n="mir.abstract.text" />
+    </div>
     <div class="mir-form-group-body">
-      <mir:textarea xpath="mods:abstract" label="mir.abstract.text" rows="5" />
+      <mir:textarea xpath="mods:abstract" label="mir.abstract.text" rows="5" class="mir-form-group"/>
     </div>
   </xed:template>
   
   <xed:template id="abstract.simple.uri">
+    <div class="col-md-11 mir-form-group-head">
+      <xed:output i18n="mir.abstract.text" />
+    </div>
     <div class="mir-form-group-body">
-      <mir:textarea xpath="mods:abstract" label="mir.abstract.text" rows="5" />
+      <mir:textarea xpath="mods:abstract" label="mir.abstract.text" rows="5" class="mir-form-group"/>
       <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" placeholder="{i18n:mir.placeholder.abstract.link}" class="mir-form-group" />
     </div>  
   </xed:template>
   
   <xed:template id="abstract.repeated">
-    <xed:repeat xpath="mods:abstract" min="2" max="4">
+    <xed:repeat xpath="mods:abstract" min="1" max="2">
       <div class="col-md-11 mir-form-group-head">
-        Abstractübersetzung
+        <xed:output i18n="mir.abstract.text.translation" />
       </div>
       <div class="mir-form-group-body">
         <div class="form-group mir-form-group">
@@ -709,7 +732,7 @@
             <xed:output i18n="mir.abstract.in" />
           </label>
           <div class="col-md-6">
-            <xed:bind xpath="@xml:lang" initially="de">
+            <xed:bind xpath="@xml:lang" initially="en">
               <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
             </xed:bind>
           </div>
