@@ -209,15 +209,22 @@ p.three_column {
 }
 
 #logo_mir {
-	display: block;
-	background-image: url("../content/images/deposit_hagen_logo_klein.png");
+	display: table-cell;
+	background-image: url("../content/images/feulogo.png");
 	background-repeat: no-repeat;
-	width:241px; 
+	background-size:contain;
+	width:300px; 
 	height:44px;
 	font-size:0px;
 }
 #logo_modul {
-	display: none;
+	display: table-cell;
+	background-image: url("../content/images/deposit_hagen_logo_klein.png");
+	background-repeat: no-repeat;
+	background-size:contain;
+	width:241px; 
+	height:44px;
+	font-size:0px;
 }
 #logo_slogan {
 	display: none;

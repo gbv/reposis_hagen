@@ -119,7 +119,7 @@
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Registrieren</label>
         <label xml:lang="en">Register</label>
-        <item href="/authorization/new-author.xed?action=save" type="intern" replaceMenu="false" constrainPopUp="false">
+        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
           <label xml:lang="de">Registrieren</label>
           <label xml:lang="en">Register</label>
         </item>

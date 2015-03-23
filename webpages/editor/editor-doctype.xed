@@ -1,28 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-  <section xml:lang="all" i18n="component.user2.admin.create.title">
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-
-    <h2>Publizieren</h2>
-    <h3>1. Schritt: Publikationstyp festlegen </h3>
-    <div class="row">
-      <div class="col-sm-12 col-md-8">
-        <p>
-          Hier knnen Sie Ihre Publikation melden. ber diese Auswahl gelangen Sie zu
-          den gewnschten Eingabemasken, ber die Sie Ihre Publikationen eintragen knnen.
-          Bitte whlen Sie den Publikationstyp:
-        </p>
-      </div>
-    </div>  
+  <section title="Neue Publikation" xml:lang="de"/>
+  <section title="New publication" xml:lang="en"/>
+  <section xml:lang="all">
     
-    <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal" id="dynamic_editor">
-      <xed:bind xpath="/mycoreobject">
-        <input id="title" type="text" />
-        
-          <xed:include uri="classification:editor:-1:children:rfc4646" />
-        
-      </xed:bind>  
-    </xed:form> 
+    <script src='editor-doctype.js'></script>
+    
+    <form id="submit_publication"
+          class="form-horizontal"
+          role="form"
+          method="get"
+          action="editor-dynamic.xed">
+    
+    
+
+      <h2>Publizieren</h2>
+      <h3>1. Schritt: Publikationstyp festlegen </h3>
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <p>
+            Bitte wählen sie den Typ der Publikation aus.
+            Anschließend werden sie auf das passende Eingabeformular weitergeleitet.
+          </p>
+        </div>
+      </div>  
+    
+      <div class="row form-group">
+        <label for="genre" class="col-sm-3 col-lg-2 control-label">
+          <text i18n="component.mods.genre" />
+        </label>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+          <select id="genre" class="form-control" name="genre" size="1">
+          </select>
+        </div> 
+      </div>
+      
+      <div class="row form-group">
+        <label for="host"  class="col-sm-3 col-lg-2 control-label">
+          <text i18n="mir.select.host" />
+        </label>
+        <div class="col-sm-7 col-md-5 col-lg-4">
+          <select id="host" class="form-control" name="host" size="1">
+          </select>
+        </div>
+      </div>
+      
+      <div class="row form-group">
+        <div class="col-sm-3 col-md-2"></div>
+        <div class="col-sm-5 col-md-4">
+          <button type="submit" class="btn btn-default">Weiter</button>
+        </div>
+      </div>
+    </form> 
   </section>
 </MyCoReWebPage>
