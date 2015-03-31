@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MyCoReWebPage>
+  <section title="MODS-Dokument erstellen" xml:lang="de"/>
+  <section title="Create MODS document" xml:lang="en"/>
+  <section xml:lang="all">
+
+  <xed:form xmlns:xed="http://www.mycore.de/xeditor" xmlns:cmd="http://www.cdlib.org/inside/diglib/copyrightMD" method="post" role="form" class="form-horizontal" id="dynamic_editor">
+    <xed:include uri="webapp:editor/editor-includes.xed" ref="in.out" />
+
+    <xed:bind xpath="/mycoreobject">
+      <xed:include uri="webapp:editor/editor-includes.xed" ref="mycore.common" />
+      <xed:bind xpath="metadata/def.modsContainer[@class='MCRMetaXML'][@notinherit='true']/modsContainer/mods:mods">
+
+        <!-- If genre is not set in edited XML, it comes from request parameter and must be created -->
+        <!-- Refer genre via variable genre_intern to simplify following code for dynamic headline and includes -->
+        <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$genre}" name="genre_intern" />
+
+        <xed:load-resource name="genres" uri="classification:metadata:-1:children:mir_genres" />
+
+        <!-- If parameter host is missing, "standalone" is default, meaning this publication has no host -->
+        <xed:param name="host" default="standalone" />
+
+        <h1>
+          Publikation erfassen:
+          <xed:output value="$genres//category[@ID=$genre_intern]/label[lang($CurrentLang)]/@text" />
+          <xed:if test="not($host='standalone')">
+            <xed:output value="concat(' in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text)" />
+          </xed:if>
+        </h1>
+
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="failed-validation-messages" />
+
+        <fieldset>
+          <xed:include uri="webapp:editor/editor-genres.xed" ref="{$genre_intern}" />
+        </fieldset>
+
+        <xed:if test="not($host='standalone')">
+          <fieldset>
+            <div class="col-md-11 mir-form-group-head">
+              <xed:output value="concat('erschienen in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,':')" />
+            </div>
+            <xed:include uri="webapp:editor/editor-hosts.xed" ref="{$host}" />
+            <xed:bind xpath="mods:relatedItem[(@type='host') or (@type='series')][1]">
+              <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" />
+            </xed:bind>
+          </fieldset>
+        </xed:if>
+
+        <xed:include uri="webapp:editor/editor-genres.xed" ref="submit" />
+
+      </xed:bind>
+    </xed:bind>
+  </xed:form>
+
+  </section>
+</MyCoReWebPage>

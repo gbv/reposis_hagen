@@ -7,10 +7,10 @@ function changeHostOptions(){
 	$( '#host').empty();
 	$.each(hosts.split(' '),function (ind,val) {
 		if (val=='standalone') {
-			$('#host').prepend('<option val="standalone" selected="selected" >(bitte ggf. auswählen)</option>');
+			$('#host').prepend('<option value="standalone" selected="selected" >(bitte ggf. auswählen)</option>');
 		} else {
 			text = $($(GenreXML).find('[ID="'+val+'"]')[0]).children('label[xml\\:lang="de"]').attr('text');
-			$('#host').append('<option val="'+val+'">'+text+'</option>');
+			$('#host').append('<option value="'+val+'">'+text+'</option>');
 		}
 	})
 }

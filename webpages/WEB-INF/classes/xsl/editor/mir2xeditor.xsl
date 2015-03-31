@@ -14,7 +14,7 @@
           <xed:output i18n="{@label}" />
         </label>
         <div class="col-md-6">
-          <input type="text" class="form-control">
+          <input id="{@id}" type="text" class="form-control">
             <xsl:copy-of select="@placeholder" />
           </input>
         </div>

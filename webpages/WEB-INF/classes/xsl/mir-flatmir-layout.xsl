@@ -54,6 +54,7 @@
         </header>
 
         <!-- show only on startpage -->
+        <!-- 
         <xsl:if test="//div/@class='jumbotwo'">
           <div class="jumboHome">
               <div class="container">
@@ -65,8 +66,8 @@
                   </div>
               </div>
           </div>
-          <div class="clearfix visible-xs-block visible-sm-block"></div>
-        </xsl:if>
+          <div class="clearfix visible-xs-block visible-sm-block"></div> 
+        </xsl:if> -->
 
         <div class="container" id="page">
           <div id="main_content">
@@ -109,6 +110,9 @@
                     <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
                 </ul>
               </div>
+              <div class="col-md-2 col-xs-6 col-sm-3">
+                <img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="images/FeULogoWT.png" />
+              </div>
             </div>
           </div>
         </footer>
@@ -116,7 +120,7 @@
         <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
         <div id="powered_by">
           <a href="http://www.mycore.de">
-            <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+            <img src="{$WebApplicationBaseURL}content/images/mycore_logo.png" title="{$mcr_version}" alt="powered by MyCoRe" />
           </a>
         </div>
         

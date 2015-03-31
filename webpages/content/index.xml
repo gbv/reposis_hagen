@@ -1,45 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
   <section xml:lang="de" title="Willkommen bei deposit_hagen">
+    <div class="jumboHome">
+      <div class="container">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-5 col-sm-4 col-md-4 col-md-offset-5"> 
+            <h1><img alt="deposit_hagen" class="img-responsive" title="desposit_hagen- Logo" src="images/dhlogo.png" /></h1>
+        </div>	
+      </div>	
+    </div>
+    <div class="clearfix visible-xs-block visible-sm-block"></div>
     <div class="jumbotwo">
       <div class="row">
         <div class="col-md-4" lang="de">
-          <h3>
-            <a href="brand/who.xml">WER wir sind</a>
-          </h3>
-          
           <p>
-            Eine Dienstleistung der Universitätsbibliothek Hagen für Angehörige der 
-            FernUniversität: Publizieren Sie Ihre wissenschaftlichen Veröffentlichungen 
-            kostenfrei auf dem Server der UB.
-            <a title="mehr erfahren" href="brand/who.xml">[...]</a>
+            Der Dokumentenserver deposit_hagen der Universitätsbibliothek der
+            FernUniversität Hagen ermöglicht Angehörigen der FernUniversität eigene
+            wissenschaftliche Publikationen der weltweiten Öffentlichkeit kostenfrei
+            online zugänglich zu machen (Open Acess). Gleichzeitig beherbergt
+            deposit_hagen die digitalen Sammlungen der Universitätsbibliothek.
           </p>
-        </div>
-        <div class="col-md-4" lang="de">
-          <h3>
-            <a href="brand/what.xml">WAS wir sammeln</a>
-          </h3>
           <p>
-            Neben der dauerhaften Archivierung Ihrer Abschlußarbeit, Dissertation oder Habilitation 
-            ermöglichen wir Ihnen auch die Veröffentlichung Ihrer Aufsätze, Proceedings, Research Paper,
-            Reports usw. Über den Nachweis in Datenbanken und Katalogen vergrößern Sie hierdurch die 
-            Reichweite Ihrer Publikation. 
-            <a title="mehr erfahren" href="brand/what.xml">[...]</a>
+            deposit_hagen ost ein Service der Abteilung Wissenschaftliches Publizieren der
+            Universitätsbibliothek. Gerne beantworten wir Ihnen ihre Fragen fund um den 
+            Publikationsprozess.
           </p>
-        </div>
-        <div class="col-md-4" lang="de">
-          <h3>
-            <a href="brand/how.xml">WIE es geht</a>
-          </h3>
-          <p>
-            How To
+          <p> 
+            Als Angehöriger der FerbUniversität haben Sie die Möglichkeit Ihre Publikation
+            über den hochschulweiten Account selbst einzustellen.
             <a title="mehr erfahren" href="brand/how.xml">[...]</a>
           </p>
         </div>
-      </div>
+       </div>
     </div>
   </section>
   <meta>
-    <log lastEditor="administrator" date="2014-05-23" time="21:37" />
+    <log lastEditor="administrator" date="2015-03-31" time="21:37" />
   </meta>
 </MyCoReWebPage>

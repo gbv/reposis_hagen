@@ -73,9 +73,9 @@
   </xed:template>
 
   <xed:template id="series.title">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title"/>
   </xed:template>
-
+  
   <xed:template id="subtitle">
     <mir:textfield xpath="mods:titleInfo/mods:subTitle" label="mir.title.subTitle" />
   </xed:template>
@@ -150,7 +150,7 @@
         </div>
         <mir:pmud />
       </div>
-      <mir:textfield xpath="mods:title" label="mir.title" />
+      <mir:textfield xpath="mods:title" label="mir.title" class="required" />
       <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" />
     </xed:repeat>
   </xed:template>
@@ -276,8 +276,9 @@
     <div class="search-person">
       <xed:bind xpath="mods:displayForm">
         <input type="text" size="26" class="form-control form-control-inline"
-          data-search="searchPerson"
+          data-search="searchEntity"
           data-search-type="select"
+          data-search-entity-type="person"
           data-search-output="#valueURIxEditor"
           data-search-button="{i18n:button.search}"
           data-search-button-loading="{i18n:button.loading}"
@@ -315,6 +316,10 @@
 
   <xed:template id="year.issued">
     <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required"
+      placeholder="{i18n:mir.placeholder.year}" />
+  </xed:template>
+  <xed:template id="year.issued.mir-form-group">
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required mir-form-group"
       placeholder="{i18n:mir.placeholder.year}" />
   </xed:template>
 
@@ -366,8 +371,8 @@
   <xed:template id="identifier.issn">
     <mir:textfield xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
-
-<xed:template id="identifier.zdbid">
+  
+  <xed:template id="identifier.zdbid">
     <mir:textfield xpath="mods:identifier[@type='zdbid']" label="mir.identifier.zdbid" />
   </xed:template>
 
@@ -520,7 +525,11 @@
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
       placeholder="{i18n:mir.placeholder.series.volume}" />
   </xed:template>
-
+  <xed:template id="series.volume.mir-form-group">
+    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
+      placeholder="{i18n:mir.placeholder.series.volume}" class="mir-form-group"/>
+  </xed:template>
+  
   <xed:template id="host.volume">
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" />
   </xed:template>
@@ -750,6 +759,10 @@
 
   <xed:template id="comment">
     <mir:textarea xpath="mods:note" label="mir.comment" rows="2" />
+  </xed:template>
+
+
+  <xed:template id="related.item">
   </xed:template>
 
   <xed:template id="related.item">

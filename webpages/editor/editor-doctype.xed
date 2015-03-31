@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE MyCoReWebPage>
 <MyCoReWebPage>
-  <section title="Neue Publikation" xml:lang="de"/>
-  <section title="New publication" xml:lang="en"/>
+  <section title="Publizieren" xml:lang="de"/>
+  <section title="Publication" xml:lang="en"/>
   <section xml:lang="all">
     
     <script src='editor-doctype.js'></script>
@@ -16,9 +16,17 @@
     
 
       <h2>Publizieren</h2>
+      <p>
+        Die Publikation eines Dokumentes erfolgt in 3 Schritten:
+        <ol>
+          <li> Publikationstyp festlegen </li>
+          <li> Publikation mit den Metadaten anlegen </li>
+          <li> Dateien hochladen </li>
+        </ol>
+      </p>
       <h3>1. Schritt: Publikationstyp festlegen </h3>
       <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-3 col-lg-5 col-lg-offset-2">
           <p>
             Bitte wählen sie den Typ der Publikation aus.
             Anschließend werden sie auf das passende Eingabeformular weitergeleitet.
