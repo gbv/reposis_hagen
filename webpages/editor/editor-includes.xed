@@ -79,12 +79,8 @@
   <xed:template id="subtitle">
     <mir:textfield xpath="mods:titleInfo/mods:subTitle" label="mir.title.subTitle" />
   </xed:template>
-
-  <xed:template id="titles.thesis">
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis.common" />
-  </xed:template>
-
-  <xed:template id="titles.thesis.common">
+  
+  <xed:template id="title.original">
     <div class="col-md-10 mir-form-group-head">
       <xed:output i18n="mir.title.original" />
     </div>
@@ -94,6 +90,9 @@
         <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" class="mir-form-group" />
       </div>
     </xed:bind>
+  </xed:template>
+  
+  <xed:template id="title.translated">
     <div class="col-md-10 mir-form-group-head">
       <xed:output i18n="mir.title.translated" />
     </div>
@@ -111,6 +110,15 @@
         </div>  
       </div>
     </xed:bind>
+  </xed:template>
+
+  <xed:template id="titles.thesis">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis.common" />
+  </xed:template>
+
+  <xed:template id="titles.thesis.common">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.translated" />
   </xed:template>
 
   <xed:template id="title.complex.repeated">
@@ -156,11 +164,21 @@
   </xed:template>
 
   <xed:template id="author.repeated">
-    <mir:role.repeated role="aut" label="mir.role.author" class="required" />
+    <div class="col-md-10 mir-form-group-head">
+      Autoren
+    </div>
+    <div class="mir-form-group-body">
+      <mir:role.repeated role="aut" label="mir.role.author" class="required mir-form-group" />
+    </div>
   </xed:template>
 
   <xed:template id="editor.repeated">
-    <mir:role.repeated role="edt" label="mir.role.editor" />
+    <div class="col-md-10 mir-form-group-head">
+      Herrausgeber
+    </div>
+    <div class="mir-form-group-body">
+      <mir:role.repeated role="edt" label="mir.role.editor mir-form-group" />
+    </div>
   </xed:template>
 
   <xed:template id="inventor.repeated">
@@ -730,7 +748,7 @@
     </div>  
   </xed:template>
   
-  <xed:template id="abstract.repeated">
+  <xed:template id="abstract.translated">
     <xed:repeat xpath="mods:abstract" min="1" max="2">
       <div class="col-md-11 mir-form-group-head">
         <xed:output i18n="mir.abstract.text.translation" />

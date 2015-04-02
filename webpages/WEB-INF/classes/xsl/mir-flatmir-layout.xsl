@@ -111,7 +111,7 @@
                 </ul>
               </div>
               <div class="col-md-2 col-xs-6 col-sm-3">
-                <img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="images/FeULogoWT.png" />
+                <img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="{$WebApplicationBaseURL}content/images/FeULogoWT.png" />
               </div>
             </div>
           </div>

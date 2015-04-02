@@ -22,7 +22,7 @@
         <xed:param name="host" default="standalone" />
 
         <h1>
-          Publikation erfassen:
+          Eingabeformular für 
           <xed:output value="$genres//category[@ID=$genre_intern]/label[lang($CurrentLang)]/@text" />
           <xed:if test="not($host='standalone')">
             <xed:output value="concat(' in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text)" />
