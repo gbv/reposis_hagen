@@ -4,7 +4,7 @@ var titles = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
   remote: {
-	  url: '../servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+	  url: '../servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
 	  filter: function(list) {
 		return list.response.docs;
 	  } 
@@ -19,7 +19,7 @@ var issns = new Bloodhound({
   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
   queryTokenizer: Bloodhound.tokenizers.whitespace,
   remote: {
-	  url: '../servlets/solr/select?&q=%2Bmods.identifier%3A*%QUERY*+%2Bcategory%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+	  url: '../servlets/solr/select?&q=%2Bmods.identifier%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
 	  filter: function(list) {
 		return list.response.docs;
 	  } 

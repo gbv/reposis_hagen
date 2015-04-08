@@ -20,7 +20,7 @@
         <xsl:choose>
           <xsl:when test="(($element = 'von') or ($element = 'bis'))">
             <field name="{$element}">
-              <xsl:value-of select="mcrxsl:getISODateFromMCRHistoryDate(.)" />
+              <xsl:value-of select="mcrxsl:getISODateFromMCRHistoryDate(.,$element,../calendar/text())" />
             </field>
             <xsl:for-each select="./@*">
               <!-- <elementName>.<attribute.name>.<attrVal> -->
@@ -49,6 +49,7 @@
           </field>
         </xsl:for-each>
       </xsl:for-each>
+
       <!-- dynamic class fields -->
       <xsl:for-each select="metadata/*[@class='MCRMetaClassification']/*">
         <xsl:variable name="classTree"
@@ -56,7 +57,13 @@
         <xsl:variable name="classid" select="@classid" />
         <xsl:variable name="notInherited" select="@inherited = '0'" />
 
-        <xsl:for-each select="$classTree">
+        <field name="{$classid}.leaf">
+          <!-- categid as value -->
+          <xsl:value-of select="@categid" />
+        </field>
+
+
+        <xsl:for-each select=" $ classTree ">
           <xsl:if test="position() = 1">
             <field name="{$classid}.root">
               <!-- categid as value -->
@@ -69,6 +76,7 @@
             <!-- categid as value -->
             <xsl:value-of select="@ID" />
           </field>
+
           <xsl:for-each select="label">
             <field name="{$classid}_Label">
               <xsl:value-of select="@text" />
@@ -84,6 +92,7 @@
           </xsl:if>
         </xsl:for-each>
       </xsl:for-each>
+
       <!-- and once again for mods -->
       <xsl:for-each select="metadata//mods:*[@authority or @authorityURI]">
         <xsl:variable name="uri" xmlns:mcrmods="xalan://org.mycore.mods.MCRMODSClassificationSupport" select="mcrmods:getClassCategParentLink(.)" />
@@ -91,6 +100,7 @@
           <xsl:variable name="class" select="document($uri)" />
           <xsl:variable name="classid" select="document($uri)/mycoreclass/@ID" />
           <xsl:variable name="classTree" select="$class/mycoreclass/categories//category" />
+          <xsl:variable name="withTopField" select="not(ancestor::mods:relatedItem)" />
           <xsl:for-each select="$classTree">
             <!-- classid as fieldname -->
             <field name="{$classid}">
@@ -105,10 +115,11 @@
                 <xsl:value-of select="@text" />
               </field>
             </xsl:for-each>
-            <!-- TODO: Currently we do not have to think of releatedItem[@type='host'] here -->
-            <field name="{$classid}.top">
-              <xsl:value-of select="@ID" />
-            </field>
+            <xsl:if test="$withTopField">
+              <field name="{$classid}.top">
+                <xsl:value-of select="@ID" />
+              </field>
+            </xsl:if>
           </xsl:for-each>
         </xsl:if>
       </xsl:for-each>

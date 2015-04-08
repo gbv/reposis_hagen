@@ -177,7 +177,7 @@
       Herrausgeber
     </div>
     <div class="mir-form-group-body">
-      <mir:role.repeated role="edt" label="mir.role.editor mir-form-group" />
+      <mir:role.repeated role="edt" label="mir.role.editor" class="mir-form-group" />
     </div>
   </xed:template>
 
@@ -772,7 +772,7 @@
   </xed:template>
 
   <xed:template id="subject">
-    <mir:textfield xpath="mods:subject/mods:topic" label="mir.subject.topic" />
+    <mir:textfield.repeated xpath="mods:subject/mods:topic" label="mir.subject.topic" /> 
   </xed:template>
 
   <xed:template id="comment">

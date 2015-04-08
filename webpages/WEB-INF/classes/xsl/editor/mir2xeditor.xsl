@@ -6,20 +6,34 @@
 
   <xsl:include href="copynodes.xsl" />
 
+  <xsl:template name="mir-textfield">
+    <label class="col-md-3 control-label ">
+      <xed:output i18n="{@label}" /> 
+    </label>
+    <div class="col-md-6">
+      <input id="{@id}" type="text" class="form-control">
+        <xsl:copy-of select="@placeholder" />
+      </input>
+    </div>
+  </xsl:template>
+  
   <xsl:template match="mir:textfield">
-    <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
     <xed:bind xpath="{@xpath}">
+      <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
       <div class="form-group {@class} {$xed-val-marker}">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="{@label}" />
-        </label>
-        <div class="col-md-6">
-          <input id="{@id}" type="text" class="form-control">
-            <xsl:copy-of select="@placeholder" />
-          </input>
-        </div>
+        <xsl:call-template name="mir-textfield" />
       </div>
     </xed:bind>
+  </xsl:template>
+  
+  <xsl:template match="mir:textfield.repeated">
+    <xed:repeat xpath="{@xpath}" min="1" max="30">
+      <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
+      <div class="form-group {@class} {$xed-val-marker}">
+        <xsl:call-template name="mir-textfield" />
+        <xsl:call-template name="mir-pmud" />
+      </div>
+    </xed:repeat>
   </xsl:template>
 
   <xsl:template match="mir:textarea">
