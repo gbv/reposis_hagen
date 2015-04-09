@@ -76,8 +76,8 @@
             <label xml:lang="en">simple</label>
         </item>
         <item href="/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
+            <label xml:lang="de">intern</label>
+            <label xml:lang="en">intern</label>
         </item>
         <item href="/servlets/MCRActionMappingServlet/complex/search" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">komplex</label>

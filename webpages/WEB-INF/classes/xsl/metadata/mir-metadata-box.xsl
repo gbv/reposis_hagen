@@ -33,10 +33,10 @@
                 <xsl:with-param name="label" select="i18n:translate('component.mods.metaData.dictionary.confpubIn')" />
               </xsl:call-template>
             </xsl:if>
-            <xsl:if test="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type=series]/@xlink:href">
+            <xsl:if test="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/@xlink:href">
               <xsl:call-template name="printMetaDate.mods.relatedItem">
-                <xsl:with-param name="parentID" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type=series]/@xlink:href" />
-                <xsl:with-param name="label" select="in Serie:" />
+                <xsl:with-param name="parentID" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/@xlink:href" />
+                <xsl:with-param name="label" select="'in Serie'" />
               </xsl:call-template>
             </xsl:if>
             <xsl:apply-templates mode="present" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier" />
