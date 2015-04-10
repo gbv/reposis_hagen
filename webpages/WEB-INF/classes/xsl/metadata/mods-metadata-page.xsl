@@ -119,7 +119,6 @@
             <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
               <div class="panel panel-default system">
                 <div class="panel-heading">
-                  <h3 class="panel-title">Systeminformationen</h3>
                   <h3 class="panel-title">
                     <xsl:value-of select="i18n:translate('component.mods.metaData.dictionary.systembox')" />
                   </h3>

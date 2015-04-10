@@ -11,10 +11,9 @@
         </li>
         <xsl:if test="$mods/mods:relatedItem[@type='series']">
           <li>
-            <xsl:variable name="seriesTitle">
-              <xsl:apply-templates select="$mods/mods:relatedItem[@type='series']" mode="mods.title" />
-            </xsl:variable>
-            <xsl:value-of select="mcrxml:shortenText($seriesTitle,70)" />
+            <xsl:call-template name="objectLink">
+              <xsl:with-param select="$mods/mods:relatedItem[@type='series']/@xlink:href" name="obj_id" />
+            </xsl:call-template>
           </li>
         </xsl:if>
         <xsl:call-template name="mir-breadcrumb-parentli">
@@ -40,7 +39,7 @@
       </xsl:call-template>
       <li>
         <xsl:call-template name="objectLink">
-        <xsl:with-param select="$parentID" name="obj_id" />
+          <xsl:with-param select="$parentID" name="obj_id" />
         </xsl:call-template>
       </li>
     </xsl:if>
