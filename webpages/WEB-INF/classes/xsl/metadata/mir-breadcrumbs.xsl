@@ -9,6 +9,14 @@
         <li>
           <a href="{$WebApplicationBaseURL}" class="navtrail">Home</a>
         </li>
+        <xsl:if test="$mods/mods:relatedItem[@type='series']">
+          <li>
+            <xsl:variable name="seriesTitle">
+              <xsl:apply-templates select="$mods/mods:relatedItem[@type='series']" mode="mods.title" />
+            </xsl:variable>
+            <xsl:value-of select="mcrxml:shortenText($seriesTitle,70)" />
+          </li>
+        </xsl:if>
         <xsl:call-template name="mir-breadcrumb-parentli">
           <xsl:with-param name="parentID" select="$mods/mods:relatedItem[@type='host']/@xlink:href"/>
         </xsl:call-template>

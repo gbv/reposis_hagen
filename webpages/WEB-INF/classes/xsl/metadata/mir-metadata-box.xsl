@@ -23,6 +23,7 @@
                       not(mods:role/mods:roleTerm='aut') and
                       count(. | key('name-by-role',mods:role/mods:roleTerm)[1])=1]">
               <!-- for every role -->
+              <xsl:copy-of select="." />
               <xsl:apply-templates select="." mode="present" />
             </xsl:for-each>
 
