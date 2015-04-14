@@ -426,3 +426,7 @@ div.mir-form-group:first-child > div.col-md-6 {
 #powered_by {
 	background-color:#FFFFFF;
 }
+.subtitle {
+	color:#999;
+	font-size: 30px;
+}

@@ -28,6 +28,80 @@ var issns = new Bloodhound({
 });
 issns.initialize();
 
+var engines = {
+	issn: new Bloodhound({
+	    //datumTokenizer: Bloodhound.tokenizers.obj.whitespace,
+	    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
+	    queryTokenizer: Bloodhound.tokenizers.whitespace,
+	    remote: {
+		    url: '../servlets/solr/select?&q=%2Bmods.identifier%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+		    filter: function(list) {
+			  return list.response.docs;
+		    } 
+	    }
+	}),
+	title:new Bloodhound({
+	    //datumTokenizer: Bloodhound.tokenizers.obj.whitespace,
+	    datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
+	    queryTokenizer: Bloodhound.tokenizers.whitespace,
+	    remote: {
+		    url: '../servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+		    filter: function(list) {
+		    	return list.response.docs;
+		    },
+		    replace : function (url, query) {
+		    	alert($(this).data("genre"));
+		    }
+	    }
+	}),
+    empty:new Bloodhound({
+    	//datumTokenizer: Bloodhound.tokenizers.obj.whitespace,
+    	datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
+    	queryTokenizer: Bloodhound.tokenizers.whitespace,
+    	remote: {
+    		url: '../servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+    		filter: function(list) {
+    			return {};
+    		} 
+    	}
+    })
+};
+
+$.each(engines,function (index,engine){
+	// While only use of remote engine this work fine. When uses prefetch only initialise
+	// needed engines in $(document).ready
+	engine.initialize();
+});
+
+$(document).ready( function() {
+	$("input[data-provide='typeahead']").each(function (index,input){
+		if (engines[$(this).data("searchengine")]) {
+			Adapter=engines[$(this).data("searchengine")].ttAdapter();
+		} else {
+			Adapter=engines["empty"].ttAdapter();
+		}
+		$(this).typeahead({
+			items: 4,
+			displayText: function(item) {
+			   return item['mods.title'][0] || item;
+			},
+			source:Adapter  
+		}); 
+		$(this).change(function() {
+		    var current = $(this).typeahead("getActive");
+		    if (current) {
+		    	if (current['mods.title'][0]==$(this).val()){
+		    	    $('#hostid').val(current.id);
+		    	    $(this).val(current['mods.title'][0]);
+		    	    $("input[data-provide='typeahead']").prop('disabled', true );
+		    	} else {
+		    		$('#hostid').val("");
+		    	}
+		    }
+		});
+		
+	});
+});
 
 $('#series-title').typeahead(
 {
@@ -97,5 +171,7 @@ $('.host-reset').click(function(event) {
   $('#series-issn').val("");
   $('#series-title').prop('disabled', false );
   $('#series-issn').prop('disabled', false );
+  $("input[data-provide='typeahead']").val("");
+  $("input[data-provide='typeahead']").prop('disabled', false );
 });
 

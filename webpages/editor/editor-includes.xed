@@ -76,6 +76,10 @@
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title"/>
   </xed:template>
   
+  <xed:template id="title.journal.hostsearch">
+    <mir:hostsearch searchengine="title" genre="journal" xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
+  </xed:template>
+  
   <xed:template id="subtitle">
     <mir:textfield xpath="mods:titleInfo/mods:subTitle" label="mir.title.subTitle" />
   </xed:template>
@@ -390,6 +394,10 @@
     <mir:textfield xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
   
+  <xed:template id="identifier.issn.hostsearch">
+    <mir:hostsearch searchengine="issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
+  </xed:template>
+  
   <xed:template id="identifier.zdbid">
     <mir:textfield xpath="mods:identifier[@type='zdbid']" label="mir.identifier.zdbid" />
   </xed:template>
@@ -481,7 +489,11 @@
   <xed:template id="shelfmark">
     <mir:textfield xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
-
+  
+  <xed:template id="shelfmark.hostsearch">
+    <mir:hostsearch searchengine="shelfmark" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
   <xed:template id="link">
     <mir:textfield xpath="mods:location/mods:url[@access='raw object']" label="mir.link.raw_object" />
   </xed:template>
@@ -543,6 +555,7 @@
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
       placeholder="{i18n:mir.placeholder.series.volume}" />
   </xed:template>
+  
   <xed:template id="series.volume.mir-form-group">
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
       placeholder="{i18n:mir.placeholder.series.volume}" class="mir-form-group"/>
@@ -551,31 +564,51 @@
   <xed:template id="host.volume">
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" />
   </xed:template>
+  
+  <xed:template id="host.volume.mir-form-group">
+    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" 
+      class="mir-form-group"/>
+  </xed:template>
 
   <xed:template id="host.issue">
     <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.issue" />
   </xed:template>
+  
+  <xed:template id="host.issue.mir-form-group">
+    <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.issue" 
+      class="mir-form-group"/>
+  </xed:template>
 
+  <xed:template id="host-pages">
+    <label class="col-md-3 control-label">
+      <xed:output i18n="mir.pages.from" />
+    </label>
+    <div class="col-md-6">
+      <div class="form-inline">
+        <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
+          <xed:bind xpath="mods:start">
+            <input type="text" size="10" class="form-control form-control-inline" />
+          </xed:bind>
+          <label>
+            <xed:output i18n="mir.pages.to" />
+          </label>
+          <xed:bind xpath="mods:end">
+            <input type="text" size="10" class="form-control form-control-inline" />
+          </xed:bind>
+        </xed:bind>
+      </div>
+    </div>
+  </xed:template>
+  
   <xed:template id="host.pages">
     <div class="form-group">
-      <label class="col-md-3 control-label">
-        <xed:output i18n="mir.pages.from" />
-      </label>
-      <div class="col-md-6">
-        <div class="form-inline">
-          <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
-            <xed:bind xpath="mods:start">
-              <input type="text" size="10" class="form-control form-control-inline" />
-            </xed:bind>
-            <label>
-              <xed:output i18n="mir.pages.to" />
-            </label>
-            <xed:bind xpath="mods:end">
-              <input type="text" size="10" class="form-control form-control-inline" />
-            </xed:bind>
-          </xed:bind>
-        </div>
-      </div>
+      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host-pages" />
+    </div>
+  </xed:template>
+
+  <xed:template id="host.pages.mir-form-group">
+    <div class="form-group mir-form-group">
+      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host-pages" />
     </div>
   </xed:template>
 

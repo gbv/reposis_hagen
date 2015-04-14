@@ -83,10 +83,12 @@
       
       <h1 itemprop="name"> 
         <xsl:apply-templates mode="mods.title" select="$mods" />
+        <xsl:if test="$mods/mods:titleInfo[1]/mods:subTitle">
+          <span class="subtitle">
+            : <xsl:apply-templates mode="mods.subtitle" select="$mods" />
+          </span>
+        </xsl:if>
       </h1>
-      <h2> 
-        <xsl:apply-templates mode="mods.subtitle" select="$mods" />
-      </h2>
       <p id="authors_short">
         <xsl:for-each select="$mods/mods:name[mods:role/mods:roleTerm/text()='aut']">
           <xsl:if test="position()!=1">
