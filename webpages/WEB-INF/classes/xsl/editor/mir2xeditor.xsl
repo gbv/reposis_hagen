@@ -122,9 +122,9 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="mir:hostsearch">
+  <xsl:template match="mir:relItemsearch">
     <xed:bind xpath="{@xpath}">
-      <div class="form-group mir-form-group">
+      <div class="form-group">
         <label class="col-md-3 control-label">
           <xed:output i18n="{@label}" />
         </label>

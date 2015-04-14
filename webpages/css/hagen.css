@@ -384,6 +384,7 @@ h3 > a {
 	vertical-align:top
 }
 .mir-form-group-head {
+	margin-left: 30px;
 	border-style: solid; 
 	border-width: 0px 0px 2px 0px; 
 	border-color: #ccc; 
@@ -429,4 +430,23 @@ div.mir-form-group:first-child > div.col-md-6 {
 .subtitle {
 	color:#999;
 	font-size: 30px;
+}
+fieldset.relatedItem{
+	margin-top:15px;
+	border-style: solid;
+	border-width: 0px 0px 0px 2px;
+	border-color: #ccc;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.mir-relatedItem-head{
+	border-style: solid;
+	border-width: 2px 2px 2px 2px;
+	border-color: #ccc;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding: 3px;
+	padding-left: 21px;
+	font-size:21px;
 }

@@ -36,8 +36,8 @@
         </fieldset>
 
         <xed:if test="not($host='standalone')">
-          <fieldset>
-            <div class="col-md-11 mir-form-group-head">
+          <fieldset class="relatedItem">
+            <div class="col-md-11 mir-relatedItem-head">
               <xed:output value="concat('erschienen in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,':')" />
             </div>
             <xed:include uri="webapp:editor/editor-hosts.xed" ref="{$host}" />
@@ -46,12 +46,30 @@
             </xed:bind>
           </fieldset>
         </xed:if>
+        
+        <xed:if test="contains($genres//category[@ID=$host]/label[lang('x-hosts')]/@text,'series')">
+          <xed:bind xpath="mods:relatedItem[(@type='host')][1]">
+            <fieldset class="relatedItem">
+              <div class="col-md-11 mir-relatedItem-head">
+                <xed:output value="concat($genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,' erschienen in Serie:')" />
+              </div>
+              <xed:include uri="webapp:editor/editor-hosts.xed" ref="series" />
+              <xed:bind xpath="mods:relatedItem[@type='series'][1]">
+                <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="series" />
+              </xed:bind>
+            </fieldset>
+          </xed:bind>  
+        </xed:if>
 
         <xed:include uri="webapp:editor/editor-genres.xed" ref="submit" />
 
       </xed:bind>
     </xed:bind>
   </xed:form>
+  
+  <script src="bootstrap3-typeahead.js" type="text/javascript"></script>
+  <script src="bloodhound.js" type="text/javascript"></script>
+  <script src="editor-hosts.js" type="text/javascript"></script>
 
   </section>
 </MyCoReWebPage>
