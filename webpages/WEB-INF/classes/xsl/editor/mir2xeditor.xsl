@@ -128,12 +128,14 @@
         <label class="col-md-3 control-label">
           <xed:output i18n="{@label}" />
         </label>
-        <div class="col-md-6 input-group">
-          <input class="form-control" data-searchengine="{@searchengine}" data-genre="{@genre}" data-provide="typeahead" type="text" autocomplete="off"/>
-          <div class="input-group-btn">
-            <button class="btn btn-default host-reset">
-	          Entsperren
-            </button>
+        <div class="col-md-6">
+          <div class="input-group">
+            <input class="form-control" data-searchengine="{@searchengine}" data-genre="{@genre}" data-provide="typeahead" type="text" autocomplete="off"/>
+            <div class="input-group-btn">
+              <button class="btn btn-default host-reset">
+	            Entsperren
+              </button>
+            </div>
           </div>  
         </div>
       </div>

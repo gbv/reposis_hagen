@@ -80,12 +80,28 @@
     <mir:relItemsearch searchengine="title" genre="series" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
+  <xed:template id="title.book.relItemsearch">
+    <mir:relItemsearch searchengine="title" genre="book" xpath="mods:titleInfo/mods:title" label="mir.title" />
+  </xed:template>
+  
   <xed:template id="title.journal.relItemsearch">
     <mir:relItemsearch searchengine="title" genre="journal" xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
   </xed:template>
   
   <xed:template id="title.collection.Itemsearch">
     <mir:relItemsearch searchengine="title" genre="collection" xpath="mods:titleInfo/mods:title" label="mir.title" />
+  </xed:template>
+  
+  <xed:template id="title.festschrift.Itemsearch">
+    <mir:relItemsearch searchengine="title" genre="festschrift" xpath="mods:titleInfo/mods:title" label="mir.title" />
+  </xed:template>
+  
+  <xed:template id="title.proceedings.Itemsearch">
+    <mir:relItemsearch searchengine="title" genre="proceedings" xpath="mods:titleInfo/mods:title" label="mir.title" />
+  </xed:template>
+  
+  <xed:template id="title.newspaper.Itemsearch">
+    <mir:relItemsearch searchengine="title" genre="newspaper" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="subtitle">
@@ -345,14 +361,10 @@
   </xed:template>
 
   <xed:template id="year.issued">
-    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required"
+    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required mir-modspart"
       placeholder="{i18n:mir.placeholder.year}" />
   </xed:template>
-  <xed:template id="year.issued.mir-form-group">
-    <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" class="required mir-form-group"
-      placeholder="{i18n:mir.placeholder.year}" />
-  </xed:template>
-
+  
   <xed:template id="date.issued">
     <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" class="required"
       placeholder="{i18n:mir.placeholder.date}" />
@@ -398,8 +410,20 @@
     <mir:textfield xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
   
+  <xed:template id="identifier.isbn.book.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="book" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+  </xed:template>
+  
   <xed:template id="identifier.isbn.collection.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="collection" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+  </xed:template>
+  
+  <xed:template id="identifier.isbn.proceeding.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="proceeding" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+  </xed:template>
+  
+  <xed:template id="identifier.isbn.lexicon.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="lexincon" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
 
   <xed:template id="identifier.issn">
@@ -412,6 +436,10 @@
   
   <xed:template id="identifier.issn.journal.relItemsearch">
     <mir:relItemsearch searchengine="issn" genre="journal" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
+  </xed:template>
+  
+  <xed:template id="identifier.issn.newspaper.relItemsearch">
+    <mir:relItemsearch searchengine="issn" genre="newspaper" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
   
   <xed:template id="identifier.zdbid">
@@ -510,7 +538,27 @@
     <mir:relItemsearch searchengine="shelfmark" genre="journal" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
+  <xed:template id="shelfmark.book.relItemsearch">
+    <mir:relItemsearch searchengine="shelfmark" genre="book" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
   <xed:template id="shelfmark.collection.relItemsearch">
+    <mir:relItemsearch searchengine="shelfmark" genre="collection" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
+  <xed:template id="shelfmark.festschrift.relItemsearch">
+    <mir:relItemsearch searchengine="shelfmark" genre="festschrift" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
+  <xed:template id="shelfmark.lexicon.relItemsearch">
+    <mir:relItemsearch searchengine="shelfmark" genre="lexicon" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
+  <xed:template id="shelfmark.proceedings.relItemsearch">
+    <mir:relItemsearch searchengine="shelfmark" genre="proceedings" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+  </xed:template>
+  
+  <xed:template id="shelfmark.proceedings.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="collection" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
@@ -573,47 +621,37 @@
 
   <xed:template id="series.volume">
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.series.volume"
-      placeholder="{i18n:mir.placeholder.series.volume}" class="mir-mods-part" />
+      placeholder="{i18n:mir.placeholder.series.volume}" class="mir-modspart" />
   </xed:template>
   
   <xed:template id="host.volume">
-    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" class="mir-mods-part"/>
+    <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.volume" class="mir-modspart"/>
   </xed:template>
 
   <xed:template id="host.issue">
-    <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.issue"  class="mir-mods-part"/>
-  </xed:template>
-  
-  <xed:template id="host-pages">
-    <label class="col-md-3 control-label">
-      <xed:output i18n="mir.pages.from" />
-    </label>
-    <div class="col-md-6">
-      <div class="form-inline">
-        <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
-          <xed:bind xpath="mods:start">
-            <input type="text" size="10" class="form-control form-control-inline mir-modspart" />
-          </xed:bind>
-          <label>
-            <xed:output i18n="mir.pages.to" />
-          </label>
-          <xed:bind xpath="mods:end">
-            <input type="text" size="10" class="form-control form-control-inline mir-modspart" />
-          </xed:bind>
-        </xed:bind>
-      </div>
-    </div>
+    <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.issue"  class="mir-modspart"/>
   </xed:template>
   
   <xed:template id="host.pages">
-    <div class="form-group">
-      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host-pages" />
-    </div>
-  </xed:template>
-
-  <xed:template id="host.pages.mir-form-group">
-    <div class="form-group mir-form-group">
-      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host-pages" />
+    <div class="form-group mir-modspart">
+      <label class="col-md-3 control-label">
+        <xed:output i18n="mir.pages.from" />
+      </label>
+      <div class="col-md-6">
+        <div class="form-inline">
+          <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
+            <xed:bind xpath="mods:start">
+              <input type="text" size="10" class="form-control form-control-inline" />
+            </xed:bind>
+            <label>
+              <xed:output i18n="mir.pages.to" />
+            </label>
+            <xed:bind xpath="mods:end">
+              <input type="text" size="10" class="form-control form-control-inline" />
+            </xed:bind>
+          </xed:bind>
+        </div>
+      </div>
     </div>
   </xed:template>
 
@@ -931,7 +969,7 @@
           <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
         </xed:otherwise>
       </xed:choose>
-      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
+      <!--<xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />-->
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:if>
     <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />

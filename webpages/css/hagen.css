@@ -431,16 +431,16 @@ div.mir-form-group:first-child > div.col-md-6 {
 	color:#999;
 	font-size: 30px;
 }
-fieldset.relatedItem{
+.mir-relatedItem-body{
 	margin-top:15px;
 	border-style: solid;
 	border-width: 0px 0px 0px 2px;
 	border-color: #ccc;
 	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
 }
 
 .mir-relatedItem-head{
+	margin-bottom: 15px;
 	border-style: solid;
 	border-width: 2px 2px 2px 2px;
 	border-color: #ccc;

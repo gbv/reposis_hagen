@@ -36,30 +36,35 @@
         </fieldset>
 
         <xed:if test="not($host='standalone')">
-          <fieldset class="relatedItem">
+          <fieldset class="mir-relatedItem">
             <div class="col-md-11 mir-relatedItem-head">
               <xed:output value="concat('erschienen in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,':')" />
             </div>
-            <xed:include uri="webapp:editor/editor-hosts.xed" ref="{$host}" />
-            <xed:bind xpath="mods:relatedItem[(@type='host') or (@type='series')][1]">
-              <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" />
-            </xed:bind>
+            <div class="mir-relatedItem-body">
+              <xed:include uri="webapp:editor/editor-hosts.xed" ref="{$host}" />
+              <xed:bind xpath="mods:relatedItem[(@type='host') or (@type='series')][1]">
+                <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" />
+              </xed:bind>
+            </div>
+            <xed:if test="contains($genres//category[@ID=$host]/label[lang('x-hosts')]/@text,'series')">
+              <xed:bind xpath="mods:relatedItem[(@type='host')][1]">
+                <fieldset class="mir-relatedItem">
+                  <div class="col-md-11 mir-relatedItem-head">
+                    <xed:output value="concat($genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,' erschienen in Serie:')" />
+                  </div>
+                  <div class="mir-relatedItem-body">
+                    <xed:include uri="webapp:editor/editor-hosts.xed" ref="series" />
+                    <xed:bind xpath="mods:relatedItem[@type='series'][1]">
+                      <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="series" />
+                    </xed:bind>
+                  </div>
+                </fieldset>
+              </xed:bind>  
+            </xed:if>
           </fieldset>
         </xed:if>
         
-        <xed:if test="contains($genres//category[@ID=$host]/label[lang('x-hosts')]/@text,'series')">
-          <xed:bind xpath="mods:relatedItem[(@type='host')][1]">
-            <fieldset class="relatedItem">
-              <div class="col-md-11 mir-relatedItem-head">
-                <xed:output value="concat($genres//category[@ID=$host]/label[lang($CurrentLang)]/@text,' erschienen in Serie:')" />
-              </div>
-              <xed:include uri="webapp:editor/editor-hosts.xed" ref="series" />
-              <xed:bind xpath="mods:relatedItem[@type='series'][1]">
-                <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="series" />
-              </xed:bind>
-            </fieldset>
-          </xed:bind>  
-        </xed:if>
+        
 
         <xed:include uri="webapp:editor/editor-genres.xed" ref="submit" />
 

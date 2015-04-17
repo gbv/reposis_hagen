@@ -8,7 +8,12 @@ var engines = {
 				remote: {
 					url: '../servlets/solr/select',
 					filter: function(list) {
-						return list.response.docs;
+						list=list.response.docs;
+						$.each(list,function (index,item){
+							item.name=item['shelfLocator']+' - '+item['mods.title'][0];
+							item.value=item['shelfLocator'];
+						});
+						return list;
 					},
 					replace : function (url, query) {
 						param="?&q=%2BshelfLocator%3A"+query+"*";
@@ -20,9 +25,6 @@ var engines = {
 					}
 				}
 			}),
-			displayText: function(item) {
-				return item['shelfLocator']+' - '+item['mods.title'][0] || item; 
-			}
 		},
 		isbn: {
 			engine:new Bloodhound({
@@ -32,7 +34,12 @@ var engines = {
 				remote: {
 					url: '../servlets/solr/select',
 					filter: function(list) {
-						return list.response.docs;
+						list=list.response.docs;
+						$.each(list,function (index,item){
+							item.name=item['identifier.type.isbn']+' - '+item['mods.title'][0];
+							item.value=item['identifier.type.isbn'];
+						});
+						return list;
 					},
 					replace : function (url, query) {
 						param="?&q=%2Bidentifier.type.isbn%3A"+query+"*";
@@ -44,9 +51,6 @@ var engines = {
 					}
 				}
 			}),
-			displayText: function(item) {
-				return item['identifier.type.isbn']+' - '+item['mods.title'][0] || item; 
-			}
 		},
 		issn: {
 			engine:new Bloodhound({
@@ -56,7 +60,12 @@ var engines = {
 				remote: {
 					url: '../servlets/solr/select',
 					filter: function(list) {
-						return list.response.docs;
+						list=list.response.docs;
+						$.each(list,function (index,item){
+							item.name=item['identifier.type.issn']+' - '+item['mods.title'][0];
+							item.value=item['identifier.type.issn'];
+						});
+						return list;
 					},
 					replace : function (url, query) {
 						param="?&q=%2Bidentifier.type.issn%3A"+query+"*";
@@ -68,9 +77,6 @@ var engines = {
 					}
 				}
 			}),
-			displayText: function(item) {
-				return item['identifier.type.issn']+' - '+item['mods.title'][0] || item; 
-			}
 		},
 		title: {
 			engine: new Bloodhound({
@@ -80,7 +86,12 @@ var engines = {
 				remote: {
 					url: '../servlets/solr/select',
 					filter: function(list) {
-						return list.response.docs;
+						list=list.response.docs;
+						$.each(list,function (index,item){
+							item.name=item['mods.title'][0];
+							item.value=item['mods.title'][0];
+						});
+						return list;
 					},
 					replace : function (url, query) {
 						param="?&q=%2Bmods.title%3A*"+query+"*";
@@ -92,9 +103,6 @@ var engines = {
 					}
 				}
 			}),
-			displayText: function(item) {
-				return item['mods.title'][0] || item;
-			}
 		},
 	    empty:  {
 			engine: new Bloodhound({
@@ -126,29 +134,29 @@ $(document).ready( function() {
 		Engine.engine.initialize();
 		$(this).typeahead({
 			items: 4,
-			displayText: Engine.displayText,
-			source: Engine.engine.ttAdapter() 
+			source: Engine.engine.ttAdapter(),
+			updater: function (current) {
+				current.name=current.value;
+				return(current);
+			},
+			afterSelect: function (current) {
+				relatedItemBody=$(document.activeElement).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
+				relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', true );
+				relatedItemBody.find("input[type='hidden']").prop('disabled', false );
+				relatedItemBody.find("input[id^='relItem']").val(current.id);
+				$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', true );
+			}
 		}); 
-		$(this).change(function() {
-		    var current = $(this).typeahead("getActive");
-		    if (current) {
-		    	if (current['mods.title'][0]==$(this).val()){
-		    	    $('#hostid').val(current.id);
-		    	    $(this).val(current['mods.title'][0]);
-		    	    $(this).parents("fieldset").find("input:not(.mir-modspart)").prop('disabled', true );
-		    	} else {
-		    		$('#hostid').val("");
-		    	}
-		    }
-		});
+		
 	});
 	
 	$('.host-reset').click(function(event) {
 		event.preventDefault();
-		$(this).parents("fieldset").find("input[data-provide='typeahead']").val("");
-		$(this).parents("fieldset").find("input[data-provide='typeahead']").prop('disabled', false );
-		//$("input[data-provide='typeahead']").val("");
-		//$("input[data-provide='typeahead']").prop('disabled', false );
+		relatedItemBody=$(document.activeElement).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
+		relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', false );
+		relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').val("");
+		relatedItemBody.find("input[id^='relItem']").val("");
+		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
 	});
 	
 });
