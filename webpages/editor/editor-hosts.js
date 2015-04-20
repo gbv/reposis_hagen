@@ -97,7 +97,7 @@ var engines = {
 						param="?&q=%2Bmods.title%3A*"+query+"*";
 						param+="+%2Bcategory.top%3A%22mir_genres\%3A"+$(document.activeElement).data("genre")+"%22";
 						param+="+%2BobjectType%3A%22mods%22";
-			    		param+="&fl=mods.title%2Cid";
+			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.issn";
 			    		param+="&version=4.5&rows=1000&wt=json";
 			    		return url+param;
 					}
@@ -140,11 +140,11 @@ $(document).ready( function() {
 				return(current);
 			},
 			afterSelect: function (current) {
-				relatedItemBody=$(document.activeElement).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
-				relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', true );
-				relatedItemBody.find("input[type='hidden']").prop('disabled', false );
+				fieldset=$(document.activeElement).closest("fieldset.mir-relatedItem");
+				relatedItemBody=fieldset.children('div.mir-relatedItem-body');
 				relatedItemBody.find("input[id^='relItem']").val(current.id);
-				$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', true );
+				disableFieldset(fieldset);
+				fillFieldset(fieldset,current);
 			}
 		}); 
 		
@@ -159,8 +159,41 @@ $(document).ready( function() {
 		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
 	});
 	
+	$("input[id^='relItem']").each (function (index,input){
+		if (input.value!="") {
+			fieldset=$(input).closest("fieldset.mir-relatedItem");
+			disableFieldset(fieldset);
+			
+		}
+	});
+	
 });
 
+function disableFieldset(fieldset){
+	relatedItemBody=fieldset.children('div.mir-relatedItem-body');
+	relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', true );
+	relatedItemBody.find("input[type='hidden']").prop('disabled', false );
+	fieldset.find("fieldset.mir-relatedItem").prop('disabled', true );
+};
+
+function fillFieldset(fieldset,current){
+	relatedItemBody=fieldset.children('div.mir-relatedItem-body');
+	relatedItemBody.find('input').each(function (index,input){
+		if ($(input).data("responsefield")){
+			if ($(input).data("responsefield")) {
+				if ($.isArray(current [$(input).data("responsefield")])) {
+					$(input).val() = current [$(input).data("responsefield")][0];
+				} else {
+					$(input).val() = current [$(input).data("responsefield")];
+				}
+			} else {
+				$(input).val()="";
+			}
+					
+		}
+	});
+};
+/*
 $('#series-issn').change(function() {
     var current = $('#series-issn').typeahead("getActive");
     if (current) {
@@ -182,6 +215,6 @@ $('#series-issn').change(function() {
     		$('#hostid').val("");
     	}
     }
-});
+});*/
 
 
