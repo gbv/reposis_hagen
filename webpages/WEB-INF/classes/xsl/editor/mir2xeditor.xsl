@@ -130,14 +130,17 @@
         </label>
         <div class="col-md-6">
           <div class="input-group">
-            <input class="form-control" data-searchengine="{@searchengine}" data-genre="{@genre}" 
+            <input class="form-control relItemsearch" data-searchengine="{@searchengine}" data-genre="{@genre}" 
                   data-responsefield="{@responsefield}" data-provide="typeahead" type="text" autocomplete="off"/>
-            <div class="input-group-btn">
+            <span class="input-group-addon searchbadge"> 
+              
+            </span>
+		  </div>
+            <!-- <div class="input-group-btn">
               <button class="btn btn-default host-reset">
 	            Entsperren
               </button>
-            </div>
-          </div>  
+            </div>-->
         </div>
       </div>
     </xed:bind> 

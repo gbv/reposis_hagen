@@ -19,7 +19,7 @@ var engines = {
 						param="?&q=%2BshelfLocator%3A"+query+"*";
 						param+="+%2Bcategory.top%3A%22mir_genres\%3A"+$(document.activeElement).data("genre")+"%22";
 						param+="+%2BobjectType%3A%22mods%22";
-			    		param+="&fl=mods.title%2Cid%2CshelfLocator";
+			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.isbn%2CshelfLocator";
 			    		param+="&version=4.5&rows=1000&wt=json";
 			    		return url+param;
 					}
@@ -45,7 +45,7 @@ var engines = {
 						param="?&q=%2Bidentifier.type.isbn%3A"+query+"*";
 						param+="+%2Bcategory.top%3A%22mir_genres\%3A"+$(document.activeElement).data("genre")+"%22";
 						param+="+%2BobjectType%3A%22mods%22";
-			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.isbn";
+			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.isbn%2CshelfLocator";
 			    		param+="&version=4.5&rows=1000&wt=json";
 			    		return url+param;
 					}
@@ -97,7 +97,7 @@ var engines = {
 						param="?&q=%2Bmods.title%3A*"+query+"*";
 						param+="+%2Bcategory.top%3A%22mir_genres\%3A"+$(document.activeElement).data("genre")+"%22";
 						param+="+%2BobjectType%3A%22mods%22";
-			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.issn";
+			    		param+="&fl=mods.title%2Cid%2Cidentifier.type.issn%2Cidentifier.type.isbn%2CshelfLocator";
 			    		param+="&version=4.5&rows=1000&wt=json";
 			    		return url+param;
 					}
@@ -145,19 +145,39 @@ $(document).ready( function() {
 				relatedItemBody.find("input[id^='relItem']").val(current.id);
 				disableFieldset(fieldset);
 				fillFieldset(fieldset,current);
+				badge='<a href="../receive/'+current.id+'" target="_blank" class="badge"> ';
+				badge+='intern';
+				badge+='<span class="glyphicon glyphicon-remove-circle relItem-reset"> </span>';
+				badge+='</a>';
+				inputgroup=$(document.activeElement).closest("div");
+				inputgroup.find(".searchbadge").html(badge);
+				inputgroup.find(".relItem-reset").click(function(event) {
+					event.preventDefault();
+					relatedItemBody=$(this).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
+					relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each ( function(index,input){
+						$(input).prop('disabled', false );
+						$(input).val($(input).data('value'));
+					});
+					relatedItemBody.find("input[id^='relItem']").val("");
+					$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
+					inputgroup=$(this).closest("div");
+					inputgroup.find(".searchbadge").html("");
+				});
 			}
 		}); 
 		
 	});
-	
+	/*
 	$('.host-reset').click(function(event) {
 		event.preventDefault();
 		relatedItemBody=$(document.activeElement).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
-		relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', false );
-		relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').val("");
+		relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each ( function(index,input){
+			$(input).prop('disabled', false );
+			$(input).val($(input).data('value'));
+		});
 		relatedItemBody.find("input[id^='relItem']").val("");
 		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
-	});
+	});*/
 	
 	$("input[id^='relItem']").each (function (index,input){
 		if (input.value!="") {
@@ -171,50 +191,50 @@ $(document).ready( function() {
 
 function disableFieldset(fieldset){
 	relatedItemBody=fieldset.children('div.mir-relatedItem-body');
-	relatedItemBody.find("div.form-group:not(.mir-modspart)").find('input').prop('disabled', true );
-	relatedItemBody.find("input[type='hidden']").prop('disabled', false );
+	relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each( function(index,input){
+		if (input != document.activeElement) {
+			$(input).prop('disabled', true );
+			$(input).data('value',$(input).val());
+		}
+	});
 	fieldset.find("fieldset.mir-relatedItem").prop('disabled', true );
 };
 
 function fillFieldset(fieldset,current){
-	relatedItemBody=fieldset.children('div.mir-relatedItem-body');
+	/*relatedItemBody=fieldset.children('div.mir-relatedItem-body');
 	relatedItemBody.find('input').each(function (index,input){
-		if ($(input).data("responsefield")){
-			if ($(input).data("responsefield")) {
-				if ($.isArray(current [$(input).data("responsefield")])) {
-					$(input).val() = current [$(input).data("responsefield")][0];
-				} else {
-					$(input).val() = current [$(input).data("responsefield")];
-				}
+		if ($(input).data("responsefield") && current [$(input).data("responsefield")]){
+			if ($.isArray(current [$(input).data("responsefield")])) {
+				$(input).val(current [$(input).data("responsefield")][0]);
 			} else {
-				$(input).val()="";
+				$(input).val(current [$(input).data("responsefield")]);
 			}
-					
 		}
+	});*/
+	$.ajax({
+		method: "GET",
+		url: "http://reposis-test.gbv.de/hagen/receive/"+current.id+"?XSL.Style=xml",
+		dataType: "xml"
+	  }).done(function( xml ) {
+		fieldset.find('input').each(function(index,input){
+			path=input.name.substr(input.name.indexOf("relatedItem/") + 12);
+			path="/mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/"+path;
+			function nsResolver(prefix) {
+				  var ns = {
+				    'mods' : 'http://www.loc.gov/mods/v3',
+				    'xlink': 'http://www.w3.org/1999/xlink',
+				  };
+				  return ns[prefix] || null;
+			}
+			xPathRes=xml.evaluate(path,xml,nsResolver,XPathResult.ANY_TYPE,null)
+			node=xPathRes.iterateNext ();
+			if (node) {
+				input.value=$(node).text();
+			}
+		});
+		//alert(xml);
+	    
 	});
 };
-/*
-$('#series-issn').change(function() {
-    var current = $('#series-issn').typeahead("getActive");
-    if (current) {
-    	issn="";
-    	issnanz="";
-    	$.each(current['mods.identifier'],function (index,identifier) {
-    	  if (identifier.match(/(\d\d\d\d-\d\d\d[0-9xX])/g)!=null) {
-    		issnanz= identifier+' - '+item['mods.title'][0]; 
-    		issn= identifier;
-    	    return false;
-    	  }
-    	});
-    	if (issn==$('#series-issn').val()){
-    	    $('#hostid').val(current.id);
-    	    $('#series-issn').val(issn); 
-    	  	$('#series-issn').prop('disabled', true );
-    	    $('#series-title').prop('disabled', true );
-    	} else {
-    		$('#hostid').val("");
-    	}
-    }
-});*/
 
 

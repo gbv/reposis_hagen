@@ -30,7 +30,7 @@
 
             <xsl:if test="mycoreobject/structure/parents/parent/@xlink:href">
               <xsl:call-template name="printMetaDate.mods.relatedItem">
-                <xsl:with-param name="parentID" select="mycoreobject/structure/parents/parent/@xlink:href" />
+                <xsl:with-param name="parentID" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/@xlink:href" />
                 <xsl:with-param name="label" select="i18n:translate('component.mods.metaData.dictionary.confpubIn')" />
               </xsl:call-template>
             </xsl:if>

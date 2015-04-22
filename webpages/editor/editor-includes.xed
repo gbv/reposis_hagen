@@ -81,31 +81,31 @@
   </xed:template>
   
   <xed:template id="title.book.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="book" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="book" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="title.lexicon.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="lexicon" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="lexicon" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="title.journal.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="journal" xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
+    <mir:relItemsearch searchengine="title" genre="journal" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
   </xed:template>
   
   <xed:template id="title.collection.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="collection" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="collection" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="title.festschrift.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="festschrift" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="festschrift" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="title.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="proceedings" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="proceedings" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="title.newspaper.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="newspaper" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="newspaper" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
   </xed:template>
   
   <xed:template id="subtitle">
@@ -206,7 +206,7 @@
 
   <xed:template id="editor.repeated">
     <div class="col-md-10 mir-form-group-head">
-      Herrausgeber
+      Herausgeber
     </div>
     <div class="mir-form-group-body">
       <mir:role.repeated role="edt" label="mir.role.editor" class="mir-form-group" />
@@ -415,19 +415,19 @@
   </xed:template>
   
   <xed:template id="identifier.isbn.book.relItemsearch">
-    <mir:relItemsearch searchengine="isbn" genre="book" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+    <mir:relItemsearch searchengine="isbn" genre="book" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
   
   <xed:template id="identifier.isbn.collection.relItemsearch">
-    <mir:relItemsearch searchengine="isbn" genre="collection" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+    <mir:relItemsearch searchengine="isbn" genre="collection" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
   
   <xed:template id="identifier.isbn.proceeding.relItemsearch">
-    <mir:relItemsearch searchengine="isbn" genre="proceeding" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+    <mir:relItemsearch searchengine="isbn" genre="proceeding" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
   
   <xed:template id="identifier.isbn.lexicon.relItemsearch">
-    <mir:relItemsearch searchengine="isbn" genre="lexicon" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
+    <mir:relItemsearch searchengine="isbn" genre="lexicon" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" />
   </xed:template>
 
   <xed:template id="identifier.issn">
@@ -439,11 +439,11 @@
   </xed:template>
   
   <xed:template id="identifier.issn.journal.relItemsearch">
-    <mir:relItemsearch searchengine="issn" genre="journal" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
+    <mir:relItemsearch searchengine="issn" genre="journal" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
   
   <xed:template id="identifier.issn.newspaper.relItemsearch">
-    <mir:relItemsearch searchengine="issn" genre="newspaper" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
+    <mir:relItemsearch searchengine="issn" genre="newspaper" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
   
   <xed:template id="identifier.zdbid">
@@ -539,31 +539,31 @@
   </xed:template>
   
   <xed:template id="shelfmark.journal.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="journal" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="journal" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.book.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="book" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="book" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.collection.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="collection" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="collection" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.festschrift.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="festschrift" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="festschrift" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.lexicon.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="lexicon" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="lexicon" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="proceedings" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="proceedings" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="shelfmark.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="shelfmark" genre="collection" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
+    <mir:relItemsearch searchengine="shelfmark" genre="collection" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
   
   <xed:template id="link">

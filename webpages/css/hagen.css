@@ -450,3 +450,12 @@ div.mir-form-group:first-child > div.col-md-6 {
 	padding-left: 21px;
 	font-size:21px;
 }
+
+.searchbadge {
+	background-color:#FFFFFF !important;
+	border-width: 2px 2px 2px 0px !important;
+}
+
+.relItemsearch {
+	border-right-width: 0px !important;
+}
