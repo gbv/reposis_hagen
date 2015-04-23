@@ -11,61 +11,37 @@
         <!-- TODO: Update badges -->
         <div class="badges_block">
           <div id="badges" classe="text-left">
-          <xsl:call-template name="categorySearchLink">
-            <xsl:with-param name="class" select="'mods_genre label label-info'" />
-            <xsl:with-param name="node" select="($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
-          </xsl:call-template>
-
-          <time itemprop="datePublished" datetime="{$dateIssued}" data-toggle="tooltip" title="Publication date">
-            <span class="date_published label label-primary">
-              <xsl:variable name="format">
-                <xsl:choose>
-                  <xsl:when test="string-length(normalize-space($dateIssued))=4">
-                    <xsl:value-of select="i18n:translate('metaData.dateYear')" />
-                  </xsl:when>
-                  <xsl:when test="string-length(normalize-space($dateIssued))=7">
-                    <xsl:value-of select="i18n:translate('metaData.dateYearMonth')" />
-                  </xsl:when>
-                  <xsl:when test="string-length(normalize-space($dateIssued))=10">
-                    <xsl:value-of select="i18n:translate('metaData.dateYearMonthDay')" />
-                  </xsl:when>
-                  <xsl:otherwise>
-                    <xsl:value-of select="i18n:translate('metaData.dateTime')" />
-                  </xsl:otherwise>
-                </xsl:choose>
-              </xsl:variable>
-              <xsl:call-template name="formatISODate">
-                <xsl:with-param name="date" select="$dateIssued" />
-                <xsl:with-param name="format" select="$format" />
-              </xsl:call-template>
-            </span>
-          </time>
-
-          <xsl:variable name="accessCondition" select="normalize-space($mods/mods:accessCondition[@type='use and reproduction'])" />
-          <xsl:if test="$accessCondition">
-            <xsl:variable name="linkText">
-              <xsl:choose>
-                <xsl:when test="contains($accessCondition, 'cc_by')">
-                  <xsl:apply-templates select="$mods/mods:accessCondition[@type='use and reproduction']/text()" mode="cc-text" />
-                </xsl:when>
-                <xsl:when test="contains($accessCondition, 'rights_reserved')">
-                  <xsl:value-of select="i18n:translate('component.mods.metaData.dictionary.rightsReserved')" />
-                </xsl:when>
-                <xsl:when test="contains($accessCondition, 'oa_nlz')">
-                  <xsl:value-of select="i18n:translate('component.mods.metaData.dictionary.oa_nlz.short')" />
-                </xsl:when>
-                <xsl:otherwise>
-                  <xsl:value-of select="$mods/mods:accessCondition[@type='use and reproduction']/text()" />
-                </xsl:otherwise>
-              </xsl:choose>
-            </xsl:variable>
-            <xsl:call-template name="searchLink">
-              <xsl:with-param name="class" select="'access_condition label label-success'" />
-              <xsl:with-param name="linkText" select="$linkText" />
-              <xsl:with-param name="query" select="concat('%2BallMeta%3A&quot;',$accessCondition,'&quot;')" />
+            <xsl:call-template name="categorySearchLink">
+              <xsl:with-param name="class" select="'mods_genre label label-info'" />
+              <xsl:with-param name="node" select="($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
             </xsl:call-template>
-          </xsl:if>
+
+            <time itemprop="datePublished" datetime="{$dateIssued}" data-toggle="tooltip" title="Publication date">
+              <span class="date_published label label-primary">
+                <xsl:variable name="format">
+                  <xsl:choose>
+                    <xsl:when test="string-length(normalize-space($dateIssued))=4">
+                      <xsl:value-of select="i18n:translate('metaData.dateYear')" />
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space($dateIssued))=7">
+                      <xsl:value-of select="i18n:translate('metaData.dateYearMonth')" />
+                    </xsl:when>
+                    <xsl:when test="string-length(normalize-space($dateIssued))=10">
+                      <xsl:value-of select="i18n:translate('metaData.dateYearMonthDay')" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="i18n:translate('metaData.dateTime')" />
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>
+                <xsl:call-template name="formatISODate">
+                  <xsl:with-param name="date" select="$dateIssued" />
+                  <xsl:with-param name="format" select="$format" />
+                </xsl:call-template>
+              </span>
+            </time>
           </div>
+          
           <xsl:variable name="objectRights" select="key('rights', mycoreobject/@ID)" />
 	      <xsl:variable name="write" select="boolean($objectRights/@write)" />
 	      <xsl:variable name="delete" select="boolean($objectRights/@delete)" />

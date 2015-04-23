@@ -302,7 +302,7 @@ h3 > a {
     background-color: #C8C8FF;
 }
 .breadcrumb {
-	background-color: #C8C8FF;
+	background-color: #FFFFFF;
 }
 .breadcrumb>li+li:before{
 	content:"/\00a0";
@@ -313,7 +313,7 @@ h3 > a {
     color: #2C3E50;
 }
 .panel-default > .panel-heading {
-	background-color: #C8C8FF;
+	background-color: #E8E8FF;
 }
 .input-group-addon {
 	background-color: #C8C8FF;
@@ -362,10 +362,10 @@ h3 > a {
     font-weight: 700;
 }
 .label-info {
-	background-color: #A15F3E;
+	background-color: #2A2A94
 }
 .label-primary {
-    background-color: #246112;
+    background-color: #4D4D4D;
 }
 .label-success {
     background-color: #5CE034;
@@ -427,9 +427,12 @@ div.mir-form-group:first-child > div.col-md-6 {
 #powered_by {
 	background-color:#FFFFFF;
 }
+
+.detail_block > h1 {
+	font-size: 28px;
+}
 .subtitle {
-	color:#999;
-	font-size: 30px;
+	font-size: 28px;
 }
 .mir-relatedItem-body{
 	margin-top:15px;
