@@ -397,11 +397,9 @@ div.mir-form-group > div.col-md-6{
 	border-style: solid;
 	border-width: 0px 0px 0px 2px;
 	border-color: #ccc;
-	padding-top:3px;
-	padding-bottom:3px;
 	padding-left:13px;
 }
-div.mir-form-group > div.form-pmud{
+div.mir-form-group > div{
 	padding-top:3px;
 	padding-bottom:3px;
 }
@@ -409,7 +407,7 @@ div.mir-form-group:last-child > div.col-md-6 {
 	padding-bottom:6px;
 	border-bottom-left-radius: 10px;
 }
-div.mir-form-group:first-child > div.col-md-6 {
+div.mir-form-group:first-child > div {
 	padding-top:6px;
 }
 .mir-form-group-pmud {
