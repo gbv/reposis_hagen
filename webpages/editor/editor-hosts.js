@@ -144,25 +144,9 @@ $(document).ready( function() {
 				relatedItemBody=fieldset.children('div.mir-relatedItem-body');
 				relatedItemBody.find("input[id^='relItem']").val(current.id);
 				disableFieldset(fieldset);
-				fillFieldset(fieldset,current);
-				badge='<a href="../receive/'+current.id+'" target="_blank" class="badge"> ';
-				badge+='intern';
-				badge+='<span class="glyphicon glyphicon-remove-circle relItem-reset"> </span>';
-				badge+='</a>';
-				inputgroup=$(document.activeElement).closest("div");
-				inputgroup.find(".searchbadge").html(badge);
-				inputgroup.find(".relItem-reset").click(function(event) {
-					event.preventDefault();
-					relatedItemBody=$(this).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
-					relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each ( function(index,input){
-						$(input).prop('disabled', false );
-						$(input).val($(input).data('value'));
-					});
-					relatedItemBody.find("input[id^='relItem']").val("");
-					$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
-					inputgroup=$(this).closest("div");
-					inputgroup.find(".searchbadge").html("");
-				});
+				fillFieldset(fieldset,current.id);
+				createbadge($(document.activeElement).closest("div"),current.id);
+				
 			}
 		}); 
 		
@@ -183,7 +167,8 @@ $(document).ready( function() {
 		if (input.value!="") {
 			fieldset=$(input).closest("fieldset.mir-relatedItem");
 			disableFieldset(fieldset);
-			
+			fillFieldset(fieldset,input.value);
+			createbadge($(fieldset.find("div.input-group")[0]),input.value);
 		}
 	});
 	
@@ -200,7 +185,7 @@ function disableFieldset(fieldset){
 	fieldset.find("fieldset.mir-relatedItem").prop('disabled', true );
 };
 
-function fillFieldset(fieldset,current){
+function fillFieldset(fieldset,relItemid){
 	/*relatedItemBody=fieldset.children('div.mir-relatedItem-body');
 	relatedItemBody.find('input').each(function (index,input){
 		if ($(input).data("responsefield") && current [$(input).data("responsefield")]){
@@ -213,7 +198,7 @@ function fillFieldset(fieldset,current){
 	});*/
 	$.ajax({
 		method: "GET",
-		url: "http://reposis-test.gbv.de/hagen/receive/"+current.id+"?XSL.Style=xml",
+		url: "http://reposis-test.gbv.de/hagen/receive/"+relItemid+"?XSL.Style=xml",
 		dataType: "xml"
 	  }).done(function( xml ) {
 		fieldset.find('input').each(function(index,input){
@@ -237,4 +222,23 @@ function fillFieldset(fieldset,current){
 	});
 };
 
-
+function createbadge(inputgroup,relItemid) {
+	badge='<a href="../receive/'+relItemid+'" target="_blank" class="badge"> ';
+	badge+='intern';
+	badge+='<span class="glyphicon glyphicon-remove-circle relItem-reset"> </span>';
+	badge+='</a>';
+	
+	inputgroup.find(".searchbadge").html(badge);
+	inputgroup.find(".relItem-reset").click(function(event) {
+		event.preventDefault();
+		relatedItemBody=$(this).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
+		relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each ( function(index,input){
+			$(input).prop('disabled', false );
+			$(input).val($(input).data('value'));
+		});
+		relatedItemBody.find("input[id^='relItem']").val("");
+		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
+		inputgroup=$(this).closest("div");
+		inputgroup.find(".searchbadge").html("");
+	});
+};
