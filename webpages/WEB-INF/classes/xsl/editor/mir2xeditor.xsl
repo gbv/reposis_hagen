@@ -15,6 +15,9 @@
         <xsl:copy-of select="@placeholder" />
       </input>
     </div>
+    <div class="col-md-1">
+      <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
+    </div>
   </xsl:template>
   
   <xsl:template match="mir:textfield">
@@ -49,13 +52,16 @@
             <xsl:copy-of select="@placeholder" />
           </textarea>
         </div>
+        <div class="col-md-1">
+          <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
+        </div>
       </div>
     </xed:bind>
   </xsl:template>
 
   <xsl:template match="mir:role.repeated">
     <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
-    <xed:repeat xpath="mods:name[@type='personal']" min="1" max="100">
+    <xed:repeat xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@type='code'][@authority='marcrelator']='{@role}']" min="1" max="100">
       <xed:bind xpath="mods:displayForm"> <!-- Move down to get the "required" validation right -->
         <div class="form-group {@class} {$xed-val-marker}">
           <xed:bind xpath=".."> <!-- Move up again after validation marker is set -->
@@ -64,9 +70,11 @@
             </label>
             <div class="col-md-6">
               <div class="controls">
-                <xed:bind xpath="mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']" default="{@role}" />
                 <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="person.fields" />
               </div>
+            </div>
+            <div class="col-md-1">
+              <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
             </div>
             <xsl:call-template name="mir-pmud" />
           </xed:bind>
@@ -91,6 +99,9 @@
             <div class="col-md-6">
               <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="person.fields" />
             </div>
+            <div class="col-md-1">
+              <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
+            </div>
             <xsl:call-template name="mir-pmud" />
           </xed:bind>
         </div>
@@ -106,7 +117,7 @@
 
   <xsl:template name="mir-pmud">
     <xsl:param name="class" />
-    <div class="form-pmud col-md-3 {$class}">
+    <div class="form-pmud col-md-2 {$class}">
       <span>
         <xed:controls>insert</xed:controls>
       </span>
