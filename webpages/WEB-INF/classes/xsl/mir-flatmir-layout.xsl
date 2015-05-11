@@ -99,19 +99,19 @@
                 </ul>
               </div>
               <div class="col-md-2 col-xs-6 col-sm-3">
+                <h4>Kontakt</h4>
+                <ul class="social_links">
+                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='contact']/*" />
+                </ul>
+              </div>
+              <div class="col-md-2 col-xs-6 col-sm-3">
                 <h4>Technisches</h4>
                 <ul class="internal_links">
                   <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" />
                 </ul>
               </div>
-              <div class="col-md-2 col-xs-6 col-sm-3">
-                <h4>Soziales</h4>
-                <ul class="social_links">
-                    <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='social']/*" />
-                </ul>
-              </div>
-              <div class="col-md-2 col-xs-6 col-sm-3">
-                <img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="{$WebApplicationBaseURL}content/images/FeULogoWT.png" />
+              <div class="col-md-4 col-xs-12 col-sm-12">
+                <img id="fuhagenlogo" alt="FU Hagen" class="img-responsive center-block" title="FU Hagen- Logo" src="{$WebApplicationBaseURL}content/images/FeULogoWT.png" />
               </div>
             </div>
           </div>
@@ -121,6 +121,9 @@
         <div id="powered_by">
           <a href="http://www.mycore.de">
             <img src="{$WebApplicationBaseURL}content/images/mycore_logo.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+          </a>
+          <a href="http://www.gbv.de">
+            <img src="{$WebApplicationBaseURL}content/images/vzgLogo.png" alt="hosted by VZG" />
           </a>
         </div>
         

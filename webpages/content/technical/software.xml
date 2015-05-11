@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Software">
+    <div>
+      <h2>Software</h2>
+      <p>
+        Informationen über die verwendete Software und Standarts
+      </p>  
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2015-05-08" time="15:59" />
+  </meta>
+</MyCoReWebPage>

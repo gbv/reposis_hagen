@@ -3,17 +3,17 @@
     <menu id="brand" dir="/content/brand">
         <label xml:lang="de">Über uns</label>
         <label xml:lang="en">About</label>
-        <item href="/content/brand/who.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Wer wir sind</label>
-            <label xml:lang="en">Who we are</label>
+        <item href="/content/brand/service.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Unser Service</label>
+            <label xml:lang="en">Our Service</label>
         </item>
-        <item href="/content/brand/what.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
-            <label xml:lang="de">Was wir sammeln</label>
-            <label xml:lang="en">What are we collecting</label>
+        <item href="/content/brand/autinfo.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
+            <label xml:lang="de">Autoreninformation</label>
+            <label xml:lang="en">Author's Info</label>
         </item>
         <item href="/content/brand/how.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
-            <label xml:lang="de">Wie es geht</label>
-            <label xml:lang="en">How is the going</label>
+            <label xml:lang="de">Wie veröffentliche ich</label>
+            <label xml:lang="en">How to publish</label>
         </item>
     </menu>
     <menu id="rights" dir="/content/rights">
@@ -23,14 +23,6 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Rights</label>
         </item>
-        <item href="/content/rights/disclaimer.xml" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Haftungshinweise</label>
-            <label xml:lang="en">Disclaimer</label>
-        </item>
-        <item href="/content/rights/privacy.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
-            <label xml:lang="de">Datenschutz</label>
-            <label xml:lang="en">Privacy</label>
-        </item>
         <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Impressum</label>
             <label xml:lang="en">Impressum</label>
@@ -39,33 +31,30 @@
     <menu id="technical" dir="/content/technical">
         <label xml:lang="de">Technisches</label>
         <label xml:lang="en">Technical</label>
-        <item href="/content/technical/basics.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Grundlagen</label>
-            <label xml:lang="en">Basics</label>
+        <item href="/content/technical/software.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Software</label>
+            <label xml:lang="en">Software</label>
         </item>
-        <item href="http://www.gbv.de/" type="extern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">GBV</label>
-            <label xml:lang="en">GBV</label>
+        <item href="/content/technical/hosting.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">technischer Betrieb</label>
+            <label xml:lang="en">Hosting</label>
         </item>
-        <item href="http://www.mycore.de/" type="extern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">MyCoRe</label>
-            <label xml:lang="en">MyCoRe</label>
+        <item href="/content/technical/interfaces.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Schnittstellen</label>
+            <label xml:lang="en">Interfaces</label>
         </item>
-        <item href="http://www.dini.de/" type="extern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">DINI</label>
-            <label xml:lang="en">DINI</label>
-        </item>
+        
     </menu>
-    <menu id="social" dir="/content/social">
-        <label xml:lang="de">Soziales</label>
-        <label xml:lang="en">social</label>
+    <menu id="contact" dir="/content/social">
+        <label xml:lang="de">Kontakt</label>
+        <label xml:lang="en">Contact</label>
         <item href="/content/social/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Kontakt</label>
-            <label xml:lang="en">Contact</label>
+            <label xml:lang="de">Ansprechpersonen</label>
+            <label xml:lang="en">Persons</label>
         </item>
         <item href="/content/social/questions.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Fragen Sie uns</label>
-            <label xml:lang="en">Questions</label>
+            <label xml:lang="de">Häufige Fragen</label>
+            <label xml:lang="en">FAQ</label>
         </item>
     </menu>
     <menu id="search">

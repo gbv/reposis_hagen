@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="deposit::hagen Urheberrecht">
+  <section xml:lang="de" title="Urheberrecht">
     <div>
       <h2>Urheberrecht</h2>
       <div class="row">
         <div class="col-md-12">
-          <h3>Urheberrechtliche Rahmenbedingungen</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Unterstützung und Kontakt</h3>
-          <p>
-            
-          </p>
+          Inhalt: Erläuterungen zum rechtlichen Kontext des Hochschulschriftenservers
+          
         </div>
       </div>
     </div>

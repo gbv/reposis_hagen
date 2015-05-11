@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="deposit::hagen - Fragen Sie uns">
+  <section xml:lang="de" title="Häufige Fragen">
     <div>
-      <h2>Fragen Sie uns</h2>
+      <h2>Häufige Fragen</h2>
       <div class="row">
         <div class="col-md-12">
           <p>
-            Hier könnte ein Kontaktformular sein.
+            Inhalt: Liste mit FAQ-Einträgen, die auch auf Mitarbeiter als Kontaktpersonen verweisen können
           </p>
           
         </div>

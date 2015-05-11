@@ -1,26 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="deposit::hagen - Kontakt">
+  <section xml:lang="de" title="Ansprechpersonen">
     <div>
-      <h2>Kontakt</h2>
+      <h2>Ansprechpersonen</h2>
       <div class="row">
         <div class="col-md-12">
           <p>
-            <h3> Allgemeine Informationen, Datenformate, Procedere etc. </h3>
-            
-            N.N. <br />
-            <span style="font-weight:bold;"> Gebäude: </span> AVZ, C 040 <br />
-            <span style="font-weight:bold;">Fon: </span> 0 23 31 / 987 - 1162 <br />
-            <span style="font-weight:bold;">Fax: </span>0 23 31 / 987 - 3 46 <br />
-            <span style="font-weight:bold;">e-mail:</span> N.N. <br />
-            
-            <h3>Hilfestellungen bei Dissertationen und Abschlussarbeiten</h3>
-
-            Annette Frerichs <br />
-            <span style="font-weight:bold;">Gebäude: </span> AVZ, C 247 <br />
-            <span style="font-weight:bold;">Fon: </span> 0 23 31 / 987 - 2892 <br />
-            <span style="font-weight:bold;">Fax: </span> 0 23 31 / 987 - 346 <br /> 
-            <span style="font-weight:bold;">e-mail: </span> annette.frerichs@fernuni-hagen.de <br />
+            Inhalt: Liste mit Mitarbeiter-Kontaktdaten für Verantwortlichkeiten und Hilfestellungen
           </p>    
         </div>
       </div>

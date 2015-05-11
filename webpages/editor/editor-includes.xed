@@ -102,38 +102,6 @@
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" help-text="{i18n:mir.help.series.title}" placeholder="{i18n:mir.placeholder.series.title}" />
   </xed:template>
   
-  <xed:template id="title.series.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.book.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="book" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.lexicon.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="lexicon" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.journal.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="journal" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.journal" />
-  </xed:template>
-  
-  <xed:template id="title.collection.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="collection" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.festschrift.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="festschrift" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="proceedings" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
-  <xed:template id="title.newspaper.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="newspaper" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
-  </xed:template>
-  
   <xed:template id="subtitle">
     <mir:textfield xpath="mods:titleInfo/mods:subTitle" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}" />
   </xed:template>
@@ -893,9 +861,9 @@
   </xed:template>
   
   <xed:template id="abstract.translated">
-    <xed:repeat xpath="mods:abstract" min="1" max="2">
+    <xed:repeat xpath="mods:abstract" min="1" max="3">
       <div class="col-md-11 mir-form-group-head">
-        <xed:output i18n="mir.abstract.text.translation" />
+        <xed:output i18n="mir.abstract.text" />
       </div>
       <div class="mir-form-group-body">
         <div class="form-group mir-form-group">

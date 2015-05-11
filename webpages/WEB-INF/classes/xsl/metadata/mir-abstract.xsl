@@ -10,7 +10,7 @@
         </xsl:variable>
         <!-- TODO: Update badges -->
         <div class="badges_block">
-          <div id="badges" classe="text-left">
+          <div id="badges" class="text-left">
             <xsl:call-template name="categorySearchLink">
               <xsl:with-param name="class" select="'mods_genre label label-info'" />
               <xsl:with-param name="node" select="($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
@@ -126,7 +126,7 @@
           <xsl:value-of select="concat($ServletsBaseURL,'solr/mods_gnd?q=',$gnd)" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:value-of select="concat($ServletsBaseURL,'solr/select?q=')" />
+          <xsl:value-of select="concat($ServletsBaseURL,'solr/find?qry=')" />
           <xsl:value-of select="concat('+mods.author:&quot;',mods:displayForm,'&quot;')" />
         </xsl:otherwise>
       </xsl:choose>

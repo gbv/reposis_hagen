@@ -422,7 +422,7 @@
                         </a>
                       </li>
                     </xsl:if>
-                    <xsl:if test="string-length($editURL) &gt; 0">
+                    <xsl:if test="string-length($admineditURL) &gt; 0">
                       <li>
                         <a href="{$admineditURL}">
                           <xsl:value-of select="'Admineditor'" />

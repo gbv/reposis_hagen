@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Unser Service">
+    <div>
+      <h2>Unser Service</h2>
+      <p>
+        Inhalt:
+		<ul> 
+		  <li>weltweite Verfügbarkeit der Volltexte</li>
+		  <li>qualitätsgesicherte elektronische Langzeitarchivierung  und die damit verbundene  dauerhafte  Zitierfähigkeit ihrer Erst- und Zweitveröffentlichungen</li>
+		  <li>Verzeichnis im Katalog der UB</li>
+		  <li>Meldung an die deutsche Nationalbibliothek und an die Universitäts- und Landesbibliothek Münster bei Erstveröffentlichungen</li>
+		  <li>Suchbarkeit  und Auffindbarkeit in Suchmaschinen</li>
+		  <li>Beratung  und Betreuung  bei Fragen rund um das Thema elektronischer Veröffentlichungen und Hybridpublikationen (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li> 
+        </ul>
+        
+      </p>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2015-05-08" time="15:19" />
+  </meta>
+</MyCoReWebPage>

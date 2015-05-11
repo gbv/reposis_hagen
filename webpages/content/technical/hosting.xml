@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="technischer Betrieb">
+    <div>
+      <h2>technischer Betrieb</h2>
+      <p>
+        Inhalt: Infomationen über den Hoster siehe DINI Kriterium M2.-7
+      </p>  
+      <p>
+        Hierunter zählen Angaben darüber, wer den Dienst technisch 
+        betreibt und welche grundsätzlichen Leistungsparameter er aufweist
+        (insbesondere Verfügbarkeit).
+      </p>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2015-05-08" time="15:59" />
+  </meta>
+</MyCoReWebPage>

@@ -419,11 +419,28 @@ div.mir-form-group:first-child > div {
 .mir-form-group{
 	margin-bottom: 0px;
 }
+
+.form-control::-moz-placeholder{
+	color:#acb6c0;
+}
+
+.form-control:-ms-input-placeholder{
+	color:#acb6c0
+}
+
+.form-control::-webkit-input-placeholder{
+	color:#acb6c0
+}
 .mir-form-group-body {
 	margin-bottom: 12px;
 }
 #powered_by {
 	background-color:#FFFFFF;
+	text-align: center;
+}
+
+#powered_by  img {
+	margin:15px 20px 15px 20px;
 }
 
 .detail_block > h1 {
@@ -459,4 +476,9 @@ div.mir-form-group:first-child > div {
 
 .relItemsearch {
 	border-right-width: 0px !important;
+}
+
+#fuhagenlogo{
+	margin-top:30px;
+	margin-bottom:30px;
 }

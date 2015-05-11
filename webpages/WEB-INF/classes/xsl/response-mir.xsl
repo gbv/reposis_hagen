@@ -414,7 +414,7 @@
   </xsl:template>
 
   <!-- copied from mods.xsl -> ToDo: refacture! -->
-  <xsl:template name="mods.getObjectEditURL">
+  <xsl:template name="mods.getObjectEditURL" priority="2">
     <xsl:param name="id" />
     <xsl:param name="layout" select="'$'" />
     <xsl:param name="collection" select="''" />
@@ -462,6 +462,7 @@
                 <xsl:with-param name="value" select="$id" />
               </xsl:call-template>
             </xsl:variable>
+            paul
             <xsl:call-template name="UrlAddSession">
               <xsl:with-param name="url" select="$urlWithParam" />
             </xsl:call-template>

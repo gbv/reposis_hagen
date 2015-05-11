@@ -7,28 +7,33 @@
         <div class="col-md-4" lang="de" style="text-align: justify;">
           <div style="margin-top:60px;text-align: right;"><img alt="deposit_hagen" title="desposit_hagen- Logo" src="images/deposit_hagen_logo_gross.png" /></div>
           <p style="margin-top:50px;">
-            Der Dokumentenserver deposit_hagen der Universitätsbibliothek der
-            FernUniversität Hagen ermöglicht Angehörigen der FernUniversität eigene
-            wissenschaftliche Publikationen der weltweiten Öffentlichkeit kostenfrei
-            online zugänglich zu machen (Open Acess). Gleichzeitig beherbergt
-            deposit_hagen die digitalen Sammlungen der Universitätsbibliothek.
+            Auf dem Dokumentenserver 
+            <span style="color:#000; font-weight:bold;">deposit</span>
+            <span style="font-weight:bold;">_hagen</span>
+            der FernUniversität Hagen werden
+            qualifizierte wissenschaftliche Publikationen von Angehörigen der 
+            Fernuniversität, sowie digitale Sammlungen der Universitätsbibliothek 
+            Hagen der weltweiten Fachöffentlichkeit kostenfrei, ohne 
+            Zugriffsbeschränkung  online zugänglich gemacht (Open Access). 
           </p>
           <p>
-            deposit_hagen ist ein Service der Abteilung Wissenschaftliches Publizieren der
-            Universitätsbibliothek. Gerne beantworten wir Ihnen ihre Fragen rund um den 
+            <span style="color:#000; font-weight:bold;">deposit</span>
+            <span style="font-weight:bold;word-wrap: normal;">_hagen</span>
+            ist ein Service der Abteilung Wissenschaftliches Publizieren der
+            Universitätsbibliothek. Gerne beantworten wir Ihnen Ihre Fragen rund um den 
             Publikationsprozess.
           </p>
           <p> 
             Als Angehöriger der FerbUniversität haben Sie die Möglichkeit Ihre Publikation
             über den hochschulweiten Account selbst einzustellen.
-            <a title="mehr erfahren" href="brand/how.xml">[...]</a>
+            
           </p>
         </div>
       
         <div class="col-md-8" lang="de">
           
           <div class="result_body" style="margin-left:10px; margin-top:60px;">
-            <h3>neuste Dokumente: </h3>
+            <h3>Neueste Dokumente: </h3>
             <div class="result_list">
               <div id="hit_list" >
                 <h1>Lade...</h1>
