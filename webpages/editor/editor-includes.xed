@@ -846,7 +846,7 @@
       <xed:output i18n="mir.abstract.text" />
     </div>
     <div class="mir-form-group-body">
-      <mir:textarea xpath="mods:abstract" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>
+      <mir:textarea xpath="mods:abstract[not(@xml:lang) or @xml:lang=../mods:languageTerm[@authority='rfc4646'][@type='code']]" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>
     </div>
   </xed:template>
   
@@ -861,9 +861,9 @@
   </xed:template>
   
   <xed:template id="abstract.translated">
-    <xed:repeat xpath="mods:abstract" min="1" max="3">
+    <xed:repeat xpath="mods:abstract[@xml:lang]" min="1" max="3">
       <div class="col-md-11 mir-form-group-head">
-        <xed:output i18n="mir.abstract.text" />
+        <xed:output i18n="mir.abstract.text.translation" />
       </div>
       <div class="mir-form-group-body">
         <div class="form-group mir-form-group">
