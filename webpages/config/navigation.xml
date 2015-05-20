@@ -77,7 +77,7 @@
         </item>
     </menu>
     <menu id="browse">
-        <label xml:lang="de">Blättern</label>
+        <label xml:lang="de">Browsen</label>
         <label xml:lang="en">Browse</label>
         <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">nach Einrichtung</label>

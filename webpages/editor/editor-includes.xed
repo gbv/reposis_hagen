@@ -515,13 +515,13 @@
           <div class="col-md-3">
             <select class="form-control" style="text-align:right; font-weight:bold;">
               <option value="doi">
-                <xed:output i18n="mir.identifier.doi" />
+                <xed:output i18n="mir.identifier.urn" />
               </option>
               <option value="hdl">
-                <xed:output i18n="mir.identifier.hdl" />
+                <xed:output i18n="mir.identifier.doi" />
               </option>
               <option value="urn">
-                <xed:output i18n="mir.identifier.urn" />
+                <xed:output i18n="mir.identifier.hdl" />
               </option>
               <option value="uri">
                 <xed:output i18n="mir.identifier.uri" />
@@ -886,6 +886,17 @@
   <xed:template id="subject">
     <mir:textfield.repeated xpath="mods:subject/mods:topic" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}"/> 
   </xed:template>
+  
+  <xed:template id="subjectgroup">
+    <div class="col-md-11 mir-form-group-head">
+      <xed:output i18n="mir.subject.topic.multiple" />
+    </div>
+    <div class="mir-form-group-body">
+      <mir:textfield.repeated xpath="mods:subject/mods:topic" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" class="mir-form-group"/>
+    </div> 
+  </xed:template>
+  
+    
 
   <xed:template id="comment">
     <mir:textarea xpath="mods:note" label="mir.comment" help-text="{i18n:mir.help.comment}" rows="2" />
