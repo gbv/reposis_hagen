@@ -43,7 +43,6 @@
             <label xml:lang="de">Schnittstellen</label>
             <label xml:lang="en">Interfaces</label>
         </item>
-        
     </menu>
     <menu id="contact" dir="/content/social">
         <label xml:lang="de">Kontakt</label>
@@ -104,17 +103,17 @@
             <label xml:lang="de">Dokument einreichen</label>
             <label xml:lang="en">Submit Document</label>
         </item>
-        <item href="/servlets/MCRActionMappingServlet/mods/create" type="intern">
-          <label xml:lang="de">Experteneditor</label>
-          <label xml:lang="en">Experteditor</label>
+        <item href="/servlets/MCRActionMappingServlet/mods/create" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Experteneditor</label>
+            <label xml:lang="en">Experteditor</label>
         </item>
     </menu>
     <menu id="publish" dir="/content/publish">
         <label xml:lang="de">Registrieren</label>
         <label xml:lang="en">Register</label>
         <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
-          <label xml:lang="de">Registrieren</label>
-          <label xml:lang="en">Register</label>
+            <label xml:lang="de">Registrieren</label>
+            <label xml:lang="en">Register</label>
         </item>
     </menu>
     <menu id="user">

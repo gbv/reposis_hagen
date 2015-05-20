@@ -1,28 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Informationen für Autoren">
-    <div>
-      <h2>Informationen für Autoren</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            Inhalt:
-            <ul>
-              <li>Verschiedenen Dokumententypen</li>
-              <li>Dokumentformate</li>
-              <li>Einwilligungserklärung</li>
-              <li>Verwertungsrechte </li>
-              <li>Zweitveröffentlichung </li>
-            </ul>
-            
-          </p>
-        </div>
-      </div>
-      
-      
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="administrator" date="2015-01-07" time="16:45" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Informationen für Autoren"><div><h2>Informationen für Autoren</h2><div class="row"><div class="col-md-12"><p>Inhalt:</p><ul><li>Verschiedenen Dokumententypen</li><li>Dokumentformate</li><li>Einwilligungserklärung</li><li>Verwertungsrechte</li><li>Zweitveröffentlichung</li></ul></div></div></div></section><meta><log lastEditor="LorenzAdmin" date="2015-05-13" time="15:06" /></meta></MyCoReWebPage>
