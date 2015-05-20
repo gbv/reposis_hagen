@@ -7,20 +7,24 @@
   <xsl:param name="WebApplicationBaseURL" />
   <xsl:param name="HttpSession" />
   <xsl:param name="ServletsBaseURL" />
-  <xsl:include href="response-mir.xsl"/> 
   <xsl:include href="response-utils.xsl"/>
+  <xsl:include href="response-mir.xsl"/> 
   <xsl:include href="layout-utils.xsl"/>
   <xsl:variable name="PageTitle">
     <xsl:value-of select="''" />
   </xsl:variable>
-  <xsl:template match="response">
-    <div id="test">response</div>
-  </xsl:template>
-
+  
+  <xsl:key name="derivate" match="response/response[@subresult='derivate']/result/doc" use="str[@name='returnId']" />
+  
+  
   <xsl:template match="/">
+  <xsl:variable name="hitNumberOnPage" select="count(../preceding-sibling::*)+1" />
     
-    <xsl:apply-templates select="//doc" mode="resultList" />
-    
+    <xsl:for-each select="//doc">
+      <xsl:apply-templates select="." mode="resultList" >
+        <xsl:with-param name="hitNumberOnPage" select="position()" />  
+      </xsl:apply-templates>
+    </xsl:for-each>
   </xsl:template>
 
 </xsl:stylesheet>
