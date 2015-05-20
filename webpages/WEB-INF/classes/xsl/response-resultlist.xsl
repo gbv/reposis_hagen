@@ -18,8 +18,7 @@
   
   
   <xsl:template match="/">
-  <xsl:variable name="hitNumberOnPage" select="count(../preceding-sibling::*)+1" />
-    
+      
     <xsl:for-each select="//doc">
       <xsl:apply-templates select="." mode="resultList" >
         <xsl:with-param name="hitNumberOnPage" select="position()" />  

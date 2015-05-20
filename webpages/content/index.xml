@@ -24,7 +24,7 @@
             Publikationsprozess.
           </p>
           <p> 
-            Als Angehöriger der FerbUniversität haben Sie die Möglichkeit Ihre Publikation
+            Als Angehöriger der FernUniversität haben Sie die Möglichkeit Ihre Publikation
             über den hochschulweiten Account selbst einzustellen.
             
           </p>
@@ -36,14 +36,15 @@
             <h3>Neueste Dokumente: </h3>
             <div class="result_list">
               <div id="hit_list" >
-                <h1>Lade...</h1>
+                <h1>Lade..</h1>
               </div>
             </div>
           </div>
-          <script src='index.js'></script>
+          
         </div>
       </div> 
     </div>
+    <script type="text/javascript" src='index.js'> </script>
   </section>
   <meta>
     <log lastEditor="administrator" date="2015-03-31" time="21:37" />

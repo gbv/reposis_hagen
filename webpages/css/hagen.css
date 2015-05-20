@@ -434,7 +434,7 @@ div.mir-form-group:first-child > div {
 .mir-form-group-body {
 	margin-bottom: 12px;
 }
-#powered_by {
+html body #powered_by {
 	background-color:#FFFFFF;
 	text-align: center;
 }

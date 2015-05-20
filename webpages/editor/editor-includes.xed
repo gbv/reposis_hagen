@@ -871,7 +871,7 @@
             <xed:output i18n="mir.abstract.in" />
           </label>
           <div class="col-md-6">
-            <xed:bind xpath="@xml:lang" initially="en">
+            <xed:bind xpath="@xml:lang">
               <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
             </xed:bind>
           </div>
