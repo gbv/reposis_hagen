@@ -18,8 +18,7 @@
   
   
   <xsl:template match="/">
-      
-    <xsl:for-each select="//doc">
+    <xsl:for-each select="//response[@subresult='groupOwner']/result/doc">
       <xsl:apply-templates select="." mode="resultList" >
         <xsl:with-param name="hitNumberOnPage" select="position()" />  
       </xsl:apply-templates>
