@@ -45,6 +45,7 @@
         <xsl:if test="string-length($MIR.CustomLayout.JS) &gt; 0">
           <script type="text/javascript" src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
         </xsl:if>
+        <link href="{$WebApplicationBaseURL}/editor/bootstrap-datetimepicker.min.css" rel="stylesheet" />
       </head>
 
       <body>

@@ -182,6 +182,8 @@ function disableFieldset(fieldset){
 			$(input).data('value',$(input).val());
 		}
 	});
+	$(".searchbadge").addClass("disabled");
+	
 	fieldset.find("fieldset.mir-relatedItem").prop('disabled', true );
 };
 
@@ -224,11 +226,12 @@ function fillFieldset(fieldset,relItemid){
 
 function createbadge(inputgroup,relItemid) {
 	badge='<a href="../receive/'+relItemid+'" target="_blank" class="badge"> ';
-	badge+='intern';
+	badge+='intern ';
 	badge+='<span class="glyphicon glyphicon-remove-circle relItem-reset"> </span>';
 	badge+='</a>';
 	
 	inputgroup.find(".searchbadge").html(badge);
+	
 	inputgroup.find(".relItem-reset").click(function(event) {
 		event.preventDefault();
 		relatedItemBody=$(this).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
@@ -236,6 +239,7 @@ function createbadge(inputgroup,relItemid) {
 			$(input).prop('disabled', false );
 			$(input).val($(input).data('value'));
 		});
+		$('.searchbadge').removeClass("disabled");
 		relatedItemBody.find("input[id^='relItem']").val("");
 		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
 		inputgroup=$(this).closest("div");

@@ -472,6 +472,20 @@ html body #powered_by {
 .searchbadge {
 	background-color:#FFFFFF !important;
 	border-width: 2px 2px 2px 0px !important;
+	padding: 1px 15px;
+}
+
+.searchbadge {
+	background-color:#FFFFFF !important;
+	border-width: 2px 2px 2px 0px !important;
+}
+
+.searchbadge.disabled {
+	background-color:#ECF0F1 !important;
+}
+
+.searchbadge, .badge {
+    font-size: 13px;
 }
 
 .relItemsearch {
