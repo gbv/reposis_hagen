@@ -24,7 +24,7 @@
       <when condition="true" url="/authorization/new-author.xed" />
     </action>
     <action action="create-child">
-      <when condition="(group = admin) or (group = editor)" url="/editor/editor-admins.xed" />
+      <when condition="(group = admin) or (group = editor)" url="/editor/editor-dynamic.xed" />
       <when condition="group = submitter" url="/editor/editor-dynamic.xed" />
       <when condition="true" url="/authorization/new-author.xed" />
     </action>
