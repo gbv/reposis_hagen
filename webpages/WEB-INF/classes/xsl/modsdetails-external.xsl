@@ -533,7 +533,7 @@
                   <xsl:otherwise>
                     <xsl:for-each select="str:tokenize($child-layout,'|')" >
                       <li>
-                        <a href="{$url}{$HttpSession}?genre={.}&amp;parentId={$id}">
+                        <a href="{$url}{$HttpSession}?genre={.}&amp;host={$mods-type}&amp;hostId={$id}">
                           <xsl:value-of select="i18n:translate(concat('component.mods.genre.',.))" />
                         </a>
                       </li>

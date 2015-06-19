@@ -462,7 +462,6 @@
                 <xsl:with-param name="value" select="$id" />
               </xsl:call-template>
             </xsl:variable>
-            paul
             <xsl:call-template name="UrlAddSession">
               <xsl:with-param name="url" select="$urlWithParam" />
             </xsl:call-template>
