@@ -90,6 +90,7 @@
 
   <xed:template id="title">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" />
+    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
   </xed:template>
 
   <xed:template id="title.abbreviated">
@@ -97,15 +98,18 @@
   </xed:template>
 
   <xed:template id="title.journal">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}" />^
+    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
   </xed:template>
 
   <xed:template id="title.newspaper">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" help-text="{i18n:mir.help.title.newspaper}" />
+    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
   </xed:template>
 
   <xed:template id="series.title">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title"/>
+    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
   </xed:template>
   
   <xed:template id="title.series.relItemsearch">
@@ -150,8 +154,11 @@
     </div>
     <xed:bind xpath="mods:titleInfo">
       <div class="mir-form-group-body">
-        <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" class="mir-form-group" help-text="{i18n:mir.help.title}"/>
-        <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" class="mir-form-group" help-text="{i18n:mir.help.title.subTitle}" />
+        <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" 
+            class="mir-form-group required" help-text="{i18n:mir.help.title}"
+            required="true" required-text="{i18n:mir.validation.title}"/>
+        <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" 
+            class="mir-form-group" help-text="{i18n:mir.help.title.subTitle}" />
       </div>
     </xed:bind>
   </xed:template>
@@ -893,6 +900,26 @@
         </div>
       </div>
     </xed:bind>
+  </xed:template> 
+  
+  <xed:template id="rights.preselected">
+    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label required">
+          <xed:output i18n="mir.rights" />:
+        </label>
+        <div class="col-md-6">
+          <select  class="form-control form-control-inline">
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_rights" />
+          </select>
+        </div>
+        <div class="col-md-1">
+          <span class="btn btn-default info-button" data-toggle="popover" data-placement="right" data-content="{i18n:mir.help.rights}">
+            <i class="fa fa-info"></i>
+          </span>
+        </div>
+      </div>
+    </xed:bind>
   </xed:template>
 
   <xed:template id="access">
@@ -1229,11 +1256,7 @@
   </xed:template>
 
   <xed:template id="validation-rules">
-    <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
-    <!-- don't validate author, date issued and rights for journal etc.  -->
-    <xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series'][@valueURIxEditor!='chapter'][@valueURIxEditor!='entry']">
-      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
-    </xed:if>
+    <!-- <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />-->
     <!-- don't validate author, date issued and rights for journal etc.  -->
     <xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series']">
       <!-- "required" checks if there is such an element which has text content, so we must validate mods:displayForm for the moment-->
@@ -1245,7 +1268,7 @@
           <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
         </xed:otherwise>
       </xed:choose>
-      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
+      <!--<xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />-->
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:if>
     <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />

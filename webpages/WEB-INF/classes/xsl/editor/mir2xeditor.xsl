@@ -26,6 +26,9 @@
       <div class="form-group {@class} {$xed-val-marker}">
         <xsl:call-template name="mir-textfield" />
       </div>
+      <xed:if test="{@required}='true'">
+        <xed:validate required="true"> {@required-text} </xed:validate>
+      </xed:if>
     </xed:bind>
   </xsl:template>
   
