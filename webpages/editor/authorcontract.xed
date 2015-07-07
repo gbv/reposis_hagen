@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MyCoReWebPage>
+  <section title="Autorenvertrag" xml:lang="de"/>
+  <section title="Authorcontract" xml:lang="en"/>
+  <section xml:lang="all">
+  
+  <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal">
+    <!--<xed:include uri="webapp:editor/editor-includes.xed" ref="in.out" />-->
+
+    <xed:bind xpath="xfdf[xmlns='http://ns.adobe.com/xfdf/']">
+      <xed:bind xpath="f/@href" initialy="vertrag.pdf"/>
+      <xed:bind xpath="fields">
+        <xed:bind xpath="field[name='Rechteinhaber']/value">
+          Autor o. sonstiger Rechteinhaber: <input> <br>
+        </xed:bind>
+        <xed:bind xpath="field[name='Zugehörigkeit']/value">
+          Zugehörigkeit (Fakultät, Institut): <input> <br>
+        </xed:bind>
+        <xed:bind xpath="field[name='Adresse']/value">
+          Adresse: <input> <br>
+        </xed:bind>
+        <xed:bind xpath="field[name='Telefon']/value">
+          Telefon: <input> <br>
+        </xed:bind>
+        <xed:bind xpath="field[name='EMail']/value">
+          E-Mail: <input> <br>
+        </xed:bind>
+        <xed:bind xpath="field[name='Titel']/value">
+          Titel der Veröffentlichung: <input> <br>
+        </xed:bind>
+      </xed:bind>
+    </xed:bind>
+  </section>
+</MyCoReWebPage>
