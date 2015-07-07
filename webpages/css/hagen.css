@@ -492,6 +492,10 @@ html body #powered_by {
 	border-right-width: 0px !important;
 }
 
+.required > label:before {
+  content:"* ";
+}
+
 #fuhagenlogo{
 	margin-top:30px;
 	margin-bottom:30px;
