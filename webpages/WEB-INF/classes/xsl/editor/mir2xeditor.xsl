@@ -15,20 +15,25 @@
         <xsl:copy-of select="@placeholder" />
       </input>
     </div>
-    <div class="col-md-1">
-      <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
-    </div>
+    <xsl:if test="string-length('{@help-text}') &gt; 0">
+      <div class="col-md-1">
+        <span class="btn btn-default info-button" data-original-title="{@help-text}" data-toggle="tooltip" data-placement="right" title=""><i class="fa fa-info"></i></span>
+      </div>
+    </xsl:if>
   </xsl:template>
   
   <xsl:template match="mir:textfield">
     <xed:bind xpath="{@xpath}">
       <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
+      <xsl:variable name="required2" select='"{@required}"'/>
       <div class="form-group {@class} {$xed-val-marker}">
         <xsl:call-template name="mir-textfield" />
       </div>
-      <xed:if test="{@required}='true'">
+      <h1 class="'{@required}'='true'"> {@required} </h1>
+      <h1 class="{@required}='true'"> <xsl:value-of select="$required2"/> </h1>
+      <xsl:if test="'{@required}'='true'">
         <xed:validate required="true"> {@required-text} </xed:validate>
-      </xed:if>
+      </xsl:if>
     </xed:bind>
   </xsl:template>
   

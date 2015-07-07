@@ -89,8 +89,7 @@
   </xed:template>
 
   <xed:template id="title">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" />
-    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true" required-text="{i18n:mir.validation.title}" />
   </xed:template>
 
   <xed:template id="title.abbreviated">
@@ -158,7 +157,7 @@
             class="mir-form-group required" help-text="{i18n:mir.help.title}"
             required="true" required-text="{i18n:mir.validation.title}"/>
         <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" 
-            class="mir-form-group" help-text="{i18n:mir.help.title.subTitle}" />
+            class="mir-form-group" />
       </div>
     </xed:bind>
   </xed:template>
