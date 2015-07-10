@@ -12,6 +12,14 @@
     </span>
   </xsl:template>
   
+  <xsl:template name="mir-required">
+    <xsl:if test="@required='true'">
+      <xed:validate required="true" display="global"> 
+        <li> <xsl:value-of select="i18n:translate(@required-i18n)" /> </li> 
+      </xed:validate>
+    </xsl:if>
+  </xsl:template>
+  
   <xsl:template name="mir-textfield">
     <label class="col-md-3 control-label ">
       <xed:output i18n="{@label}" /> 
@@ -39,6 +47,7 @@
           <div class="form-group {@class} {$xed-val-marker}">
             <xsl:call-template name="mir-textfield" />
           </div>
+          <xsl:call-template name="mir-required" />
         </xed:repeat>
       </xsl:when>
       <xsl:otherwise>
@@ -47,9 +56,7 @@
           <div class="form-group {@class} {$xed-val-marker}">
             <xsl:call-template name="mir-textfield" />
           </div>
-          <xsl:if test="@required='true'">
-            <xed:validate required="true" display="global"> <xsl:value-of select="i18n:translate(@required-i18n)" /> </xed:validate>
-          </xsl:if>
+          <xsl:call-template name="mir-required" />
         </xed:bind>
       </xsl:otherwise>
     </xsl:choose>
@@ -118,6 +125,7 @@
           </xed:bind>
         </div>
       </xed:bind>
+      <xsl:call-template name="mir-required" />
     </xed:repeat>
   </xsl:template>
 
@@ -146,6 +154,7 @@
           </xed:bind>
         </div>
      </xed:bind>
+     <xsl:call-template name="mir-required" />
     </xed:repeat>
   </xsl:template>
 

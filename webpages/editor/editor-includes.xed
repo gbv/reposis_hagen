@@ -141,7 +141,8 @@
       </legend>
       <xed:bind xpath="mods:titleInfo">
         <div class="mir-fieldset-content">
-          <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" help-text="{i18n:mir.help.title}"/>
+          <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" 
+              help-text="{i18n:mir.help.title}" class="required" required="true" required-i18n="mir.validation.title"/>
           <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}" />
         </div>
       </xed:bind>
@@ -233,7 +234,7 @@
       Autoren
     </div>
     <div class="mir-form-group-body">
-      <mir:role.repeated role="aut" label="mir.role.author" help-text="{i18n:mir.help.role.author}" class="required mir-form-group" />
+      <mir:role.repeated role="aut" label="mir.role.author" help-text="{i18n:mir.help.role.author}" class="required mir-form-group" required="true"/>
     </div>
   </xed:template>
 
@@ -1092,8 +1093,8 @@
         </div>
         <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" placeholder="{i18n:mir.placeholder.abstract.link}" class="mir-form-group" />
         <mir:textarea xpath="." label="mir.abstract.ortext" rows="5" class="mir-form-group"/>
-      </div>
-    </xed:repeat>
+      </xed:repeat>
+    </fieldset>
   </xed:template>
 
   <xed:template id="subject">
@@ -1204,15 +1205,33 @@
 
   <xed:template id="failed-validation-messages">
     <xed:if test="$xed-validation-failed">
-      <div>
+      <div class="col-md-10 mir-validation-messages">
         <h3>
           <xed:output i18n="mir.validation.failed" />
         </h3>
-        <ul class="mir-validation-messages">
+        <ul>
           <xed:display-validation-messages />
         </ul>
       </div>
     </xed:if>
+  </xed:template>
+
+  <xed:template id="validation-rules-identifier">
+    <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" display="global" />
+      <li> <xed:output i18n="mir.validation.isbn" /> </li>
+    </xed:validate>
+    <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" display="global" />
+      <li> <xed:output i18n="mir.validation.issn" /> </li>
+    </xed:validate>
+    <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" display="global" />
+      <li> <xed:output i18n="mir.validation.doi" /> </li>
+    </xed:validate>
+    <xed:validate xpath="//mods:identifier[@type='hdl']" matches="\S+/\S+" display="global" />
+      <li> <xed:output i18n="mir.validation.hdl" /> </li>
+    </xed:validate>
+    <xed:validate xpath="//mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" display="global" />
+      <li> <xed:output i18n="mir.validation.urn" /> </li>
+    </xed:validate>
   </xed:template>
 
   <xed:template id="validation-rules">
@@ -1222,20 +1241,20 @@
       <!-- "required" checks if there is such an element which has text content, so we must validate mods:displayForm for the moment-->
       <xed:choose>
         <xed:when test="//mods:mods/mods:genre[@valueURIxEditor='collection']">
-          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
+          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']/mods:displayForm" required="true" display="global" >
+            <li> <xed:output i18n="mir.validation.author" /> </li>
+          </xed:validate>
         </xed:when>
         <xed:otherwise>
-          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" i18n="mir.validation.author" display="global" />
+          <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
+            <li> <xed:output i18n="mir.validation.author" /> </li>
+          </xed:validate>
         </xed:otherwise>
       </xed:choose>
       <!--<xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />-->
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:if>
-    <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" i18n="mir.validation.isbn" display="global" />
-    <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" i18n="mir.validation.issn" display="global" />
-    <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" i18n="mir.validation.doi" display="global" />
-    <xed:validate xpath="//mods:identifier[@type='hdl']" matches="\S+/\S+" i18n="mir.validation.handle" display="global" />
-    <xed:validate xpath="//mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" i18n="mir.validation.urn" display="global" />
+    <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules-identifier" />
     <xed:validate xpath="//mods:url|//mods:abstract/@xlink:href" matches="(ftp|http|https)://[\w\d.]+\S*" i18n="mir.validation.url" display="global" />
     <xed:validate xpath="//mods:*[@encoding='w3cdtf']" matches="\d{4}(\-\d{2}(\-\d{2})?)?" type="datetime" format="yyyy;yyyy-MM;yyyy-MM-dd" i18n="mir.validation.date" display="global" />
   </xed:template>
