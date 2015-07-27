@@ -6,7 +6,7 @@ var engines = {
 				datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
 				queryTokenizer: Bloodhound.tokenizers.whitespace,
 				remote: {
-					url: '../servlets/solr/select',
+					url: webApplicationBaseURL+'servlets/solr/select',
 					filter: function(list) {
 						list=list.response.docs;
 						$.each(list,function (index,item){
@@ -32,7 +32,7 @@ var engines = {
 				datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
 				queryTokenizer: Bloodhound.tokenizers.whitespace,
 				remote: {
-					url: '../servlets/solr/select',
+					url: webApplicationBaseURL+'servlets/solr/select',
 					filter: function(list) {
 						list=list.response.docs;
 						$.each(list,function (index,item){
@@ -58,7 +58,7 @@ var engines = {
 				datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
 				queryTokenizer: Bloodhound.tokenizers.whitespace,
 				remote: {
-					url: '../servlets/solr/select',
+					url: webApplicationBaseURL+'servlets/solr/select',
 					filter: function(list) {
 						list=list.response.docs;
 						$.each(list,function (index,item){
@@ -84,7 +84,7 @@ var engines = {
 				datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
 				queryTokenizer: Bloodhound.tokenizers.whitespace,
 				remote: {
-					url: '../servlets/solr/select',
+					url: webApplicationBaseURL+'servlets/solr/select',
 					filter: function(list) {
 						list=list.response.docs;
 						$.each(list,function (index,item){
@@ -110,7 +110,7 @@ var engines = {
 				datumTokenizer: Bloodhound.tokenizers.obj.whitespace('mods.title[0]'),
 				queryTokenizer: Bloodhound.tokenizers.whitespace,
 				remote: {
-					url: '../servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
+					url: webApplicationBaseURL+'servlets/solr/select?&q=%2Bmods.title%3A*%QUERY*+%2Bcategory.top%3A%22mir_genres\%3Aseries%22+%2BobjectType%3A%22mods%22&version=4.5&rows=1000&fl=mods.title%2Cid%2Cmods.identifier&wt=json',
 					filter: function(list) {
 						return {};
 					} 
@@ -151,20 +151,9 @@ $(document).ready( function() {
 		}); 
 		
 	});
-	/*
-	$('.host-reset').click(function(event) {
-		event.preventDefault();
-		relatedItemBody=$(document.activeElement).closest("fieldset.mir-relatedItem").children('div.mir-relatedItem-body');
-		relatedItemBody.find("div.form-group:not(.mir-modspart)").find("input[type!='hidden']").each ( function(index,input){
-			$(input).prop('disabled', false );
-			$(input).val($(input).data('value'));
-		});
-		relatedItemBody.find("input[id^='relItem']").val("");
-		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
-	});*/
-	
+		
 	$("input[id^='relItem']").each (function (index,input){
-		if (input.value!="") {
+		if (input.value!="mir_mods_00000000") {
 			fieldset=$(input).closest("fieldset.mir-relatedItem");
 			disableFieldset(fieldset);
 			fillFieldset(fieldset,input.value);
@@ -188,19 +177,9 @@ function disableFieldset(fieldset){
 };
 
 function fillFieldset(fieldset,relItemid){
-	/*relatedItemBody=fieldset.children('div.mir-relatedItem-body');
-	relatedItemBody.find('input').each(function (index,input){
-		if ($(input).data("responsefield") && current [$(input).data("responsefield")]){
-			if ($.isArray(current [$(input).data("responsefield")])) {
-				$(input).val(current [$(input).data("responsefield")][0]);
-			} else {
-				$(input).val(current [$(input).data("responsefield")]);
-			}
-		}
-	});*/
 	$.ajax({
 		method: "GET",
-		url: "http://reposis-test.gbv.de/hagen/receive/"+relItemid+"?XSL.Style=xml",
+		url: webApplicationBaseURL+"receive/"+relItemid+"?XSL.Style=xml",
 		dataType: "xml"
 	  }).done(function( xml ) {
 		fieldset.find('input').each(function(index,input){
@@ -240,7 +219,7 @@ function createbadge(inputgroup,relItemid) {
 			$(input).val($(input).data('value'));
 		});
 		$('.searchbadge').removeClass("disabled");
-		relatedItemBody.find("input[id^='relItem']").val("");
+		relatedItemBody.find("input[id^='relItem']").val("mir_mods_00000000");
 		$(document.activeElement).closest("fieldset.mir-relatedItem").find("fieldset.mir-relatedItem").prop('disabled', false );
 		inputgroup=$(this).closest("div");
 		inputgroup.find(".searchbadge").html("");

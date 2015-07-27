@@ -124,8 +124,8 @@
             </div>
           </xed:bind>
         </div>
+        <xsl:call-template name="mir-required" />
       </xed:bind>
-      <xsl:call-template name="mir-required" />
     </xed:repeat>
   </xsl:template>
 
@@ -151,10 +151,10 @@
               </xsl:if>
               <xsl:call-template name="mir-pmud" />
             </div>
+            <xsl:call-template name="mir-required" />
           </xed:bind>
         </div>
      </xed:bind>
-     <xsl:call-template name="mir-required" />
     </xed:repeat>
   </xsl:template>
 
@@ -191,7 +191,7 @@
   </xsl:template>
 
   <xsl:template match="mir:relItemsearch">
-    <xed:bind xpath="{@xpath}">
+    <xed:bind xpath="{@xpath} {@class}">
       <div class="form-group">
         <label class="col-md-3 control-label">
           <xed:output i18n="{@label}" />

@@ -5,7 +5,7 @@
   <xed:template id="series">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='series']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-series" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-series" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.series.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.issn.series.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="series.volume" />
@@ -17,7 +17,7 @@
   <xed:template id="book">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-collection" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-collection" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.book.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
@@ -33,7 +33,7 @@
   <xed:template id="collection">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-collection" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-collection" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.collection.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
@@ -48,7 +48,7 @@
   <xed:template id="festschrift">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-festschrift" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-festschrift" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.festschrift.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.honoree.repeated" />
@@ -63,7 +63,7 @@
   <xed:template id="lexicon">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-lexicon" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-lexicon" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.lexicon.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
@@ -78,7 +78,7 @@
   <xed:template id="proceedings">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-proceedings" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-proceedings" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.proceedings.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="conference" />
@@ -101,16 +101,14 @@
   <xed:template id="journal">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:bind xpath="@xlink:href"> <input id="relItem-journal" type="hidden" /> </xed:bind>
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-journal" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.journal.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.issn.journal.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="shelfmark.journal.relItemsearch" />
-      </xed:bind>
-      <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued.modspart" />
-      <xed:bind xpath="mods:relatedItem[@type='host']">
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.volume" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.issue" />
-        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.pages" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.volume.required" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.issue.required" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="host.pages.required" />
+        <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="validation-rules.relItem.host" />
       </xed:bind>
     </div>
   </xed:template>
@@ -118,6 +116,7 @@
   <xed:template id="newspaper">
     <div class="mir-form-group-body">
       <xed:bind xpath="mods:relatedItem[@type='host']">
+        <xed:bind xpath="@xlink:href" initially="mir_mods_00000000"> <input id="relItem-newspaper" type="hidden" /> </xed:bind>
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.newspaper.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="identifier.issn.newspaper.relItemsearch" />
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="shelfmark.newspaper.relItemsearch" />
