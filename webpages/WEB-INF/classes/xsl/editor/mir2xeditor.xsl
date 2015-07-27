@@ -191,8 +191,8 @@
   </xsl:template>
 
   <xsl:template match="mir:relItemsearch">
-    <xed:bind xpath="{@xpath} {@class}">
-      <div class="form-group">
+    <xed:bind xpath="{@xpath}">
+      <div class="form-group  {@class}">
         <label class="col-md-3 control-label">
           <xed:output i18n="{@label}" />
         </label>
