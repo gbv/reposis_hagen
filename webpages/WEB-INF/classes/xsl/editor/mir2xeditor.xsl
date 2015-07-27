@@ -191,8 +191,9 @@
   </xsl:template>
 
   <xsl:template match="mir:relItemsearch">
+    <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
     <xed:bind xpath="{@xpath}">
-      <div class="form-group  {@class}">
+      <div class="form-group  {@class} {$xed-val-marker}">
         <label class="col-md-3 control-label">
           <xed:output i18n="{@label}" />
         </label>
