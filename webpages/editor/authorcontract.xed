@@ -7,8 +7,9 @@
   
   <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal">
     <!--<xed:include uri="webapp:editor/editor-includes.xed" ref="in.out" />-->
-
-    <xed:bind xpath="xfdf[xmlns='http://ns.adobe.com/xfdf/']">
+    <h1> test </h1>
+    <xed:bind xpath="xfdf">
+      <xed:bind xpath="@xmlns" initially="http://ns.adobe.com/xfdf/" />
       <xed:bind xpath="f/@href" initialy="vertrag.pdf"/>
       <xed:bind xpath="fields">
         <xed:bind xpath="field[name='Rechteinhaber']/value">
@@ -31,5 +32,17 @@
         </xed:bind>
       </xed:bind>
     </xed:bind>
+    <div class="form-group" id="editor-buttons">
+      <div class="col-md-offset-2 col-md-6">
+        <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
+        <button type="submit" class="btn btn-default" xed:target="cancel">
+          <xed:output i18n="button.cancel" />
+        </button>
+      </div>
+      <button type="submit" class="btn btn-primary" xed:target="servlet" xed:href="MirFillPdfFormServlet">
+        <xed:output i18n="button.save" />
+      </button>
+    </div>
+  </xed:form>
   </section>
 </MyCoReWebPage>
