@@ -478,7 +478,7 @@
   <xed:template id="identifier.isbn.proceeding.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="proceeding" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}"/>
   </xed:template>
-  
+
   <xed:template id="identifier.isbn.lexicon.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="lexicon" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}"/>
   </xed:template>
@@ -486,15 +486,15 @@
   <xed:template id="identifier.issn">
     <mir:textfield xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" />
   </xed:template>
-  
+
   <xed:template id="identifier.issn.series.relItemsearch">
     <mir:relItemsearch searchengine="issn" genre="series" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" help-text="{i18n:mir.help.identifier.issn}"/>
   </xed:template>
-  
+
   <xed:template id="identifier.issn.journal.relItemsearch">
     <mir:relItemsearch searchengine="issn" genre="journal" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" help-text="{i18n:mir.help.identifier.issn}"/>
   </xed:template>
-  
+
   <xed:template id="identifier.issn.newspaper.relItemsearch">
     <mir:relItemsearch searchengine="issn" genre="newspaper" responsefield="identifier.type.issn" xpath="mods:identifier[@type='issn']" label="mir.identifier.issn" help-text="{i18n:mir.help.identifier.issn}"/>
   </xed:template>
@@ -590,31 +590,31 @@
   <xed:template id="shelfmark">
     <mir:textfield xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" />
   </xed:template>
-  
+
   <xed:template id="shelfmark.journal.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="journal" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.book.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="book" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.collection.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="collection" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.festschrift.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="festschrift" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.lexicon.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="lexicon" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.proceedings.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="proceedings" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
-  
+
   <xed:template id="shelfmark.proceedings.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="collection" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}"/>
   </xed:template>
@@ -857,6 +857,24 @@
       </div>
     </xed:bind>
   </xed:template>
+  
+  <xed:template id="type.of.resource.repeated">
+  	<xed:repeat xpath="mods:typeOfResource" min="1" max="10" >
+      <div class="form-group">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="mir.typeOfResource" />
+        </label>
+        <div class="col-md-6">
+          <div class="controls">
+            <select class="form-control form-control-inline">
+              <xed:include uri="xslStyle:items2options:classification:editor:-1:children:typeOfResource" />
+            </select>
+          </div>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.typeOfResource}" pmud="true" />
+      </div>
+    </xed:repeat>
+  </xed:template>
 
   <xed:template id="rights">
     <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
@@ -866,37 +884,16 @@
         </label>
         <div class="col-md-6">
           <select  class="form-control form-control-inline">
-            <option value=""><xed:output i18n="mir.select" /></option>
             <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_rights" />
           </select>
         </div>
         <mir:help-pmud help-text="{i18n:mir.help.rights}" />
       </div>
     </xed:bind>
-  </xed:template> 
-  
-  <xed:template id="rights.preselected">
-    <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
-      <div class="form-group {$xed-validation-marker}">
-        <label class="col-md-3 control-label required">
-          <xed:output i18n="mir.rights" />:
-        </label>
-        <div class="col-md-6">
-          <select  class="form-control form-control-inline">
-            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_rights" />
-          </select>
-        </div>
-        <div class="col-md-1">
-          <span class="btn btn-default info-button" data-toggle="popover" data-placement="right" data-content="{i18n:mir.help.rights}">
-            <i class="fa fa-info"></i>
-          </span>
-        </div>
-      </div>
-    </xed:bind>
   </xed:template>
 
   <xed:template id="access">
-    <xed:bind xpath="mods:accessCondition[@type='restriction on access']" initially="">
+    <xed:bind xpath="mods:accessCondition[@type='restriction on access'][@xlink:href='http://www.mycore.org/classifications/mir_access']" initially="">
       <div class="form-group {$xed-validation-marker}">
         <label class="col-md-3 control-label">
           <xed:output i18n="mir.access" />:
@@ -1020,26 +1017,26 @@
 
   <xed:template id="cartographics">
     <mir:textfield id="mir_coordinates" xpath="mods:subject/mods:cartographics/mods:coordinates" label="mir.cartographics.coordinates" help-text="{i18n:mir.help.cartographics.coordinates}" />
-  	<div class="form-group openstreetmap" >
-			<div class="col-md-2 col-md-offset-3">
-				<button id="show_openstreetmap" type="button" class="btn btn-default" data-target="#openstreetmap-container" data-toggle="collapse">
-					OpenStreetMap
-				</button>
-	  	</div>
-	  	<div id="openstreetmap-container" class="col-md-6 col-md-offset-3 collapse" >
-		  	<div id="header">
-			   <div id="osm">� <a href="http://www.openstreetmap.org">OpenStreetMap</a>
-			     und <a href="http://www.openstreetmap.org/copyright">Mitwirkende</a>,
-			     <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.de">CC-BY-SA</a>
-			   </div>
-			  </div>
-			  <div id="map" style="width:555px;height:380px;"></div>
-		  </div>
-  	</div>
-  	
-  	<script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
-		<script type="text/javascript" src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
-		<script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/geo-coords.js"></script>
+    <div class="form-group openstreetmap" >
+      <div class="col-md-2 col-md-offset-3">
+        <button id="show_openstreetmap" type="button" class="btn btn-default" data-target="#openstreetmap-container" data-toggle="collapse">
+          OpenStreetMap
+        </button>
+      </div>
+      <div id="openstreetmap-container" class="col-md-6 col-md-offset-3 collapse" >
+        <div id="header">
+         <div id="osm">(c) <a href="http://www.openstreetmap.org">OpenStreetMap</a>
+           und <a href="http://www.openstreetmap.org/copyright">Mitwirkende</a>,
+           <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.de">CC-BY-SA</a>
+         </div>
+        </div>
+        <div id="map" style="width:555px;height:380px;"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="http://www.openlayers.org/api/OpenLayers.js"></script>
+    <script type="text/javascript" src="http://www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/geo-coords.js"></script>
   </xed:template>
 
   <xed:template id="sdnb">
@@ -1066,7 +1063,7 @@
       <mir:textarea xpath="mods:abstract[not(@xml:lang) or @xml:lang=../mods:languageTerm[@authority='rfc4646'][@type='code']]" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>
     </div>
   </xed:template>
-  
+
   <xed:template id="abstract.simple.uri">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -1078,7 +1075,7 @@
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="abstract.translated">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -1122,7 +1119,8 @@
             </div>
             <mir:help-pmud help-text="{i18n:mir.help.abstract.language}" pmud="true" />
           </div>
-          <mir:pmud class="mir-form-group-pmud"/>
+          <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" help-text="{i18n:mir.help.abstract.aslink}" placeholder="{i18n:mir.placeholder.abstract.link}" />
+          <mir:textarea xpath="." label="mir.abstract.ortext" help-text="{i18n:mir.help.abstract.ortext}" rows="5" />
         </div>
         <mir:textfield xpath="@xlink:href" label="mir.abstract.aslink" placeholder="{i18n:mir.placeholder.abstract.link}" class="mir-form-group" />
         <mir:textarea xpath="." label="mir.abstract.ortext" rows="5" class="mir-form-group"/>
@@ -1131,7 +1129,11 @@
   </xed:template>
 
   <xed:template id="subject">
-    <mir:textfield repeated="true" xpath="mods:subject" bind="mods:topic" min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+    <mir:textfield repeat="true" xpath="mods:subject/mods:topic" min="1" max="10" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+  </xed:template>
+  
+  <xed:template id="subject.genre">
+  	<mir:textfield repeat="true" xpath="mods:subject/mods:genre" min="1" max="10" label="mir.subject.genre" help-text="{i18n:mir.help.subject.genre}" />
   </xed:template>
 
   <xed:template id="subjectgroup">
@@ -1140,9 +1142,68 @@
         <xed:output i18n="mir.subject.topic.multiple" />
       </legend>
       <div class="mir-fieldset-content">
-        <mir:textfield repeated="true" xpath="mods:subject/mods:topic" bind="mods:genre" min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
+        <mir:textfield repeat="true" xpath="mods:subject/mods:topic" bind="mods:genre" min="1" max="20" label="mir.subject.topic" help-text="{i18n:mir.help.subject.topic}" />
       </div>
     </fieldset>
+  </xed:template>
+  
+  <xed:template id="classification">
+  	<xed:repeat xpath="mods:classification" min="1" max="10">
+	  	<div class="form-group">
+	  		<label class="col-md-3 control-label">
+	  			<xed:output i18n="mir.classification" />
+	  		</label>
+	  		<div class="col-md-6">
+	  			<div class="form-inline">
+						<input type="button" class="form-control mir-classification-select" value="{i18n:mir.classification.select}" />
+				    <xed:bind xpath=".">
+							<input type="hidden" />
+				    </xed:bind>
+				    <xed:bind xpath="@mcr:categId">
+				    	<input type="hidden" />
+				    </xed:bind>
+				    <span class="mir-span"></span>
+			    </div>
+	  		</div>
+	  		<mir:help-pmud help-text="{i18n:mir.help.classification}" pmud="true" />
+	  	</div>
+  	</xed:repeat>
+  	
+  	<!-- frame for modal window -->
+    <div class="modal fade" id="modalFrame" tabindex="-1" role="dialog" aria-labelledby="modal frame" aria-hidden="true">
+		  <div class="modal-dialog" style="width: 930px">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close modalFrame-cancel" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">x</span></button>
+		        <h4 class="modal-title" id="modalFrame-title"></h4>
+		      </div>
+		      <div id="modalFrame-body" class="modal-body" style="padding-bottom: 0px" />
+		      <div class="modal-footer" style="clear: both">
+		        <button id="modalFrame-cancel" type="button" class="btn btn-danger" data-dismiss="modal"></button>
+		        <button id="modalFrame-send" type="button" class="btn btn-primary" disabled="disabled"></button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/classification-modal-select.js"></script>
+  </xed:template>
+
+  <xed:template id="openAIRE">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.project.information" />
+      </legend>
+      <div class="mir-fieldset-content mir-openAIRE-container">
+        <mir:textfield.nobind label="mir.project.name" help-text="{i18n:mir.help.project.name}" />
+        <mir:textfield.nobind.complex label="mir.project.acronym" placeholder="{i18n:mir.project.grantID}" divClass2="has-warning" inputClass2="inputWarning" help-text="{i18n:mir.help.project.acronym}" />
+        <mir:textfield.nobind.complex label="mir.project.sponsor.program" data-provide="typeahead" placeholder="{i18n:mir.project.sponsor.programmID}" inputID="programmSearch" divClass2="has-warning" inputClass2="inputWarning" help-text="{i18n:mir.help.sponsor.program}" />
+        <mir:textfield.nobind.complex label="mir.project.sponsor.organisation" placeholder="{i18n:mir.project.sponsor.organisationID}" divClass2="has-warning" inputClass2="inputWarning" help-text="{i18n:mir.help.sponsor.organisation}" />
+        <xed:bind xpath="mods:identifier[@type='open-aire']">
+          <input type="hidden" />
+        </xed:bind>
+      </div>
+    </fieldset>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/openaire-cutter.js" />
   </xed:template>
 
   <xed:template id="comment">
