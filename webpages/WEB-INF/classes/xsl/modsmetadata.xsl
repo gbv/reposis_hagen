@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xalan="http://xml.apache.org/xalan"
-  xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:mcrmods="xalan://org.mycore.mods.MCRMODSClassificationSupport"
+  xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:mcrmods="xalan://org.mycore.mods.classification.MCRMODSClassificationSupport"
   xmlns:acl="xalan://org.mycore.access.MCRAccessManager" xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions" xmlns:mcr="http://www.mycore.org/"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mods="http://www.loc.gov/mods/v3" exclude-result-prefixes="xalan xlink mcr mcrxsl i18n acl mods mcrmods"
   version="1.0">
@@ -571,6 +571,24 @@
     </xsl:if>
   </xsl:template>
 
+  <xsl:template match="mods:name[@type='corporate' and not(@ID)]" mode="present">
+    <tr>
+      <td valign="top" class="metaname">
+        <xsl:choose>
+          <xsl:when test="mods:role/mods:roleTerm[@type='code' and @authority='marcrelator']">
+            <xsl:value-of select="concat(i18n:translate(concat('component.mods.metaData.dictionary.institution.', mods:role/mods:roleTerm[@type='code' and @authority='marcrelator'], '.label')),':')" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="concat(i18n:translate('component.mods.metaData.dictionary.institution.label'),':')" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </td>
+      <td class="metavalue">
+        <xsl:apply-templates select="." mode="printName" />
+      </td>
+    </tr>
+  </xsl:template>
+
   <xsl:template match="mods:identifier[@type='hdl']" mode="present">
     <tr>
       <td valign="top" class="metaname">
@@ -680,7 +698,7 @@
         <xsl:value-of select="concat(i18n:translate('component.mods.metaData.dictionary.language'), ':')" />
       </td>
       <td class="metavalue">
-        <xsl:for-each select="mods:languageTerm">
+        <xsl:for-each select="mods:languageTerm[@authority='rfc4646']">
           <xsl:if test="position()!=1">
             <xsl:choose>
               <xsl:when test="string-length($sep)&gt;0">
@@ -798,10 +816,12 @@
               <xsl:value-of select="mods:titleInfo/mods:title" />
             </xsl:otherwise>
           </xsl:choose>
-          <xsl:text disable-output-escaping="yes">&lt;br /></xsl:text>
-          <xsl:for-each select="mods:part/mods:extent[@unit='pages']">
-            <xsl:call-template name="printMetaDate.mods.extent" />
-          </xsl:for-each>
+          <xsl:if test="mods:part/mods:extent[@unit='pages']">
+            <xsl:text disable-output-escaping="yes">&lt;br /></xsl:text>
+            <xsl:for-each select="mods:part/mods:extent[@unit='pages']">
+              <xsl:call-template name="printMetaDate.mods.extent" />
+            </xsl:for-each>
+          </xsl:if>
         </td>
       </tr>
     </xsl:for-each>
