@@ -14,48 +14,48 @@
     <xed:load-resource name="mcrobject" uri="mcrobject:{$id}" />
     <!--<xed:load-resource name="user" uri="..." />-->
     
-    <xed:bind xpath="xfdf:xfdf">
-      <xed:bind xpath="xfdf:f">
+    <xed:bind xpath="xfdf">
+      <xed:bind xpath="f">
         <xed:bind xpath="@href" set="Einverstaendniserklaerung.pdf"/>
       </xed:bind>
-      <xed:bind xpath="xfdf:ids">
+      <xed:bind xpath="ids">
         <xed:bind xpath="@original" set="3477EC05CC3FA59BFECAD6CBA7B0D449"/>
         <xed:bind xpath="@modified" set="BC02343C3F75484B875FD7B491BECEB0"/>
       </xed:bind>
-      <xed:bind xpath="xfdf:fields">
-        <xed:bind xpath="xfdf:field[@name='Rechteinhaber']/xfdf:value">
+      <xed:bind xpath="fields">
+        <xed:bind xpath="field[@name='Rechteinhaber']/value">
           <div class="form-group">
             <label class="col-md-3 control-label">Autor o. sonstiger Rechteinhaber:</label>
             <div class="col-md-6"> <input class="form-control" type="text"/> </div>
           </div>
         </xed:bind>
-        <xed:bind xpath="xfdf:field[@name='Zugehörigkeit']/xfdf:value">
+        <xed:bind xpath="field[@name='Zugehörigkeit']/value">
           <div class="form-group">
             <label class="col-md-3 control-label">Zugehörigkeit (Fakultät, Institut):</label> 
             <div class="col-md-6"> <input class="form-control" type="text" /></div>
           </div>
         </xed:bind>
-        <xed:bind xpath="xfdf:field[@name='Adresse']/xfdf:value">
+        <xed:bind xpath="field[@name='Adresse']/value">
           <div class="form-group">
             <label class="col-md-3 control-label">Adresse:</label> 
             <div class="col-md-6"> <input class="form-control" type="text"/> </div>
           </div>
         </xed:bind>
-        <xed:bind xpath="xfdf:field[@name='Telefon']/xfdf:value">
+        <xed:bind xpath="field[@name='Telefon']/value">
           <div class="form-group">
             <label class="col-md-3 control-label">Telefon:</label> 
             <div class="col-md-6"> <input class="form-control" type="text" /> </div>
           </div>
         </xed:bind>
-        <xed:bind xpath="xfdf:field[@name='EMail']/xfdf:value">
+        <xed:bind xpath="field[@name='EMail']/value">
           <div class="form-group">
             <label class="col-md-3 control-label">E-Mail:</label> 
             <div class="col-md-6"> <input class="form-control" type="text"/> </div>
           </div>
         </xed:bind>
         <xed:output value="$mcrobject//mods:titleInfo/mods:title"/>
-        <xed:bind xpath="xfdf:field[@name='Titel']">
-          <xed:bind xpath="xfdf:value">
+        <xed:bind xpath="field[@name='Titel']">
+          <xed:bind xpath="value">
             <div class="form-group">
               <label class="col-md-3 control-label">Titel der Veröffentlichung: </label>
               <div class="col-md-6"> <input class="form-control" type="text"/> </div>
@@ -64,7 +64,7 @@
         </xed:bind>
       </xed:bind>
     </xed:bind>
-    <xed:cleanup-rule xpath="//xfdf:value" relevant-if="true()" />
+    <xed:cleanup-rule xpath="//value" relevant-if="true()" />
     <div class="form-group" id="editor-buttons">
       <div class="col-md-offset-2 col-md-6">
         <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
