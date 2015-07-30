@@ -11,9 +11,6 @@
     
     <h1> Autorenvertrag </h1>
     
-    <xed:load-resource name="mcrobject" uri="mcrobject:{$id}" />
-    <!--<xed:load-resource name="user" uri="..." />-->
-    
     <xed:bind xpath="xfdf">
       <xed:bind xpath="f">
         <xed:bind xpath="@href" set="Einverstaendniserklaerung.pdf"/>
@@ -53,7 +50,6 @@
             <div class="col-md-6"> <input class="form-control" type="text"/> </div>
           </div>
         </xed:bind>
-        <xed:output value="$mcrobject//mods:titleInfo/mods:title"/>
         <xed:bind xpath="field[@name='Titel']">
           <xed:bind xpath="value">
             <div class="form-group">

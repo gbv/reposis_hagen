@@ -9,7 +9,6 @@
           </value>
         </field>
         <xsl:variable  name="user" select="document(concat('user:',service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby']))" />
-        <xsl:copy-of select="$user" />
         <field name="Rechteinhaber">
           <value>
             <xsl:value-of select="$user/user/realName"/>
@@ -34,7 +33,7 @@
         </field>
         <field name="EMail">
           <value>
-            <xsl:value-of select="$user/user/attributes/attribute[@name='tel']/@value"/>
+            <xsl:value-of select="$user/user/eMail"/>
           </value>
         </field>
       </fields>
