@@ -63,6 +63,8 @@
           <xsl:value-of select="'Informationen zum Ersteller:'" />
           <xsl:value-of select="$newline" />
           <xsl:apply-templates select="document('user:current')/user" mode="output" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          <xsl:value-of select="'Bitte senden sie den Autorenvertag an ...'" />
         </body>
       </xsl:when>
       <xsl:otherwise>

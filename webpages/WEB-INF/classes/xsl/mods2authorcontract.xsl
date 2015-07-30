@@ -3,6 +3,8 @@
   <xsl:template match="mycoreobject">
     <xfdf>
       <fields>
+        mcrxsl:isCurrentUserInRole('admin') 
+        service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby']) = curentUser
         <field name="Titel">
           <value>
             <xsl:value-of select="metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />
@@ -22,7 +24,9 @@
         <field name="Adresse">
           <value>
             <xsl:value-of select="$user/user/attributes/attribute[@name='street']/@value"/>
+            <xsl:value-of select="' '"/>
             <xsl:value-of select="$user/user/attributes/attribute[@name='postalcode']/@value"/>
+            <xsl:value-of select="' '"/>
             <xsl:value-of select="$user/user/attributes/attribute[@name='city']/@value"/>
           </value>
         </field>
