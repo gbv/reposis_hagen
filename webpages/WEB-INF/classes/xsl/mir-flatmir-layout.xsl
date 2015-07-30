@@ -15,7 +15,7 @@
   <xsl:param name="MIR.CustomLayout.JS" select="''" />
   <xsl:param name="MIR.Layout.Theme" select="'flatmir'" />
   <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.3.4'" />
+  <xsl:variable name="bootstrap.version" select="'3.3.5'" />
   <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
   <xsl:variable name="fontawesome.version" select="'4.2.0'" />
   <xsl:variable name="jquery.version" select="'2.1.1'" />
@@ -128,12 +128,12 @@
             <img src="{$WebApplicationBaseURL}content/images/vzgLogo.png" alt="hosted by VZG" />
           </a>
         </div>
-        
+
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->
           if (jQuery.fn.button){jQuery.fn.btn = jQuery.fn.button.noConflict();}
         </script>
-        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/{$bootstrap.version}/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}webjars/bootstrap/{$bootstrap.version}/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.confirm.min.js"></script>
         <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/base.js"></script>
         <script>
