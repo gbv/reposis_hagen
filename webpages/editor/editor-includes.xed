@@ -409,7 +409,7 @@
 
   <xed:template id="year.issued">
     <mir:textfield xpath="mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required"
-      placeholder="{i18n:mir.placeholder.year}" />
+      placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
   <xed:template id="date.issued">
@@ -889,13 +889,14 @@
         </div>
         <mir:help-pmud help-text="{i18n:mir.help.rights}" />
       </div>
+      <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:bind>
   </xed:template>
   
   <xed:template id="rights.preselected">
     <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
       <div class="form-group {$xed-validation-marker}">
-        <label class="col-md-3 control-label required">
+        <label class="col-md-3 control-label">
           <xed:output i18n="mir.rights" />:
         </label>
         <div class="col-md-6">
