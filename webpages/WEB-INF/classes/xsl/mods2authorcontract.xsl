@@ -11,7 +11,7 @@
   <xsl:template match="mycoreobject">
     <xfdf>
       <fields>
-        <xsl:if test="mcrxsl:isCurrentUserInRole('admin') or service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby']) = $CurentUser">
+        <xsl:if test="mcrxsl:isCurrentUserInRole('admin') or service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby'] = $CurrentUser">
           <field name="Titel">
             <value>
               <xsl:value-of select="metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />

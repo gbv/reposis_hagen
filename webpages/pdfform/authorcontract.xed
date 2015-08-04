@@ -6,7 +6,7 @@
   <section xml:lang="all">
   
   <xed:form xmlns:xed="http://www.mycore.de/xeditor" method="post" role="form" class="form-horizontal" xmlns:xfdf="http://ns.adobe.com/xfdf/">
-    <!--<xed:source uri="webapp:pdfform/template.xfdf" />-->
+    
     <xed:source uri="xslStyle:mods2authorcontract:mcrobject:{$id}" />
     
     <h1> Autorenvertrag </h1>
