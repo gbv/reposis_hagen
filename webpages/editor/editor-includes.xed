@@ -99,15 +99,15 @@
   </xed:template>
   
   <xed:template id="title.series.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.series" class="required"/>
   </xed:template>
   
   <xed:template id="title.book.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="book" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="book" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.book" class="required"/>
   </xed:template>
   
   <xed:template id="title.lexicon.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="lexicon" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="lexicon" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.lexicon" class="required"/>
   </xed:template>
   
   <xed:template id="title.journal.relItemsearch">
@@ -115,19 +115,19 @@
   </xed:template>
   
   <xed:template id="title.collection.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="collection" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" class="required"/>
+    <mir:relItemsearch searchengine="title" genre="collection" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.collection" class="required"/>
   </xed:template>
   
   <xed:template id="title.festschrift.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="festschrift" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="festschrift" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.festschrift" class="required"/>
   </xed:template>
   
   <xed:template id="title.proceedings.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="proceedings" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="proceedings" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.proceedings" />
   </xed:template>
   
   <xed:template id="title.newspaper.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="newspaper" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title" />
+    <mir:relItemsearch searchengine="title" genre="newspaper" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" class="required"/>
   </xed:template>
   
   <xed:template id="subtitle">
@@ -246,6 +246,16 @@
       <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" class="mir-form-group" />
     </div>
   </xed:template>
+  
+  <xed:template id="honoree.repeated">
+    <div class="col-md-10 mir-form-group-head">
+      Gefeierte Personen
+    </div>
+    <div class="mir-form-group-body"> 
+      <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
+      class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
+    </div>
+  </xed:template>
 
   <xed:template id="inventor.repeated">
     <mir:role.repeated role="inv" label="mir.role.inventor" help-text="{i18n:mir.help.role.inventor}" />
@@ -318,6 +328,7 @@
         <xed:output i18n="mir.role.reviewer" />
       </option>
     </mir:person.repeated>
+    <xed:validation xpath=""
   </xed:template>
 
   <xed:template id="otherthesis.advisor.reviewer.repeated">
@@ -335,6 +346,9 @@
         <xed:output i18n="mir.role.reviewer" />
       </option>
     </mir:person.repeated>
+    <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
+      <li> <xed:output i18n="mir.validation.author.thesis" /> </li>
+    </xed:validate>
   </xed:template>
 
   <xed:template id="thesisHabil.repeated">
@@ -403,8 +417,8 @@
   </xed:template>
 
   <xed:template id="year.issued.modspart">
-    <mir:textfield xpath="mods:part/mods:date[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required mir-modspart"
-      placeholder="{i18n:mir.placeholder.year}" />
+    <mir:textfield xpath="../mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required mir-modspart"
+      placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
   <xed:template id="year.issued">
@@ -429,22 +443,22 @@
 
   <xed:template id="date.acceptedHabil">
     <mir:textfield xpath="mods:originInfo/mods:dateOther[@type='accepted'][@encoding='w3cdtf']" label="mir.date.acceptedHabil" help-text="{i18n:mir.help.date.acceptedHabil}"
-      placeholder="{i18n:mir.placeholder.date}" />
+      placeholder="{i18n:mir.placeholder.date}" class="datetimepicker" />
   </xed:template>
 
   <xed:template id="date.submitted">
     <mir:textfield xpath="mods:originInfo/mods:dateOther[@type='submitted'][@encoding='w3cdtf']" label="mir.date.submitted" help-text="{i18n:mir.help.date.submitted}"
-      placeholder="{i18n:mir.placeholder.date}" />
+      placeholder="{i18n:mir.placeholder.date}" class="datetimepicker"/>
   </xed:template>
 
   <xed:template id="part.date">
     <mir:textfield xpath="mods:part/mods:date[@encoding='w3cdtf']" label="mir.host.date" help-text="{i18n:mir.help.host.date}"
-      placeholder="{i18n:mir.placeholder.date}" />
+      placeholder="{i18n:mir.placeholder.date}" class="datetimepicker"/>
   </xed:template>
 
   <xed:template id="date.created">
     <mir:textfield xpath="mods:originInfo/mods:dateCreated[@encoding='w3cdtf']" label="mir.date.created" help-text="{i18n:mir.help.date.created}" class="required"
-      placeholder="{i18n:mir.placeholder.date}" />
+      placeholder="{i18n:mir.placeholder.date}" class="datetimepicker" />
   </xed:template>
 
   <xed:template id="identifier.patent">
@@ -478,7 +492,7 @@
   <xed:template id="identifier.isbn.proceeding.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="proceeding" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}"/>
   </xed:template>
-
+  
   <xed:template id="identifier.isbn.lexicon.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="lexicon" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}"/>
   </xed:template>
