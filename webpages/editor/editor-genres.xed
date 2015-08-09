@@ -2,12 +2,6 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor">
 
-  <xed:template id="monograph">
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:include uri="webapp:editor/editor-genres.xed" ref="book.common" />
-  </xed:template>
-
   <xed:template id="book">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
@@ -92,6 +86,15 @@
     <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules-identifier" />
   </xed:template>
 
+  <xed:template id="thesis">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="other_thesis.common" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="link" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subject.simple" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="classification" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="related.item" />
+  </xed:template>
+
   <xed:template id="dissertation">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="thesis.advisor.reviewer.repeated" />
@@ -151,7 +154,7 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="college" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="collegeplace" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="publisher" />
-    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="place" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="publisherplace" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="extent.required" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.simple" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="sdnb" />
