@@ -70,7 +70,19 @@
             <xsl:call-template name="print.writeProtectionMessage" />
             <xsl:choose>
               <xsl:when test="$readAccess='true'">
-                <xsl:copy-of select="*[not(name()='head')]" />
+                <xsl:if test="breadcrumb/ul[@class='breadcrumb']">
+                  <div class="row detail_row bread_plus">
+                    <div class="col-xs-12">
+                      <ul itemprop="breadcrumb" class="breadcrumb">
+                        <li>
+                          <a class="navtrail" href="{$WebApplicationBaseURL}"><xsl:value-of select="i18n:translate('mir.breadcrumb.home')" /></a>
+                        </li>
+                        <xsl:copy-of select="breadcrumb/ul[@class='breadcrumb']/*" />
+                      </ul>
+                    </div>
+                  </div>
+                </xsl:if>
+                <xsl:copy-of select="*[not(name()='head')][not(name()='breadcrumb')] " />
               </xsl:when>
               <xsl:otherwise>
                 <xsl:call-template name="printNotLoggedIn" />
@@ -112,38 +124,35 @@
             </div>
           </div>
         </footer>
-        
+
+
         <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
         <div id="powered_by">
-          <a href="http://www.mycore.de">
-            <img src="{$WebApplicationBaseURL}content/images/mycore_logo.png" title="{$mcr_version}" alt="powered by MyCoRe" />
-          </a>
-          <a href="http://www.gbv.de">
-            <img src="{$WebApplicationBaseURL}content/images/vzgLogo.png" alt="hosted by VZG" />
-          </a>
         </div>
 
         <script type="text/javascript">
           <!-- Bootstrap & Query-Ui button conflict workaround  -->
           if (jQuery.fn.button){jQuery.fn.btn = jQuery.fn.button.noConflict();}
         </script>
-        <script type="text/javascript" src="{$WebApplicationBaseURL}webjars/bootstrap/{$bootstrap.version}/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.confirm.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}assets/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}assets/jquery/plugins/jquery-confirm/jquery.confirm.min.js"></script>
         <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/base.js"></script>
         <script>
           $( document ).ready(function() {
             $('.overtext').tooltip();
             $.confirm.options = {
-              text: "<xsl:value-of select="i18n:translate('mir.confirm.text')" />",
               title: "<xsl:value-of select="i18n:translate('mir.confirm.title')" />",
               confirmButton: "<xsl:value-of select="i18n:translate('mir.confirm.confirmButton')" />",
               cancelButton: "<xsl:value-of select="i18n:translate('mir.confirm.cancelButton')" />",
-              post: false
+              post: false,
+              confirmButtonClass: "btn-danger",
+              cancelButtonClass: "btn-default",
+              dialogClass: "modal-dialog modal-lg" // Bootstrap classes for large modal
             }
           });
         </script>
         <!-- alco add placeholder for older browser -->
-        <script src="{$WebApplicationBaseURL}js/jquery.placeholder.min.js"></script>
+        <script src="{$WebApplicationBaseURL}assets/jquery/plugins/jquery-placeholder/jquery.placeholder.min.js"></script>
         <script>
           jQuery("input[placeholder]").placeholder();
           jQuery("textarea[placeholder]").placeholder();
