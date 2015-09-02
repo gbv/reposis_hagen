@@ -14,13 +14,7 @@
   <xsl:param name="MIR.CustomLayout.CSS" select="''" />
   <xsl:param name="MIR.CustomLayout.JS" select="''" />
   <xsl:param name="MIR.Layout.Theme" select="'flatmir'" />
-  <!-- Various versions -->
-  <xsl:variable name="bootstrap.version" select="'3.3.5'" />
-  <xsl:variable name="bootswatch.version" select="$bootstrap.version" />
-  <xsl:variable name="fontawesome.version" select="'4.2.0'" />
-  <xsl:variable name="jquery.version" select="'2.1.1'" />
-  <xsl:variable name="jquery.migrate.version" select="'1.2.1'" />
-  <!-- End of various versions -->
+
   <xsl:variable name="PageTitle" select="/*/@title" />
 
   <xsl:template match="/site">
@@ -34,9 +28,9 @@
           Mobile viewport optimisation
         </xsl:comment>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="//netdna.bootstrapcdn.com/font-awesome/{$fontawesome.version}/css/font-awesome.min.css" rel="stylesheet" />
-        <script type="text/javascript" src="//code.jquery.com/jquery-{$jquery.version}.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-{$jquery.migrate.version}.min.js"></script>
+        <link href="{$WebApplicationBaseURL}assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+        <script type="text/javascript" src="{$WebApplicationBaseURL}mir-layout/assets/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="{$WebApplicationBaseURL}mir-layout/assets/jquery/plugins/jquery-migrate/jquery-migrate.min.js"></script>
         <xsl:copy-of select="head/*" />
         <link href="{$WebApplicationBaseURL}mir-layout/css/{$MIR.Layout.Theme}/{$MIR.DefaultLayout.CSS}.css" rel="stylesheet" />
         <xsl:if test="string-length($MIR.CustomLayout.CSS) &gt; 0">
