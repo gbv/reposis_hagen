@@ -15,7 +15,7 @@
   <xsl:template name="mir-required">
     <xsl:if test="@required='true'">
       <xed:validate required="true" display="global"> 
-        <li> <xsl:value-of select="i18n:translate(@required-i18n)" /> </li> 
+        <xsl:value-of select="i18n:translate(@required-i18n)" /> 
       </xed:validate>
     </xsl:if>
   </xsl:template>
