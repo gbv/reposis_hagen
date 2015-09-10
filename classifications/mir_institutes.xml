@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
-  <label xml:lang="de" text="Beispiel-Einrichtungen" description="Liste der Einrichtungen" />
+  <label xml:lang="de" text="Einrichtungen" description="Liste der Einrichtungen" />
   <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_institutes" />
   <label xml:lang="en" text="Sample Institutions" description="A list of institutions" />
   <categories>
@@ -12,12 +12,12 @@
         <label xml:lang="de" text="Historisches Institut" />
         <label xml:lang="en" text="" />
         <category ID="GesGegAlt">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="NeuDeuEurGes">
-          <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte" />
         </category>
         <category ID="NeuEurAusEurGes">
           <label xml:lang="en" text="" />
@@ -25,8 +25,8 @@
         </category>
       </category>
       <category ID="InsBilMed">
-        <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
         <category ID="AllBilWiss">
           <label xml:lang="de" text="Allgemeine Bildungswissenschaft" />
           <label xml:lang="en" text="" />
@@ -36,25 +36,25 @@
           <label xml:lang="de" text="Bildungstheorie und Medienpädagogik" />
         </category>
         <category ID="EmpBilFor">
-          <label xml:lang="de" text="Empirische Bildungsforschung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Empirische Bildungsforschung" />
         </category>
         <category ID="IntBilPro">
-          <label xml:lang="de" text="Internationalisierung von Bildungsprozessen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Internationalisierung von Bildungsprozessen" />
         </category>
         <category ID="LebLanLer">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Lebenslanges Lernen" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="MedDid">
-          <label xml:lang="de" text="Mediendidaktik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Mediendidaktik" />
         </category>
       </category>
       <category ID="InsNeuDeuLitMed">
-        <label xml:lang="de" text="Institut für Neuere deutsche Literatur- und Medienwissenschaft" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Institut für Neuere deutsche Literatur- und Medienwissenschaft" />
         <category ID="NeuDeuLitMedthe">
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie" />
           <label xml:lang="en" text="" />
@@ -76,12 +76,12 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="Phil2">
-          <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie" />
         </category>
         <category ID="Phil3">
-          <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft" />
         </category>
       </category>
       <category ID="InsPol">
@@ -96,24 +96,24 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="Pol3">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Politikwissenschaft III: Politikfeldanalyse" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="Pol4">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Politikwissenschaft IV: Politik und Verwaltung" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="Pol5">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Politikwissenschaft V: Vergleichende Politikwissenschaft" />
+          <label xml:lang="en" text="" />
         </category>
       </category>
       <category ID="InsPsy">
         <label xml:lang="de" text="Institut für Psychologie" />
         <label xml:lang="en" text="" />
         <category ID="AllPsyLerMotEmo">
-          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion" />
         </category>
         <category ID="AllPsyUrtEntHan">
           <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln" />
@@ -124,12 +124,12 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="ComPsy">
-          <label xml:lang="de" text="Community Psychology" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Community Psychology" />
         </category>
         <category ID="GesPsy">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Gesundheitspsychologie" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="PerPsyDiaBer">
           <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung" />
@@ -144,20 +144,20 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="SozPsy">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Sozialpsychologie" />
+          <label xml:lang="en" text="" />
         </category>
       </category>
       <category ID="InsSoz">
-        <label xml:lang="de" text="Institut für Soziologie" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Institut für Soziologie" />
         <category ID="Soz1">
           <label xml:lang="de" text="Soziologie I, Allgemeine Soziologie und Soziologische Theorie" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="Soz2">
-          <label xml:lang="de" text="Soziologie II, Soziologische Gegenwartsdiagnosen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Soziologie II, Soziologische Gegenwartsdiagnosen" />
         </category>
         <category ID="Soz3">
           <label xml:lang="en" text="" />
@@ -176,29 +176,29 @@
         <label xml:lang="de" text="Arbeitsbereich" />
         <label xml:lang="en" text="" />
         <category ID="ArbOrgpsy">
-          <label xml:lang="de" text="Arbeits- und Organisationspsychologie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Arbeits- und Organisationspsychologie" />
         </category>
       </category>
       <category ID="KswPenEmePro">
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
         <category ID="TheSchUnt">
-          <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
         </category>
       </category>
     </category>
     <category ID="mathinf">
-      <label xml:lang="en" text="Faculty of Mathematics and Computer Science" />
       <label xml:lang="de" text="Fakultät für Mathematik und Informatik" />
+      <label xml:lang="en" text="Faculty of Mathematics and Computer Science" />
       <url xlink:href="http://www.fernuni-hagen.de/mathinf/" xlink:type="locator" />
       <category ID="FachEle">
         <label xml:lang="de" text="Elektrotechnik" />
         <label xml:lang="en" text="" />
         <category ID="EleEne">
-          <label xml:lang="de" text="Elektrische Energietechnik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Elektrische Energietechnik" />
         </category>
         <category ID="Inftec">
           <label xml:lang="de" text="Informationstechnik" />
@@ -213,12 +213,12 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="ProReg">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Prozesssteuerung und Regelungstechnik" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="TecInn">
-          <label xml:lang="de" text="Technologie- und Innovationsmanagement" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Technologie- und Innovationsmanagement" />
         </category>
       </category>
       <category ID="FachInf">
@@ -233,24 +233,24 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="DatAnw">
-          <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen" />
         </category>
         <category ID="KooSys">
           <label xml:lang="de" text="Kooperative Systeme" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="MulInt">
-          <label xml:lang="de" text="Multimedia und Internetanwendungen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Multimedia und Internetanwendungen" />
         </category>
         <category ID="ParVLSI">
-          <label xml:lang="de" text="Parallelität und VLSI" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Parallelität und VLSI" />
         </category>
         <category ID="UntSof">
-          <label xml:lang="de" text="Unternehmensweite Softwaresysteme" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Unternehmensweite Softwaresysteme" />
         </category>
         <category ID="MenComInt">
           <label xml:lang="de" text="Mensch-Computer-Interaktion" />
@@ -261,8 +261,8 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="ProgSys">
-          <label xml:lang="de" text="Programmiersysteme" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Programmiersysteme" />
         </category>
         <category ID="AlgoKomp">
           <label xml:lang="de" text="Algorithmen und Komplexität" />
@@ -273,8 +273,8 @@
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Mathematik" />
         <category ID="Algebra">
-          <label xml:lang="de" text="Algebra" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Algebra" />
         </category>
         <category ID="Analysis">
           <label xml:lang="de" text="Analysis" />
@@ -293,13 +293,13 @@
           <label xml:lang="de" text="Stochastik" />
         </category>
         <category ID="AngSto">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Angewandte Stochastik" />
+          <label xml:lang="en" text="" />
         </category>
       </category>
       <category ID="mathinfPenEmePro">
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
       </category>
     </category>
     <category ID="wiwi">
@@ -307,15 +307,15 @@
       <label xml:lang="en" text="Faculty of Business Administration and Economics" />
       <url xlink:href="www.fernuni-hagen.de/wiwi" xlink:type="locator" />
       <category ID="bwl">
-        <label xml:lang="de" text="Betriebswirtschaftslehre" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Betriebswirtschaftslehre" />
         <category ID="AngStaMetEmpSoz">
           <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="BaFi">
-          <label xml:lang="de" text="Bank- und Finanzwirtschaft" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Bank- und Finanzwirtschaft" />
         </category>
         <category ID="BetAnw">
           <label xml:lang="de" text="Betriebliche Anwendungssysteme" />
@@ -330,44 +330,44 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="bwlEntInf">
-          <label xml:lang="de" text="Entwicklung von Informationssystemen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Entwicklung von Informationssystemen" />
         </category>
         <category ID="bwlInfMan">
           <label xml:lang="en" text="" />
           <label xml:lang="de" text="Informationsmanagement" />
         </category>
         <category ID="InvUnt">
-          <label xml:lang="de" text="Investitionstheorie und Unternehmensbewertung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Investitionstheorie und Unternehmensbewertung" />
         </category>
         <category ID="Marketing">
-          <label xml:lang="de" text="Marketing" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Marketing" />
         </category>
         <category ID="OrgPla">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Organisation und Planung" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="PerOrg">
-          <label xml:lang="de" text="Personalführung und Organisation" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Personalführung und Organisation" />
         </category>
         <category ID="ProLog">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Produktion und Logistik" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="QuaMetWirmat">
           <label xml:lang="en" text="" />
           <label xml:lang="de" text="Quantitative Methoden und Wirtschaftsmathematik" />
         </category>
         <category ID="UntCon">
-          <label xml:lang="de" text="Unternehmensrechnung und Controlling" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Unternehmensrechnung und Controlling" />
         </category>
         <category ID="Wirpru">
-          <label xml:lang="de" text="Wirtschaftsprüfung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Wirtschaftsprüfung" />
         </category>
       </category>
       <category ID="vwl">
@@ -378,45 +378,45 @@
           <label xml:lang="en" text="" />
         </category>
         <category ID="Makro">
-          <label xml:lang="de" text="Makroökonomik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Makroökonomik" />
         </category>
         <category ID="Wirpol">
           <label xml:lang="de" text="Wirtschaftspolitik" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="Wirthe">
-          <label xml:lang="de" text="Wirtschaftstheorie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Wirtschaftstheorie" />
         </category>
       </category>
       <category ID="wiwiPenEmePro">
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
       </category>
     </category>
     <category ID="rewi">
-      <label xml:lang="de" text="Rechtswissenschaftliche Fakultät" />
       <label xml:lang="en" text="Faculty of Law" />
+      <label xml:lang="de" text="Rechtswissenschaftliche Fakultät" />
       <url xlink:href="www.fernuni-hagen.de/rewi" xlink:type="locator" />
       <category ID="rewiLehr">
-        <label xml:lang="en" text="" />
         <label xml:lang="de" text="Lehrstühle" />
+        <label xml:lang="en" text="" />
         <category ID="LehrBueRecArbRecver">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung" />
         </category>
         <category ID="LehrBueRecPrivrecges">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht" />
         </category>
         <category ID="LehrBueRecUntRecver">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung" />
         </category>
         <category ID="LehrBueRecWirGewRecUrhZiv">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht" />
         </category>
         <category ID="LehrBueRecZivIntPrivRecver">
           <label xml:lang="en" text="" />
@@ -427,12 +427,12 @@
           <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht" />
         </category>
         <category ID="LehrOefRecJurRhetRecphil">
-          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie" />
         </category>
         <category ID="LehrStrafrecGes">
-          <label xml:lang="de" text="Lehrstuhl für Strafrecht und Strafrechtsgeschichte" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Strafrecht und Strafrechtsgeschichte" />
         </category>
         <category ID="LehrVerwWirtverwAllSta">
           <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre" />
@@ -455,16 +455,16 @@
           <label xml:lang="de" text="Contarini-Institut für Mediation" />
         </category>
         <category ID="InstEurVerfass">
-          <label xml:lang="en" text="" />
           <label xml:lang="de" text="Dimitris-Tsatsos-Institut für Europäische Verfassungswissenschaften" />
+          <label xml:lang="en" text="" />
         </category>
         <category ID="InstJapRec">
-          <label xml:lang="de" text="Institut für Japanisches Recht" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Institut für Japanisches Recht" />
         </category>
         <category ID="InstJurWei">
-          <label xml:lang="de" text="Institut für juristische Weiterbildung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Institut für juristische Weiterbildung" />
         </category>
         <category ID="InstJurZeiges">
           <label xml:lang="en" text="" />
@@ -479,15 +479,25 @@
           <label xml:lang="de" text="Institut für deutsches und europäisches Arbeits- und Sozialrecht" />
         </category>
         <category ID="39930c83-b3ac-4ab8-9fb1-52d1fda556fa">
-          <label xml:lang="de" text="Forschungsinstitut für rechtliches Informationsmanagement - Firm GmbH" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Forschungsinstitut für rechtliches Informationsmanagement - Firm GmbH" />
           <url xlink:href="InstRecInfMan" xlink:type="locator" />
         </category>
       </category>
       <category ID="rewiPenEmePro">
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
         <label xml:lang="en" text="" />
+        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
       </category>
+    </category>
+    <category ID="FeUHagen">
+      <label xml:lang="en" text="" />
+      <label xml:lang="de" text="FernUniversität in Hagen" />
+      <url xlink:href="http://www.fernuni-hagen.de/" xlink:type="locator" />
+    </category>
+    <category ID="UBHagen">
+      <label xml:lang="en" text="" />
+      <label xml:lang="de" text="Universitätsbibliothek Hagen" />
+      <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
     </category>
   </categories>
 </mycoreclass>
