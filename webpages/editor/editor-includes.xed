@@ -727,31 +727,31 @@
 
   <xed:template id="collegeplace">
     <mir:textfield xpath="mods:originInfo[@eventType='creation']/mods:place/mods:placeTerm[@type='text']" label="mir.collegeplace" help-text="{i18n:mir.help.place}" 
-      class="required" required="true" required-i18n="mir.validation.collegeplace"/>/>
+      class="required" required="true" required-i18n="mir.validation.collegeplace"/>
   </xed:template>
 
   <xed:template id="place">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:place/mods:placeTerm[@type='text']" label="mir.place" help-text="{i18n:mir.help.place}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.place" help-text="{i18n:mir.help.place}" />
   </xed:template>
   
   <xed:template id="publisherplace">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:place/mods:placeTerm[@type='text']" label="mir.publisherplace" help-text="{i18n:mir.help.place}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.publisherplace" help-text="{i18n:mir.help.place}" />
   </xed:template>
   
   <xed:template id="country">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:place/mods:placeTerm[@type='text']" label="mir.place.country" help-text="{i18n:mir.help.place.country}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.place.country" help-text="{i18n:mir.help.place.country}" />
   </xed:template>
 
   <xed:template id="publisher">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:publisher" label="mir.publisher" help-text="{i18n:mir.help.publisher}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:publisher" label="mir.publisher" help-text="{i18n:mir.help.publisher}" />
   </xed:template>
 
   <xed:template id="station">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:publisher" label="mir.publisher.station" help-text="{i18n:mir.help.publisher.station}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:publisher" label="mir.publisher.station" help-text="{i18n:mir.help.publisher.station}" />
   </xed:template>
 
   <xed:template id="edition">
-    <mir:textfield xpath="mods:originInfo[@eventType='']/mods:edition" label="mir.edition" help-text="{i18n:mir.help.edition}" placeholder="{i18n:mir.placeholder.edition}" />
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:edition" label="mir.edition" help-text="{i18n:mir.help.edition}" placeholder="{i18n:mir.placeholder.edition}" />
   </xed:template>
 
   <xed:template id="extent">
