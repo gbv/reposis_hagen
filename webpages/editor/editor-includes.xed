@@ -414,7 +414,7 @@
   </xed:template>
 
   <xed:template id="year.issued.modspart">
-    <mir:textfield xpath="../mods:originInfo[@eventType='']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required mir-modspart"
+    <mir:textfield xpath="../mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required mir-modspart"
       placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
