@@ -19,7 +19,17 @@
         <xed:bind xpath="mods:typeOfResource" initially="text" />
 
         <xed:load-resource name="genres" uri="classification:metadata:-1:children:mir_genres" />
-
+        
+        <xed:bind xpath="mods:relatedItem[@type='series'][@xlink:type='simple']/@xlink:href" name="seriesid" />
+        <xed:output value="concat('seriesid:',$seriesid,':')" />
+        <xed:bind xpath="mods:relatedItem[@type='series'][@xlink:type='simple'][@xlink:href=$seriesid]">
+          <xed:output value="concat('test1:',@xlink:href,':')" />
+          <xed:bind xpath="mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres'][@usage='primary']/@valueURI" name="hostgenre">
+            <xed:output value="concat('genre:',$hostgenre,':')" />
+            <xed:output value="." />
+		    
+		  </xed:bind>
+		</xed:bind>
         <!-- If parameter host is missing, "standalone" is default, meaning this publication has no host -->
         <xed:param name="host" default="standalone" />
         <xed:param name="series" default="no" />
@@ -30,6 +40,7 @@
           <xed:if test="not($host='standalone')">
             <xed:output value="concat(' in ',$genres//category[@ID=$host]/label[lang($CurrentLang)]/@text)" />
           </xed:if>
+          
         </h1>
 
         <xed:include uri="webapp:editor/editor-includes.xed" ref="failed-validation-messages" />
@@ -92,6 +103,7 @@
       });
     });
   </script>
+
 
   </section>
 </MyCoReWebPage>
