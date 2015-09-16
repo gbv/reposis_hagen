@@ -6,7 +6,7 @@
         <def.modsContainer class="MCRMetaXML" heritable="false" notinherit="true">
           <modsContainer inherited="0">
             <mods:mods xmlns:mods="http://www.loc.gov/mods/v3">
-              <mods:relatedItem type="host" xlink:href="{@ID}" xlink:type="simple">
+              <mods:relatedItem xlink:href="{@ID}" xlink:type="simple">
                 <xsl:copy-of select="metadata/def.modsContainer/modsContainer/mods:mods/*" />
               </mods:relatedItem>
             </mods:mods>
