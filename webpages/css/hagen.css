@@ -452,6 +452,11 @@ html body #powered_by {
 .mir_metadata .subtitle {
   font-size: unset;
 }
+
+.detail_block .ellipsis {
+  height: 150px;
+}
+
 .mir-relatedItem-body{
   margin-top:15px;
   border-style: solid;
