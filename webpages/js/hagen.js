@@ -2,8 +2,10 @@
 $﻿(document).ready(function() {
 
   // for configuration look here: http://dotdotdot.frebsite.nl/
-  $(".ellipsis").dotdotdot({
-    after: "a.readmore"
-  });
+  if (jQuery.fn.dotdotdot) {
+    $(".ellipsis").dotdotdot({
+      after: "a.readmore"
+    });
+  };
 
 });
