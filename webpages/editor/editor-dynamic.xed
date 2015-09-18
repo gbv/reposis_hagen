@@ -21,20 +21,33 @@
         <xed:load-resource name="genres" uri="classification:metadata:-1:children:mir_genres" />
                 
         <!-- If parameter host is missing, "standalone" is default, meaning this publication has no host -->
-        <xed:param name="host" />
+        <xed:param name="host" default="standalone"/>
         <xed:param name="series" default="no" />
         
-        <xed:if test="not($host='standalone')">
-          <xed:bind xpath="mods:relatedItem">
-            <xed:bind xpath="@xlink:href" initially="{$relatedItemId}" />
-            <xed:bind xpath="@type" initially="{$relatedItemType}" />
-          </xed:bind>
-          <xed:bind xpath="mods:relatedItem/mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" name="genre_host" />
-        </xed:if>                
+        <xed:choose>
+          <!-- A relItem exsist so wie bind the variable genre_host and overwrite type and id-->
+          <xed:when test="mods:relatedItem">
+            <xed:bind xpath="mods:relatedItem">
+              <xed:bind xpath="@xlink:href" initially="{$relatedItemId}" />
+              <xed:bind xpath="@type" initially="{$relatedItemType}" />
+            </xed:bind>
+            <xed:bind xpath="mods:relatedItem/mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" name="genre_host" />
+          </xed:when>
+          <!-- For host = series create a relItem with type series-->
+          <xed:when test="$host='series'">
+            <xed:bind xpath="mods:relatedItem[@type='series']" />
+            <xed:bind xpath="mods:relatedItem/mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" name="genre_host" />
+          </xed:when>
+          <xed:when test="not($host='standalone')">
+            <xed:bind xpath="mods:relatedItem[@type='host']" />
+            <xed:bind xpath="mods:relatedItem/mods:genre[@type='intern'][@authorityURI='http://www.mycore.org/classifications/mir_genres']/@valueURIxEditor" initially="{$host}" name="genre_host" />
+          </xed:when>
+        </xed:choose>
+        
         <h1>
           Eingabeformular für
           <xed:output value="$genres//category[@ID=$genre_intern]/label[lang($CurrentLang)]/@text" />
-          <xed:if test="not($host='standalone')">
+          <xed:if test="mods:relatedItem">
             <xed:output value="concat(' in ',$genres//category[@ID=$genre_host]/label[lang($CurrentLang)]/@text)" />
           </xed:if>
           
@@ -46,7 +59,7 @@
           <xed:include uri="webapp:editor/editor-genres.xed" ref="{$genre_intern}" />
         </fieldset>
 
-        <xed:if test="not($host='standalone')">
+        <xed:if test="mods:relatedItem">
           <fieldset class="mir-relatedItem">
             <div class="col-md-11 mir-relatedItem-head">
               <xed:output value="concat('erschienen in ',$genres//category[@ID=$genre_host]/label[lang($CurrentLang)]/@text,':')" />
@@ -82,6 +95,9 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="javascript" />
         <!-- frame for modal window -->
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="modal.body" />
+        
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="cleanup-rules" />
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules.identifier" />
 
       </xed:bind>
     </xed:bind>

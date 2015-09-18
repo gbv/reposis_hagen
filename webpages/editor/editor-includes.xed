@@ -84,18 +84,18 @@
   </xed:template>
 
   <xed:template id="title.journal">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}" />^
-    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}"
+    class="required" required="true" required-i18n="mir.validation.title" />
   </xed:template>
 
   <xed:template id="title.newspaper">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" help-text="{i18n:mir.help.title.newspaper}" />
-    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" help-text="{i18n:mir.help.title.newspaper}" 
+    class="required" required="true" required-i18n="mir.validation.title"/>
   </xed:template>
 
-  <xed:template id="series.title">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title"/>
-    <xed:validate xpath="mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+  <xed:template id="title.series">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title" 
+    class="required" required="true" required-i18n="mir.validation.title"/>
   </xed:template>
   
   <xed:template id="title.series.relItemsearch">
@@ -247,6 +247,16 @@
     </div>
   </xed:template>
   
+  <xed:template id="editor.repeated.required">
+    <div class="col-md-10 mir-form-group-head">
+      Herausgeber
+    </div>
+    <div class="mir-form-group-body">
+      <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" 
+      class="mir-form-group required" required="true" required-i18n="mir.validation.editor"/>
+    </div>
+  </xed:template>
+  
   <xed:template id="honoree.repeated">
     <div class="col-md-10 mir-form-group-head">
       Gefeierte Personen
@@ -254,6 +264,16 @@
     <div class="mir-form-group-body"> 
       <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
       class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
+    </div>
+  </xed:template>
+  
+  <xed:template id="honoree.repeated.relItem">
+    <div class="col-md-10 mir-form-group-head">
+      Gefeierte Personen
+    </div>
+    <div class="mir-form-group-body"> 
+      <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
+      class="mir-form-group required" />
     </div>
   </xed:template>
 
@@ -430,9 +450,14 @@
 
   <xed:template id="date.issued">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
-      class="required datetimepicker" placeholder="{i18n:mir.placeholder.date}"/>
+      class="required datetimepicker" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
-
+  
+  <xed:template id="date.issued.relItem">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
+      class="required datetimepicker mir-modspart" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
+  </xed:template>
+  
   <xed:template id="date.broadcasted">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.broadcasted" help-text="{i18n:mir.help.date.broadcasted}"
       placeholder="{i18n:mir.placeholder.date}" />
