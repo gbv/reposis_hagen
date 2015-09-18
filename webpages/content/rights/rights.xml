@@ -1,17 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Urheberrecht">
-    <div>
-      <h2>Urheberrecht</h2>
-      <div class="row">
-        <div class="col-md-12">
-          Inhalt: Erläuterungen zum rechtlichen Kontext des Hochschulschriftenservers
-          
-        </div>
-      </div>
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="cmathieu" date="2014-09-22" time="15:39" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Urheberrecht"><div><h2>Urheberrecht</h2><div class="row"><div class="col-md-12"><p style="text-align: justify;">Alle Dokumente auf dem Dokumentenserver  <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span>  der FernUniversität in Hagen unterliegen den Urheberrechtsbestimmungen des Urheberrechtsgesetzes (UrhG). Hat der Autor / die Autorin eines Dokumentes nichts anderes in einer Lizenz (CC-Lizenz) bestimmt, so liegen alle Rechte beim Autor / bei der Autorin.</p></div></div></div></section><meta><log lastEditor="muelleradmin" date="2015-07-27" time="11:03" /></meta></MyCoReWebPage>

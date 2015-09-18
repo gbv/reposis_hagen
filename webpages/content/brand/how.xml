@@ -1,22 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Wie veröffentliche ich">
-    <div>
-      <h2>Wie veröffentliche ich</h2>
-      <div class="row">
-      
-      
-        <div class="col-md-12">
-          <p>
-            Inhalt: Eine Anleitung zum Publikationsprozess
-          </p>
-        </div>
-      </div>
-      
-      
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="administrator" date="2014-09-22" time="15:48" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Wie veröffentliche ich"><div><h2>Wie veröffentliche ich</h2><div class="row"><div class="col-md-12"><p style="text-align: justify;">Um auf <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> ein Dokument zu publizieren müssen Sie sich zunächst mit Ihrem hochschulweiten Account anmelden. Dann können Sie über  <em>Publizieren -&gt; Dokument einreichen </em>Ihre Dokumente veröffentlichen. Die Publikation eines Dokuments erfolgt dabei in drei Schritten:</p><ol><li style="text-align: justify;"><strong>Publikationstyp festlegen</strong></li><li style="text-align: justify;"><strong>Metadaten eingeben</strong></li><li style="text-align: justify;"><strong>Datei(en) hochladen</strong></li></ol><p style="text-align: justify;">Im 1. Schritt wird der Publikationstyp festgelegt.</p><p style="margin-left: 35.4pt; text-align: justify;">In einem Drop-Down-Menü kann zwischen verschiedenen Publikationstypen ausgewählt werden. Handelt es sich um eine in einem anderen Werk erschienene Publikation, können Sie im unteren Feld den Publikationstyp weiter spezifizieren.</p><p style="algingleft"><img alt="" height="209" src="screenshot_schritt1.png" style="float: right;" width="474" /></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p style="text-align: justify;">Im 2. Schritt werden die Metadaten über ein Eingabeformular erfasst.</p><p style="margin-left: 35.4pt; text-align: justify;">Das Eingabeformular ist abhängig vom gewählten Publikationstyp und bietet verschiedene Felder zur Erfassung der Metadaten. Hier müssen mindestens die durch * gekennzeichneten Pflichtfelder ausgefüllt werden. Mit dem Button  <em>Abbrechen</em>  wird der gesamte Publikationsprozess beendet. Über den Button <em>Debug</em>  können alle eingegebenen Daten im Formular wieder gelöscht werden.</p><p style="text-align: justify;"><img alt="" height="209" src="screenshot_schritt2.jpg" style="float: right;" width="474" /></p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p> </p><p style="text-align: justify;">Im 3. Schritt werden das Dokument und mögliche dazugehörigen Dateien in das Repository hochgeladen.</p><p style="margin-left: 35.4pt; text-align: justify;">Dazu wählen Sie die richtige Datei aus und ziehen diese in das Upload-Feld oder durchsuchen über den Button  <em>Durchsuchen</em> Ihre Festplatte und wählen das gewünschte Dokument aus.</p><p style="margin-left: 35.4pt; text-align: justify;">Über <em>Speichern</em> wird der Erfassungsvorgang abgeschlossen. Sie bekommen per Mail die automatisch erstellte „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ zugesandt. Diese schicken Sie bitte unterschrieben via E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek zurück. Näheres zur Einverständniserklärung finden Sie unter Autoreninformation und im FAQ.</p><p style="text-align: justify;">Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben hinsichtlich formaler Kriterien, ändert und ergänzt ggf. Metadaten und vergibt ggf. einen URN. Nach Kontrolle der Metadaten und dem Eintreffen der unterschriebenen Einverständniserklärung wird das Dokument freigeschaltet und ist damit auf <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> veröffentlicht. Eine automatische Bestätigung der Veröffentlichung wird Ihnen via Mail zugesandt.</p><p style="text-align: justify;"><strong>HINWEIS</strong>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere Exemplare in Printform abgegeben werden (i.d.R. vier Exemplare). Näheres hierzu regelt die jeweilige Promotionsordnung.</p></div></div></div></section><meta><log lastEditor="FrerichsAdmin" date="2015-07-28" time="10:16" /></meta></MyCoReWebPage>

@@ -1,23 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Unser Service">
-    <div>
-      <h2>Unser Service</h2>
-      <p>
-        Inhalt:
-		<ul> 
-		  <li>weltweite Verfügbarkeit der Volltexte</li>
-		  <li>qualitätsgesicherte elektronische Langzeitarchivierung  und die damit verbundene  dauerhafte  Zitierfähigkeit ihrer Erst- und Zweitveröffentlichungen</li>
-		  <li>Verzeichnis im Katalog der UB</li>
-		  <li>Meldung an die deutsche Nationalbibliothek und an die Universitäts- und Landesbibliothek Münster bei Erstveröffentlichungen</li>
-		  <li>Suchbarkeit  und Auffindbarkeit in Suchmaschinen</li>
-		  <li>Beratung  und Betreuung  bei Fragen rund um das Thema elektronischer Veröffentlichungen und Hybridpublikationen (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li> 
-        </ul>
-        
-      </p>
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="administrator" date="2015-05-08" time="15:19" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Unser Service"><div><h2>Unser Service</h2><p>Der Dokumentenserver <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> der FernUniversität in Hagen ist eine Dienstleistung der Universitätsbibliothek mit dem Ziel, Mitgliedern und Angehörigen der FernUniversität die Veröffentlichung ihrer wissenschaftlichen Publikationen zu ermöglichen. Darüber hinaus bietet die FernUniversität über den Dokumentenserver ihre digitalen Sammlungen an.</p><p>Beim Veröffentlichen übernimmt <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> für Sie:</p><ul><li>die qualitätsgesicherte elektronische Langzeitarchivierung und die damit einhergehende dauerhafte Zitierfähigkeit Ihrer Erst- und Zweitveröffentlichungen</li><li>die Verzeichnung Ihrer Qualifizierungsarbeiten und wissenschaftlichen Veröffentlichungen im Katalog der Universitätsbibliothek</li><li>die Meldung Ihrer Erstveröffentlichungen an die Deutsche Nationalbibliothek und die Universitäts- und Landesbibliothek Münster</li></ul><p>Ihre Vorteile:</p><ul><li>Beratung und Betreuung bei allen Fragen rund um das Thema elektronische Veröffentlichungen und Hybridpublikationen (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li><li>Verbesserung der Such- und Auffindbarkeit Ihrer Dokumente durch Suchmaschinen</li><li>Steigerung der Sichtbarkeit Ihrer wissenschaftlichen Publikationen</li><li>Abgabe weniger gedruckter Pflichtexemplare bei Dissertationen</li><li>Möglichkeit der Publikation hervorragender studentischer Arbeiten auf Empfehlung der Prüfenden</li></ul></div></section><meta><log lastEditor="muelleradmin" date="2015-08-05" time="13:51" /></meta></MyCoReWebPage>

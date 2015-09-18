@@ -27,21 +27,21 @@
             <label xml:lang="de">Impressum</label>
             <label xml:lang="en">Impressum</label>
         </item>
+        <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenschutz</label>
+            <label xml:lang="en">Privacy</label>
+        </item>
     </menu>
     <menu id="technical" dir="/content/technical">
         <label xml:lang="de">Technisches</label>
         <label xml:lang="en">Technical</label>
         <item href="/content/technical/software.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Software</label>
-            <label xml:lang="en">Software</label>
+            <label xml:lang="de">Software &amp; Grundlagen</label>
+            <label xml:lang="en">Software &amp; Basics</label>
         </item>
         <item href="/content/technical/hosting.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">technischer Betrieb</label>
+            <label xml:lang="de">Technischer Betrieb</label>
             <label xml:lang="en">Hosting</label>
-        </item>
-        <item href="/content/technical/interfaces.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Schnittstellen</label>
-            <label xml:lang="en">Interfaces</label>
         </item>
     </menu>
     <menu id="contact" dir="/content/social">
@@ -52,7 +52,7 @@
             <label xml:lang="en">Persons</label>
         </item>
         <item href="/content/social/questions.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Häufige Fragen</label>
+            <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
             <label xml:lang="en">FAQ</label>
         </item>
     </menu>

@@ -1,18 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Ansprechpersonen">
-    <div>
-      <h2>Ansprechpersonen</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            Inhalt: Liste mit Mitarbeiter-Kontaktdaten für Verantwortlichkeiten und Hilfestellungen
-          </p>    
-        </div>
-      </div>
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="administrator" date="2015-01-07" time="15:52" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Ansprechpersonen"><div><h2>Ansprechpersonen</h2><div class="row"><div class="col-md-12"><h3>Allgemeine Information, Datenformate, Procedere etc.</h3><table><tbody><tr><td colspan="1" height="30" rowspan="1" width="170"><em>Maria Müller</em></td><td colspan="1" rowspan="1">Tel. 02331/987 -1162</td></tr><tr><td colspan="1" height="30" rowspan="1" width="170"><em>Gabriele Schneider</em></td><td colspan="1" rowspan="1">Tel. 02331/987 -2893</td></tr></tbody></table><p>Gebäude: AVZ, C 040</p><p>E-Mail: publizieren.ub@fernuni-hagen.de</p><h3>Hilfestellung bei Dissertationen und Abschlussarbeiten</h3><table><tbody><tr><td colspan="1" height="30" rowspan="1" width="170"><em>Annette Frerichs</em></td><td colspan="1" rowspan="1">Tel. 02331/987 -2892</td></tr></tbody></table><p>Gebäude: AVZ, C 247</p></div></div></div></section><meta><log lastEditor="muelleradmin" date="2015-07-27" time="10:58" /></meta></MyCoReWebPage>
