@@ -105,8 +105,7 @@
         </xsl:if>
       </div>
 
-      <div class="cols-xs-12 col-sm-8 col-lg-9 result_list">
-        <xsl:copy-of select="$ResultPages" />
+      <div class="col-xs-12 col-sm-8 col-lg-9 result_list">
         <xsl:comment>
           RESULT LIST START
         </xsl:comment>
@@ -581,7 +580,7 @@
             Filter
             <span class="caret"/>
           </button>
-          <ul class="dropdown-menu" role="menu" style="max-height: 500px; overflow-y: scroll;">
+          <ul class="dropdown-menu dropdown-menu-right" role="menu" style="max-height: 500px; overflow-y: scroll;">
             <xsl:apply-templates select="$classiDocument/select/option" mode="calculate_option_notselected" >
               <xsl:with-param name="classId" select="$classId" />
             </xsl:apply-templates>
