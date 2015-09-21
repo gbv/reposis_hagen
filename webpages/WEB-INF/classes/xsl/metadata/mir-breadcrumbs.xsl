@@ -6,9 +6,6 @@
     <xsl:variable name="mods" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods" />
     <div id="mir-breadcrumb">
       <ul class="breadcrumb" itemprop="breadcrumb">
-        <li>
-          <a href="{$WebApplicationBaseURL}" class="navtrail">Home</a>
-        </li>
         <xsl:if test="$mods/mods:relatedItem[@type='series']">
           <li>
             <xsl:call-template name="objectLink">
