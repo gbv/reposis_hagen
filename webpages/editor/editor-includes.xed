@@ -148,6 +148,21 @@
       </xed:bind>
     </fieldset>
   </xed:template>
+  
+  <xed:template id="title.original.nonrequired">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.title.type.original" />
+      </legend>
+      <xed:bind xpath="mods:titleInfo">
+        <div class="mir-fieldset-content">
+          <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" 
+              help-text="{i18n:mir.help.title}" />
+          <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}" />
+        </div>
+      </xed:bind>
+    </fieldset>
+  </xed:template>
 
   <xed:template id="title.translated">
     <fieldset>
@@ -273,7 +288,7 @@
     </div>
     <div class="mir-form-group-body"> 
       <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
-      class="mir-form-group required" />
+      class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
     </div>
   </xed:template>
 
@@ -674,7 +689,7 @@
       label="mir.shelfmark" help-text="{i18n:mir.help.shelfmark}" />
   </xed:template>
 
-  <xed:template id="shelfmark.proceedings.relItemsearch">
+  <xed:template id="shelfmark.collection.relItemsearch">
     <mir:relItemsearch searchengine="shelfmark" genre="collection" responsefield="shelfLocator" xpath="mods:location/mods:shelfLocator" label="mir.shelfmark"
       help-text="{i18n:mir.help.shelfmark}" />
   </xed:template>
@@ -1438,10 +1453,17 @@
   
   <xed:template id="validation-rules.relItem.host">
     <xed:validate xpath="//mods:relatedItem/mods:titleInfo/mods:title" test="(substring-after(../../@xlink:href,'mods_') > '00000000') or ((string-length(.) > 0) and ((substring-after(../../@xlink:href,'mods_') = '00000000') or (string-length(../../@xlink:href,'mods_') = 0)))" display="global" >
-      <li> <xed:output i18n="mir.validation.relItem.title" /> </li>
+      <xed:output i18n="mir.validation.relItem.title" /> 
     </xed:validate>
   </xed:template>
-
+  
+  <xed:template id="validation-rules.title.proceedings">
+    <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" test="string-length(.) > 0 or string-length(../../mods:name[@type='conference']/mods:namePart) > 0" display="global" >
+      <xed:output i18n="mir.validation.titleconference.proceedings" /> 
+    </xed:validate> 
+    <xed:validate xpath="//mods:mods/mods:name[@type='conference']/mods:namePart" test="string-length(.) > 0 or string-length(../../mods:titleInfo/mods:title)" display="global" />
+  </xed:template>
+  
   <xed:template id="validation-rules">
     <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
     <!-- don't validate author, date issued and rights for journal etc.  -->
