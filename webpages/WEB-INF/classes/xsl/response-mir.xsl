@@ -460,7 +460,7 @@
   </xsl:template>
 
   <!-- copied from mods.xsl -> ToDo: refacture! -->
-  <xsl:template name="mods.getObjectEditURL" priority="2">
+  <xsl:template name="mods.getObjectEditURL">
     <xsl:param name="id" />
     <xsl:param name="layout" select="'$'" />
     <xsl:param name="collection" select="''" />
@@ -474,9 +474,6 @@
                 <xsl:when test="$layout = 'all'">
                   <xsl:value-of select="actionmapping:getURLforCollection('update-xml',$collection,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
                 </xsl:when>
-                <xsl:when test="$layout = 'admin'">
-                  <xsl:value-of select="actionmapping:getURLforCollection('update-admin',$collection,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
-                </xsl:when>
                 <xsl:otherwise>
                   <xsl:value-of select="actionmapping:getURLforCollection('update',$collection,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
                 </xsl:otherwise>
@@ -486,9 +483,6 @@
               <xsl:choose>
                 <xsl:when test="$layout = 'all'">
                   <xsl:value-of select="actionmapping:getURLforID('update-xml',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
-                </xsl:when>
-                <xsl:when test="$layout = 'admin'">
-                  <xsl:value-of select="actionmapping:getURLforID('update-admin',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
                 </xsl:when>
                 <xsl:otherwise>
                   <xsl:value-of select="actionmapping:getURLforID('update',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
@@ -581,7 +575,7 @@
             Filter
             <span class="caret"/>
           </button>
-          <ul class="dropdown-menu" role="menu" style="max-height: 500px; overflow-y: scroll;">
+          <ul class="dropdown-menu dropdown-menu-right" role="menu" style="max-height: 500px; overflow-y: scroll;">
             <xsl:apply-templates select="$classiDocument/select/option" mode="calculate_option_notselected" >
               <xsl:with-param name="classId" select="$classId" />
             </xsl:apply-templates>
