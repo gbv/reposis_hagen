@@ -5,11 +5,11 @@
   exclude-result-prefixes="xsl mir i18n">
 
   <xsl:include href="copynodes.xsl" />
-  
+
   <xsl:template name="mir-helpbutton">
-    <span class="btn btn-default info-button" data-toggle="popover" data-placement="right" data-content="{@help-text}">
+    <a tabindex="0" class="btn btn-default info-button" role="button" data-toggle="popover" data-placement="right" data-content="{@help-text}">
       <i class="fa fa-info"></i>
-    </span>
+    </a>
   </xsl:template>
   
   <xsl:template name="mir-required">
@@ -45,7 +45,16 @@
         <xed:repeat xpath="{@xpath}" min="{@min}" max="{@max}">
           <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
           <div class="form-group {@class} {$xed-val-marker}">
-            <xsl:call-template name="mir-textfield" />
+            <xsl:choose>
+              <xsl:when test="@bind" >
+                <xed:bind xpath="{@bind}" >
+                  <xsl:call-template name="mir-textfield" />
+                </xed:bind>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:call-template name="mir-textfield" />
+              </xsl:otherwise>
+            </xsl:choose>
           </div>
           <xsl:call-template name="mir-required" />
         </xed:repeat>
