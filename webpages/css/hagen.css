@@ -378,6 +378,11 @@ h3 > a {
   display:table-cell;
   vertical-align:top
 }
+
+.info-button {
+	background-color: #ECF0F1;
+	
+}
 .mir-edit{
   display:table-cell;
   width:230px;
@@ -514,4 +519,8 @@ html body #powered_by {
   border-radius: 4px;
   margin-bottom:15px;
   padding-bottom:20px;
+}
+
+.access_condition {
+  display: none;
 }
