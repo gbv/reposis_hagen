@@ -364,7 +364,7 @@
       </option>
     </mir:person.repeated>
     <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
-      <li> <xed:output i18n="mir.validation.author.thesis" /> </li>
+      <xed:output i18n="mir.validation.author.thesis" />
     </xed:validate>
   </xed:template>
 
@@ -384,7 +384,7 @@
       </option>
     </mir:person.repeated>
     <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
-      <li> <xed:output i18n="mir.validation.author.otherthesis" /> </li>
+      <xed:output i18n="mir.validation.author.otherthesis" />
     </xed:validate>
   </xed:template>
 
@@ -404,7 +404,7 @@
       </option>
     </mir:person.repeated>
     <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
-      <li> <xed:output i18n="mir.validation.author.habil" /> </li>
+      <xed:output i18n="mir.validation.author.habil" />
     </xed:validate>
   </xed:template>
 
@@ -888,7 +888,7 @@
         <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
       </div>
       <xed:validate test="string-length(mods:start) > 0" display="global"> 
-        <li> Bitte Seitenangaben eintragen. </li> 
+        Bitte Seitenangaben eintragen. 
       </xed:validate>
     </xed:bind>
   </xed:template>
@@ -1479,19 +1479,19 @@
 
   <xed:template id="validation-rules.identifier">
     <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" display="global" >
-      <li> <xed:output i18n="mir.validation.isbn" /> </li>
+       <xed:output i18n="mir.validation.isbn" /> 
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" display="global" >
-      <li> <xed:output i18n="mir.validation.issn" /> </li>
+       <xed:output i18n="mir.validation.issn" /> 
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" display="global" >
-      <li> <xed:output i18n="mir.validation.doi" /> </li>
+       <xed:output i18n="mir.validation.doi" /> 
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='hdl']" matches="\S+/\S+" display="global" >
-      <li> <xed:output i18n="mir.validation.hdl" /> </li>
+       <xed:output i18n="mir.validation.hdl" /> 
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" display="global" >
-      <li> <xed:output i18n="mir.validation.urn" /> </li>
+       <xed:output i18n="mir.validation.urn" /> 
     </xed:validate>
   </xed:template>
   
