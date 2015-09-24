@@ -90,7 +90,8 @@
           </fieldset>
         </xed:if>
 
-        <xed:include uri="webapp:editor/editor-genres.xed" ref="submit" />
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="cancel.redirect.submit" />
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="cleanup-rules" />
 
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="javascript" />
         <!-- frame for modal window -->
