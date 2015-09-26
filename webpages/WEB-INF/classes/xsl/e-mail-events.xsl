@@ -53,19 +53,80 @@
               </xsl:otherwise>
             </xsl:choose>
           </xsl:variable>
-          <xsl:value-of select="concat($objectType,' erstellt: ',@ID)" />
+          <xsl:value-of select="concat('[deposit_hagen] ',$objectType,' erstellt: ',./metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title[1])" />
         </subject>
         <body>
-          <xsl:value-of select="'Ein Dokument wurde von einem Autor erstellt und wartet auf Bearbeitung.'" />
-          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'Sehr geehrte/r Frau/Herr '" />
+          <xsl:value-of select="document('user:current')/user/realName" /><xsl:value-of select="','" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          <xsl:value-of select="'Sie haben folgenden Eintrag auf dem Dokumentenserver erstellt:'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
           <xsl:apply-templates select="." mode="output" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Die Redaktion der Universitätsbibliothek wird Ihr Dokument und die eingegebenen Metadaten nun hinsichtlich'"/>
           <xsl:value-of select="$newline" />
+          <xsl:value-of select="'formaler Kriterien und auf Vollständigkeit überprüfen. Bis zur Veröffentlichung ist Ihr Dokument auf '"/>
           <xsl:value-of select="$newline" />
-          <xsl:value-of select="'Informationen zum Ersteller:'" />
+          <xsl:value-of select="'deposit_hagen nur für Sie und die Redaktion sichtbar. Solange Ihr Dokument noch nicht bearbeitet wird, '"/>
+          <xsl:value-of select="$newline" /> 
+          <xsl:value-of select="'können Sie sich die Aufnahme Ihres Dokuments über den oben genannten Link ansehen und Änderungen an '"/>
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'den Metadaten vornehmen. Danach können Sie keine Änderungen mehr eintragen.'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Den vorausgefüllten Autorenvertrag können Sie über den oben genannten Link herunterladen. Bitte senden Sie '" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'diesen unterschrieben per Post an die Universitätsbibliothek der FernUniversität – Wissenschaftliches'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'Publizieren Universitätsstraße 23 in 58097 Hagen oder senden ihn als Scan per E-Mail an '" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'publizieren.ub@fernuni-hagen.de. '"/>
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Wir weisen darauf hin, dass wir bei Bachelor- und Masterarbeiten sowie Studienleistungen vor '"/>
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'Veröffentlichung zusätzlich eine schriftliche Zustimmung der Prüfenden benötigen. Unter dem Punkt'"/>
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'„Autoreninformationen“ auf den Seiten des deposit_hagen steht Ihnen hierzu ein Vordruck zum Herunterladen'"/>
+          <xsl:value-of select="$newline" /> 
+          <xsl:value-of select="'zur Verfügung.'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'(https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml)'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Nach Kontrolle der Metadaten und Eintreffen des Autorenvertrages wird Ihr Dokument auf dem Server '" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'freigeschaltet und ist somit für alle Nutzer sichtbar. Eine Bestätigung der Veröffentlichung Ihres Dokuments'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'wird Ihnen per Mail zugesandt.'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Bei Fragen können Sie sich jederzeit gern an uns wenden.'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          <xsl:value-of select="'Mit freundlichen Grüßen,'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          <xsl:value-of select="'Ihr Team Wissenschaftliches Publizieren'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'---'" />
+          <xsl:value-of select="$newline" />
+          
+          <xsl:value-of select="'Universitätsbibliothek der FernUniversität'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'Wissenschaftliches Publizieren'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'Universitätsstraße 23'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'58097 Hagen'" />
+          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
+          <xsl:value-of select="'Tel.: 02331 – 987 1162 / 2893 / 2892'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'E-Mail.: publizieren.ub@fernuni-hagen.de'" />
+          <xsl:value-of select="$newline" />
+          <xsl:value-of select="'____________________________________________________________________________________________________________'" />
           <xsl:value-of select="$newline" />
           <xsl:apply-templates select="document('user:current')/user" mode="output" />
-          <xsl:value-of select="$newline" /><xsl:value-of select="$newline" />
-          <xsl:value-of select="'Bitte senden sie den Autorenvertag an ...'" />
+          
         </body>
       </xsl:when>
       <xsl:otherwise>
