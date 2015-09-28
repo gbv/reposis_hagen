@@ -394,10 +394,14 @@
 
   <xed:template id="thesisHabil.reviewer.repeated">
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='ths']" />
     <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
     <mir:person.repeated help-text="{i18n:mir.help.thesisHabil.reviewer}">
       <option value="aut">
         <xed:output i18n="mir.role.thesisHabil" />
+      </option>
+      <option value="ths">
+        Betreuer(in):<!-- TODO: i18n -->
       </option>
       <option value="rev">
         <xed:output i18n="mir.role.reviewer" />
@@ -466,6 +470,11 @@
   <xed:template id="date.issued">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
       class="required datetimepicker" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
+  </xed:template>
+  
+  <xed:template id="date.issued.nonrequired">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
+      class="datetimepicker" placeholder="{i18n:mir.placeholder.date}"/>
   </xed:template>
   
   <xed:template id="date.issued.relItem">
@@ -1164,12 +1173,14 @@
   </xed:template>
 
   <xed:template id="abstract.simple">
-    <div class="col-md-11 mir-form-group-head">
-      <xed:output i18n="mir.abstract.text" />
-    </div>
-    <div class="mir-form-group-body">
-      <mir:textarea xpath="mods:abstract[not(@xml:lang) or @xml:lang=../mods:languageTerm[@authority='rfc4646'][@type='code']]" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>
-    </div>
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        <xed:output i18n="mir.abstract.text" />
+      </legend>
+      <div class="mir-fieldset-content">
+        <mir:textarea xpath="mods:abstract[not(@xml:lang) or @xml:lang=../mods:languageTerm[@authority='rfc4646'][@type='code']]" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>
+      </div>
+    </fieldset>
   </xed:template>
 
   <xed:template id="abstract.simple.uri">
@@ -1509,12 +1520,12 @@
   </xed:template>
   
   <xed:template id="validation-rules">
-    <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />
+    <!--<xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />-->
     <!-- don't validate author, date issued and rights for journal etc.  -->
-    <xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series']">
+    <!--<xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series']">
       <xed:choose>
         <xed:when test="//mods:mods/mods:genre[@valueURIxEditor='collection' or @valueURIxEditor='proceedings']">
-          <!-- "required" checks if there is such an element which has text content, so we must validate mods:displayForm for the moment-->
+          
           <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']/mods:displayForm"
             required="true" i18n="mir.validation.editor" display="global" />
         </xed:when>
@@ -1523,9 +1534,9 @@
             required="true" i18n="mir.validation.author" display="global" />
         </xed:otherwise>
       </xed:choose>
-      <!--<xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />-->
+      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
-    </xed:if>
+    </xed:if>-->
     <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules-identifier" />
     <xed:validate xpath="//mods:url|//mods:abstract/@xlink:href" matches="(ftp|http|https)://[\w\d.]+\S*" i18n="mir.validation.url" display="global" />
     <xed:validate xpath="//mods:*[@encoding='w3cdtf']" matches="\d{4}(\-\d{2}(\-\d{2})?)?" type="datetime" format="yyyy;yyyy-MM;yyyy-MM-dd" i18n="mir.validation.date" display="global" />

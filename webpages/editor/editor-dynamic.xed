@@ -62,7 +62,7 @@
         <xed:if test="mods:relatedItem">
           <fieldset class="mir-relatedItem">
             <div class="col-md-11 mir-relatedItem-head">
-              <xed:output value="concat('erschienen in ',$genres//category[@ID=$genre_host]/label[lang($CurrentLang)]/@text,':')" />
+              <xed:output value="concat('erschienen in ',$genres//category[@ID=$genre_host]/label[lang($CurrentLang)]/@text)" />
             </div>
             <div class="mir-relatedItem-body">
               <xed:include uri="webapp:editor/editor-hosts.xed" ref="{$genre_host}" />

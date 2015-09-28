@@ -381,8 +381,9 @@ h3 > a {
 
 .info-button {
 	background-color: #ECF0F1;
-	
+	color: #7979C9;
 }
+
 .mir-edit{
   display:table-cell;
   width:230px;
