@@ -140,7 +140,7 @@
             </div>
           </div>
 <!-- system -->
-          <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
+          <xsl:if test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
             <div id="mir_admindata_panel" class="panel panel-default system">
               <div class="panel-heading">
                 <h3 class="panel-title">

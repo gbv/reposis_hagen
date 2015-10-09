@@ -384,6 +384,16 @@ h3 > a {
 	color: #7979C9;
 }
 
+.pagination > .active > a,.pagination > .active > a:hover {
+    background-color: #ECF0F1;
+	color: #7979C9;
+}
+
+#options > .btn-danger {
+    background-color: #2A2A94;
+    border-color: #2A2A94;
+}
+
 .mir-edit{
   display:table-cell;
   width:230px;

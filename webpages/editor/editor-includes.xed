@@ -94,7 +94,7 @@
   </xed:template>
 
   <xed:template id="title.series">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.series.title" placeholder="{i18n:mir.placeholder.series.title}" id="series-title" 
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.series" placeholder="{i18n:mir.placeholder.series.title}" id="series-title" 
     class="required" required="true" required-i18n="mir.validation.title"/>
   </xed:template>
   
@@ -174,7 +174,7 @@
           <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.translated}" />
           <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" />
           <div class="form-group">
-            <label class="col-md-3 control-label mir-formgroup-label">Sprache:</label><!-- TODO: i18n -->
+            <label class="col-md-3 control-label mir-formgroup-label"><xed:output i18n="mir.language.noText" /></label>
             <div class="col-md-6">
               <xed:bind xpath="@xml:lang" initially="de">
                 <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="lang.list" />
@@ -245,41 +245,49 @@
   </xed:template>
 
   <xed:template id="author.repeated">
-    <div class="col-md-10 mir-form-group-head">
-      Autoren
-    </div>
-    <div class="mir-form-group-body">
-      <mir:role.repeated role="aut" label="mir.role.author" help-text="{i18n:mir.help.role.author}" class="required mir-form-group" required="true" required-i18n="mir.validation.author"/>
-    </div>
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        Autoren
+      </legend>
+      <div class="mir-fieldset-content">
+        <mir:role.repeated role="aut" label="mir.role.author" help-text="{i18n:mir.help.role.author}" class="required mir-form-group" required="true" required-i18n="mir.validation.author"/>
+      </div>
+    </fieldset>
   </xed:template>
 
   <xed:template id="editor.repeated">
-    <div class="col-md-10 mir-form-group-head">
-      Herausgeber
-    </div>
-    <div class="mir-form-group-body">
-      <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" class="mir-form-group" />
-    </div>
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        Herausgeber
+      </legend>
+      <div class="mir-fieldset-content">
+        <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" class="mir-form-group" />
+      </div>
+    </fieldset>
   </xed:template>
   
   <xed:template id="editor.repeated.required">
-    <div class="col-md-10 mir-form-group-head">
-      Herausgeber
-    </div>
-    <div class="mir-form-group-body">
-      <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" 
-      class="mir-form-group required" required="true" required-i18n="mir.validation.editor"/>
-    </div>
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        Herausgeber
+      </legend>
+      <div class="mir-fieldset-content">
+        <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" 
+        class="mir-form-group required" required="true" required-i18n="mir.validation.editor"/>
+      </div>
+    </fieldset>
   </xed:template>
   
   <xed:template id="honoree.repeated">
-    <div class="col-md-10 mir-form-group-head">
-      Gefeierte Personen
-    </div>
-    <div class="mir-form-group-body"> 
-      <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
-      class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
-    </div>
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        Gefeierte Personen
+      </legend>
+      <div class="mir-fieldset-content"> 
+        <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
+        class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
+      </div>
+    </fieldset>
   </xed:template>
   
   <xed:template id="honoree.repeated.relItem">
@@ -462,6 +470,11 @@
       class="required" placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
   
+  <xed:template id="year.issued.nonrequired">
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" 
+      placeholder="{i18n:mir.placeholder.year}"/>
+  </xed:template>
+    
   <xed:template id="year.issued.relItem">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
       class="required mir-modspart" placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
@@ -1175,7 +1188,7 @@
   <xed:template id="abstract.simple">
     <fieldset>
       <legend class="mir-fieldset-legend">
-        <xed:output i18n="mir.abstract.text" />
+        <xed:output i18n="mir.abstract.text.2" />
       </legend>
       <div class="mir-fieldset-content">
         <mir:textarea xpath="mods:abstract[not(@xml:lang) or @xml:lang=../mods:languageTerm[@authority='rfc4646'][@type='code']]" label="mir.abstract.text" help-text="{i18n:mir.help.abstract}" rows="5" class="mir-form-group"/>

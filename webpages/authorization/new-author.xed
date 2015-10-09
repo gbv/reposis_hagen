@@ -4,14 +4,8 @@
   <section xml:lang="all" i18n="component.user2.admin.create.title">
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
-    <h2>Dokument einreichen</h2>
-    <h3>Schritt 1: Selbstregistrierung</h3>
-    <p>
-      Bevor Sie eine Publikation einreichen können, benötigen Sie eine Nutzerkennung mit Autoren-Rechten. Sie können sich über das unten stehende
-      Formular selbst registrieren. Um die Registrierung abzuschließen, müssen Sie einmal den Link aufrufen, der Ihnen per Mail zugesandt wird, nachdem
-      Sie das Formular abgesandt haben. Vielen Dank!
-    </p>
-
+    <h2>Registrierung</h2>
+    
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
       <xed:bind xpath="user">
@@ -22,7 +16,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              <xed:output i18n="component.user2.admin.create.title" />
+             
             </h3>
           </div>
           <div class="panel-body">
@@ -44,14 +38,14 @@
               <div class="form-group {$xed-validation-marker}">
                 <div style="padding-left: 50px" class="col-md-9 col-md-offset-3 checkbox">
                   <input type="checkbox" class="" value="Datenschutzerklaerung" />
-                  Hiermit nehme ich die Datenschutzerklärung zur Kenntniss und stimme ihr zu.
+                  Hiermit nehme ich die <a href="../folder/myfile.xml"> Datenschutzerklärung </a> zur Kenntnis und stimme ihr zu.
                 </div>
                 <xed:validate required="true" i18n="deposit_hagen.user.validation.privacy"/>
               </div>
             </xed:bind>
           </div>
           <div class="panel-footer clearfix">
-           <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
+            <!--<button type="submit" class="btn btn-default" xed:target="debug">Debug</button>-->
             <div class="pull-right">
               <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="buttons" />
             </div>
