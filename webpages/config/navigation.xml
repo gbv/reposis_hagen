@@ -23,13 +23,13 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Rights</label>
         </item>
-        <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Impressum</label>
-            <label xml:lang="en">Impressum</label>
-        </item>
         <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenschutz</label>
             <label xml:lang="en">Privacy</label>
+        </item>
+        <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Impressum</label>
+            <label xml:lang="en">Impressum</label>
         </item>
     </menu>
     <menu id="technical" dir="/content/technical">
@@ -60,16 +60,16 @@
         <label xml:lang="de">Suche</label>
         <label xml:lang="en">Search</label>
         <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">einfach</label>
-            <label xml:lang="en">simple</label>
+            <label xml:lang="de">Erweitert</label>
+            <label xml:lang="en">Advanced</label>
         </item>
         <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">intern</label>
             <label xml:lang="en">intern</label>
         </item>
         <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">komplex</label>
-            <label xml:lang="en">complex</label>
+            <label xml:lang="de">Experte</label>
+            <label xml:lang="en">expert</label>
         </item>
         <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">expert</label>
@@ -104,8 +104,8 @@
             <label xml:lang="en">Submit Document</label>
         </item>
         <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">Experteneditor</label>
-            <label xml:lang="en">Experteditor</label>
+            <label xml:lang="de">Admineditor</label>
+            <label xml:lang="en">Admineditor</label>
         </item>
     </menu>
     <menu id="publish" dir="/content/publish">
