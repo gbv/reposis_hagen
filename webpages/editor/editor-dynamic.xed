@@ -21,7 +21,7 @@
         <xed:load-resource name="genres" uri="classification:metadata:-1:children:mir_genres" />
                 
         <!-- If parameter host is missing, "standalone" is default, meaning this publication has no host -->
-        <xed:param name="host" default="standalone"/>
+        <!--<xed:param name="host" default="standalone"/>-->
         <xed:param name="series" default="no" />
         
         <xed:choose>
