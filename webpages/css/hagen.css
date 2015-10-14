@@ -535,3 +535,23 @@ html body #powered_by {
 .access_condition {
   display: none;
 }
+
+.two_column {
+  -webkit-column-width: 350px;
+     -moz-column-width: 350px;
+          column-width: 350px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+          margin-bottom: 60px;
+}
+
+.three_column {
+  -webkit-column-width: 280px;
+     -moz-column-width: 280px;
+          column-width: 280px;
+  -webkit-column-gap: 60px;
+     -moz-column-gap: 60px;
+          column-gap: 60px;
+          margin-bottom: 60px;
+}
