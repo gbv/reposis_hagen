@@ -5,7 +5,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <h2>Registrierung</h2>
-    
+
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
       <xed:bind xpath="user">
@@ -16,7 +16,7 @@
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-             
+
             </h3>
           </div>
           <div class="panel-body">
@@ -33,12 +33,12 @@
             >
               <xed:output i18n="selfRegistration.error.userExists" />
             </xed:validate>
-            
+
             <xed:bind xpath="attributes/attribute[@name='datenschutzerklaerung']/@value">
               <div class="form-group {$xed-validation-marker}">
                 <div style="padding-left: 50px" class="col-md-9 col-md-offset-3 checkbox">
                   <input type="checkbox" class="" value="Datenschutzerklaerung" />
-                  Hiermit nehme ich die <a href="../folder/myfile.xml"> Datenschutzerklärung </a> zur Kenntnis und stimme ihr zu.
+                  Hiermit nehme ich die <a href="../content/folder/myfile.xml"> Datenschutzerklärung </a> zur Kenntnis und stimme ihr zu.
                 </div>
                 <xed:validate required="true" i18n="deposit_hagen.user.validation.privacy"/>
               </div>
