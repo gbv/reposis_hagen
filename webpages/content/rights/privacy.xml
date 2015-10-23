@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Datenschutz">
+    <div>
+      <h1>Datenschutz</h1>
+      <div class="row">
+        <div class="col-md-8">
+        <p>
+          Der verantwortungsvolle Umgang mit Ihren persönlichen Daten hat bei
+          uns höchste Priorität. Daher möchten wir Sie an dieser Stelle über
+          die wichtigsten datenschutzrechtlich relevanten Aspekte unseres
+          Dokumentservers
+          <span style="color:#000; font-weight:bold;">deposit</span>
+          <span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span>
+          informieren.
+        </p>
+        <p>TODO</p>
+      </div>
+    </div></div>
+  </section>
+  <meta>
+    <log lastEditor="muelleradmin" date="2015-10-06" time="11:41" />
+  </meta>
+</MyCoReWebPage>

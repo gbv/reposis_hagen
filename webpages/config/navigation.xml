@@ -23,7 +23,7 @@
             <label xml:lang="de">Urheberrecht</label>
             <label xml:lang="en">Rights</label>
         </item>
-        <item href="/content/folder/myfile.xml" replaceMenu="false" constrainPopUp="false">
+        <item href="/content/rights/privacy.xml" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Datenschutz</label>
             <label xml:lang="en">Privacy</label>
         </item>

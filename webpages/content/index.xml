@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Willkommen bei deposit_hagen"><div><div class="jumbotwo"><div class="row"><div class="col-md-4" lang="de" style="text-align: justify;"><div style="margin-top:60px;text-align: right;"><img alt="deposit_hagen" src="images/deposit_hagen_logo_gross.png" title="desposit_hagen- Logo" /></div><p style="margin-top: 50px;">Auf dem Dokumentenserver <span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> der FernUniversität in Hagen werden qualifizierte wissenschaftliche Publikationen von Angehörigen der FernUniversität, sowie digitale Sammlungen der Universitätsbibliothek Hagen der weltweiten Fachöffentlichkeit kostenfrei, ohne Zugriffsbeschränkung online zugänglich gemacht (Open Access).</p><p>Als Angehörige der FernUniversität in Hagen haben Sie die Möglichkeit Ihre Publikation über Ihren hochschulweiten Account einzustellen.</p><p><span style="color:#000; font-weight:bold;">deposit</span><span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span> ist ein Service der Abteilung Wissenschaftliches Publizieren der Universitätsbibliothek. Gerne beantworten wir Ihnen Ihre Fragen rund um den Publikationsprozess.</p></div><div class="col-md-8" lang="de"><div class="result_body" style="margin-left:10px; margin-top:60px;"><h3>Neueste Dokumente:</h3><div class="result_list"><div id="hit_list"><h1>Lade...</h1></div></div></div></div></div></div><script type="text/javascript" src="index.js" xml:space="preserve"> </script></div></section><meta><log lastEditor="LorenzAdmin" date="2015-10-13" time="13:03" /></meta></MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Willkommen bei deposit_hagen">
+    <div>
+      <div class="jumbotwo">
+        <div class="row">
+          <div class="col-md-6" lang="de">
+            <div style="margin:60px 0px 80px 0px;text-align: left;">
+              <img alt="deposit_hagen" src="images/deposit_hagen_logo_gross.png"
+                title="desposit_hagen-Logo" />
+            </div>
+            <p>
+              Auf dem Dokumentenserver 
+              <span style="color:#000; font-weight:bold;">deposit</span>
+              <span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span>
+               der FernUniversität in Hagen werden qualifizierte
+              wissenschaftliche Publikationen von Angehörigen der
+              FernUniversität, sowie digitale Sammlungen der
+              Universitätsbibliothek Hagen der weltweiten Fachöffentlichkeit
+              kostenfrei, ohne Zugriffsbeschränkung online zugänglich gemacht
+              (Open Access).
+            </p>
+            <p>Als Angehörige der FernUniversität in Hagen haben Sie die
+              Möglichkeit Ihre Publikation über Ihren hochschulweiten Account
+              einzustellen.</p>
+            <p>
+              <span style="color:#000; font-weight:bold;">deposit</span>
+              <span style="color:#595959; font-weight:bold;word-wrap: normal;">_hagen</span>
+               ist ein Service der Abteilung Wissenschaftliches Publizieren der
+              Universitätsbibliothek. Gerne beantworten wir Ihnen Ihre Fragen
+              rund um den Publikationsprozess.
+            </p>
+          </div>
+          <div class="col-md-1" lang="de"></div>
+          <div class="col-md-5" lang="de">
+            <div class="result_body" style="margin-left:10px; margin-top:60px;">
+              <h3 style="margin-left:87px;">Neueste Dokumente:</h3>
+              <div class="result_list">
+                <div id="hit_list">
+                  <h1>Lade...</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="index.js" xml:space="preserve"> </script>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="LorenzAdmin" date="2015-10-13" time="13:03" />
+  </meta>
+</MyCoReWebPage>

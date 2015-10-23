@@ -50,19 +50,19 @@
         </header>
 
         <!-- show only on startpage -->
-        <!-- 
+        <!--
         <xsl:if test="//div/@class='jumbotwo'">
           <div class="jumboHome">
               <div class="container">
-                  <div class="hidden-xs col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1"> 
+                  <div class="hidden-xs col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1">
                       <h1><img alt="FU Hagen" class="img-responsive" title="FU Hagen- Logo" src="images/feulogo.png" /></h1>
                   </div>
-                  <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1"> 
+                  <div class="col-xs-10 col-xs-offset-1 col-sm-offset-1 col-sm-4 col-md-4 col-md-offset-1">
                       <h1><img alt="deposit_hagen" class="img-responsive" title="desposit_hagen- Logo" src="images/deposit_hagen_logo_gross.png" /></h1>
                   </div>
               </div>
           </div>
-          <div class="clearfix visible-xs-block visible-sm-block"></div> 
+          <div class="clearfix visible-xs-block visible-sm-block"></div>
         </xsl:if> -->
 
         <div class="container" id="page">
@@ -128,6 +128,9 @@
 
         <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
         <div id="powered_by">
+          <a href="http://www.mycore.de">
+            <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_powered_120x30_blaue_schrift_frei.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+          </a>
         </div>
 
         <script type="text/javascript">

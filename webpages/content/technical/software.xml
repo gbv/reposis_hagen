@@ -1,2 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Software"><div><h2 style="text-align: justify;">Software &amp; Grundlagen</h2><div style="column-width: 400px;-moz-column-width: 400px; -webkit-column-width: 400px; -moz-column-gap: 40px;column-gap: 40px;-webkit-column-gap: 40px;"><p style="text-align: justify;">Basierend auf der Open-Source Software <a href="http://www.mycore.de/" shape="rect" target="_blank">MyCoRe</a> (My Content Repository) wird <span style="line-height: 20.8px; color: rgb(0, 0, 0); font-weight: bold;">deposit</span><span style="line-height: 20.8px; color: rgb(89, 89, 89); font-weight: bold; word-wrap: normal;">_hagen</span><strong> </strong>von der Verbundzentrale des Gemeinsamen Bibliotheksverbanden (<a href="https://www.gbv.de/Verbundzentrale" shape="rect" target="_blank">VZG</a>) gehostet. MyCoRe stellt dabei die Grundfunktionen des Dokumenten- und Publikationsservers bereit, während die Suchfunktionen auf der Apache Open Source Enterprise Search Platform <a href="http://lucene.apache.org/solr/" shape="rect" target="_blank">Solr</a> basieren. Die VZG garantiert eine Archivierung der Inhalte für mindestens fünf Jahre. Eine Langzeitverfügbarkeit der Dokumente wird zudem über die Pflichtabgabe bei der Deutschen Nationalbibliothek und der Universitäts- und Landesbibliothek Münster realisiert. </p><p style="text-align: justify;">Um eine dauerhafte und zuverlässige Identifizierung und Zitierfähigkeit der elektronischen Dokumente sicherzustellen, werden diese mit einem eindeutigen Identifikator – Uniform Ressource Name (<a href="http://www.dnb.de/DE/Netzpublikationen/URNService/urnservice_node.html" shape="rect" target="_blank">URN</a>) – versehen. URN werden von der Deutschen Nationalbibliothek vergeben und verwaltet.</p><p style="text-align: justify;">Die elektronischen Dokumente werden mithilfe strukturierter Metadaten beschrieben. Im Rahmen der Open Archives Initiative (OAI) werden die formalen wie inhaltlichen Metadaten der veröffentlichten Dokumente über die standardisierte Schnittstelle OAI Protocol for Metadata Harvesting (<a href="http://www.openarchives.org/pmh/" shape="rect" target="_blank">OAI-PMH 2.0</a>) an etablierte, wissenschaftliche Suchmaschinen wie <a href="http://www.oclc.org/oaister.en.html" shape="rect" target="_blank">OAIster</a> und <a href="https://www.base-search.net/" shape="rect" target="_blank">BASE</a> übermittelt. Mit einer zusätzlichen Indexierung der Dokumente durch <a href="https://scholar.google.de/" shape="rect" target="_blank">Google Scholar</a> wird die globale Sichtbarkeit der Beiträge auf <span style="line-height: 20.8px; color: rgb(0, 0, 0); font-weight: bold;">deposit</span><span style="line-height: 20.8px; color: rgb(89, 89, 89); font-weight: bold; word-wrap: normal;">_hagen</span><strong> </strong>weiter verbessert.</p><p style="text-align: justify;">Die Metadaten werden in einem MODS-basierten bibliographischen Format gespeichert. Das Metadata Object Description Schema (MODS) ist ein XML-Format, welches von der Library of Congress in den USA verwaltet und weiterentwickelt wird. Die Metadaten können in gängige, bibliographische Formate exportiert werden. Zur Verfügung stehen u.a. die Formate <a href="http://www.bibtex.org/" shape="rect" target="_blank">BibTex</a> für <a href="http://www.latex-project.org/" shape="rect" target="_blank">LaTeX</a> oder <a href="http://www.citavi.com/sub/manual4/de/importing_a_ris_file.html" shape="rect" target="_blank">RIS</a> für <a href="http://www.citavi.com/" shape="rect" target="_blank">Citavi</a> und <a href="http://endnote.com/" shape="rect" target="_blank">Endnote</a>. </p></div><div><a href="http://www.mycore.de/"><img alt="" src="mycore_logo_small.png" style="width: 129px; height: 34px; float: right;" /></a></div></div></section><meta><log lastEditor="muelleradmin" date="2015-10-06" time="11:27" /></meta></MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Software">
+    <div>
+      <h1>Software &amp; Grundlagen</h1>
+      <div class="row">
+        <div class="col-md-8">
+        <p>
+          Basierend auf der Open-Source Software <a href="http://www.mycore.de/" shape="rect">MyCoRe</a>
+          (My Content Repository) wird
+          <span
+            style="line-height: 20.8px; color: rgb(0, 0, 0); font-weight: bold;">deposit</span>
+          <span
+            style="line-height: 20.8px; color: rgb(89, 89, 89); font-weight: bold; word-wrap: normal;">_hagen</span>
+          von der Verbundzentrale des Gemeinsamen Bibliotheksverbanden (
+          <a href="https://www.gbv.de/Verbundzentrale" shape="rect">
+            VZG</a>) gehostet. MyCoRe stellt dabei die Grundfunktionen des Dokumenten-
+          und Publikationsservers bereit, während die Suchfunktionen auf der
+          Apache Open Source Enterprise Search Platform 
+          <a href="http://lucene.apache.org/solr/" shape="rect">Solr</a>
+           basieren. Die VZG garantiert eine Archivierung der Inhalte für
+          mindestens fünf Jahre. Eine Langzeitverfügbarkeit der Dokumente
+          wird zudem über die Pflichtabgabe bei der Deutschen
+          Nationalbibliothek und der Universitäts- und Landesbibliothek
+          Münster realisiert. 
+        </p>
+        <p>
+          Um eine dauerhafte und zuverlässige Identifizierung und
+          Zitierfähigkeit der elektronischen Dokumente sicherzustellen,
+          werden diese mit einem eindeutigen Identifikator – Uniform
+          Ressource Name (
+          <a
+            href="http://www.dnb.de/DE/Netzpublikationen/URNService/urnservice_node.html"
+            shape="rect">URN</a>) – versehen. URN werden von der Deutschen Nationalbibliothek
+          vergeben und verwaltet.
+        </p>
+        <p>
+          Die elektronischen Dokumente werden mithilfe strukturierter
+          Metadaten beschrieben. Im Rahmen der Open Archives Initiative (OAI)
+          werden die formalen wie inhaltlichen Metadaten der veröffentlichten
+          Dokumente über die standardisierte Schnittstelle OAI Protocol for
+          Metadata Harvesting (<a href="http://www.openarchives.org/pmh/" shape="rect">OAI-PMH
+            2.0</a>) an etablierte, wissenschaftliche Suchmaschinen wie 
+          <a href="http://www.oclc.org/oaister.en.html" shape="rect"
+           >OAIster</a>
+           und 
+          <a href="https://www.base-search.net/" shape="rect">BASE</a>
+           übermittelt. Mit einer zusätzlichen Indexierung der Dokumente
+          durch 
+          <a href="https://scholar.google.de/" shape="rect">Google
+            Scholar</a>
+           wird die globale Sichtbarkeit der Beiträge auf 
+          <span
+            style="line-height: 20.8px; color: rgb(0, 0, 0); font-weight: bold;">deposit</span>
+          <span
+            style="line-height: 20.8px; color: rgb(89, 89, 89); font-weight: bold; word-wrap: normal;">_hagen</span>
+          <strong> </strong>
+          weiter verbessert.
+        </p>
+        <p>
+          Die Metadaten werden in einem MODS-basierten bibliographischen
+          Format gespeichert. Das Metadata Object Description Schema (MODS)
+          ist ein XML-Format, welches von der Library of Congress in den USA
+          verwaltet und weiterentwickelt wird. Die Metadaten können in
+          gängige, bibliographische Formate exportiert werden. Zur Verfügung
+          stehen u.a. die Formate 
+          <a href="http://www.bibtex.org/" shape="rect">BibTex</a>
+           für 
+          <a href="http://www.latex-project.org/" shape="rect">LaTeX</a>
+           oder 
+          <a href="http://www.citavi.com/sub/manual4/de/importing_a_ris_file.html"
+            shape="rect">RIS</a>
+           für 
+          <a href="http://www.citavi.com/" shape="rect">Citavi</a>
+           und 
+          <a href="http://endnote.com/" shape="rect">Endnote</a>. 
+        </p>
+      </div>
+      <div>
+        <a href="http://www.mycore.de/">
+          <img alt="" src="mycore_logo_small.png" style="width: 129px; height: 34px; float: right;" />
+        </a>
+      </div>
+    </div></div>
+  </section>
+  <meta>
+    <log lastEditor="muelleradmin" date="2015-10-06" time="11:27" />
+  </meta>
+</MyCoReWebPage>

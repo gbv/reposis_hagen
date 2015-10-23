@@ -1,2 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="technischer Betrieb"><div><h2>Technischer Betrieb</h2><div class="three_column"><p>Die VZG des GBV übernimmt als Dienstleister im Auftrag der Fernuniversität Hagen den Technischen Betrieb von deposit_hagen. Außerdem garantiert der GBV eine Langzeitverfügbarkeit über 5 Jahre für Dokumente des Repository, sofern dies nicht vom der Fernuniversität Hagen selbst übernommen wird.</p><p>Sowohl die Repository Software als auch die Suchmaschine nutzen Tomcat als Webapplicationserver. Dieser läuft auf einer virtuellen Maschine mit Linux als Betriebssystem. Die virtuelle Maschine ist Teil des VM-Ware Clusters des GBV. Um Verfügbarkeit des Dienstes zu erhöhen wird der Tomcat lokal über die Java​wrapper Software yajsw und remote über die Überwachungssoftware nagios überwacht. TODO Info über VMWarecluster.</p><p>Die Metadaten der Dokumente und die Dokuemnte selbst werden als Dateien in dem Dateisystem der VM gespeichert. Die Metadaten werden zusätzlich durch svn versioniert. Sämtliche Dateien werden täglich durch ein Backup gesichert. TODO backupsoftware, Sicherungsort (band)</p></div></div></section><meta><log lastEditor="administrator" date="2015-10-14" time="13:17" /></meta></MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="technischer Betrieb">
+    <div>
+      <h1>Technischer Betrieb</h1>
+      <div class="row">
+        <div class="col-md-8">
+        <p>Die VZG des GBV übernimmt als Dienstleister im Auftrag der
+          Fernuniversität Hagen den Technischen Betrieb von deposit_hagen.
+          Außerdem garantiert der GBV eine Langzeitverfügbarkeit über 5 Jahre
+          für Dokumente des Repository, sofern dies nicht vom der
+          Fernuniversität Hagen selbst übernommen wird.</p>
+        <p>Sowohl die Repository Software als auch die Suchmaschine nutzen
+          Tomcat als Webapplicationserver. Dieser läuft auf einer virtuellen
+          Maschine mit Linux als Betriebssystem. Die virtuelle Maschine ist
+          Teil des VM-Ware Clusters des GBV. Um Verfügbarkeit des Dienstes zu
+          erhöhen wird der Tomcat lokal über die Java​wrapper Software yajsw
+          und remote über die Überwachungssoftware nagios überwacht. TODO
+          Info über VMWarecluster.</p>
+        <p>Die Metadaten der Dokumente und die Dokuemnte selbst werden als
+          Dateien in dem Dateisystem der VM gespeichert. Die Metadaten werden
+          zusätzlich durch svn versioniert. Sämtliche Dateien werden täglich
+          durch ein Backup gesichert. TODO backupsoftware, Sicherungsort
+          (band)</p>
+      </div>
+    </div></div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2015-10-14" time="13:17" />
+  </meta>
+</MyCoReWebPage>
