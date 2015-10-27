@@ -425,6 +425,7 @@ html body #powered_by {
 }
 
 
+/* TODO: move to MIR */
 .mir-main-nav nav .navbar-nav .dropdown-menu {
     background-color: #FFF;
 }
@@ -439,9 +440,16 @@ html body #powered_by {
     width: 318px;
 }
 
-.mycoreviewer > .navbar-default {
-    background-color: #ECECEC;
+.result_body .result_filter .panel {
+  width: 100%;
+  margin-right: 0;
 }
-.mycoreviewer > .navbar {
+
+.result_list, .result_search {
+  padding-right: 40px;
+}
+
+.mycoreViewer .navbar {
+    background-color: #ECECEC;
     border-radius: 0px;
 }
