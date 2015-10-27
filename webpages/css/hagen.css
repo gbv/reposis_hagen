@@ -314,6 +314,7 @@ div.mir-form-group:first-child > div {
 html body #powered_by {
   background-color:#FFFFFF;
   text-align: center;
+  display:none;
 }
 
 #powered_by  img {
