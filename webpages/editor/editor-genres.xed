@@ -36,7 +36,7 @@
   </xed:template>
 
   <xed:template id="book.common">
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="place" />
@@ -101,7 +101,7 @@
   <xed:template id="dissertation">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="thesis.advisor.reviewer.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued.nonrequired" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.accepted" />
@@ -111,7 +111,7 @@
   <xed:template id="habilitation">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="thesisHabil.reviewer.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="$host='not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued.nonrequired" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.acceptedHabil" />
@@ -145,7 +145,7 @@
 
   <xed:template id="other_thesis.common">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="otherthesis.advisor.reviewer.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued.nonrequired" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="date.acceptedOtherThesis" />
@@ -191,7 +191,7 @@
   <xed:template id="publication.common">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="extent" />
@@ -287,7 +287,7 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.interviewee.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.simple" />
@@ -306,11 +306,11 @@
   <xed:template id="speech">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="conference" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.simple" />
@@ -347,11 +347,11 @@
   <xed:template id="poster">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
-    <xed:if test="$host='standalone'">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="conference" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="place" />
     </xed:if>
@@ -395,7 +395,7 @@
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="subtitle" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
-    <xed:if test="$host='standalone' or not(mods:relatedItem)">
+    <xed:if test="not(mods:relatedItem)">
       <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="year.issued" />
     </xed:if>
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="language.simple" />
