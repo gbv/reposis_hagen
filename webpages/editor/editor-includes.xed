@@ -91,6 +91,10 @@
   <xed:template id="title">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true" required-text="{i18n:mir.validation.title}" />
   </xed:template>
+  
+  <xed:template id="title.nonrequired">
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" />
+  </xed:template>
 
   <xed:template id="title.abbreviated">
     <mir:textfield xpath="mods:titleInfo[@type='abbreviated']/mods:title" label="mir.title.type.abbreviated" help-text="{i18n:mir.help.title.abbreviated}" />
@@ -267,7 +271,7 @@
       </div>
     </fieldset>
   </xed:template>
-
+  
   <xed:template id="editor.repeated">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -360,6 +364,17 @@
       </option>
       <option value="spk">
         <xed:output i18n="mir.role.speaker" />
+      </option>
+    </mir:person.repeated>
+  </xed:template>
+  
+  <xed:template id="artist.photographer.repeated">
+    <mir:person.repeated help-text="{i18n:mir.help.artist.photographer}">
+      <option value="art">
+        <xed:output i18n="mir.role.artist" />
+      </option>
+      <option value="pht">
+        <xed:output i18n="mir.role.photographer" />
       </option>
     </mir:person.repeated>
   </xed:template>
