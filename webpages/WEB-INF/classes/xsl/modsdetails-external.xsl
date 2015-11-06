@@ -636,7 +636,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li>
-              <a href="{$ServletsBaseURL}derivate/update{$HttpSession}?id={$deriv}">
+              <a href="{$WebApplicationBaseURL}editor/editor-derivate.xed{$HttpSession}?derivateid={$deriv}">
                 <!-- xsl:value-of select="i18n:translate('component.swf.derivate.updateFile')" / -->
                 Beschriftung bearbeiten
               </a>
@@ -809,7 +809,7 @@
           <xsl:value-of select="//mods:originInfo/mods:publisher" />
         </div>
       </xsl:if>
-      
+
       <xsl:if test="//mods:originInfo[@eventType='creation']/mods:publisher">
         <div class="hit_pub_name">
           <span class="label_publisher">
