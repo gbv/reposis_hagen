@@ -105,7 +105,7 @@
         </xsl:if>
       </div>
 
-      <div class="cols-xs-12 col-sm-8 result_list">
+      <div class="col-xs-12 col-sm-8 result_list">
         <xsl:copy-of select="$ResultPages" />
         <xsl:comment>
           RESULT LIST START
