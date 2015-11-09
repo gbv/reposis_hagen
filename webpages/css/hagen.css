@@ -420,7 +420,7 @@ html body #powered_by {
   min-width: 80px;
 }
 
-#main_content dd {
+#main_content dl.contact dd {
     margin-left: 20px;
 }
 

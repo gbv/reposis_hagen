@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-8">
           <h2>Allgemeine Information, Datenformate, Procedere etc.</h2>
-          <dl>
+          <dl class="contact">
             <dt>Maria Müller</dt>
             <dd>Tel. 02331/987 -1162</dd>
 
@@ -19,7 +19,7 @@
           </p>
 
           <h2>Hilfestellung bei Dissertationen und Abschlussarbeiten</h2>
-          <dl>
+          <dl class="contact">
             <dt>Annette Frerichs</dt>
             <dd>Tel. 02331/987 -2892</dd>
           </dl>
