@@ -91,7 +91,7 @@
   <xed:template id="title">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true" required-text="{i18n:mir.validation.title}" />
   </xed:template>
-  
+
   <xed:template id="title.nonrequired">
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" />
   </xed:template>
@@ -116,9 +116,13 @@
   </xed:template>
   
   <xed:template id="title.series.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.series" class="required"/>
+    <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.series" help-text="{i18n:mir.help.series.title}" class="required"/>
   </xed:template>
-  
+
+  <xed:template id="title.lecture.relItemsearch">
+    <mir:relItemsearch searchengine="title" genre="lecture" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title"  help-text="{i18n:mir.help.series.title}" />
+  </xed:template>
+
   <xed:template id="title.book.relItemsearch">
     <mir:relItemsearch searchengine="title" genre="book" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.book" class="required"/>
   </xed:template>
@@ -128,7 +132,7 @@
   </xed:template>
   
   <xed:template id="title.journal.relItemsearch">
-    <mir:relItemsearch searchengine="title" genre="journal" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.journal" class="required"/>
+    <mir:relItemsearch searchengine="title" genre="journal" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}" class="required"/>
   </xed:template>
   
   <xed:template id="title.collection.relItemsearch">
@@ -254,8 +258,8 @@
             </div>
             <mir:help-pmud help-text="{i18n:mir.help.title.complex}" pmud="true" />
           </div>
-          <mir:textfield xpath="mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" />
-          <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}" />
+          <mir:textarea xpath="mods:title" rows="2" label="mir.title" help-text="{i18n:mir.help.title}" class="required" />
+          <mir:textarea xpath="mods:subTitle" rows="2" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}" />
         </div>
       </xed:repeat>
     </fieldset>
@@ -367,7 +371,7 @@
       </option>
     </mir:person.repeated>
   </xed:template>
-  
+
   <xed:template id="artist.photographer.repeated">
     <mir:person.repeated help-text="{i18n:mir.help.artist.photographer}">
       <option value="art">
@@ -402,6 +406,14 @@
     <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']/mods:displayForm" required="true" display="global">
       <xed:output i18n="mir.validation.author.thesis" />
     </xed:validate>
+  </xed:template>
+
+  <xed:template id="thesis.advisor.reviewer.all.repeated">
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='aut']" />
+    <xed:bind xpath="mods:name[@type='personal'][mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='rev']" />
+    <mir:person.repeated help-text="{i18n:mir.help.thesis.advisor.reviewer}">
+      <xed:include uri="xslStyle:items2options:classification:editor:-1:children:marcrelator" />
+    </mir:person.repeated>
   </xed:template>
 
   <xed:template id="otherthesis.advisor.reviewer.repeated">
@@ -587,10 +599,25 @@
     <mir:relItemsearch searchengine="isbn" genre="collection" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
+  
+  <xed:template id="identifier.isbn.festschrift.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="festschrift" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
+                       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
+  </xed:template>
 
   <xed:template id="identifier.isbn.proceeding.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="proceeding" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
+  </xed:template>
+
+  <xed:template id="identifier.isbn.journal.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="journal" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
+                       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
+  </xed:template>
+
+  <xed:template id="identifier.isbn.newspaper.relItemsearch">
+    <mir:relItemsearch searchengine="isbn" genre="newspaper" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
+                       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
 
   <xed:template id="identifier.isbn.lexicon.relItemsearch">
@@ -1236,7 +1263,27 @@
       </div>
     </xed:bind>
   </xed:template>
-
+  
+  <xed:template id="sdnb.nopreselect">
+    <xed:bind xpath="mods:classification[@authority='sdnb'][@displayLabel='sdnb']">
+      <div class="form-group {$xed-validation-marker}">
+        <label class="col-md-3 control-label">
+          <xed:output i18n="editor.search.mir.sdnb" />
+          :
+        </label>
+        <div class="col-md-6">
+          <select class="form-control form-control-inline">
+            <option value="">
+              <xed:output i18n="mir.select" />
+            </option>
+            <xed:include uri="xslStyle:items2options:classification:editor:-1:children:SDNB" />
+          </select>
+        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.sdnb}" />
+      </div>
+    </xed:bind>
+  </xed:template>
+  
   <xed:template id="abstract.simple">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -1599,7 +1646,6 @@
             required="true" i18n="mir.validation.author" display="global" />
         </xed:otherwise>
       </xed:choose>
-      <xed:validate xpath="//mods:originInfo/mods:dateIssued[@encoding='w3cdtf']" required="true" i18n="mir.validation.dateIssued" display="global" />
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:if>-->
     <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules-identifier" />
