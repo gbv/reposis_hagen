@@ -4,7 +4,17 @@
     <div>
       <div class="jumbotwo">
         <div class="row">
-          <div class="col-md-6" lang="de">
+          <div class="col-md-8" lang="de">
+            <div class="result_body" style="margin-top:80px;">
+              <h3 style="margin-left:87px;font-weight: 500;">Neueste Dokumente:</h3>
+              <div class="result_list">
+                <div id="hit_list">
+                  <h1>Lade...</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" lang="de">
             <div style="margin:60px 0px 80px 0px;text-align: left;">
               <img alt="deposit_hagen" src="images/deposit_hagen_logo_gross.png"
                 title="desposit_hagen-Logo" />
@@ -30,17 +40,6 @@
               Universitätsbibliothek. Gerne beantworten wir Ihnen Ihre Fragen
               rund um den Publikationsprozess.
             </p>
-          </div>
-          <div class="col-md-1" lang="de"></div>
-          <div class="col-md-5" lang="de">
-            <div class="result_body" style="margin-left:10px; margin-top:60px;">
-              <h3 style="margin-left:87px;">Neueste Dokumente:</h3>
-              <div class="result_list">
-                <div id="hit_list">
-                  <h1>Lade...</h1>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

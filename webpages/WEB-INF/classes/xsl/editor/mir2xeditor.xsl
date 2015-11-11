@@ -22,7 +22,7 @@
   
   <xsl:template name="mir-textfield">
     <label class="col-md-3 control-label ">
-      <xed:output i18n="{@label}" /> 
+      <xed:output i18n="{@label}" />
     </label>
     <div class="col-md-6">
       <input id="{@id}" type="text" class="form-control">
@@ -38,7 +38,7 @@
       </xsl:if>
     </div>
   </xsl:template>
-  
+
   <xsl:template match="mir:textfield">
     <xsl:choose>
       <xsl:when test="@repeat = 'true'">
@@ -69,12 +69,10 @@
         </xed:bind>
       </xsl:otherwise>
     </xsl:choose>
-      
-    
   </xsl:template>
 
   <xsl:template match="mir:textfield.repeat">
-  <!-- depricated after removing edit mir-textfield-->
+  <!-- deprecated after removing edit mir-textfield-->
     <xed:repeat xpath="{@xpath}" min="{@min}" max="{@max}">
       <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
       <div class="form-group {@class} {$xed-val-marker}">
@@ -88,27 +86,64 @@
 
   <xsl:template match="mir:textarea">
     <xsl:variable name="xed-val-marker" > {$xed-validation-marker} </xsl:variable>
-    <xed:bind xpath="{@xpath}">
-      <div class="form-group {@class} {$xed-val-marker}">
-        <label class="col-md-3 control-label">
-          <xed:output i18n="{@label}" />
-        </label>
-        <div class="col-md-6">
-          <textarea class="form-control">
-            <xsl:copy-of select="@rows" />
-            <xsl:copy-of select="@placeholder" />
-          </textarea>
-        </div>
-        <div class="col-md-3">
-          <xsl:if test="string-length(@help-text) &gt; 0">
-            <xsl:call-template name="mir-helpbutton" />
-          </xsl:if>
-          <xsl:if test="@pmud = 'true'">
-            <xsl:call-template name="mir-pmud" />
-          </xsl:if>
-        </div>
-      </div>
-    </xed:bind>
+    <xsl:choose>
+      <xsl:when test="@repeat = 'true'">
+        <xed:repeat xpath="{@xpath}" min="{@min}" max="{@max}">
+          <div class="form-group {@class} {$xed-val-marker}">
+            <label class="col-md-3 control-label">
+              <xed:output i18n="{@label}" />
+            </label>
+            <div class="col-md-6">
+            <xsl:choose>
+              <xsl:when test="@bind" >
+                <xed:bind xpath="{@bind}" >
+                  <textarea class="form-control">
+                    <xsl:copy-of select="@rows" />
+                    <xsl:copy-of select="@placeholder" />
+                  </textarea>
+                </xed:bind>
+              </xsl:when>
+              <xsl:otherwise>
+                <textarea class="form-control">
+                  <xsl:copy-of select="@rows" />
+                  <xsl:copy-of select="@placeholder" />
+                </textarea>
+              </xsl:otherwise>
+            </xsl:choose>
+            </div>
+            <div class="col-md-3">
+              <xsl:if test="string-length(@help-text) &gt; 0">
+                <xsl:call-template name="mir-helpbutton" />
+              </xsl:if>
+              <xsl:call-template name="mir-pmud" />
+            </div>
+          </div>
+        </xed:repeat>
+      </xsl:when>
+      <xsl:otherwise>
+        <xed:bind xpath="{@xpath}">
+          <div class="form-group {@class} {$xed-val-marker}">
+            <label class="col-md-3 control-label">
+              <xed:output i18n="{@label}" />
+            </label>
+            <div class="col-md-6">
+              <textarea class="form-control">
+                <xsl:copy-of select="@rows" />
+                <xsl:copy-of select="@placeholder" />
+              </textarea>
+            </div>
+            <div class="col-md-3">
+              <xsl:if test="string-length(@help-text) &gt; 0">
+                <xsl:call-template name="mir-helpbutton" />
+              </xsl:if>
+              <xsl:if test="@pmud = 'true'">
+                <xsl:call-template name="mir-pmud" />
+              </xsl:if>
+            </div>
+          </div>
+        </xed:bind>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template match="mir:role.repeated">
@@ -172,7 +207,7 @@
       <xsl:call-template name="mir-pmud" />
     </div>
   </xsl:template>
-  
+
   <xsl:template match="mir:help-pmud">
     <div class="col-md-3 {@class}">
       <xsl:if test="string-length(@help-text) &gt; 0">
