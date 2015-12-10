@@ -1463,6 +1463,10 @@
   <xed:template id="comment">
     <mir:textarea xpath="mods:note" label="mir.comment" help-text="{i18n:mir.help.comment}" rows="2" />
   </xed:template>
+  
+  <xed:template id="comment.extern">
+    <mir:textarea xpath="mods:note[@type='extern']" label="mir.comment.extern" help-text="{i18n:mir.help.comment}" rows="2" />
+  </xed:template>
 
   <xed:template id="related.item">
     <fieldset>

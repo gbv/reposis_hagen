@@ -20,7 +20,7 @@
 
       <xsl:if test="div[@id='search_browsing']">
         <div class="row detail_row">
-          <div class="col-md-12">
+          <div class="col-md-8">
             <div class="detail_block text-center">
               <span id="pagination_label">gefundende Dokumente</span>
               <br />
@@ -53,7 +53,7 @@
                 <!-- End: EDIT -->
               </div>
             </div>
-            <div class="col-md-8 col-md-pull-4">
+            <div class="col-xs-12 col-sm-8 col-sm-pull-4 col-md-8 col-md-pull-4">
               <xsl:apply-templates select="div[@id='mir-abstract-badges']" mode="copyContent" />
             </div>
           </div>
@@ -72,6 +72,10 @@
           <!-- viewer -->
           <xsl:if test="div[@id = 'mir-viewer']">
             <xsl:apply-templates select="div[@id='mir-viewer']" mode="copyContent" />
+          </xsl:if>
+          <!-- player -->
+          <xsl:if test="div[@id = 'mir-player']">
+            <xsl:apply-templates select="div[@id='mir-player']" mode="copyContent" />
           </xsl:if>
           <!-- files -->
           <xsl:if test="div[contains(@id,'mir-collapse-')]">
@@ -98,7 +102,7 @@
         </div>
 
 <!-- right column -->
-        <div id="aux_col" class="col-xs-12 col-sm-4" style="margin-top:20px;">
+        <div id="aux_col" class="col-xs-12 col-sm-4">
 
 <!-- cites -->
           <xsl:if test="div[@id='mir-citation']">
@@ -127,7 +131,7 @@
             </div>
           </xsl:if>
 <!-- export -->
-          <div class="panel panel-default">
+          <div id="mir_export_panel" class="panel panel-default">
             <div class="panel-heading">
               <h3 class="panel-title">Export</h3>
             </div>
@@ -138,7 +142,7 @@
             </div>
           </div>
 <!-- system -->
-          <xsl:if test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
+          <xsl:if test="not(mcrxsl:isCurrentUserGuestUser())">
             <div id="mir_admindata_panel" class="panel panel-default system">
               <div class="panel-heading">
                 <h3 class="panel-title">
@@ -149,6 +153,28 @@
                 <!-- Start: ADMINMETADATA -->
                 <xsl:apply-templates select="div[@id='mir-admindata']" mode="newMetadata" />
                 <!-- End: ADMINMETADATA -->
+              </div>
+              <div class="modal fade" id="historyModal" tabindex="-1" role="dialog" aria-labelledby="modal frame" aria-hidden="true">
+                <div class="modal-dialog" style="width: 930px">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close modalFrame-cancel" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">x</span>
+                      </button>
+                      <h4 class="modal-title" id="modalFrame-title">
+                        <xsl:value-of select="i18n:translate('metadata.versionInfo.label')" />
+                      </h4>
+                    </div>
+                    <div id="modalFrame-body" class="modal-body" style="max-height: 560px; overflow: auto">
+                      <xsl:apply-templates select="div[@id='mir-historydata']" mode="copyContent" />
+                    </div>
+                    <div class="modal-footer" style="clear: both">
+                      <button id="modalFrame-cancel" type="button" class="btn btn-danger" data-dismiss="modal">
+                        <xsl:value-of select="i18n:translate('button.cancel')" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </xsl:if>
