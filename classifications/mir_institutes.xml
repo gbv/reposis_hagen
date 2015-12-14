@@ -11,165 +11,384 @@
       <category ID="HistInst">
         <label xml:lang="de" text="Historisches Institut" />
         <label xml:lang="en" text="" />
+        <category ID="GesEurMod">
+          <label xml:lang="de" text="Geschichte der Europäischen Moderne (Prof. Dr. Alexandra Przyrembel)" />
+        </category>
+        <category ID="GesEurWel">
+          <label xml:lang="de" text="Geschichte Europas in der Welt (Dr. Eberhard Crailsheim)" />
+        </category>
         <category ID="GesGegAlt">
-          <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas" />
+          <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas (Prof. Dr. Felicitas Schmieder)" />
           <label xml:lang="en" text="" />
         </category>
-        <category ID="NeuDeuEurGes">
+        <category ID="HistInstAD">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte" />
-        </category>
-        <category ID="NeuEurAusEurGes">
-          <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Neuere Europäische und Außereuropäische Geschichte" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="NeuDeuEurGes">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte (Prof. Dr. Peter Brandt)" />
+          </category>
+          <category ID="NeuEurAusEurGes">
+            <label xml:lang="de" text="Neuere Europäische und Außereuropäische Geschichte (Prof. Dr. Reinhard Wendt)" />
+            <label xml:lang="en" text="" />
+          </category>
         </category>
       </category>
       <category ID="InsBilMed">
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
         <category ID="AllBilWiss">
-          <label xml:lang="de" text="Allgemeine Bildungswissenschaft" />
+          <label xml:lang="de" text="Allgemeine Bildungswissenschaft (Prof. Dr. Cathleen Grunert)" />
           <label xml:lang="en" text="" />
+        </category>
+        <category ID="BilDif">
+          <label xml:lang="es" text="" />
+          <label xml:lang="fr" text="" />
+          <label xml:lang="it" text="" />
+          <label xml:lang="de" text="Bildung und Differenz (Prof. Dr. Katharina Walgenbach)" />
+          <label xml:lang="en" text="" />
+          <label xml:lang="pt" text="" />
+          <label xml:lang="de" text="" />
         </category>
         <category ID="BilMedPad">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Bildungstheorie und Medienpädagogik" />
+          <label xml:lang="de" text="Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" />
         </category>
         <category ID="EmpBilFor">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Empirische Bildungsforschung" />
-        </category>
-        <category ID="IntBilPro">
-          <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Internationalisierung von Bildungsprozessen" />
+          <label xml:lang="de" text="Empirische Bildungsforschung (Dr. Boris Becker)" />
         </category>
         <category ID="LebLanLer">
-          <label xml:lang="de" text="Lebenslanges Lernen" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lebenslanges Lernen (Prof. Dr. Uwe Elsholz)" />
         </category>
         <category ID="MedDid">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Mediendidaktik" />
+          <label xml:lang="de" text="Mediendidaktik (Prof. Dr. Theo Bastiaens)" />
+        </category>
+        <category ID="InsBilMedAD">
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="ArbSysPaed">
+            <label xml:lang="de" text="Arbeitsbereich Systematische Pädagogik (nur Magister) (Apl.-Prof. Dr. Roland Bast)" />
+            <label xml:lang="en" text="" />
+          </category>
+          <category ID="BerWirPae">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Berufs- und Wirtschaftspädagogik (Prof. Dr. Walter Georg)" />
+          </category>
+          <category ID="Biltec">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Bildungstechnologie (PD Dr. Thomas Brüsemeister)" />
+          </category>
+          <category ID="CSCL">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="de" text="CSCL (Computer Supported Collaborative Learning) (Jun.-Prof. Dr. Michael Klebl)" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="IntErz">
+            <label xml:lang="de" text="Interkulturelle Erziehungswissenschaft und Ausländerpädagogik (Prof. Dr. Georg Hansen)" />
+            <label xml:lang="en" text="" />
+          </category>
+          <category ID="IntBilPro">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Internationalisierung von Bildungsprozessen (Dr. Rainer Jansen)" />
+          </category>
+          <category ID="KulManMetErz">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Kulturmanagement / Methoden der Erziehungswissenschaft (Prof. Dr. Thomas Heinze)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="5cb5f095-daa0-424c-a8e6-b26bc4b188be">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Methodenlehre des Fernstudiums (Prof. Dr. Dr. h.c. Otto Peters)" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="TheSchUnt">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
+          </category>
         </category>
       </category>
       <category ID="InsNeuDeuLitMed">
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Institut für Neuere deutsche Literatur- und Medienwissenschaft" />
         <category ID="NeuDeuLitMedthe">
-          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie" />
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie (Prof. Dr. Uwe Steiner)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="NeuDeuLitGesMedkul">
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Geschichte der Medienkulturen (Prof. Dr. Armin Schäfer)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Geschichte der Medienkulturen" />
         </category>
         <category ID="NeuDeuLitMedaes">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medienästhetik" />
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medienästhetik (Prof. Dr. Michael Niehaus)" />
         </category>
       </category>
       <category ID="InsPhil">
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Institut für Philosophie" />
         <category ID="Phil1">
-          <label xml:lang="de" text="Philosophie I" />
+          <label xml:lang="de" text="Philosophie I (Prof. Dr. Hubertus Busche)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="Phil2">
+          <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie (Prof. Dr. Thomas Sören Hoffmann)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie" />
         </category>
         <category ID="Phil3">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft" />
+          <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft (Prof. Dr. Thomas Bedorf)" />
+        </category>
+        <category ID="InsPhilAL">
+          <label xml:lang="es" text="" />
+          <label xml:lang="fr" text="" />
+          <label xml:lang="it" text="" />
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <label xml:lang="pt" text="" />
+          <label xml:lang="ar" text="" />
+          <category ID="Phil2PraktPhil">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Philosophie II, insbes. praktische Philosophie (Prof. Dr. Kurt Röttgers)" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="Phil3Gethmann-Siefert">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Philosophie III (Prof. Dr. Annemarie Gethmann-Siefert)" />
+            <label xml:lang="ar" text="" />
+          </category>
         </category>
       </category>
       <category ID="InsPol">
         <label xml:lang="de" text="Institut für Politikwissenschaft" />
         <label xml:lang="en" text="" />
         <category ID="Pol1">
-          <label xml:lang="de" text="Politikwissenschaft I: Staat und Regieren" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft I: Staat und Regieren (Prof. Dr. Viktoria Kaina)" />
         </category>
         <category ID="Pol2">
-          <label xml:lang="de" text="Politikwissenschaft II: Internationale Politik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft II: Internationale Politik (PD Dr. Thorsten Hüller)" />
         </category>
         <category ID="Pol3">
-          <label xml:lang="de" text="Politikwissenschaft III: Politikfeldanalyse" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft III: Politikfeldanalyse und Umweltpolitik (Prof. Dr. Annette Elisabeth Töller)" />
         </category>
         <category ID="Pol4">
-          <label xml:lang="de" text="Politikwissenschaft IV: Politik und Verwaltung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Politikwissenschaft IV: Politik und Verwaltung (Prof. Dr. Lars Holtkamp)" />
         </category>
         <category ID="Pol5">
-          <label xml:lang="de" text="Politikwissenschaft V: Vergleichende Politikwissenschaft" />
+          <label xml:lang="de" text="Politikwissenschaft V: Vergleichende Politikwissenschaft (Prof. Dr. Michael Stoiber)" />
           <label xml:lang="en" text="" />
+        </category>
+        <category ID="InsPolAD">
+          <label xml:lang="es" text="" />
+          <label xml:lang="fr" text="" />
+          <label xml:lang="it" text="" />
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <label xml:lang="pt" text="" />
+          <label xml:lang="ar" text="" />
+          <category ID="Pol2IntKonf">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Politikwissenschaft II: Internationale Konflikte und Umweltpolitik (Prof. Dr. Georg Simonis)" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="Pol5DemEntw">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Politikwissenschaft V: Demokratie und Entwicklung (Prof. Dr. Hans-Joachim Lauth)" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
         </category>
       </category>
       <category ID="InsPsy">
         <label xml:lang="de" text="Institut für Psychologie" />
         <label xml:lang="en" text="" />
         <category ID="AllPsyLerMotEmo">
+          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion (Prof. Dr. Robert Gaschler)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion" />
         </category>
         <category ID="AllPsyUrtEntHan">
-          <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln (Prof. Dr. Andreas Glöckner)" />
         </category>
         <category ID="BilPsy">
-          <label xml:lang="de" text="Bildungspsychologie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Bildungspsychologie (Prof. Dr. Kathrin Jonkmann)" />
         </category>
         <category ID="ComPsy">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Community Psychology" />
+          <label xml:lang="de" text="Community Psychology (Prof. Dr. Anette Rohmann)" />
         </category>
         <category ID="GesPsy">
-          <label xml:lang="de" text="Gesundheitspsychologie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Gesundheitspsychologie (Prof. Dr. Christel Salewski)" />
         </category>
         <category ID="PerPsyDiaBer">
-          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung" />
+          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung (Dr. Jörg-Tobias Kuhn)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="PsyErw">
-          <label xml:lang="de" text="Psychologie des Erwachsenenalters" />
+          <label xml:lang="de" text="Psychologie des Erwachsenenalters (Prof. Dr. Ingrid Josephs)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="PsyMetDiaEva">
-          <label xml:lang="de" text="Psychologische Methodenlehre, Diagnostik und Evaluation" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Psychologische Methodenlehre und Evaluation (Prof. Dr. Oliver Christ)" />
         </category>
         <category ID="SozPsy">
-          <label xml:lang="de" text="Sozialpsychologie" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Sozialpsychologie (Prof. Dr. Stefan Stürmer)" />
+        </category>
+        <category ID="InsPsyAD">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="AllPsy">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Allgemeine Psychologie (Prof. Dr. Wolfgang Mack)" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="ArbOrgPsy">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Arbeits- und Organisationspsychologie (Prof. Dr. Bernd Marcus)" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="PsyMetDiaEv">
+            <label xml:lang="de" text="Psychologische Methodenlehre, Diagnostik und Evaluation (Prof. Dr. Karl-Heinz Renner)" />
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="54c4630f-65ef-46a1-8d29-fef46b2d7493">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Psychologie, Schwerpunkt Ökologische Psychologie (Prof. Dr. Lenelis Kruse-Graumann)" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="PsySchPsySozPro">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Psychologie, Schwerpunkt Psychologie sozialer Prozesse (Prof. Dr. Helmut E. Lück)" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="PsyArbOrg">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Psychologie, Arbeits- und Organisationspsychologie (Prof. Dr. Gerd Wiendieck)" />
+            <label xml:lang="ar" text="" />
+          </category>
         </category>
       </category>
       <category ID="InsSoz">
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Institut für Soziologie" />
         <category ID="Soz1">
-          <label xml:lang="de" text="Soziologie I, Allgemeine Soziologie und Soziologische Theorie" />
+          <label xml:lang="de" text="Soziologie I, Allgemeine Soziologie und Soziologische Theorie (Prof. Dr. Frank Hillebrandt)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="Soz2">
+          <label xml:lang="de" text="Soziologie II, Soziologische Gegenwartsdiagnosen (Prof. Dr. Uwe Vormbusch)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Soziologie II, Soziologische Gegenwartsdiagnosen" />
         </category>
         <category ID="Soz3">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Soziologie III, Organisationssoziologie und qualitative Methoden" />
-        </category>
-        <category ID="ArbStaRegsoz">
-          <label xml:lang="de" text="Arbeitsbereich Stadt- und Regionalsoziologie" />
-          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Soziologie III, Organisationssoziologie und qualitative Methoden (Prof. Dr. Sylvia Wilz)" />
         </category>
         <category ID="StiProSozFamLebNetGem">
+          <label xml:lang="de" text="Ernsting's-family-Junior Stiftungsprofessur für Soziologie familialer Lebensformen, Netzwerke und Gemeinschaften (Jun.-Prof. Dr. Dorett Funcke)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Ernsting's-family-Junior Stiftungsprofessur für Soziologie familialer Lebensformen, Netzwerke und Gemeinschaften" />
+        </category>
+        <category ID="InsSozAD">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="Soz1IndGes">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Soziologie I, Individuum und Gesellschaft (Prof. Dr. Heinz Abels)" />
+          </category>
+          <category ID="Soz2HanStr">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Soziologie II, Handeln und Strukturen (Prof. Dr. Uwe Schimank)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="Soz3AllSoz">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Soziologie III, Allgemeine Soziologie (Prof. Dr. Werner Fuchs-Heinritz)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="SozBerArbGes">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Soziologie, Bereich Arbeit und Gesellschaft (Apl.-Prof. Dr. Dr. h.c. Wieland Jäger)" />
+          </category>
+          <category ID="SozOrgEnt">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Soziologie, Soziologie organisationaler Entscheidungen (Jun.-Prof. Dr. Sylvia Wilz) " />
+          </category>
         </category>
       </category>
       <category ID="ArbSoz">
@@ -177,16 +396,30 @@
         <label xml:lang="en" text="" />
         <category ID="ArbOrgpsy">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Arbeits- und Organisationspsychologie" />
+          <label xml:lang="de" text="Arbeits- und Organisationspsychologie (Prof. Dr. Bernd Marcus)" />
         </category>
       </category>
-      <category ID="KswPenEmePro">
+      <category ID="ArbKSW">
+        <label xml:lang="de" text="Arbeitsstellen" />
         <label xml:lang="en" text="" />
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
-        <category ID="TheSchUnt">
+        <category ID="ArbKulGru">
+          <label xml:lang="de" text="Kulturwissenschaftliche Grundlagen (Dr. Daniel Schubbe-Åkerlund)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
         </category>
+        <category ID="ArbQuaMet">
+          <label xml:lang="de" text="Quantitative Methoden (Dr. Markus Tausendpfund)" />
+          <label xml:lang="en" text="" />
+        </category>
+      </category>
+      <category ID="IFD">
+        <label xml:lang="es" text="" />
+        <label xml:lang="fr" text="" />
+        <label xml:lang="it" text="" />
+        <label xml:lang="en" text="" />
+        <label xml:lang="pt" text="" />
+        <label xml:lang="de" text="Institut Frieden und Demokratie" />
+        <label xml:lang="ar" text="" />
+        <url xlink:href="http://www.fernuni-hagen.de/FRIEDEN/" xlink:type="locator" />
       </category>
     </category>
     <category ID="mathinf">
@@ -198,108 +431,221 @@
         <label xml:lang="en" text="" />
         <category ID="EleEne">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Elektrische Energietechnik" />
+          <label xml:lang="de" text="Elektrische Energietechnik (Prof. Dr. Detlev Hackstein)" />
         </category>
         <category ID="Inftec">
-          <label xml:lang="de" text="Informationstechnik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Informationstechnik (Prof. Dr. Dr. Wolfgang A. Halang)" />
         </category>
         <category ID="Komnet">
-          <label xml:lang="de" text="Kommunikationsnetze" />
+          <label xml:lang="de" text="Kommunikationsnetze (Prof. Dr.-Ing. habil. Herwig Unger)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="MikNan">
-          <label xml:lang="de" text="Mikro- und Nanophotonik (bisher: Optische Nachrichtentechnik)" />
+          <label xml:lang="de" text="Mikro- und Nanophotonik (Prof. Dr. Jürgen Jahns)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="ProReg">
-          <label xml:lang="de" text="Prozesssteuerung und Regelungstechnik" />
+          <label xml:lang="de" text="Prozesssteuerung und Regelungstechnik (Prof. Dr.-Ing. Helmut Hoyer)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="TecInn">
+          <label xml:lang="de" text="Technologie- und Innovationsmanagement (Prof. Dr.-Ing. Joachim Warschat)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Technologie- und Innovationsmanagement" />
+        </category>
+        <category ID="FachEleAD">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="AllTheEle">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Allgemeine und Theoretische Elektrotechnik" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="BauEleTec">
+            <label xml:lang="de" text="Bauelemente der Elektrotechnik (Prof. Dr. Wolfgang Fahrner)" />
+            <label xml:lang="en" text="" />
+          </category>
+          <category ID="EleSch">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Elektronische Schaltungen (Prof. Dr. Ing. Horst Wupper)" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="KomSys">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Kommunikationssysteme (Prof. Dr.-Ing. Firoz Kaderali)" />
+            <label xml:lang="de" text="" />
+          </category>
+          <category ID="NacTec">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Nachrichtentechnik (Prof. Dr. Ing Ludwig Kittel)" />
+            <label xml:lang="de" text="" />
+          </category>
+          <category ID="OptNacTec">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Optische Nachrichtentechnik (Prof. Dr. Jürgen Jahns)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
         </category>
       </category>
       <category ID="FachInf">
         <label xml:lang="de" text="Informatik" />
         <label xml:lang="en" text="" />
-        <category ID="WisSys">
-          <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Wissensbasierte Systeme" />
-        </category>
-        <category ID="SofThePro">
-          <label xml:lang="de" text="Softwaretechnik und Theorie der Programmierung" />
+        <category ID="AlgoKomp">
+          <label xml:lang="de" text="Algorithmen und Komplexität (Lehrstuhlvertretung Prof. Dr. Bernhard Heinemann)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="DatAnw">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen" />
+          <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen (Prof. Dr. Ralf Hartmut Güting)" />
         </category>
         <category ID="KooSys">
-          <label xml:lang="de" text="Kooperative Systeme" />
+          <label xml:lang="de" text="Kooperative Systeme (Prof. Dr. Jörg M. Haake)" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="MenComInt">
+          <label xml:lang="de" text="Mensch-Computer-Interaktion (Prof. Dr. rer. nat. Gabriele Peters)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="MulInt">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Multimedia und Internetanwendungen" />
+          <label xml:lang="de" text="Multimedia und Internetanwendungen (Prof. Dr.-Ing. Matthias Hemmje)" />
         </category>
         <category ID="ParVLSI">
-          <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Parallelität und VLSI" />
-        </category>
-        <category ID="UntSof">
-          <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Unternehmensweite Softwaresysteme" />
-        </category>
-        <category ID="MenComInt">
-          <label xml:lang="de" text="Mensch-Computer-Interaktion" />
-          <label xml:lang="en" text="" />
-        </category>
-        <category ID="Recarch">
-          <label xml:lang="de" text="Rechnerarchitektur" />
+          <label xml:lang="de" text="Parallelität und VLSI (Prof. Dr. Jörg Keller)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="ProgSys">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Programmiersysteme" />
+          <label xml:lang="de" text="Programmiersysteme (Prof. Dr. Friedrich Steimann)" />
         </category>
-        <category ID="AlgoKomp">
-          <label xml:lang="de" text="Algorithmen und Komplexität" />
+        <category ID="Recarch">
+          <label xml:lang="de" text="Rechnerarchitektur (Prof. Dr. Wolfram Schiffmann)" />
           <label xml:lang="en" text="" />
+        </category>
+        <category ID="SofThePr">
+          <label xml:lang="de" text="Softwaretechnik und Theorie der Programmierung (Prof. Dr. Jörg Desel)" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="SofThePro">
+          <label xml:lang="de" text="Theoretische Informatik (Prof. Dr. André Schulz)" />
+          <label xml:lang="en" text="" />
+        </category>
+        <category ID="UntSof">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Unternehmensweite Softwaresysteme (Prof. Dr. Lars Mönch)" />
+        </category>
+        <category ID="WisSys">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Wissensbasierte Systeme (Prof. Dr. Christoph Beierle)" />
+        </category>
+        <category ID="FachInfAD">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="BerLog">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Berechenbarkeit und Logik (Prof. Dr. Klaus Weihrauch)" />
+          </category>
+          <category ID="DatTec">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Datenverarbeitungstechnik (Prof. Dr.-Ing. Bernd J. Krämer)" />
+          </category>
+          <category ID="InfDat">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Informationssysteme und Datenbanken (Prof. Dr. Gunter Schlageter)" />
+          </category>
+          <category ID="SofEng">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Software Engineering (Prof. Dr. Hans-Werner Six)" />
+          </category>
+          <category ID="TecInf">
+            <label xml:lang="es" text="" />
+            <label xml:lang="de" text="Technische Informatik (Winfrid G. Schneeweiss)" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="" />
+          </category>
+          <category ID="IntInfKomsys">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Intelligente Informations- und Kommunikationssysteme (Prof. Dr. Hermann Helbig)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="" />
+          </category>
+          <category ID="VerSysKooArbLer">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Verteilte Systeme für kooperative Arbeits-/Lernumgebungen (Jun.-Prof. Dr. Stephan Lukosch)" />
+          </category>
         </category>
       </category>
       <category ID="FachMat">
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Mathematik" />
         <category ID="Algebra">
+          <label xml:lang="de" text="Algebra (Prof. Dr. Luise Unger)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Algebra" />
         </category>
         <category ID="Analysis">
-          <label xml:lang="de" text="Analysis" />
+          <label xml:lang="de" text="Analysis (Prof. Dr. Delio Mugnolo)" />
           <label xml:lang="en" text="" />
+        </category>
+        <category ID="AngSto">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Angewandte Stochastik (Prof. Dr. Wolfgang Spitzer)" />
         </category>
         <category ID="DisMatOpt">
-          <label xml:lang="de" text="Diskrete Mathematik und Optimierung" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Diskrete Mathematik und Optimierung (Prof. Dr. Winfried Hochstättler)" />
         </category>
         <category ID="NumMat">
-          <label xml:lang="de" text="Numerische Mathematik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Numerische Mathematik (Prof. Dr. Torsten Linß)" />
         </category>
         <category ID="Stochastik">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Stochastik" />
+          <label xml:lang="de" text="Stochastik (Prof. Dr. Werner Kirsch)" />
         </category>
-        <category ID="AngSto">
-          <label xml:lang="de" text="Angewandte Stochastik" />
+        <category ID="FachMatAD">
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="AngMat">
+            <label xml:lang="de" text="Angewandte Mathematik (Prof. Dr. Hansjörg Linden)" />
+            <label xml:lang="en" text="" />
+          </category>
+          <category ID="KomAna">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Komplexe Analysis (Prof. Dr. Andrei Duma)" />
+          </category>
         </category>
       </category>
-      <category ID="mathinfPenEmePro">
+      <category ID="mathinfPub">
         <label xml:lang="en" text="" />
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
+        <label xml:lang="de" text="Veröffentlichungen der Fakultät" />
       </category>
     </category>
     <category ID="wiwi">
@@ -310,89 +656,168 @@
         <label xml:lang="en" text="" />
         <label xml:lang="de" text="Betriebswirtschaftslehre" />
         <category ID="AngStaMetEmpSoz">
-          <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung" />
+          <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung (Univ.-Prof. Dr. Hermann Singer)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="BaFi">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Bank- und Finanzwirtschaft" />
+          <label xml:lang="de" text="Bank- und Finanzwirtschaft (Univ.-Prof. Dr. Rainer Baule)" />
         </category>
         <category ID="BetAnw">
-          <label xml:lang="de" text="Betriebliche Anwendungssysteme" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Betriebliche Anwendungssysteme (Univ.-Prof. Dr. Stefan Smolnik)" />
         </category>
         <category ID="BetSte">
-          <label xml:lang="de" text="Betriebswirtschaftliche Steuerlehre" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Betriebswirtschaftliche Steuerlehre (Univ.-Prof. Dr. Stephan Meyering)" />
         </category>
         <category ID="StiLehrDieMan">
-          <label xml:lang="de" text="Douglas-Stiftungslehrstuhl für Dienstleistungsmanagement" />
+          <label xml:lang="de" text="Douglas-Stiftungslehrstuhl für Dienstleistungsmanagement (Univ.-Prof. Dr. Sabine Fließ)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="bwlEntInf">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Entwicklung von Informationssystemen" />
+          <label xml:lang="de" text="Entwicklung von Informationssystemen (Univ.-Prof. Dr. Stefan Strecker)" />
         </category>
         <category ID="bwlInfMan">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Informationsmanagement" />
+          <label xml:lang="de" text="Informationsmanagement (Univ.-Prof. Dr. Ulrike Baumöl)" />
         </category>
         <category ID="InvUnt">
+          <label xml:lang="de" text="Investitionstheorie und Unternehmensbewertung (Univ.-Prof. Dr. Thomas Hering)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Investitionstheorie und Unternehmensbewertung" />
         </category>
         <category ID="Marketing">
+          <label xml:lang="de" text="Marketing (Univ.-Prof. Dr. Rainer Olbrich)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Marketing" />
         </category>
         <category ID="OrgPla">
-          <label xml:lang="de" text="Organisation und Planung" />
+          <label xml:lang="de" text="Organisation und Planung (Univ.-Prof. Dr. Ewald Scherm)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="PerOrg">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Personalführung und Organisation" />
+          <label xml:lang="de" text="Personalführung und Organisation (Univ.-Prof. Dr. Jürgen Weibler)" />
         </category>
         <category ID="ProLog">
-          <label xml:lang="de" text="Produktion und Logistik" />
+          <label xml:lang="de" text="Produktion und Logistik (Univ.-Prof. Dr. Thomas Volling)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="QuaMetWirmat">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Quantitative Methoden und Wirtschaftsmathematik" />
+          <label xml:lang="de" text="Quantitative Methoden und Wirtschaftsmathematik (Univ.-Prof. Dr. Andreas Kleine)" />
         </category>
         <category ID="UntCon">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Unternehmensrechnung und Controlling" />
+          <label xml:lang="de" text="Unternehmensrechnung und Controlling (Univ.-Prof. Dr. Jörn Littkemann)" />
         </category>
         <category ID="Wirpru">
+          <label xml:lang="de" text="Wirtschaftsprüfung (Univ.-Prof. Dr. Gerrit Brösel)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Wirtschaftsprüfung" />
+        </category>
+        <category ID="bwlAD">
+          <label xml:lang="es" text="" />
+          <label xml:lang="fr" text="" />
+          <label xml:lang="it" text="" />
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <label xml:lang="pt" text="" />
+          <category ID="DidWirt">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Didaktik der Wirtschaftswissenschaft (Univ.-Prof. Dr. Klaus Anderseck Emertius)" />
+          </category>
+          <category ID="ForOpeRes">
+            <label xml:lang="de" text="Forschungsbereich Operations Research (Univ.-Prof. Dr. Dr. Tomas Gal Emertius)" />
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="" />
+          </category>
+          <category ID="OpeRes">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="de" text="Operations Research (Univ.-Prof. Dr. Wilhelm Rödder)" />
+          </category>
+          <category ID="PersUnt">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Personalwirtschaft und Unternehmenskommunikation (Univ.-Prof. Dr. Dr. Gerhard Ortner)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="ProInv">
+            <label xml:lang="es" text="" />
+            <label xml:lang="de" text="Produktions- und Investitionstheorie (Univ.-Prof. Dr. Dr. h.c. Günter Fandel)" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="StaOek">
+            <label xml:lang="en" text="" />
+            <label xml:lang="de" text="Statistik und Ökonometrie (Univ.-Prof. Dr. Dr. Dr. h.c. Josef Gruber Emertius)" />
+          </category>
+          <category ID="StePru">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Steuer- und Prüfungswesen (Univ.-Prof. Dr. Dieter Schneeloch)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
+          <category ID="UntUnt">
+            <label xml:lang="de" text="Unternehmensgründung und Unternehmensnachfolge (Univ.-Prof. Dr. Thomas Hering)" />
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+            <label xml:lang="ar" text="" />
+          </category>
+          <category ID="winfo">
+            <label xml:lang="es" text="" />
+            <label xml:lang="fr" text="" />
+            <label xml:lang="de" text="Wirtschaftsinformatik (Univ.-Prof. Dr. Hermann Gehring)" />
+            <label xml:lang="it" text="" />
+            <label xml:lang="en" text="" />
+            <label xml:lang="pt" text="" />
+          </category>
         </category>
       </category>
       <category ID="vwl">
         <label xml:lang="de" text="Volkswirtschaftslehre" />
         <label xml:lang="en" text="" />
         <category ID="Finwis">
-          <label xml:lang="de" text="Finanzwissenschaft" />
+          <label xml:lang="de" text="Finanzwissenschaft (Univ.-Prof. Dr. Thomas Eichner)" />
           <label xml:lang="en" text="" />
+        </category>
+        <category ID="IntOek">
+          <label xml:lang="es" text="" />
+          <label xml:lang="fr" text="" />
+          <label xml:lang="it" text="" />
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Internationale Ökonomie (Univ.-Prof. Dr. Hans-Jörg Schmerer)" />
+          <label xml:lang="pt" text="" />
+          <label xml:lang="ar" text="" />
         </category>
         <category ID="Makro">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Makroökonomik" />
+          <label xml:lang="de" text="Makroökonomik (Univ.-Prof. Dr. Helmut Wagner)" />
         </category>
         <category ID="Wirpol">
-          <label xml:lang="de" text="Wirtschaftspolitik" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Wirtschaftspolitik (Univ.-Prof. Dr. Joachim Grosser)" />
         </category>
         <category ID="Wirthe">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Wirtschaftstheorie" />
+          <label xml:lang="de" text="Wirtschaftstheorie (Univ.-Prof. Dr. Alfred Endres)" />
         </category>
-      </category>
-      <category ID="wiwiPenEmePro">
-        <label xml:lang="en" text="" />
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
       </category>
     </category>
     <category ID="rewi">
@@ -404,47 +829,51 @@
         <label xml:lang="en" text="" />
         <category ID="LehrBueRecArbRecver">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung (Prof. Dr. Kerstin Tillmanns)" />
         </category>
         <category ID="LehrBueRecPrivrecges">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht (Prof. Dr. Andreas Bergmann)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht" />
         </category>
         <category ID="LehrBueRecUntRecver">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung" />
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung (Prof. Dr. Ulrich Wackerbarth)" />
         </category>
         <category ID="LehrBueRecWirGewRecUrhZiv">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht" />
         </category>
         <category ID="LehrBueRecZivIntPrivRecver">
+          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Zivilprozessrecht, Internationales Privatrecht und Rechtsvergleichung (Prof. Dr. Karl August Prinz von Sachsen Gessaphe)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Zivilprozessrecht, Internationales Privatrecht und Rechtsvergleichung" />
         </category>
         <category ID="LehrDeuEurVerfVerwVoerec">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht" />
+          <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht (Prof. Dr. Andreas Haratsch)" />
         </category>
         <category ID="LehrOefRecJurRhetRecphil">
+          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie (Prof. Dr. Katharina Gräfin von Schlieffen) " />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie" />
         </category>
         <category ID="LehrStrafrecGes">
+          <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafrechtsgeschichte und Rechtsphilosophie (Prof. Dr. Stephan Stübinger)" />
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="Lehrstuhl für Strafrecht und Strafrechtsgeschichte" />
         </category>
         <category ID="LehrVerwWirtverwAllSta">
-          <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre" />
           <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre (N. N. (Vertretung: PD Dr. Mathias Schubert))" />
         </category>
         <category ID="ArbStrarecStraprorec">
-          <label xml:lang="de" text="Arbeitsbereich für Strafrecht und Strafprozessrecht" />
+          <label xml:lang="de" text="Arbeitsbereich für Strafrecht und Strafprozessrecht (apl. Prof. Dr. Gabriele Zwiehoff)" />
           <label xml:lang="en" text="" />
         </category>
         <category ID="StistuBuerec">
           <label xml:lang="en" text="" />
-          <label xml:lang="de" text="W. P. Radt Stiftungslehrstuhl für Bürgerliches Recht, Gewerblichen Rechtsschutz, Internationales Privat- und Zivilprozessrecht" />
+          <label xml:lang="de" text="W. P. Radt Stiftungslehrstuhl für Bürgerliches Recht, Gewerblichen Rechtsschutz, Internationales Privat- und Zivilprozessrecht (Prof. Dr. Sebastian Kubis, LL.M. (Illinois))" />
+        </category>
+        <category ID="RewiLehrAD">
+          <label xml:lang="en" text="" />
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
         </category>
       </category>
       <category ID="rewiInst">
@@ -484,10 +913,6 @@
           <url xlink:href="InstRecInfMan" xlink:type="locator" />
         </category>
       </category>
-      <category ID="rewiPenEmePro">
-        <label xml:lang="en" text="" />
-        <label xml:lang="de" text="Pensionierte / Emeritierte Professoren" />
-      </category>
     </category>
     <category ID="FeUHagen">
       <label xml:lang="en" text="" />
@@ -498,6 +923,24 @@
       <label xml:lang="en" text="" />
       <label xml:lang="de" text="Universitätsbibliothek Hagen" />
       <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
+    </category>
+    <category ID="ZIFF">
+      <label xml:lang="es" text="" />
+      <label xml:lang="fr" text="" />
+      <label xml:lang="de" text="Zentrales Institut für Fernstudienforschung (ZIFF)" />
+      <label xml:lang="it" text="" />
+      <label xml:lang="en" text="" />
+      <label xml:lang="pt" text="" />
+      <label xml:lang="ar" text="" />
+    </category>
+    <category ID="extern">
+      <label xml:lang="es" text="" />
+      <label xml:lang="fr" text="" />
+      <label xml:lang="it" text="" />
+      <label xml:lang="en" text="" />
+      <label xml:lang="pt" text="" />
+      <label xml:lang="de" text="Externe Einrichtungen" />
+      <label xml:lang="ar" text="" />
     </category>
   </categories>
 </mycoreclass>
