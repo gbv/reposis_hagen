@@ -48,7 +48,7 @@
           <label xml:lang="de" text="Bildung und Differenz (Prof. Dr. Katharina Walgenbach)" />
           
           
-          <label xml:lang="de" text="" />
+          
         </category>
         <category ID="BilMedPad">
           
@@ -483,7 +483,7 @@
             
             
             <label xml:lang="de" text="Kommunikationssysteme (Prof. Dr.-Ing. Firoz Kaderali)" />
-            <label xml:lang="de" text="" />
+            
           </category>
           <category ID="NacTec">
             
@@ -492,7 +492,7 @@
             
             
             <label xml:lang="de" text="Nachrichtentechnik (Prof. Dr. Ing Ludwig Kittel)" />
-            <label xml:lang="de" text="" />
+            
           </category>
           <category ID="OptNacTec">
             
@@ -586,7 +586,7 @@
             
             
             
-            <label xml:lang="de" text="" />
+            
           </category>
           <category ID="IntInfKomsys">
             
@@ -595,7 +595,7 @@
             
             
             
-            <label xml:lang="de" text="" />
+            
           </category>
           <category ID="VerSysKooArbLer">
             
@@ -733,7 +733,7 @@
             
             
             
-            <label xml:lang="de" text="" />
+            
           </category>
           <category ID="OpeRes">
             
