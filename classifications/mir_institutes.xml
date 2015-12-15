@@ -10,7 +10,6 @@
       <url xlink:href="www.fernuni-hagen.de/ksw" xlink:type="locator" />
       <category ID="HistInst">
         <label xml:lang="de" text="Historisches Institut" />
-        
         <category ID="GesEurMod">
           <label xml:lang="de" text="Geschichte der Europäischen Moderne (Prof. Dr. Alexandra Przyrembel)" />
         </category>
@@ -19,153 +18,95 @@
         </category>
         <category ID="GesGegAlt">
           <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas (Prof. Dr. Felicitas Schmieder)" />
-          
         </category>
         <category ID="HistInstAD">
-          
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
           <category ID="NeuDeuEurGes">
-            
             <label xml:lang="de" text="Neuere Deutsche und Europäische Geschichte (Prof. Dr. Peter Brandt)" />
           </category>
           <category ID="NeuEurAusEurGes">
             <label xml:lang="de" text="Neuere Europäische und Außereuropäische Geschichte (Prof. Dr. Reinhard Wendt)" />
-            
           </category>
         </category>
       </category>
       <category ID="InsBilMed">
-        
         <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
         <category ID="AllBilWiss">
           <label xml:lang="de" text="Allgemeine Bildungswissenschaft (Prof. Dr. Cathleen Grunert)" />
-          
         </category>
         <category ID="BilDif">
-          
-          
-          
           <label xml:lang="de" text="Bildung und Differenz (Prof. Dr. Katharina Walgenbach)" />
-          
-          
-          
         </category>
         <category ID="BilMedPad">
-          
           <label xml:lang="de" text="Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" />
         </category>
         <category ID="EmpBilFor">
-          
           <label xml:lang="de" text="Empirische Bildungsforschung (Dr. Boris Becker)" />
         </category>
         <category ID="LebLanLer">
-          
           <label xml:lang="de" text="Lebenslanges Lernen (Prof. Dr. Uwe Elsholz)" />
         </category>
         <category ID="MedDid">
-          
           <label xml:lang="de" text="Mediendidaktik (Prof. Dr. Theo Bastiaens)" />
         </category>
         <category ID="InsBilMedAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
           <category ID="ArbSysPaed">
             <label xml:lang="de" text="Arbeitsbereich Systematische Pädagogik (nur Magister) (Apl.-Prof. Dr. Roland Bast)" />
-            
           </category>
           <category ID="BerWirPae">
-            
             <label xml:lang="de" text="Berufs- und Wirtschaftspädagogik (Prof. Dr. Walter Georg)" />
           </category>
           <category ID="Biltec">
-            
             <label xml:lang="de" text="Bildungstechnologie (PD Dr. Thomas Brüsemeister)" />
           </category>
           <category ID="CSCL">
-            
-            
-            
             <label xml:lang="de" text="CSCL (Computer Supported Collaborative Learning) (Jun.-Prof. Dr. Michael Klebl)" />
-            
-            
           </category>
           <category ID="IntErz">
             <label xml:lang="de" text="Interkulturelle Erziehungswissenschaft und Ausländerpädagogik (Prof. Dr. Georg Hansen)" />
-            
           </category>
           <category ID="IntBilPro">
-            
             <label xml:lang="de" text="Internationalisierung von Bildungsprozessen (Dr. Rainer Jansen)" />
           </category>
           <category ID="KulManMetErz">
-            
-            
             <label xml:lang="de" text="Kulturmanagement / Methoden der Erziehungswissenschaft (Prof. Dr. Thomas Heinze)" />
-            
-            
-            
           </category>
           <category ID="5cb5f095-daa0-424c-a8e6-b26bc4b188be">
-            
-            
-            
-            
             <label xml:lang="de" text="Methodenlehre des Fernstudiums (Prof. Dr. Dr. h.c. Otto Peters)" />
-            
-            
           </category>
           <category ID="TheSchUnt">
-            
             <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
           </category>
         </category>
       </category>
       <category ID="InsNeuDeuLitMed">
-        
         <label xml:lang="de" text="Institut für Neuere deutsche Literatur- und Medienwissenschaft" />
         <category ID="NeuDeuLitMedthe">
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie (Prof. Dr. Uwe Steiner)" />
-          
         </category>
         <category ID="NeuDeuLitGesMedkul">
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Geschichte der Medienkulturen (Prof. Dr. Armin Schäfer)" />
-          
         </category>
         <category ID="NeuDeuLitMedaes">
-          
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medienästhetik (Prof. Dr. Michael Niehaus)" />
         </category>
       </category>
       <category ID="InsPhil">
-        
         <label xml:lang="de" text="Institut für Philosophie" />
         <category ID="Phil1">
           <label xml:lang="de" text="Philosophie I (Prof. Dr. Hubertus Busche)" />
-          
         </category>
         <category ID="Phil2">
           <label xml:lang="de" text="Philosophie II, Praktische Philosophie: Ethik, Recht, Ökonomie (Prof. Dr. Thomas Sören Hoffmann)" />
-          
         </category>
         <category ID="Phil3">
-          
           <label xml:lang="de" text="Philosophie III, Praktische Philosophie: Technik, Geschichte, Gesellschaft (Prof. Dr. Thomas Bedorf)" />
         </category>
         <category ID="InsPhilAL">
-          
-          
-          
-          
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
-          
-          
           <category ID="Phil2PraktPhil">
-            
-            
-            
-            
             <label xml:lang="de" text="Philosophie II, insbes. praktische Philosophie (Prof. Dr. Kurt Röttgers)" />
-            
-            
           </category>
           <category ID="Phil3Gethmann-Siefert">
             
