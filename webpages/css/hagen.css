@@ -461,3 +461,7 @@ ul.names li.active a {
 .classificationBrowser {
     width: 800px;
 }
+
+#aux_col {
+	padding-left:0px;
+}
