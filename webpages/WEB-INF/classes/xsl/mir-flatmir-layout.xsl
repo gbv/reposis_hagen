@@ -119,7 +119,9 @@
                 </ul>
               </div>
               <div class="col-md-4 col-xs-12 col-sm-12">
-                <img id="fuhagenlogo" alt="FU Hagen" class="img-responsive center-block" title="FU Hagen- Logo" src="{$WebApplicationBaseURL}content/images/FeULogoWT.png" />
+                <a href="https://www.fernuni-hagen.de/">
+                  <img id="fuhagenlogo" alt="FU Hagen" class="img-responsive center-block" title="FU Hagen- Logo" src="{$WebApplicationBaseURL}content/images/FeULogoWT.png" />
+                </a>
               </div>
             </div>
           </div>
