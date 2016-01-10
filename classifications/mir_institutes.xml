@@ -556,6 +556,13 @@
         </category>
         <category ID="39930c83-b3ac-4ab8-9fb1-52d1fda556fa">
           <label xml:lang="de" text="Forschungsinstitut für rechtliches Informationsmanagement - Firm GmbH" />
+          <url xlink:href="InstRecInfMan" xlink:type="locator" />
+        </category>
+      </category>
+      <category ID="rewiPub">
+        <label xml:lang="de" text="Veröffentlichungen der Fakultät" />
+        <category ID="SummerSchool">
+          <label xml:lang="de" text="IP Summer School" />
         </category>
       </category>
     </category>
