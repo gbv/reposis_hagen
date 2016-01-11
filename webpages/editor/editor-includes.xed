@@ -7,6 +7,7 @@
     <xed:source uri="xslStyle:RDF-mods-journal,editor/mods2xeditor:http://ld.zdb-services.de/data/{$zdbid}.rdf" />
     <xed:source uri="xslStyle:editor/mods2xeditor:{$sourceUri}" />
     <xed:source uri="xslStyle:mycoreobject-editor,editor/mods2xeditor:mcrobject:{$id}" />
+    <xed:source uri="xslStyle:mycoreobject-copyof,editor/mods2xeditor:mcrobject:{$copyofid}" />
     <xed:choose>
       <xed:when test="$relatedItemType='series'"> <!-- $seriesId -->
         <xed:source uri="xslStyle:asSeries,editor/mods2xeditor:mcrobject:{$relatedItemId}" />
@@ -1673,6 +1674,12 @@
     <script src="{$WebApplicationBaseURL}assets/jquery/plugins/typeahead/bloodhound.js" type="text/javascript"></script>
     <script src="{$WebApplicationBaseURL}assets/jquery/plugins/bootstrap3-typeahead/bootstrap3-typeahead.js" type="text/javascript"></script>
     <script src="{$WebApplicationBaseURL}js/mir/relatedItem-autocomplete.js" type="text/javascript"></script>
+    <script src="{$WebApplicationBaseURL}js/mir/item-autocomplete.js" type="text/javascript"></script>
+    <link href="{$WebApplicationBaseURL}assets/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <script type="text/javascript" src="{$WebApplicationBaseURL}assets/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.min.js"></script>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}assets/moment/moment.js"></script>
+    <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/xeditor-form.js"></script>
   </xed:template>
 
 </xed:template>
