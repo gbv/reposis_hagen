@@ -575,7 +575,7 @@
       <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
     </category>
     <category ID="ZIFF">
-      <label xml:lang="de" text="Zentrales Institut für Fernstudienforschung (ZIFF)" />
+      <label xml:lang="de" text="Ehemaliges Zentrales Institut für Fernstudienforschung (ZIFF)" />
     </category>
     <category ID="extern">
       <label xml:lang="de" text="Externe Einrichtungen" />
