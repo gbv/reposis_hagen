@@ -567,11 +567,14 @@
     <div class="search-person">
       <xed:bind xpath="mods:displayForm">
         <input type="text" size="26" class="form-control form-control-inline" data-search="searchEntity" data-search-type="select"
-          data-search-entity-type="person" data-search-output="#valueURIxEditor" data-search-button="{i18n:button.search}" data-search-button-loading="{i18n:button.loading}"
+          data-search-entity-type="person" data-search-output=".nameIdentifier" data-search-output-type=".nameIdentifierType" data-search-button="{i18n:button.search}" data-search-button-loading="{i18n:button.loading}"
           data-search-result-empty="{i18n:mir.searchIdentifier.noResult}" data-target=".search-person" placeholder="{i18n:mir.placeholder.name.family}, {i18n:mir.placeholder.name.given}" />
       </xed:bind>
-      <xed:bind xpath="@valueURIxEditor">
-        <input type="hidden" id="valueURIxEditor" />
+      <xed:bind xpath="mods:nameIdentifier">
+        <input type="hidden" class="nameIdentifier" />
+      </xed:bind>
+      <xed:bind xpath="mods:nameIdentifier/@type">
+        <input type="hidden" class="nameIdentifierType" />
       </xed:bind>
     </div>
     <!-- ========== LSF subselect ==========
@@ -591,6 +594,16 @@
       </p>
     </xed:if>
     -->
+  </xed:template>
+
+  <xed:template id="person.fields.noHidden">
+    <div class="search-person">
+      <xed:bind xpath="mods:displayForm">
+        <input type="text" size="26" class="form-control form-control-inline" data-search="searchEntity" data-search-type="select"
+               data-search-entity-type="person" data-search-output=".nameIdentifier" data-search-output-type=".nameIdentifierType" data-search-button="{i18n:button.search}" data-search-button-loading="{i18n:button.loading}"
+               data-search-result-empty="{i18n:mir.searchIdentifier.noResult}" data-target=".personExtended_box" placeholder="{i18n:mir.placeholder.name.family}, {i18n:mir.placeholder.name.given}" />
+      </xed:bind>
+    </div>
   </xed:template>
 
   <xed:template id="person.affiliation">
@@ -1525,11 +1538,11 @@
       </div>
     </xed:bind>
   </xed:template>
-  
+
   <xed:template id="sdnb.repeat">
     <xed:repeat xpath="mods:classification[@authority='sdnb'][@displayLabel='sdnb']" min="1" max="10" method="build">
       <div class="form-group {$xed-validation-marker}">
-        <label class="col-md-3 control-label required">
+        <label class="col-md-3 control-label">
           <xed:output i18n="editor.search.mir.sdnb" />
           :
         </label>
