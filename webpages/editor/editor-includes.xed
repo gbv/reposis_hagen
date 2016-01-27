@@ -16,9 +16,9 @@
         <xed:source uri="xslStyle:asHost,editor/mods2xeditor:mcrobject:{$relatedItemId}" />
       </xed:otherwise>
     </xed:choose>
-    <xed:cancel url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}" />
-    <xed:cancel url="{$cancelUrl}" />
-    <xed:cancel url="../index.html" />
+    <xed:cancel url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="{$cancelUrl}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel url="../index.html?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
     <xed:post-processor xsl="editor/xeditor2mods.xsl" />
   </xed:template>
 
@@ -31,6 +31,8 @@
         <xed:bind xpath="@ID" initially="{$MIR.projectid.default}_mods_00000000" />
       </xed:otherwise>
     </xed:choose>
+    <input type="hidden" name="XSL.Status.Message" value="mir.editstatus.success" />
+    <input type="hidden" name="XSL.Status.Style" value="success" />
   </xed:template>
 
   <xed:template id="genre">
@@ -121,7 +123,7 @@
     <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.series" placeholder="{i18n:mir.placeholder.series.title}" id="series-title" 
     class="required" required="true" required-i18n="mir.validation.title"/>
   </xed:template>
-  
+
   <xed:template id="title.series.relItemsearch">
     <mir:relItemsearch searchengine="title" genre="series" responsefield="mods.title" xpath="mods:titleInfo/mods:title" label="mir.title.series" help-text="{i18n:mir.help.series.title}" class="required"/>
   </xed:template>
