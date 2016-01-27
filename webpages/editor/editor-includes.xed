@@ -1316,11 +1316,7 @@
             <xed:include uri="xslStyle:items2options:classification:editor:-1:children:mir_rights" />
           </select>
         </div>
-        <div class="col-md-1">
-          <span class="btn btn-default info-button" data-toggle="popover" data-placement="right" data-content="{i18n:mir.help.rights}">
-            <i class="fa fa-info"></i>
-          </span>
-        </div>
+        <mir:help-pmud help-text="{i18n:mir.help.rights}" />
       </div>
     </xed:bind>
   </xed:template>
