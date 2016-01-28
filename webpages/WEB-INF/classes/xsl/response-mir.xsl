@@ -639,7 +639,7 @@
       <li>
         <div class="checkbox">
           <label>
-            <input type="checkbox" onclick="location.href='{$queryURL}';" >
+            <input type="checkbox" onclick="location.href='{$queryURL}';">
               <xsl:if test="contains($RequestURL, $typeComplete)">
                 <xsl:attribute name="checked">true</xsl:attribute>
               </xsl:if>

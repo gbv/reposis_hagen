@@ -461,7 +461,7 @@
             </xsl:choose>
             <xsl:if test="$displayAddDerivate='true'">
               <li>
-                <a href="{$WebApplicationBaseURL}fileupload_commit.xed{$HttpSession}?XSL.parentObjectID={$id}">
+                <a href="{$WebApplicationBaseURL}fileupload.xml{$HttpSession}?XSL.parentObjectID={$id}">
                   <xsl:value-of select="i18n:translate('derivate.addDerivate')" />
                 </a>
               </li>
@@ -658,7 +658,7 @@
             <xsl:choose>
               <xsl:when test="$derivateWithURN=false()">
                 <li>
-                  <a href="{$WebApplicationBaseURL}fileupload_commit.xed{$HttpSession}?XSL.parentObjectID={../../../@ID}&amp;XSL.derivateID={$deriv}{$suffix}" class="option">
+                  <a href="{$WebApplicationBaseURL}fileupload.xml{$HttpSession}?XSL.parentObjectID={../../../@ID}&amp;XSL.derivateID={$deriv}{$suffix}" class="option">
                     <xsl:value-of select="i18n:translate('component.swf.derivate.addFile')" />
                   </a>
                 </li>
