@@ -40,7 +40,6 @@
           <script type="text/javascript" src="{$WebApplicationBaseURL}js/{$MIR.CustomLayout.JS}"></script>
         </xsl:if>
         <xsl:call-template name="mir.prop4js" />
-        <link href="{$WebApplicationBaseURL}/editor/bootstrap-datetimepicker.min.css" rel="stylesheet" />
       </head>
 
       <body>
