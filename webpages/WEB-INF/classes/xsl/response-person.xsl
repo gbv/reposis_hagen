@@ -59,13 +59,24 @@
   <xsl:template match="int">
     <xsl:variable name="gnd" select="substring-after(@name, ':')" />
 
-    <xsl:variable name="linkText">
+    <xsl:variable name="name2">
       <xsl:choose>
-        <xsl:when test="contains(@name, ':')">
-          <xsl:value-of select="substring-before(@name, ':')" />
+        <xsl:when test="contains(@name, ' ')">
+          <xsl:value-of select="concat(substring-before(@name, ' '),'\ ',substring-after(@name, ' '))" />
         </xsl:when>
         <xsl:otherwise>
           <xsl:value-of select="@name" />
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
+
+    <xsl:variable name="linkText">
+      <xsl:choose>
+        <xsl:when test="contains($name2, ':')">
+          <xsl:value-of select="substring-before($name2, ':')" />
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="$name2" />
         </xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
