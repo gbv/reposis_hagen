@@ -40,12 +40,12 @@
                   <input type="checkbox" class="" value="Datenschutzerklaerung" />
                   Hiermit nehme ich die <a href="../content/rights/privacy.xml"> Datenschutzerklärung </a> zur Kenntnis und stimme ihr zu.
                 </div>
-                <xed:validate required="true" i18n="deposit_hagen.user.validation.privacy"/>
+                <xed:validate required="true" display="global" i18n="deposit_hagen.user.validation.privacy"/>
               </div>
             </xed:bind>
           </div>
           <div class="panel-footer clearfix">
-            <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
+            <!--<button type="submit" class="btn btn-default" xed:target="debug">Debug</button>-->
             <div class="pull-right">
               <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="buttons" />
             </div>
