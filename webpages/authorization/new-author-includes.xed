@@ -23,11 +23,23 @@
 
   <xed:template id="captcha">
     <xed:if test="string-length($MIR.ReCaptcha.site.key) &gt; 0">
+      <script type="text/javascript">
+          var verifyCallback = function(response) {
+            $('#my-g-recaptcha-response').val(response);
+          };
+      </script>  
       <script src='https://www.google.com/recaptcha/api.js?hl={$CurrentLang}'></script>
-      <div id="captcha" class="g-recaptcha col-md-offset-3 col-md-9" data-sitekey="{$MIR.ReCaptcha.site.key}" />
-      <xed:validate display="global xpath="recaptchaParam" test="xed:call-java('org.mycore.mir.authorization.ReCaptcha', 'verifyResponse', deinParameter, '91.64.224.19')" >
-        Chaptcha fehlt
-      </xed:validate>
+      <div id="captcha" class="g-recaptcha col-md-offset-3 col-md-9" data-sitekey="{$MIR.ReCaptcha.site.key}" data-callback="verifyCallback"/>
+      
+      <xed:bind xpath="attributes/attribute[@name='recaptchaParam']/@value">
+        <input id="my-g-recaptcha-response" type="hidden" />
+        <xed:validate display="global" test="xed:call-java('org.mycore.mir.authorization.ReCaptcha', 'isSubmittedCaptchaCorrect', . )" >
+          Chaptcha fehlt
+        </xed:validate>
+      </xed:bind>
+      <xed:cleanup-rule xpath="//attribute[@name='recaptchaParam']" relevant-if="true" />
+        
+      
     </xed:if>
   </xed:template>
 </xed:template>
