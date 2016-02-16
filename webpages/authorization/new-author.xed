@@ -35,7 +35,7 @@
             </xed:validate>
 
             <xed:bind xpath="attributes/attribute[@name='datenschutzerklaerung']/@value">
-              <div class="form-group {$xed-validation-marker}">
+              <div class="form-group {$xed-validation-marker} required">
                 <div style="padding-left: 50px" class="col-md-9 col-md-offset-3 checkbox">
                   <input type="checkbox" class="" value="Datenschutzerklaerung" />
                   Hiermit nehme ich die <a href="../content/rights/privacy.xml"> Datenschutzerklärung </a> zur Kenntnis und stimme ihr zu.

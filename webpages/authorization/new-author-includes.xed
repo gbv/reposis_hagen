@@ -37,7 +37,7 @@
       
         <xed:bind xpath="attributes/attribute[@name='recaptchaParam']/@value">
           <input id="my-g-recaptcha-response" type="hidden" />
-          <xed:validate display="global" i18n="editor.title.required" test="xed:call-java('org.mycore.mir.authorization.ReCaptcha', 'isSubmittedCaptchaCorrect', . )" />
+          <xed:validate display="global" i18n="selfRegistration.error.captcha" test="xed:call-java('org.mycore.mir.authorization.ReCaptcha', 'isSubmittedCaptchaCorrect', . )" />
         </xed:bind>
       </div>
       <xed:cleanup-rule xpath="//attribute[@name='recaptchaParam']" relevant-if="true" />

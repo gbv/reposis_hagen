@@ -1902,9 +1902,9 @@
   </xed:template>
 
   <xed:template id="validation-rules.identifier">
-    <xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" display="global" >
+    <!--<xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" display="global" >
        <xed:output i18n="mir.validation.isbn" /> 
-    </xed:validate>
+    </xed:validate>-->
     <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" display="global" >
        <xed:output i18n="mir.validation.issn" /> 
     </xed:validate>

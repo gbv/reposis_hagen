@@ -469,3 +469,7 @@ ul.names li.active a {
 #aux_col {
 	padding-left:15px;
 }
+
+.has-error iframe {
+    border: solid thin red;
+}
