@@ -5,18 +5,18 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <h2>Registrierung</h2>
-    
-    <div class=row>
+    <p>
       Um Ihren Beitrag auf deposit_hagen zu veröffentlichen, ist eine einmalige 
       Registrierung erforderlich. Dazu füllen Sie bitte im unten stehenden Formular
-       mindestens alle durch * gekennzeichneten Pflichtfelder aus und stimmen der
-        Datenschutzerklärung zu. Benutzernamen und Passwort können Sie frei wählen.
-        Der Benutzername darf nur aus Kleinbuchstaben bestehen und maximal 16 Zeichen
-        lang sein. Nach dem Abspeichern wird Ihnen in einer E-Mail ein Link zur Bestätigung 
-        Ihrer E-Mail-Adresse zugesandt, dessen Aktivierung den Registrierungsvorgang 
-        abschließt. Mit Ihren Zugangsdaten können Sie sich nun jederzeit auf dem Server 
-        deposit_hagen anmelden.
-    </div>
+      mindestens alle durch * gekennzeichneten Pflichtfelder aus und stimmen der
+      Datenschutzerklärung zu. Benutzernamen und Passwort können Sie frei wählen.
+      Der Benutzername darf nur aus Kleinbuchstaben bestehen und maximal 16 Zeichen
+      lang sein. Nach dem Abspeichern wird Ihnen in einer E-Mail ein Link zur Bestätigung 
+      Ihrer E-Mail-Adresse zugesandt, dessen Aktivierung den Registrierungsvorgang 
+      abschließt. Mit Ihren Zugangsdaten können Sie sich nun jederzeit auf dem Server 
+      deposit_hagen <a href="/servlets/MCRLoginServlet?url=../content/index.xml"> anmelden </a>.
+    </p>
+    
 
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
