@@ -127,6 +127,11 @@
             <!-- Start: METADATA -->
               <xsl:apply-templates select="div[@id='mir-metadata']" mode="newMetadata" />
             <!-- End: METADATA -->
+              <xsl:if test="contains(div[@id='mir-metadata'], '°, ')">
+                <script type="text/javascript" src="//www.openstreetmap.org/openlayers/OpenLayers.js"></script>
+                <script type="text/javascript" src="//www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
+                <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/geo-coords.js"></script>
+              </xsl:if>
             </div>
           </xsl:if>
 
@@ -163,16 +168,18 @@
             </div>
           </xsl:if>
 <!-- export -->
-          <div id="mir_export_panel" class="panel panel-default">
-            <div class="panel-heading">
-              <h3 class="panel-title">Export</h3>
+          <xsl:if test="div[@id='mir-export']">
+            <div id="mir_export_panel" class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Export</h3>
+              </div>
+              <div class="panel-body">
+                  <!-- Start: EXPORT -->
+                <xsl:apply-templates select="div[@id='mir-export']" mode="copyContent" />
+                  <!-- End: EXPORT -->
+              </div>
             </div>
-            <div class="panel-body">
-                <!-- Start: EXPORT -->
-              <xsl:apply-templates select="div[@id='mir-export']" mode="copyContent" />
-                <!-- End: EXPORT -->
-            </div>
-          </div>
+          </xsl:if>
 <!-- system -->
           <xsl:if test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
             <div id="mir_admindata_panel" class="panel panel-default system">
@@ -217,6 +224,9 @@
 <!--  end: detail row -->
       </div>
       <script src="{$WebApplicationBaseURL}assets/jquery/plugins/shariff/shariff.min.js"></script>
+      <script src="{$WebApplicationBaseURL}assets/moment/moment.js"></script>
+      <script src="{$WebApplicationBaseURL}assets/handlebars/handlebars.min.js"></script>
+      <script src="{$WebApplicationBaseURL}js/mir/derivate-fileList.js"></script>
     </xsl:copy>
   </xsl:template>
 
