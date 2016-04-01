@@ -1,21 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
-  xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" exclude-result-prefixes="mods mcrxsl i18n"
+  xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:ex="http://exslt.org/dates-and-times" exclude-result-prefixes="mods mcrxsl i18n ex"
 >
   <xsl:include href="layout-utils.xsl" />
+  
+  <xsl:param name="MIR.oas" select="'hide'" />
+  <xsl:param name="MIR.oas.graph" select="'hide'" />
 
-  <xsl:variable name="XSL.Status.Message">
-    <xsl:call-template name="UrlGetParam">
-      <xsl:with-param name="url" select="$RequestURL" />
-      <xsl:with-param name="par" select="'XSL.Status.Message'" />
-    </xsl:call-template>
-  </xsl:variable>
-  <xsl:variable name="XSL.Status.Style">
-    <xsl:call-template name="UrlGetParam">
-      <xsl:with-param name="url" select="$RequestURL" />
-      <xsl:with-param name="par" select="'XSL.Status.Style'" />
-    </xsl:call-template>
-  </xsl:variable>
+  
 
   <xsl:template match="/site">
     <xsl:copy>
@@ -25,25 +17,6 @@
         <script type="text/javascript" src="{$WebApplicationBaseURL}assets/jquery/plugins/dotdotdot/jquery.dotdotdot.min.js" />
       </head>
 
-      <xsl:if test="string-length($XSL.Status.Message) &gt; 0">
-        <div class="row">
-          <div class="col-md-12">
-            <div role="alert">
-              <xsl:attribute name="class">
-                <xsl:choose>
-                  <xsl:when test="string-length($XSL.Status.Style) &gt; 0"><xsl:value-of select="concat('alert-', $XSL.Status.Style)" /></xsl:when>
-                  <xsl:otherwise>alert-info</xsl:otherwise>
-                </xsl:choose>
-                alert alert-dismissible fade in
-              </xsl:attribute>
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">×</span></button>
-              <span aria-hidden="true"><xsl:value-of select="i18n:translate($XSL.Status.Message)" /></span>
-            </div>
-        </div>
-        </div>
-      </xsl:if>
-
       <xsl:if test="div[@id='mir-breadcrumb']">
         <breadcrumb>
           <xsl:copy-of select="div[@id='mir-breadcrumb']/*" />
@@ -51,7 +24,7 @@
       </xsl:if>
 
       <xsl:if test="div[@id='search_browsing']">
-        <div class="row detail_row">
+        <div class="row detail_row" id="mir-search_browsing">
           <div class="col-md-8">
             <div class="detail_block text-center">
               <span id="pagination_label">gefundende Dokumente</span>
@@ -134,6 +107,17 @@
               </xsl:if>
             </div>
           </xsl:if>
+<!-- OAS statistics -->
+          <xsl:if test="$MIR.oas.graph = 'show'">  
+            <div class="mir_metadata">
+              <h3>Zugriffsstatistik</h3>
+              <div>
+                <!-- Start: OAS -->
+                <iframe style="width: 100%;border-width: 0px;height: 220px;" src="https://ub-deposit.fernuni-hagen.de/graphprovider/index.php?identifier=oai%3Aub-deposit.fernuni-hagen.de%3Amir_mods_00000008&amp;from=2016-01-01&amp;until=2016-12-31" />
+                <!-- End: OAS -->
+              </div>
+            </div>
+          </xsl:if>         
 
 <!-- end: left column -->
         </div>
@@ -151,6 +135,34 @@
                 <!-- Start: CITATION -->
                 <xsl:apply-templates select="div[@id='mir-citation']" mode="copyContent" />
                 <!-- End: CITATION -->
+              </div>
+            </div>
+          </xsl:if>
+<!-- OAS statistics -->
+          <xsl:if test="$MIR.oas = 'show'">  
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Zugriffsstatistik</h3>
+              </div>
+              <div class="panel-body">
+                <!-- Start: OAS -->
+                <xsl:variable name="now" select="ex:date-time()"/>
+                <xsl:variable name="now-1year">
+                  <xsl:choose>
+                    <xsl:when test="ex:monthInYear($now)=12">
+                      <xsl:value-of select="ex:year($now)" />-01
+                    </xsl:when>
+                    <xsl:when test="ex:monthInYear($now)=11 or ex:monthInYear($now)=10">
+                      <xsl:value-of select="ex:year($now)-1" />-<xsl:value-of select="ex:monthInYear($now)+1" />
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:value-of select="ex:year($now)-1" />-0<xsl:value-of select="ex:monthInYear($now)+1" />
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:variable>  
+                <xsl:value-of select="ex:format-date($now,'yyyy-MM')" />
+                <xsl:value-of select="$now-1year" /> 
+                <!-- End: OAS -->
               </div>
             </div>
           </xsl:if>
