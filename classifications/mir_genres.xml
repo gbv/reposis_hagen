@@ -6,7 +6,7 @@
   <categories>
     <category ID="article">
       <label xml:lang="en" text="Article / Chapter" />
-      <label xml:lang="de" text="Artikel / Aufsatz" />
+      <label xml:lang="de" text="Artikel / Beitrag" />
       <label xml:lang="x-hosts" text="journal newspaper collection festschrift proceedings standalone" />
       <category ID="entry">
         <label xml:lang="en" text="Encyclopedia entry" />
@@ -14,9 +14,9 @@
         <label xml:lang="de" text="Lexikoneintrag" />
       </category>
       <category ID="speech">
-        <label xml:lang="x-hosts" text="standalone" />
         <label xml:lang="en" text="Lecture / Speech" />
         <label xml:lang="de" text="Vortrag" />
+        <label xml:lang="x-hosts" text="standalone series" />
       </category>
       <category ID="research_results">
         <label xml:lang="en" text="Research Results" />
@@ -64,7 +64,7 @@
       </category>
     </category>
     <category ID="book">
-      <label xml:lang="de" text="Buch" />
+      <label xml:lang="de" text="Buch (Monographie)" />
       <label xml:lang="x-hosts" text="standalone series" />
       <label xml:lang="en" text="Book" />
     </category>
@@ -73,14 +73,14 @@
       <label xml:lang="x-hosts" text="series standalone" />
       <label xml:lang="en" text="Collection" />
       <category ID="festschrift">
-        <label xml:lang="x-hosts" text="standalone" />
         <label xml:lang="en" text="Festschrift" />
+        <label xml:lang="x-hosts" text="standalone series" />
         <label xml:lang="de" text="Festschrift" />
       </category>
       <category ID="proceedings">
-        <label xml:lang="x-hosts" text="standalone" />
         <label xml:lang="en" text="Proceedings" />
         <label xml:lang="de" text="Tagungsband" />
+        <label xml:lang="x-hosts" text="standalone series" />
       </category>
       <category ID="lexicon">
         <label xml:lang="x-hosts" text="standalone" />

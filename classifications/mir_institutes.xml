@@ -571,11 +571,20 @@
       <url xlink:href="http://www.fernuni-hagen.de/" xlink:type="locator" />
     </category>
     <category ID="UBHagen">
-      <label xml:lang="de" text="Universitätsbibliothek Hagen" />
+      <label xml:lang="de" text="Universitätsbibliothek Hagen (Digitale Sammlungen)" />
       <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
-    </category>
-    <category ID="ZIFF">
-      <label xml:lang="de" text="Ehemaliges Zentrales Institut für Fernstudienforschung (ZIFF)" />
+      <category ID="dfsd">
+        <label xml:lang="de" text="Deutsche Fernstudiendokumentation (dfsd)" />
+      </category>
+      <category ID="UBdigitalisate">
+        <label xml:lang="de" text="Digitalisate und Netzpublikationen" />
+      </category>
+      <category ID="ZIFF">
+        <label xml:lang="de" text="Ehemaliges Zentrales Institut für Fernstudienforschung (ZIFF)" />
+      </category>
+      <category ID="UBMitarb">
+        <label xml:lang="de" text="Veröffentlichungen von Beschäftigten" />
+      </category>
     </category>
     <category ID="extern">
       <label xml:lang="de" text="Externe Einrichtungen" />

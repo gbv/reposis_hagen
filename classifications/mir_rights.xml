@@ -8,10 +8,6 @@
       <label xml:lang="de" text="Alle Rechte vorbehalten" />
       <label xml:lang="en" text="all rights reserved" />
     </category>
-    <category ID="oa_nlz">
-      <label xml:lang="de" text="Open-Access im Zuge einer Allianz- bzw. Nationallizenz" />
-      <label xml:lang="en" text="Open Access related to alliance or national license" />
-    </category>
     <category ID="cc_by">
       <label xml:lang="de" text="CC BY" />
       <label xml:lang="en" text="CC BY" />
