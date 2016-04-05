@@ -116,6 +116,31 @@
                 <iframe style="width: 100%;border-width: 0px;height: 220px;" src="https://ub-deposit.fernuni-hagen.de/graphprovider/index.php?identifier=oai%3Aub-deposit.fernuni-hagen.de%3Amir_mods_00000008&amp;from=2016-01-01&amp;until=2016-12-31" />
                 <!-- End: OAS -->
               </div>
+              
+              <script src="/graphprovider/includes/morris.js-0.5.1/morris.min.js"></script>
+              <script src="/graphprovider/includes/raphael-2.1.2/raphael-min.js"></script>
+              <script src="/graphprovider/includes/jquery-ui-1.11.2/jquery-ui.js"></script>
+              <script src="/graphprovider/includes/oawidget.js"></script>
+              <div id="oas__statistics"/>
+              <script>
+                 $(document).ready(function() { $( "#oas__statistics ").barchart({
+                                                                 from: "2014-10-12",
+                                                                 jsonloader: "/graphprovider/jsonloader.php",
+                                                                 identifier: "oai:ub-deposit.fernuni-hagen.de:mir_mods_00000008",
+                                                                 statisticsToggleable: true,
+                                                                 showCounterAbst: false,
+                                                                 showRobots: true,
+                                                                 showRobotsAbst: true,
+                                                                 granularityEditable: false,
+                                                                 timespanEditable: false,
+                                                                 granularityStandard: "week"
+                                                                });
+
+                                                                //alert(JSON.stringify($._data( $("#content")[0], "events" )));
+
+                                     } );
+                
+              </script> 
             </div>
           </xsl:if>         
 
@@ -162,6 +187,9 @@
                 </xsl:variable>  
                 <xsl:value-of select="ex:format-date($now,'yyyy-MM')" />
                 <xsl:value-of select="$now-1year" /> 
+                <xsl:variable name="statistics" select="document('https://ub-deposit.fernuni-hagen.de/graphprovider/jsonloader.php?identifier=oai:ub-deposit.fernuni-hagen.de:mir_mods_00000008&amp;from=2016-01-01&amp;until=2016-03-31&amp;formatExtension=xml&amp;granularity=total')"/>
+                <xsl:value-of select="$statistics/report/entries/entry/access/type" />
+                <!-- <xsl:value-of select="$statistics/report/entries/entry/access/type[text()='counter']/../count"/> -->
                 <!-- End: OAS -->
               </div>
             </div>
