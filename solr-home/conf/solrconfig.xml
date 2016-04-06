@@ -2099,7 +2099,7 @@
     </lst>
     <lst name="appends">
       <!-- filter query: search only in published mods objects-->
-      <str name="fq">{!join from=returnId to=id}derivateURN:* OR mods.identifier:urn\:nbn\:de\:gbv\:708-*</str>
+      <str name="fq">{!join from=returnId to=id}derivateURN:* OR mods.identifier:urn\:nbn\:de\:hbz\:708-*</str>
       <str name="fq">state:published</str>
     </lst>
   </requestHandler>
