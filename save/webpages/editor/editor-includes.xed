@@ -16,7 +16,8 @@
         <xed:source uri="xslStyle:asHost,editor/mods2xeditor:mcrobject:{$relatedItemId}" />
       </xed:otherwise>
     </xed:choose>
-    <xed:cancel url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
+    <xed:cancel
+      url="../servlets/MCRLockServlet?action=unlock&amp;id={$id}&amp;url=/receive/{$id}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
     <xed:cancel url="{$cancelUrl}?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
     <xed:cancel url="../index.html?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
     <xed:post-processor xsl="editor/xeditor2mods.xsl" />
@@ -98,7 +99,8 @@
   </xed:template>
 
   <xed:template id="title">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true" required-text="{i18n:mir.validation.title}" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title" help-text="{i18n:mir.help.title}" class="required" required="true"
+      required-text="{i18n:mir.validation.title}" />
   </xed:template>
 
   <xed:template id="title.nonrequired">
