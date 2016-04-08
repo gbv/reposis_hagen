@@ -7,7 +7,8 @@
                 xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions" xmlns:str="http://exslt.org/strings"
                 xmlns:encoder="xalan://java.net.URLEncoder" xmlns:acl="xalan://org.mycore.access.MCRAccessManager"
                 xmlns:imageware="org.mycore.mir.imageware.MIRImageWarePacker"
-                exclude-result-prefixes="basket xalan xlink mcr i18n mods mcrmods mcrxsl mcrurn str encoder acl imageware"
+                xmlns:pi="xalan://org.mycore.pi.frontend.MCRIdentifierXSLUtils"
+                exclude-result-prefixes="basket xalan xlink mcr i18n mods mcrmods mcrxsl mcrurn str encoder acl imageware pi"
                 version="1.0" xmlns:ex="http://exslt.org/dates-and-times"
                 xmlns:exslt="http://exslt.org/common" extension-element-prefixes="ex exslt"
 >
@@ -453,10 +454,10 @@
                     <xsl:value-of select="i18n:translate('object.editGenre')" />
                   </a>
                 </li -->
-                <xsl:if test="not(//mods:mods/mods:identifier[@type='doi']) and $MIR.registerDOI='true'">
+                <xsl:if test="string-length($copyURL) &gt; 0">
                   <li>
-                    <a href="{$WebApplicationBaseURL}receive/{/mycoreobject/@ID}?XSL.Transformer=datacite">
-                      <xsl:value-of select="i18n:translate('mir.registerDOI')" />
+                    <a href="{$copyURL}?copyofid={$id}">
+                      <xsl:value-of select="i18n:translate('object.copyObject')" />
                     </a>
                   </li>
                 </xsl:if>
@@ -481,7 +482,14 @@
               <img src="{$WebApplicationBaseURL}images/workflow_addnbn.gif" title="{i18n:translate('derivate.urn.addURN')}" />
             </a>
             </xsl:if -->
-
+            <!-- Register DOI -->
+            <xsl:if test="$MIR.registerDOI='true' and $accessedit and not(pi:hasIdentifierRegistered('Datacite', /mycoreobject/@ID, '')) and not(.//mods:identifier[@type='doi'])">
+              <li>
+                <a href="#" id="registerDOI" data-mycoreID="{/mycoreobject/@ID}" data-baseURL="{$WebApplicationBaseURL}">
+                  <xsl:value-of select="i18n:translate('component.pi.register.doi')" />
+                </a>
+              </li>
+            </xsl:if>
             <!-- Packing with ImageWare Packer -->
             <xsl:if test="imageware:displayPackerButton($id, 'ImageWare')">
                 <li>
@@ -501,13 +509,6 @@
                   <a href="#" title="{i18n:translate('object.hasChildren')}">
                     <xsl:value-of select="i18n:translate('object.delObject')" />
                   </a>
-                  <xsl:if test="string-length($copyURL) &gt; 0">
-                    <li>
-                      <a href="{$copyURL}?copyofid={$id}">
-                        <xsl:value-of select="i18n:translate('object.copyObject')" />
-                      </a>
-                    </li>
-                  </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                   <a href="{$ServletsBaseURL}object/delete{$HttpSession}?id={$id}" class="confirm_deletion" data-text="{i18n:translate('mir.confirm.text')}">
@@ -667,7 +668,7 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li>
-              <a href="{$WebApplicationBaseURL}editor/editor-derivate.xed{$HttpSession}?derivateid={$deriv}">
+              <a class="option" href="{$WebApplicationBaseURL}editor/editor-derivate.xed{$HttpSession}?derivateid={$deriv}">
                 <!-- xsl:value-of select="i18n:translate('component.swf.derivate.updateFile')" / -->
                 Beschriftung bearbeiten
               </a>
@@ -681,8 +682,8 @@
                 </li>
               </xsl:when>
               <xsl:otherwise>
-                <li><!-- xsl:value-of select="i18n:translate('component.swf.derivate.addFile')" /-->
-                  Bearbeitung wg. URN gesperrt
+                <li ><!-- xsl:value-of select="i18n:translate('component.swf.derivate.addFile')" /-->
+                  <span class="option">Bearbeitung wg. URN gesperrt</span>
                 </li>
               </xsl:otherwise>
             </xsl:choose>
