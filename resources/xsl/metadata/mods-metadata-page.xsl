@@ -192,6 +192,7 @@
                 <!-- <xsl:value-of select="$statistics/report/entries/entry/access/type[text()='counter']/../count"/> -->
                 <!-- End: OAS -->
                 <div data-oasproviderurl="https://ub-deposit.fernuni-hagen.de/graphprovider/"/>
+                <script src="http://reposis-test.gbv.de/hagen/js/oas.js" ></script>
               </div>
             </div>
           </xsl:if>
