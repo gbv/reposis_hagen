@@ -187,11 +187,11 @@
                 </xsl:variable>  
                 <xsl:value-of select="ex:format-date($now,'yyyy-MM')" />
                 <xsl:value-of select="$now-1year" /> 
-                <xsl:variable name="statistics" select="document('https://ub-deposit.fernuni-hagen.de/graphprovider/jsonloader.php?identifier=oai:ub-deposit.fernuni-hagen.de:mir_mods_00000008&amp;from=2016-01-01&amp;until=2016-03-31&amp;formatExtension=xml&amp;granularity=total')"/>
+                <xsl:variable name="statistics" select="document('https://reposis-test.gbv.de/graphprovider/jsonloader.php?identifier=oai:ub-deposit.fernuni-hagen.de:mir_mods_00000008&amp;from=2016-01-01&amp;until=2016-03-31&amp;formatExtension=xml&amp;granularity=total')"/>
                 <xsl:value-of select="$statistics/report/entries/entry/access/type" />
                 <!-- <xsl:value-of select="$statistics/report/entries/entry/access/type[text()='counter']/../count"/> -->
                 <!-- End: OAS -->
-                <div data-oasproviderurl="https://ub-deposit.fernuni-hagen.de/graphprovider/"/>
+                <div data-oasproviderurl="https://reposis-test.gbv.de/graphprovider/"/>
                 <script src="http://reposis-test.gbv.de/hagen/js/oas.js" ></script>
               </div>
             </div>
