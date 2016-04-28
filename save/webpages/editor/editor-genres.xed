@@ -34,6 +34,13 @@
     <xed:include uri="webapp:editor/editor-genres.xed" ref="book.common" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="validation-rules.title.proceedings" />
   </xed:template>
+  
+  <xed:template id="issue">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes-noa.xed" ref="title.original.nonrequired" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="editor.repeated" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="book.common" />
+  </xed:template>
 
   <xed:template id="book.common">
     <xed:if test="not(mods:relatedItem)">
