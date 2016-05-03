@@ -287,6 +287,17 @@
     </fieldset>
   </xed:template>
   
+  <xed:template id="author.repeated.nonrequired">
+    <fieldset>
+      <legend class="mir-fieldset-legend">
+        Autoren
+      </legend>
+      <div class="mir-fieldset-content">
+        <mir:role.repeated role="aut" label="mir.role.author" help-text="{i18n:mir.help.role.author}" class="mir-form-group" required-i18n="mir.validation.author"/>
+      </div>
+    </fieldset>
+  </xed:template>
+  
   <xed:template id="editor.repeated">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -759,18 +770,18 @@
   </xed:template>
 
   <xed:template id="date.range.reviewed.datetimepicker">
-    <mir:dateRange xpath="mods:originInfo[@eventType='review']/mods:dateOther[@type='reviewed'][@encoding='w3cdtf']" label="mir.date.reviewed" help-text="{i18n:mir.help.date.reviewed.range}"
-                   class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
+    <mir:dateRange xpath="mods:originInfo[@eventType='review']/mods:dateOther[@type='reviewed'][@encoding='w3cdtf']" label="mir.date.reviewed"
+      help-text="{i18n:mir.help.date.reviewed.range}" class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
   </xed:template>
 
   <xed:template id="date.range.issued.datetimepicker">
     <mir:dateRange xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
-                   class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
+      class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
   </xed:template>
 
   <xed:template id="date.range.updated.datetimepicker">
     <mir:dateRange xpath="mods:originInfo[@eventType='update']/mods:dateModified[@encoding='w3cdtf']" label="mir.date.updated" help-text="{i18n:mir.help.date.updated}"
-                   class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
+      class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
   </xed:template>
 
   <xed:template id="date.range.extended.datetimepicker">
@@ -790,17 +801,17 @@
       </legend>
       <div class="mir-fieldset-content dateExtended-container hidden">
         <mir:dateRange xpath="mods:originInfo[@eventType='creation']/mods:dateCreated[@encoding='w3cdtf']" help-text="{i18n:mir.help.date.created.range}"
-                            class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.created.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.created.range" />
         <mir:dateRange xpath="mods:originInfo[@eventType='collection']/mods:dateCaptured[@encoding='w3cdtf']" help-text="{i18n:mir.help.date.collected.range}"
-                            class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.collected.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.collected.range" />
         <mir:dateRange xpath="mods:originInfo[@eventType='review']/mods:dateOther[@type='reviewed'][@encoding='w3cdtf']" help-text="{i18n:mir.help.date.reviewed.range}"
-                            class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.reviewed.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.reviewed.range" />
         <mir:dateRange xpath="mods:originInfo[@eventType='update']/mods:dateModified[@encoding='w3cdtf']" help-text="{i18n:mir.help.date.updated.range}"
-                            class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.updated.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.updated.range" />
         <mir:dateRange xpath="mods:originInfo[@eventType='creation']/mods:dateOther[@type='accepted'][@encoding='w3cdtf']" help-text="{i18n:mir.help.date.accepted.range}"
-                       class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.accepted.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.accepted.range" />
         <mir:dateRange xpath="mods:originInfo[@eventType='creation']/mods:dateOther[@type='submitted'][@encoding='w3cdtf']" help-text="{i18n:mir.help.date.submitted.range}"
-                       class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.submitted.range" />
+          class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" label="mir.date.submitted.range" />
       </div>
     </fieldset>
   </xed:template>
@@ -837,7 +848,7 @@
 
   <xed:template id="identifier.isbn.festschrift.relItemsearch">
     <mir:relItemsearch searchengine="isbn" genre="festschrift" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
-                       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
+      label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
 
   <xed:template id="identifier.isbn.proceedings.relItemsearch">
@@ -846,8 +857,8 @@
   </xed:template>
 
   <xed:template id="identifier.isbn.journal.relItemsearch">
-    <mir:relItemsearch searchengine="isbn" genre="journal" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']"
-                       label="mir.identifier.isbn" help-text="{i18n:mir.help.identifier.isbn}" />
+    <mir:relItemsearch searchengine="isbn" genre="journal" responsefield="identifier.type.isbn" xpath="mods:identifier[@type='isbn']" label="mir.identifier.isbn"
+      help-text="{i18n:mir.help.identifier.isbn}" />
   </xed:template>
 
   <xed:template id="identifier.isbn.newspaper.relItemsearch">
