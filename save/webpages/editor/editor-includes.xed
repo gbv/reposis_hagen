@@ -778,6 +778,11 @@
     <mir:dateRange xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
       class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" />
   </xed:template>
+  
+  <xed:template id="date.onlyrange.issued.datetimepicker">
+    <mir:dateRange xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
+      class="datetimepicker" placeholder="{i18n:mir.placeholder.date}" onlyRange="true"/>
+  </xed:template>
 
   <xed:template id="date.range.updated.datetimepicker">
     <mir:dateRange xpath="mods:originInfo[@eventType='update']/mods:dateModified[@encoding='w3cdtf']" label="mir.date.updated" help-text="{i18n:mir.help.date.updated}"
