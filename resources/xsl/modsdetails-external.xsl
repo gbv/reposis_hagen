@@ -389,10 +389,7 @@
       <xsl:value-of select="actionmapping:getURLforID('update-admin',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
     </xsl:variable>
     <xsl:variable name="editURL_allMods">
-      <xsl:call-template name="mods.getObjectEditURL">
-        <xsl:with-param name="id" select="$id" />
-        <xsl:with-param name="layout" select="'all'" />
-      </xsl:call-template>
+      <xsl:value-of select="actionmapping:getURLforID('update-xml',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
     </xsl:variable>
     <xsl:variable name="copyURL">
       <xsl:value-of select="actionmapping:getURLforID('create-copy',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
@@ -432,7 +429,7 @@
           <xsl:if test="not($accessedit or $accessdelete)">
             <li>
               <a href="{$ServletsBaseURL}MCRLoginServlet?action=login">
-                <xsl:value-of select="i18n:translate('mir.actions.noaccess')"/>
+                <xsl:value-of select="i18n:translate('mir.actions.noaccess')" />
               </a>
             </li>
           </xsl:if>
@@ -483,7 +480,9 @@
             </a>
             </xsl:if -->
             <!-- Register DOI -->
-            <xsl:if test="$MIR.registerDOI='true' and $accessedit and not(pi:hasIdentifierRegistered('Datacite', /mycoreobject/@ID, '')) and not(.//mods:identifier[@type='doi'])">
+            <xsl:if
+              test="$MIR.registerDOI='true' and $accessedit and not(pi:hasIdentifierRegistered('Datacite', /mycoreobject/@ID, '')) and not(.//mods:identifier[@type='doi'])"
+            >
               <li>
                 <a href="#" id="registerDOI" data-mycoreID="{/mycoreobject/@ID}" data-baseURL="{$WebApplicationBaseURL}">
                   <xsl:value-of select="i18n:translate('component.pi.register.doi')" />
@@ -492,11 +491,13 @@
             </xsl:if>
             <!-- Packing with ImageWare Packer -->
             <xsl:if test="imageware:displayPackerButton($id, 'ImageWare')">
-                <li>
-                  <a href="{$ServletsBaseURL}MCRPackerServlet?packer=ImageWare&amp;objectId={/mycoreobject/@ID}&amp;redirect={encoder:encode(concat($WebApplicationBaseURL,'receive/',/mycoreobject/@ID,'?XSL.Status.Message=mir.iwstatus.success&amp;XSL.Status.Style=success'))}">
-                     <xsl:value-of select="i18n:translate('object.createImagewareZipPackage')" />
-                   </a>
-                </li>
+              <li>
+                <a
+                  href="{$ServletsBaseURL}MCRPackerServlet?packer=ImageWare&amp;objectId={/mycoreobject/@ID}&amp;redirect={encoder:encode(concat($WebApplicationBaseURL,'receive/',/mycoreobject/@ID,'?XSL.Status.Message=mir.iwstatus.success&amp;XSL.Status.Style=success'))}"
+                >
+                  <xsl:value-of select="i18n:translate('object.createImagewareZipPackage')" />
+                </a>
+              </li>
             </xsl:if>
           </xsl:if>
           <xsl:if test="$accessdelete and (not(mcrurn:hasURNDefined($id)) or (mcrurn:hasURNDefined($id) and $CurrentUser=$MCR.Users.Superuser.UserName))">
@@ -566,6 +567,15 @@
                   </li>
                 </xsl:for-each>
               </xsl:when>
+              <xsl:when test="contains($url, 'editor-dynamic.xed') and $mods-type = 'lecture'">
+                <xsl:for-each select="str:tokenize($child-layout,'|')">
+                  <li>
+                    <a href="{$url}{$HttpSession}?relatedItemId={$id}&amp;relatedItemType=series&amp;genre={.}&amp;host={$mods-type}">
+                      <xsl:value-of select="mcrxsl:getDisplayName('mir_genres',.)" />
+                    </a>
+                  </li>
+                </xsl:for-each>
+              </xsl:when>
               <xsl:otherwise>
                 <xsl:for-each select="str:tokenize($child-layout,'|')">
                   <li>
@@ -578,7 +588,7 @@
             </xsl:choose>
           </xsl:if>
 
-          <xsl:if test="key('rights', @ID)/@accKeyEnabled">
+          <xsl:if test="(key('rights', @ID)/@accKeyEnabled) and (key('rights', @ID)/@write)">
             <xsl:variable name="action">
               <xsl:choose>
                 <xsl:when test="key('rights', @ID)/@readKey">
@@ -601,6 +611,13 @@
                     <xsl:value-of select="i18n:translate('mir.accesskey.add')" />
                   </xsl:otherwise>
                 </xsl:choose>
+              </a>
+            </li>
+          </xsl:if>
+          <xsl:if test="key('rights', @ID)/@accKeyEnabled and key('rights', @ID)/@readKey and not(mcrxsl:isCurrentUserGuestUser() or $accessedit or $accessdelete)">
+            <li>
+              <a role="menuitem" tabindex="-1" href="{$WebApplicationBaseURL}authorization/accesskey.xed?objId={@ID}&amp;url={encoder:encode(string($RequestURL))}">
+                <xsl:value-of select="i18n:translate('mir.accesskey.setOnUser')" />
               </a>
             </li>
           </xsl:if>
@@ -668,9 +685,14 @@
           </a>
           <ul class="dropdown-menu dropdown-menu-right">
             <li>
-              <a class="option" href="{$WebApplicationBaseURL}editor/editor-derivate.xed{$HttpSession}?derivateid={$deriv}">
+              <a href="{$WebApplicationBaseURL}editor/editor-derivate.xed{$HttpSession}?derivateid={$deriv}" class="option">
                 <!-- xsl:value-of select="i18n:translate('component.swf.derivate.updateFile')" / -->
                 Beschriftung bearbeiten
+              </a>
+            </li>
+            <li>
+              <a href="{$ServletsBaseURL}MCRDisplayHideDerivateServlet?derivate={$deriv}" class="option">
+                <xsl:value-of select="i18n:translate(concat('mir.derivate.display.', $derivate//derivate/@display))" />
               </a>
             </li>
             <xsl:choose>
@@ -682,8 +704,8 @@
                 </li>
               </xsl:when>
               <xsl:otherwise>
-                <li ><!-- xsl:value-of select="i18n:translate('component.swf.derivate.addFile')" /-->
-                  <span class="option">Bearbeitung wg. URN gesperrt</span>
+                <li><!-- xsl:value-of select="i18n:translate('component.swf.derivate.addFile')" /-->
+                  Bearbeitung wg. URN gesperrt
                 </li>
               </xsl:otherwise>
             </xsl:choose>
