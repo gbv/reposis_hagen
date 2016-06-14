@@ -130,7 +130,8 @@ OASGraph.prototype= {
           data: this.data,
           xkey: 'date',
           ykeys: ['counter'],
-          labels: ['Downloads']
+          labels: ['Downloads'],
+          hideHover:true
         });
         break;
       default:

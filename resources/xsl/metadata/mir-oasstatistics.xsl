@@ -92,6 +92,8 @@
       <script src="{$WebApplicationBaseURL}graphprovider/includes/raphael-2.1.2/raphael-min.js"></script>
       <script src="{$WebApplicationBaseURL}graphprovider/includes/morris.js-0.5.1/morris.js"></script>
       <script src="{$WebApplicationBaseURL}js/oas.js" ></script>
+      <style type="text/css"> @import url("<xsl:value-of select="$WebApplicationBaseURL" />graphprovider/includes/morris.js-0.5.1/morris.css"); </style> 
+       
       <!-- oai:ub-deposit.fernuni-hagen.de:mir_mods_00000080 -->
     </div>
     <xsl:apply-imports />
