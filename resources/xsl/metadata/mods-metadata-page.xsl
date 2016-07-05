@@ -5,12 +5,10 @@
   <xsl:include href="layout-utils.xsl" />
   
   <xsl:param name="MIR.oas" select="'hide'" />
-  <xsl:param name="MIR.oas.graph" select="'hide'" />
-
   
-
   <xsl:template match="/site">
     <xsl:copy>
+      <xsl:copy-of select="@*" />
       <head>
         <xsl:apply-templates select="citation_meta" mode="copyContent" />
         <link href="{$WebApplicationBaseURL}assets/jquery/plugins/shariff/shariff.min.css" rel="stylesheet" />
@@ -27,7 +25,7 @@
         <div class="row detail_row" id="mir-search_browsing">
           <div class="col-md-8">
             <div class="detail_block text-center">
-              <span id="pagination_label">gefundende Dokumente</span>
+              <!-- span id="pagination_label">gefundende Dokumente</span -->
               <br />
               <!-- Start: PAGINATION -->
               <xsl:apply-templates select="div[@id='search_browsing']" mode="copyContent" />

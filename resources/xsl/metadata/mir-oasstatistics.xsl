@@ -2,7 +2,7 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
   xmlns:ex="http://exslt.org/dates-and-times" exclude-result-prefixes="i18n ex">
 
-  <xsl:import href="xslImport:modsmeta:metadata/mir-oasstatistics.xsl" />  
+  <xsl:import href="xslImport:modsmeta:metadata/mir-oastatistics.xsl" />  
   
   <xsl:template match="/">
     <xsl:variable name="ID" select="/mycoreobject/@ID" />
@@ -23,14 +23,14 @@
     <xsl:variable name="from" select="$now-1year" />
     <xsl:variable name="until" select="ex:format-date($now,'yyyy-MM')" />
     <xsl:variable name="objID" select="mycoreobject/@ID" />
-    <div id="mir-oasstatistics">
+    <div id="mir-oastatistics">
       <div class="row">
         <h3 class="col-md-12">Gesamt</h3>
       </div>
       <div class="row">
         <div class="col-md-7 col-sm-9 col-xs-6 text-right">Volltextzugriffe:</div>
         <div  data-oaselementtype="OASInline" 
-            data-oasproviderurl="{$WebApplicationBaseURL}graphprovider/" 
+            data-oasproviderurl="{$MIR.OAS.GraphProviderURL}" 
             data-oasidentifier="oai:ub-deposit.fernuni-hagen.de:{$objID}" 
             data-oascounttype="counter"
         />
@@ -38,7 +38,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-9 col-xs-6 text-right">Metadatenansicht:</div>
         <div  data-oaselementtype="OASInline" 
-            data-oasproviderurl="{$WebApplicationBaseURL}graphprovider/" 
+            data-oasproviderurl="{$MIR.OAS.GraphProviderURL}" 
             data-oasidentifier="oai:ub-deposit.fernuni-hagen.de:{$objID}" 
             data-oascounttype="counter_abstract" 
         />
@@ -49,7 +49,7 @@
       <div class="row">
         <div class="col-md-7 col-sm-9 col-xs-6 text-right">Volltextzugriffe:</div>
         <div  data-oaselementtype="OASInline" 
-            data-oasproviderurl="{$WebApplicationBaseURL}graphprovider/" 
+            data-oasproviderurl="{$MIR.OAS.GraphProviderURL}" 
             data-oasidentifier="oai:ub-deposit.fernuni-hagen.de:{$objID}" 
             data-oascounttype="counter"
             data-oasfrom="{$from}" data-oasuntil="{$until}"
@@ -81,7 +81,7 @@
             <div class="modal-body">
               <div id="oasGraph" style="width:100%;height:200px;" 
                   data-oaselementtype="OASGraph" 
-                  data-oasproviderurl="{$WebApplicationBaseURL}graphprovider/" 
+                  data-oasproviderurl="{$MIR.OAS.GraphProviderURL}" 
                   data-oasidentifier="oai:ub-deposit.fernuni-hagen.de:{$objID}" 
                   data-oasfrom="{$from}" data-oasuntil="{$until}"
               />
@@ -89,12 +89,10 @@
           </div>
         </div>
       </div>
-      <script src="{$WebApplicationBaseURL}graphprovider/includes/raphael-2.1.2/raphael-min.js"></script>
-      <script src="{$WebApplicationBaseURL}graphprovider/includes/morris.js-0.5.1/morris.js"></script>
-      <script src="{$WebApplicationBaseURL}js/oas.js" ></script>
-      <style type="text/css"> @import url("<xsl:value-of select="$WebApplicationBaseURL" />graphprovider/includes/morris.js-0.5.1/morris.css"); </style> 
-       
-      <!-- oai:ub-deposit.fernuni-hagen.de:mir_mods_00000080 -->
+      <script src="{$MIR.OAS.GraphProviderURL}includes/raphael-2.1.2/raphael-min.js"></script>
+      <script src="{$MIR.OAS.GraphProviderURL}includes/morris.js-0.5.1/morris.js"></script>
+      <script src="{$WebApplicationBaseURL}js/oa-statistic.js" ></script>
+      <style type="text/css"> @import url("<xsl:value-of select="$MIR.OAS.GraphProviderURL" />includes/morris.js-0.5.1/morris.css"); </style>
     </div>
     <xsl:apply-imports />
   </xsl:template>
