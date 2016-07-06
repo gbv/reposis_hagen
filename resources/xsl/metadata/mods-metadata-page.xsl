@@ -134,7 +134,7 @@
               <div class="panel-body" style="background-image:url(https://reposis-test.gbv.de/hagen/content/images/oaslogobg.png);
                 background-repeat: no-repeat; background-position: center center;
               ">
-                <xsl:apply-templates select="div[@id='mir-oasstatistics']" mode="copyContent" />
+                <xsl:apply-templates select="div[@id='mir-oastatistics']" mode="copyContent" />
               </div>
             </div>
           </xsl:if>
