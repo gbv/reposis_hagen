@@ -120,7 +120,7 @@ OASGraph.prototype= {
         this.$element.html("<i class='fa fa-exclamation-triangle' data-toggle='tooltip' title='"+this.errortext+"'></i>");
         break;
       case "waiting":
-        this.$element.html("<i class='fa fa-spinner fa-pulse'></i>");
+        this.$element.html("<div style='font-size: 5em;text-align:center;'> <i class='fa fa-spinner fa-pulse'></i> </div>");
         break;
       case "success":
         console.log("Render barchart");
@@ -129,8 +129,8 @@ OASGraph.prototype= {
           element: "oasGraph",
           data: this.data,
           xkey: 'date',
-          ykeys: ['counter'],
-          labels: ['Downloads'],
+          ykeys: ['counter','counter_abstract'],
+          labels: ['Volltextzugriffe','Metadatenansichten'],
           hideHover:true
         });
         break;

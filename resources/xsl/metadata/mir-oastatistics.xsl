@@ -89,8 +89,9 @@
               />
             </div>
             <div class="modal-footer">
-              <img src="{$WebApplicationBaseURL}content/images/oaslogo.png" style="float:right" />
-              Datenquelle: <a href="https://www.gbv.de/Verbundzentrale/04Projekte/open-access-statistik-oa-s"> Open Access Statistik</a>
+              <a href="https://www.gbv.de/Verbundzentrale/04Projekte/open-access-statistik-oa-s">
+                <img src="{$WebApplicationBaseURL}content/images/oaslogo.png" />
+              </a>
             </div>
           </div>
         </div>
