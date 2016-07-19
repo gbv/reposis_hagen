@@ -23,7 +23,7 @@
       </xsl:choose>
     </xsl:variable>  
     <xsl:variable name="from" select="$now-1year" />
-    <xsl:variable name="until" select="ex:format-date($now,'yyyy-MM')" />
+    <xsl:variable name="until" select="ex:format-date($now,'yyyy-MM-dd')" />
     <xsl:variable name="objID" select="mycoreobject/@ID" />
     <div id="mir-oastatistics">
       <div class="row">
@@ -89,7 +89,7 @@
               />
             </div>
             <div class="modal-footer">
-              <a href="https://www.gbv.de/Verbundzentrale/04Projekte/open-access-statistik-oa-s">
+              <a href="https://www.gbv.de/Verbundzentrale/serviceangebote/oas-service/open-access-statistik-service">
                 <img src="{$WebApplicationBaseURL}content/images/oaslogo.png" />
               </a>
             </div>
