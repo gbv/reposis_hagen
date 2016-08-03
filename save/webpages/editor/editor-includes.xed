@@ -1261,21 +1261,19 @@
   </xed:template>
   
   <xed:template id="host.pages.required">
-    <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
+    <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
       <div class="form-group mir-modspart required {$xed-validation-marker}">
         <label class="col-md-3 control-label">
           <xed:output i18n="mir.pages.from" />
         </label>
         <div class="col-md-6">
           <div class="form-inline">
-            <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
-               <input type="text" size="20" class="form-control form-control-inline" />
-            </xed:bind>
+            <input type="text" size="20" class="form-control form-control-inline" />
           </div>
         </div>
         <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
       </div>
-      <xed:validate test="string-length(mods:list) > 0" display="global"> 
+      <xed:validate test="string-length(.) > 0" display="global"> 
         Bitte Seitenangaben eintragen. 
       </xed:validate>
     </xed:bind>
