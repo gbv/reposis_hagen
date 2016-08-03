@@ -122,13 +122,13 @@
   </xed:template>
 
   <xed:template id="title.journal">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}"
-    class="required" required="true" required-i18n="mir.validation.title" />
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.journal" help-text="{i18n:mir.help.title.journal}" class="required"
+      required="true" required-i18n="mir.validation.title" />
   </xed:template>
 
   <xed:template id="title.newspaper">
-    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" help-text="{i18n:mir.help.title.newspaper}" 
-    class="required" required="true" required-i18n="mir.validation.title"/>
+    <mir:textfield xpath="mods:titleInfo/mods:title" label="mir.title.newspaper" help-text="{i18n:mir.help.title.newspaper}" class="required"
+      required="true" required-i18n="mir.validation.title" />
   </xed:template>
 
   <xed:template id="title.series">
@@ -307,7 +307,7 @@
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="editor.repeated">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -693,7 +693,7 @@
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
       class="required datetimepicker mir-modspart" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
-  
+
   <xed:template id="date.broadcasted">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.broadcasted" help-text="{i18n:mir.help.date.broadcasted}"
       placeholder="{i18n:mir.placeholder.date}" />
@@ -1247,20 +1247,12 @@
   <xed:template id="host.pages">
     <div class="form-group mir-modspart">
       <label class="col-md-3 control-label">
-        <xed:output i18n="mir.pages.from" />
+        <xed:output i18n="mir.pages" />:
       </label>
       <div class="col-md-6">
         <div class="form-inline">
-          <xed:bind xpath="mods:part/mods:extent[@unit='pages']">
-            <xed:bind xpath="mods:start">
-              <input type="text" size="10" class="form-control form-control-inline" />
-            </xed:bind>
-            &amp;npsp;
-            <xed:output i18n="mir.pages.to" />
-            &amp;npsp;
-            <xed:bind xpath="mods:end">
-              <input type="text" size="10" class="form-control form-control-inline" />
-            </xed:bind>
+          <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
+            <input type="text" size="20" class="form-control form-control-inline" />
           </xed:bind>
         </div>
       </div>
@@ -1276,18 +1268,14 @@
         </label>
         <div class="col-md-6">
           <div class="form-inline">
-            <xed:bind xpath="mods:start">
-              <input type="text" size="10" class="form-control form-control-inline" />
-            </xed:bind>
-             <xed:output i18n="mir.pages.to" /> 
-            <xed:bind xpath="mods:end">
-              <input type="text" size="10" class="form-control form-control-inline" />
+            <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
+               <input type="text" size="20" class="form-control form-control-inline" />
             </xed:bind>
           </div>
         </div>
         <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
       </div>
-      <xed:validate test="string-length(mods:start) > 0" display="global"> 
+      <xed:validate test="string-length(mods:list) > 0" display="global"> 
         Bitte Seitenangaben eintragen. 
       </xed:validate>
     </xed:bind>
@@ -1296,7 +1284,6 @@
   <xed:template id="host.lecture.semester">
     <mir:textfield xpath="mods:part/mods:detail[@type='volume']/mods:number" label="mir.lecture.semester" help-text="{i18n:mir.help.issue}" class="mir-modspart" />
   </xed:template>
-  
 
   <xed:template id="host.lecture.number">
     <mir:textfield xpath="mods:part/mods:detail[@type='issue']/mods:number" label="mir.lecture.number" help-text="{i18n:mir.help.volume}" class="mir-modspart" />
@@ -1412,7 +1399,7 @@
           :
         </label>
         <div class="col-md-6">
-          <select  class="form-control form-control-inline">
+          <select class="form-control form-control-inline">
             <option value="">
               <xed:output i18n="mir.select" />
             </option>
