@@ -84,14 +84,19 @@
       </category>
       <category ID="lexicon">
         <label xml:lang="x-hosts" text="standalone" />
-        <label xml:lang="de" text="Lexikon" />
         <label xml:lang="en" text="Lexicon" />
+        <label xml:lang="de" text="Lexikon" />
       </category>
+    </category>
+    <category ID="issue">
+      <label xml:lang="en" text="Issue" />
+      <label xml:lang="x-hosts" text="journal" />
+      <label xml:lang="de" text="Zeitschriftenheft" />
     </category>
     <category ID="journal">
       <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="de" text="Zeitschrift" />
       <label xml:lang="en" text="Journal" />
+      <label xml:lang="de" text="Zeitschrift" />
     </category>
     <category ID="newspaper">
       <label xml:lang="x-hosts" text="standalone" />

@@ -571,7 +571,7 @@
       <url xlink:href="http://www.fernuni-hagen.de/" xlink:type="locator" />
     </category>
     <category ID="UBHagen">
-      <label xml:lang="de" text="Universitätsbibliothek Hagen (Digitale Sammlungen)" />
+      <label xml:lang="de" text="Universitätsbibliothek Hagen (digitale Sammlungen)" />
       <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
       <category ID="dfsd">
         <label xml:lang="de" text="Deutsche Fernstudiendokumentation (dfsd)" />

@@ -50,8 +50,8 @@
     <category ID="da">
       <label xml:lang="de" text="Dänisch" />
       <label xml:lang="x-bibl" text="dan" />
-      <label xml:lang="en" text="Danish" />
       <label xml:lang="x-term" text="dan" />
+      <label xml:lang="en" text="Danish" />
     </category>
     <category ID="fi">
       <label xml:lang="x-term" text="fin" />
@@ -115,8 +115,8 @@
     </category>
     <category ID="sk">
       <label xml:lang="x-bibl" text="slo" />
-      <label xml:lang="en" text="Slovak" />
       <label xml:lang="x-term" text="slk" />
+      <label xml:lang="en" text="Slovak" />
       <label xml:lang="de" text="Slowakisch" />
     </category>
     <category ID="sr">
@@ -217,9 +217,9 @@
     </category>
     <category ID="rn">
       <label xml:lang="x-term" text="run" />
-      <label xml:lang="de" text="Kirundisch" />
-      <label xml:lang="en" text="Rundi" />
       <label xml:lang="x-bibl" text="run" />
+      <label xml:lang="en" text="Rundi" />
+      <label xml:lang="de" text="Kirundisch" />
     </category>
   </categories>
 </mycoreclass>
