@@ -602,8 +602,10 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:if>
-
-              <xsl:if test="(key('rights', @ID)/@accKeyEnabled) and (key('rights', @ID)/@write)">
+              <xsl:variable name="addaccessKey">
+                <xsl:value-of select="actionmapping:getURLforID('add-accessKey',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
+              </xsl:variable>
+              <xsl:if test="(string-length(addaccessKey) &gt; 0 and key('rights', @ID)/@accKeyEnabled) and (key('rights', @ID)/@write)">
                 <xsl:variable name="action">
                   <xsl:choose>
                     <xsl:when test="key('rights', @ID)/@readKey">

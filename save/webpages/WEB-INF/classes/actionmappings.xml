@@ -38,6 +38,9 @@
     <action action="update-xml">
       <when condition="group = admin" url="/servlets/MCRLockServlet?url=/editor/editor-xml.xed" />
     </action>
+    <action action="add-accessKey">
+      <when condition="(group = admin) or (group = editor)" url="true" />
+    </action>
   </collection>
 
 </actionmappings>
