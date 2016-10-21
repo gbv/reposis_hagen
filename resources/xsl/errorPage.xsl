@@ -9,7 +9,7 @@
       Es ist ein Fehler aufgetreten
     </h1>
     <div class="row">
-      <div class="col-md-8 oa-borderbox" lang="de">
+      <div class="col-md-8" lang="de">
         <xsl:choose>
           <xsl:when test="/mcr_error/@HttpError = '500'">
               <h2>Interner Serverfehler</h2>
