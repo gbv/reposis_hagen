@@ -48,6 +48,22 @@
           </xsl:otherwise>
         </xsl:choose>
       </div>
+      <xsl:if test="exception">
+      <div class="hidden">
+        <div class="panel panel-warning">
+          <div class="panel-heading">
+            <xsl:value-of select="concat(i18n:translate('error.stackTrace'),' :')" />
+          </div>
+          <div class="panel-body">
+            <xsl:for-each select="exception/trace">
+              <pre style="font-size:0.8em;">
+                <xsl:value-of select="." />
+              </pre>
+            </xsl:for-each>
+          </div>
+        </div>
+      </div>
+      </xsl:if>
     </div>
   </xsl:template>
   <xsl:include href="MyCoReLayout.xsl" />
