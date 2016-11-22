@@ -41,7 +41,8 @@
   <xsl:param name="MCR.URN.SubNamespace.Default.Prefix" select="''" />
   <xsl:param name="MCR.OAIDataProvider.FallbackPublisher" />
   <xsl:param name="MCR.OAIDataProvider.FallbackPublisherPlace" />
-
+  <xsl:param name="MCR.OAIDataProvider.FallbackPublisherAddress" />
+  
   <xsl:variable name="language">
     <xsl:call-template name="translate_Lang">
       <xsl:with-param name="lang_code" select="//metadata/def.modsContainer/modsContainer/mods:mods/mods:language/mods:languageTerm[@authority='rfc4646']/text()" />
@@ -320,9 +321,16 @@
             <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:originInfo[not(@eventType) or @eventType='publication']/mods:place/mods:placeTerm[@type='text']" />
           </xsl:when>
           <xsl:otherwise>
-            <xsl:value-of select="$MCR.OAIDataProvider.FallbackPublisherPlace"/>
+            <xsl:if test="$publisher_name=$MCR.OAIDataProvider.FallbackPublisher">
+              <xsl:value-of select="$MCR.OAIDataProvider.FallbackPublisherPlace"/>
+            </xsl:if>
           </xsl:otherwise>
         </xsl:choose>
+      </xsl:variable>
+      <xsl:variable name="publisher_address">
+        <xsl:if test="$publisher_name=$MCR.OAIDataProvider.FallbackPublisher">
+          <xsl:value-of select="$MCR.OAIDataProvider.FallbackPublisherAddress"/>
+        </xsl:if>
       </xsl:variable>
       <xsl:if test="string-length($publisher_name) &gt; 0">
         <xsl:element name="dc:publisher">
@@ -338,6 +346,17 @@
                 <xsl:value-of select="$publisher_place"/>
               </xsl:element>
             </xsl:if>
+          </xsl:element>
+          <xsl:element name="cc:address">
+            <xsl:choose> 
+              <xsl:when test="$publisher_name=$MCR.OAIDataProvider.FallbackPublisher">
+                <xsl:attribute name="cc:Scheme">DIN5008</xsl:attribute>
+                <xsl:value-of select="$MCR.OAIDataProvider.FallbackPublisher"/>
+              </xsl:when>
+              <xsl:otherwise>
+                <xsl:value-of select="$publisher_place"/>
+              </xsl:otherwise>
+            </xsl:choose>
           </xsl:element>
         </xsl:element>
       </xsl:if>
