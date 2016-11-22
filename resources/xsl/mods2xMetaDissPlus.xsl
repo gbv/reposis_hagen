@@ -536,7 +536,7 @@
                 </xsl:if>
             </xsl:for-each>
         </xsl:variable>
-        <xsl:if test="$thesis_level">
+        <xsl:if test="string-length($thesis_level) &gt; 0">
             <xsl:element name="thesis:degree">
                 <xsl:copy-of select="$thesis_level"/>
                 <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:originInfo[@eventType='creation']/mods:publisher">
