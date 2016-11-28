@@ -64,14 +64,19 @@ OASInline.prototype= {
 
 OASInline.receiveData = function(oasinline,xml) {
   
-  nodes = $(xml).find("access");
-  nodes.each (function () {
-    type=$($(this).children( "type" )[0]).text();
-    if (type==oasinline.getCounttype()) {
-      count=$($(this).children( "count" )[0]).text();
-      oasinline.setCount(count);
-    }
-  });
+  if (xml) {
+    nodes = $(xml).find("access");
+    nodes.each (function () {
+      type=$($(this).children( "type" )[0]).text();
+      if (type==oasinline.getCounttype()) {
+        count=$($(this).children( "count" )[0]).text();
+        oasinline.setCount(count);
+      }
+    });
+  } else {
+    // JSON Loader does not reponse xml if the ID doesn't exsist or never counted
+    oasinline.setCount(0);
+  }
   oasinline.state="success";
   oasinline.render();
 };
@@ -117,7 +122,11 @@ OASGraph.prototype= {
   ,render: function () {
     switch(this.state) {
       case "error":
-        this.$element.html("<i class='fa fa-exclamation-triangle' data-toggle='tooltip' title='"+this.errortext+"'></i>");
+        html='<div style="with:100%;text-align:center;">';
+        html+="<i class='fa fa-exclamation-triangle' data-toggle='tooltip' title='"+this.errortext+"'/>";
+        html+=this.errortext;
+        html+="</div>";
+        this.$element.html(html);
         break;
       case "waiting":
         this.$element.html("<div style='font-size: 5em;text-align:center;'> <i class='fa fa-spinner fa-pulse'></i> </div>");
@@ -189,8 +198,13 @@ OASGraph.prototype= {
 };
 
 OASGraph.receiveData = function(oasgraph,json) {
-  oasgraph.data=json.entries;
-  oasgraph.state="success";
+  if (json) {
+    oasgraph.data=json.entries;
+    oasgraph.state="success";
+  } else {
+    oasgraph.state="error";
+    oasgraph.errortext="Keine Zugriffsdaten vorhanden";
+  }
   oasgraph.render();
 };
 
