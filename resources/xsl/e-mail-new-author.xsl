@@ -17,6 +17,8 @@
     <to>
       <xsl:value-of select="eMail/text()" />
     </to>
+    <to>paul.borchert@gbv.de</to>
+    <to>publizieren.ub@fernuni-hagen.de</to>
     <subject>
       Ihre Benutzerkennung wurde angelegt!
     </subject>
