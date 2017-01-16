@@ -483,6 +483,16 @@
 <!-- dcterms:isPartOf xsi:type="ddb:Erstkat-ID" >2049984-X</dcterms:isPartOf>
 <dcterms:isPartOf xsi:type="ddb:ZS-Ausgabe" >2004</dcterms:isPartOf -->
     <xsl:template name="ispartof">
+      <!-- Ausgabe der Schriftenreihe ala: <dcterms:isPartOf xsi:type=“ddb:noScheme“>Bulletin ; 34</dcterms:isPartOf>  -->
+      <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem/@type='series'">
+        <xsl:element name="dcterms:isPartOf">
+          <xsl:attribute name="xsi:type">ddb:noScheme</xsl:attribute>
+          <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:titleInfo/mods:title" />
+          <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:part/mods:detail[@type='volume']/mods:number">
+            <xsl:value-of select="concat(' ; ',./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:part/mods:detail[@type='volume']/mods:number)"/>
+          </xsl:if>
+        </xsl:element>
+      </xsl:if>
       <xsl:choose>
         <xsl:when test="contains(./metadata/def.modsContainer/modsContainer/mods:mods/mods:genre/@valueURI, 'issue')">
           <xsl:element name="dcterms:isPartOf">
@@ -507,16 +517,7 @@
             </xsl:element>
           </xsl:if>
         </xsl:when>
-        <!-- Ausgabe der Schriftenreihe ala: <dcterms:isPartOf xsi:type=“ddb:noScheme“>Bulletin ; 34</dcterms:isPartOf>  -->
-        <xsl:when test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem/@type='series'">
-          <xsl:element name="dcterms:isPartOf">
-            <xsl:attribute name="xsi:type">ddb:noScheme</xsl:attribute>
-            <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:titleInfo/mods:title" />
-            <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:part/mods:detail[@type='volume']/mods:number">
-              <xsl:value-of select="concat(' ; ',./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='series']/mods:part/mods:detail[@type='volume']/mods:number)"/>
-            </xsl:if>
-          </xsl:element>
-        </xsl:when>
+        
         <!--  If not use isPartOf use dc:source -->
         <xsl:when test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem/@type='host'">
           <xsl:variable name="hosttitel" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:titleInfo/mods:title" />
