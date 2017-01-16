@@ -83,7 +83,6 @@
              <xsl:call-template name="publisher" />
              <xsl:call-template name="language" />
              <xsl:call-template name="ispartof" />
-             <xsl:call-template name="source" />
              <xsl:call-template name="degree" />
              <xsl:call-template name="contact" />
              <xsl:call-template name="file" />
