@@ -290,7 +290,7 @@
           </xsl:element>
       </xsl:for-each>
     </xsl:template>
-    
+
     <xsl:template name="publisher">
       <xsl:variable name="publisher_name">
         <xsl:choose>
@@ -376,7 +376,7 @@
                 <xsl:attribute name="xsi:type">dcterms:W3CDTF</xsl:attribute>
                 <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:originInfo[@eventType='creation']/mods:dateOther[@type='accepted'][@encoding='w3cdtf']" />
             </xsl:element>
-        </xsl:if> 
+        </xsl:if>
         <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']">
             <xsl:element name="dcterms:issued">
                 <xsl:attribute name="xsi:type">dcterms:W3CDTF</xsl:attribute>
@@ -522,10 +522,10 @@
     <xsl:template name="source" >
       <xsl:if test="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem/@type='host'">
         <xsl:variable name="hosttitel" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:titleInfo/mods:title" />
-        <xsl:variable name="issue" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:detail[type='issue']/mods:number"/>
-        <xsl:variable name="volume" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:detail[type='volume']/mods:number"/>
-        <xsl:variable name="startPage" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/extent[@unit='pages']/mods:start"/>
-        <xsl:variable name="endPage" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/extent[@unit='pages']/mods:end"/>
+        <xsl:variable name="issue" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:detail[@type='issue']/mods:number"/>
+        <xsl:variable name="volume" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:detail[@type='volume']/mods:number"/>
+        <xsl:variable name="startPage" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:extent[@unit='pages']/mods:start"/>
+        <xsl:variable name="endPage" select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:relatedItem[@type='host']/mods:part/mods:extent[@unit='pages']/mods:end"/>
         <xsl:variable name="volume2">
           <xsl:if test="string-length($volume) &gt; 0">
             <xsl:value-of select="concat('(',$volume,')')"/>
@@ -533,7 +533,7 @@
         </xsl:variable>
         <xsl:variable name="issue2">
           <xsl:if test="string-length($issue) &gt; 0">
-            <xsl:value-of select="concat(', H.',$issue)"/>
+            <xsl:value-of select="concat(', H. ',$issue)"/>
           </xsl:if>
         </xsl:variable>
         <xsl:variable name="pages">
@@ -647,7 +647,7 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
-    
+
     <xsl:template name="frontpage">
         <xsl:element name="ddb:identifier">
             <xsl:attribute name="ddb:type">URL</xsl:attribute>
