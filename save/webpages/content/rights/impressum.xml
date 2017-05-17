@@ -1,99 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage>
-  <section xml:lang="de" title="Impressum">
-    <div>
-      <h1>Impressum</h1>
-      <div class="row">
-        <div class="col-md-8">
-          <h2>
-            Anbieterkennzeichnung
-            <br />
-            (Informationen nach § 5 Telemediengesetz (TMG) und § 55 Abs. 2
-            Rundfunkstaatsvertrag (RStV))
-          </h2>
-          <p>
-            FernUniversität in Hagen
-            <br />
-            Körperschaft des öffentlichen Rechts
-            <br />
-            Der Rektor Prof. Dr.-Ing. Helmut Hoyer
-            <br />
-            Feithstraße 152, 58097 Hagen
-            <br />
-            Telefon: 0 23 31 / 9 87-0
-            <br />
-            email: 
-            <a href="mailto:presse@fernuni-hagen.de?subject=deposit_hagen"
-              shape="rect">presse@fernuni-hagen.de</a>
-            <br />
-            Umsatzsteueridentifikationsnummer: DE 125 138 511
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Verantwortliche i.S.d. § 55 II RStV:</h2>
-          <p>
-            Die Direktorin der UB Hagen
-            <br />
-            Karin Michalke
-            <br />
-            Telefon: 02331 / 987-2910
-            <br />
-            Fax: 02331 / 987-346
-            <br />
-            email: 
-            <a href="mailto:sekretariat.ub@FernUni-Hagen.de?subject=deposit_hagen"
-              shape="rect">sekretariat.ub@FernUni-Hagen.de</a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Inhaltliche Zuständigkeiten</h2>
-          <p>Abteilung Wissenschaftliches Publizieren der
-            Universitätsbibliothek
-            <br />
-            <a href="http://www.ub.fernuni-hagen.de/personen/frerichs/">Annette Frerichs</a>,
-            Maria Müller,
-            <a href="http://www.ub.fernuni-hagen.de/personen/schneider/">Gabriele Schneider</a>
-            <br />
-            E-Mail:  
-            <a href="mailto:publizieren.ub@fernuni-hagen.de?subject=deposit_hagen"
-              shape="rect">publizieren.ub@fernuni-hagen.de</a>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">
-          <h2>Haftung</h2>
-          <p>Die Universitätsbibliothek Hagen steht nicht für die
-            Korrektheit, Vollständigkeit oder Aktualität ihrer Internetseiten
-            ein. Für Schäden, die durch die Nutzung der Internetseiten
-            verursacht werden, haftet die Bibliothek grundsätzlich nicht, es
-            sei denn, es ist ihr vorsätzliches oder grob fahrlässiges
-            Verschulden nachzuweisen. Die Universitätsbibliothek kann ihre
-            Internetseiten jederzeit ohne gesonderte Ankündigung verändern,
-            ergänzen oder löschen. Die Bibliothek haftet nicht für fremde
-            Internetseiten, auf die sie mit einem Link verweist und die nach
-            der Linksetzung verändert wurden.</p>
-        </div>
-      </div>
-      <h2>Technischer Betrieb</h2>
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            Verbundzentrale des GBV (VZG)
-            <br />
-            Platz der Göttinger Sieben 1
-            <br />
-            D-37073 Göttingen
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <meta>
-    <log lastEditor="muelleradmin" date="2015-10-06" time="11:28" />
-  </meta>
-</MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Impressum"><div>
+<h1>Impressum</h1>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Anbieterkennzeichnung<br />
+(Informationen nach § 5 Telemediengesetz (TMG) und § 55 Abs. 2 Rundfunkstaatsvertrag (RStV))</h2>
+
+<p>FernUniversität in Hagen<br />
+Körperschaft des öffentlichen Rechts<br />
+Die Rektorin Prof. Dr. Ada Pellert<br />
+Feithstraße 152, 58097 Hagen<br />
+Telefon: 0 23 31 / 9 87-0<br />
+email: <a href="mailto:presse@fernuni-hagen.de?subject=deposit_hagen" shape="rect">presse@fernuni-hagen.de</a><br />
+Umsatzsteueridentifikationsnummer: DE 125 138 511</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Verantwortliche i.S.d. § 55 II RStV:</h2>
+
+<p>Die Direktorin der UB Hagen<br />
+Karin Michalke<br />
+Telefon: 02331 / 987-2910<br />
+Fax: 02331 / 987-346<br />
+email: <a href="mailto:sekretariat.ub@FernUni-Hagen.de?subject=deposit_hagen" shape="rect">sekretariat.ub@FernUni-Hagen.de</a></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Inhaltliche Zuständigkeiten</h2>
+
+<p>Abteilung Wissenschaftliches Publizieren der Universitätsbibliothek<br />
+<a href="http://www.ub.fernuni-hagen.de/personen/frerichs/">Annette Frerichs</a>, <a href="http://www.ub.fernuni-hagen.de/personen/schneider/">Gabriele Schneider</a><br />
+E-Mail:  <a href="mailto:publizieren.ub@fernuni-hagen.de?subject=deposit_hagen" shape="rect">publizieren.ub@fernuni-hagen.de</a></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Haftung</h2>
+
+<p>Die Universitätsbibliothek Hagen steht nicht für die Korrektheit, Vollständigkeit oder Aktualität ihrer Internetseiten ein. Für Schäden, die durch die Nutzung der Internetseiten verursacht werden, haftet die Bibliothek grundsätzlich nicht, es sei denn, es ist ihr vorsätzliches oder grob fahrlässiges Verschulden nachzuweisen. Die Universitätsbibliothek kann ihre Internetseiten jederzeit ohne gesonderte Ankündigung verändern, ergänzen oder löschen. Die Bibliothek haftet nicht für fremde Internetseiten, auf die sie mit einem Link verweist und die nach der Linksetzung verändert wurden.</p>
+</div>
+</div>
+
+<h2>Technischer Betrieb</h2>
+
+<div class="row">
+<div class="col-md-12">
+<p>Verbundzentrale des GBV (VZG)<br />
+Platz der Göttinger Sieben 1<br />
+D-37073 Göttingen</p>
+</div>
+</div>
+</div></section><meta><log lastEditor="muelleradmin" date="2017-02-15" time="15:03" /></meta></MyCoReWebPage>

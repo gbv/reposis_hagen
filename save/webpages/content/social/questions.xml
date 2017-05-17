@@ -1,2 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Häufige Fragen"><div><h1>Häufig gestellte Fragen (FAQ)</h1><div class="row"><div class="col-md-8"><p>Allgemein</p><ul><li><a href="#frage1" shape="rect">Was bedeutet Open Access?</a></li><li><a href="#frage2" shape="rect">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</a></li><li><a href="#frage3" shape="rect">Können veröffentlichte Dokumente wieder gelöscht werden?</a></li><li><a href="#frage4" shape="rect">Sind die Publikationen zitierfähig?</a></li></ul><p>Veröffentlichen:</p><ul><li><a href="#frage5" shape="rect">Welche Dokumente können veröffentlicht werden?</a></li><li><a href="#frage6" shape="rect">Wie können Dokumente veröffentlicht werden?</a></li><li><a href="#frage7" shape="rect">Welche Dateiformate können eingereicht werden?</a></li><li><a href="#frage8" shape="rect">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</a></li><li><a href="#frage9" shape="rect">Was ist eine CC-Lizenz?</a></li><li><a href="#frage10" shape="rect">Wozu dient die Einverständniserklärung und was beinhaltet sie?</a></li></ul><p>Nutzen:</p><ul><li><a href="#frage11" shape="rect">Wie kann ich nach Publikationen in deposit_hagen suchen?</a></li><li><a href="#frage12" shape="rect">Dürfen Dokumente ausgedruckt werden?</a></li><li><a href="#frage13" shape="rect">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</a></li></ul><hr /></div></div><div class="row"><div class="col-md-8"><h2>Allgemein:</h2><h3 id="frage1">Was bedeutet Open Access?</h3><p>Mit Open Access ist der uneingeschränkte und kostenlose Zugang zu wissenschaftlichen Informationen gemeint. Ziel ist es neben dem möglichst von technischen, rechtlichen und monetären Barrieren freiem Zugang zu wissenschaftlicher Literatur und wissenschaftlichen Materialien, die Maximierung der Verbreitung von wissenschaftlicher Information. (<a href="https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/" shape="rect">https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/</a>)</p><p>Gründe für Open Access sind u.a. :</p><ul><li>der öffentliche Zugang zu öffentlich finanzierten Forschungsergebnissen,</li><li>die erhöhte Sichtbarkeit und Zitierfähigkeit von Dokumenten,</li><li>die gute Auffindbarkeit über Suchmaschinen und Nachweisdienste,</li><li>die Förderung der internationalen und interdisziplinären Zusammenarbeit,</li><li>die Förderung der Forschungseffizienz und</li><li>der Verbleib der Verwertungsrechte bei den AutorInnen.</li></ul><p>Weiterführende Informationen zu Open Access finden Sie auf <a href="https://open-access.net/" shape="rect">https://open-access.net/</a> </p><h3 id="frage2">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</h3><p>Die Dokumente bleiben mindestens fünf Jahre auf deposit_hagen verfügbar.</p><h3 id="frage3">Können veröffentlichte Dokumente wieder gelöscht werden?</h3><p>Dokumente, die bereits veröffentlicht wurden, können <u>nicht</u>  gelöscht oder nachträglich geändert werden. Dies garantiert die Authentizität der Dokumente und macht sie mit gedruckten Publikationen vergleichbar. Geänderte Dokumente müssen neu eingebracht werden und erhalten einen neuen Persistent Identifier (URN).</p><h3 id="frage4">Sind die Publikationen zitierfähig?</h3><p>Publikationen des deposit_hagen sind gedruckten Veröffentlichungen gleichwertig und damit auch zitierfähig. Die Zitierfähigkeit wird durch einen Persistent Identifier garantiert. deposit_hagen nutzt hierzu URNs (Uniform Ressource Name). Näheres zu URN: <a href="http://www.dnb.de/urnservice.html" shape="rect" title="urnservice">http://www.dnb.de/urnservice</a></p></div></div><div class="row"><div class="col-md-8" style="margin-top:20px"><p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p><hr style="margin-top:0px" /></div></div><div class="row"><div class="col-md-8"><h2>Veröffentlichen:</h2><h3 id="frage5">Welche Dokumente können veröffentlicht werden?</h3><p>Auf deposit_hagen können wissenschaftliche Veröffentlichungen jeglicher Art veröffentlicht werden, z.B. Artikel, Beiträge, Research Paper, Dissertationen etc. Bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der Qualitätssicherung zur Veröffentlichung der Zustimmung der Prüfenden.</p><h3 id="frage6">Wie können Dokumente veröffentlicht werden?</h3><p>Eine ausführliche Beschreibung des Publikationsprozesses finden Sie unter dem Punkt  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">Wie veröffentliche ich?</a></p><h3 id="frage7">Welche Dateiformate können eingereicht werden?</h3><p>Dokumente sind i.d.R. in einem PDF-Format einzureichen. Für Audio- und Video-Dateien können entsprechende Formate eingereicht werden. Hochgeladene Dokumente dürfen nicht mit technischen Schutzmaßnahmen versehen sein.</p><h3 id="frage8">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</h3><p>Um eine langfristige Archivierung zu ermöglich, müssen Dateien oftmals umgespeichert und in andere Systeme überführt werden. Daher ist es wichtig, dass die Dateien weder verschlüsselt noch passwortgeschützt sind.</p><h3 id="frage9">Was ist eine CC-Lizenz?</h3></div></div><div class="row"><div class="col-md-8"><p>Die Creative Commons (CC) ist eine Non-Profit-Organisation, welche vorgefertigte Lizenzverträge zur Freigabe rechtlich geschützter Inhalte anbietet. Insgesamt gibt es sechs dieser Standard-Lizenzverträge, auch CC-Lizenzen genannt.</p><ul><li><img alt="" src="BY.jpg" />  Namensnennung/BY: Der Name des Urhebers muss genannt werden. (In allen Lizenzen enthalten)</li><li><img alt="" src="NC.jpg" />  Keine Bearbeitung/ND: Es dürfen keine Veränderungen am Werk vorgenommen werden (no derivatives).</li><li><img alt="" src="ND.jpg" /> Nicht Kommerziell/NC: Das Werk darf nicht für kommerzielle Zwecke verwendet werden (non-comercial).</li><li><img alt="" src="SA.jpg" /> Weitergabe unter gleichen Bedingungen/SA: Das Werk bzw. ein aus ihm entstehendes neues Werk muss unter den gleichen Bedingungen weitergegeben werden (share alike).</li></ul><p>Mehr zu CC-Lizenzen unter:  <a href="http://de.creativecommons.org/was-ist-cc/" shape="rect">http://de.creativecommons.org/was-ist-cc/</a>  und  <a href="http://creativecommons.org/licenses/" shape="rect">http://creativecommons.org/licenses/</a></p></div><div class="col-md-4"><figure><div class="img-thumbnail" style="padding:30px;"><img alt="" src="CC-BY.jpg" style="margin-bottom:4px;" /><br /><img alt="" src="CC-BY-NC.jpg" style="margin-bottom:4px;" /><br /><img alt="" src="CC-BY-NC-ND.jpg" style="margin-bottom:4px;" /><br /><img alt="" src="CC-BY-NC-SA.png" style="margin-bottom:4px;" /><br /><img alt="" src="CC-BY-ND.png" style="margin-bottom:4px;" /><br /><img alt="" src="CC-BY-SA.png" /></div><figcaption>Abb.2: CC-Lizenzen</figcaption></figure></div><div class="col-md-8"><h3 id="frage10">Wozu dient die Einverständniserklärung und was beinhaltet sie?</h3><p>Die „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ dient der rechtlichen Absicherung seitens der FernUniversität und ist maßgebend für eine rechtlich einwandfreie Bereitstellung und Archivierung der Dokumente. Näheres zu den Inhalten der Einverständniserklärung finden sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p></div></div><div class="row"><div class="col-md-8" style="margin-top:20px"><p align="right"><a href="#" shape="rect">Zurück nach oben</a></p><hr style="margin-top:0px" /></div></div><div class="row"><div class="col-md-8"><h2>Nutzen:</h2><h3 id="frage11">Wie kann ich nach Publikationen in deposit_hagen suchen?</h3></div></div><div class="row"><div class="col-md-8"><p>Es gibt verschiedene Möglichkeiten auf deposit_hagen zu suchen:</p><p>Bei der einfachen Suche (Suchschlitz im blauen Menübalken) werden die eingegebenen Begriffe oder Phrasen gemeinsam über alle Suchfelder (Titel, Autor, Schlagwort usw.) gesucht.</p><p>Bei der Erweiterten Suche (über<em>Suche -&gt; Erweitert</em>) kann die Suche auf bestimmte Felder eingeschränkt werden. Hier ist die Suche im Titel, im Namen, in den Metadaten und in den Dateien möglich. Die Suche in den Dateien entspricht dabei einer Volltextsuche. Die Erweiterte Suche kann zudem auf die Einrichtung eingeschränkt werden, in der das Dokument erschienen ist.</p><p>Bei der Expertensuche können Sie Ihre Suche noch weiter spezifizieren. Sie können Ihre Suche beispielsweise zusätzlich auf einen bestimmten Dokumenttyp oder einen Zeitraum, in dem das Dokument erschienen ist, einschränken.</p><p>Zudem ist das Browsen im Bestand nach den Einrichtungen der FernUniversität, den Dokumenttypen, den vergebenen Sachgruppen oder nach Personen möglich.</p><p> </p><figure><img alt="" class="img-thumbnail" src="Browsen.jpg" style="margin-bottom: 3px; padding: 30px; width: 593px; height: 465px;" /><figcaption>Abb.3: Browsen nach Einrichtungen</figcaption></figure><p> </p><p>Gefundene Dokumente, die für Sie von Interesse sind, können Sie auf eine Merkliste setzen. In der Trefferliste gibt es neben jedem Dokument ein kleines Rädchen „Aktionen“. Über „auf die Merkliste“ wird das Dokument auf Ihre Merkliste geschoben. Auf der Detailseite eines Dokuments befindet sich dazu oben rechts ein blauer Button „+auf die Merkliste“. Die Merkliste selbst können Sie über das Lesezeichensymbol im blauen Menübalken aufrufen. Diese können Sie in verschiedenen Datenformaten exportieren.</p></div></div><div class="row"><div class="col-md-8"><h3 id="frage12">Dürfen Dokumente ausgedruckt werden?</h3><p>Die Dokumente dürfen i.d.R ausgedruckt werden.</p><h3 id="frage13">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</h3><p>Für Dokumente, welche in elektronischer Form über Datennetze angeboten werden, gelten die gleichen gesetzlichen Urheberrechtsbestimmungen wie für gedruckte Publikationen. Zwar können die Dokumente auf lokale Rechner kopiert, heruntergeladen und abgespeichert werden, für sie gilt dennoch uneingeschränkt das Urheberrechtsgesetz (UrhG), welches u.a. besagt,</p><ul><li>dass einzelne Vervielfältigungen wie Kopien und Ausdrucke ausschließlich zum privaten oder sonstigen eigenen Gebrauch angefertigt werden und keinem kommerziellen Zweck dienen dürfen (§ 53 UrhG).</li><li>dass die Herstellung weiterer Vervielfältigung immer der Zustimmung des Urhebers bedarf.</li></ul><p>Für die Einhaltung der Rechtsvorschriften sind die NutzerInnen selbst verantwortlich.</p></div></div><div class="row"><div class="col-md-8" style="margin-top:20px;"><p align="right"><a href="#" shape="rect">Zurück nach oben</a></p></div></div></div></section><meta><log lastEditor="muelleradmin" date="2016-01-11" time="15:42" /></meta></MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Häufige Fragen"><div>
+<div>
+<h1>Häufig gestellte Fragen (FAQ)</h1>
+
+<div class="row">
+<div class="col-md-8">
+<p>Allgemein:</p>
+
+<ul>
+	<li><a href="#frage1" shape="rect">Was bedeutet Open Access?</a></li>
+	<li><a href="#frage2" shape="rect">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</a></li>
+	<li><a href="#frage3" shape="rect">Können veröffentlichte Dokumente wieder gelöscht werden?</a></li>
+	<li><a href="#frage4" shape="rect">Sind die Publikationen zitierfähig?</a></li>
+</ul>
+
+<p>Veröffentlichen:</p>
+
+<ul>
+	<li><a href="#frage5" shape="rect">Welche Dokumente können veröffentlicht werden?</a></li>
+	<li><a href="#frage6" shape="rect">Wie können Dokumente veröffentlicht werden?</a></li>
+	<li><a href="#frage7" shape="rect">Welche Dateiformate können eingereicht werden?</a></li>
+	<li><a href="#frage8" shape="rect">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</a></li>
+	<li><a href="#frage9" shape="rect">Was ist eine CC-Lizenz?</a></li>
+	<li><a href="#frage10" shape="rect">Wozu dient die Einverständniserklärung und was beinhaltet sie?</a></li>
+	<li><a href="#frage11" shape="rect">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</a></li>
+</ul>
+
+<p>Nutzen:</p>
+
+<ul>
+	<li><a href="#frage12" shape="rect">Wie kann ich nach Publikationen in deposit_hagen suchen?</a></li>
+	<li><a href="#frage13" shape="rect">Dürfen Dokumente ausgedruckt werden?</a></li>
+	<li><a href="#frage14" shape="rect">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</a></li>
+	<li><a href="#frage15" shape="rect">Was mache ich, wenn ich mein Passwort vergessen habe?</a></li>
+</ul>
+
+<hr /></div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Allgemein:</h2>
+
+<h3 id="frage1">Was bedeutet Open Access?</h3>
+
+<p>Mit Open Access ist der uneingeschränkte und kostenlose Zugang zu wissenschaftlichen Informationen gemeint. Ziel ist es neben dem möglichst von technischen, rechtlichen und monetären Barrieren freiem Zugang zu wissenschaftlicher Literatur und wissenschaftlichen Materialien, die Maximierung der Verbreitung von wissenschaftlicher Information. (<a href="https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/" shape="rect">https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/</a>)</p>
+
+<p>Gründe für Open Access sind u.a. :</p>
+
+<ul>
+	<li>der öffentliche Zugang zu öffentlich finanzierten Forschungsergebnissen,</li>
+	<li>die erhöhte Sichtbarkeit und Zitierfähigkeit von Dokumenten,</li>
+	<li>die gute Auffindbarkeit über Suchmaschinen und Nachweisdienste,</li>
+	<li>die Förderung der internationalen und interdisziplinären Zusammenarbeit,</li>
+	<li>die Förderung der Forschungseffizienz und</li>
+	<li>der Verbleib der Verwertungsrechte bei den AutorInnen.</li>
+</ul>
+
+<p>Weiterführende Informationen zu Open Access finden Sie auf <a href="https://open-access.net/" shape="rect">https://open-access.net/</a> </p>
+
+<h3 id="frage2">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</h3>
+
+<p>Die Dokumente bleiben mindestens fünf Jahre auf deposit_hagen verfügbar.</p>
+
+<h3 id="frage3">Können veröffentlichte Dokumente wieder gelöscht werden?</h3>
+
+<p>Dokumente, die bereits veröffentlicht wurden, können <u>nicht</u>  gelöscht oder nachträglich geändert werden. Dies garantiert die Authentizität der Dokumente und macht sie mit gedruckten Publikationen vergleichbar. Geänderte Dokumente müssen neu eingebracht werden und erhalten einen neuen Persistent Identifier (URN).</p>
+
+<h3 id="frage4">Sind die Publikationen zitierfähig?</h3>
+
+<p>Publikationen des deposit_hagen sind gedruckten Veröffentlichungen gleichwertig und damit auch zitierfähig. Die Zitierfähigkeit wird durch einen Persistent Identifier garantiert. deposit_hagen nutzt hierzu URNs (Uniform Ressource Name). Näheres zu URN: <a href="http://www.dnb.de/urnservice.html" shape="rect" title="urnservice">http://www.dnb.de/urnservice</a></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8" style="margin-top:20px">
+<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+
+<hr style="margin-top:0px" /></div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Veröffentlichen:</h2>
+
+<h3 id="frage5">Welche Dokumente können veröffentlicht werden?</h3>
+
+<p>Auf deposit_hagen können wissenschaftliche Veröffentlichungen jeglicher Art veröffentlicht werden, z.B. Artikel, Beiträge, Research Paper, Dissertationen etc. Bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der Qualitätssicherung zur Veröffentlichung der Zustimmung der Prüfenden.</p>
+
+<h3 id="frage6">Wie können Dokumente veröffentlicht werden?</h3>
+
+<p>Eine ausführliche Beschreibung des Publikationsprozesses finden Sie unter dem Punkt  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">Wie veröffentliche ich?</a></p>
+
+<h3 id="frage7">Welche Dateiformate können eingereicht werden?</h3>
+
+<p>Dokumente sind i.d.R. in einem PDF-Format einzureichen. Für Audio- und Video-Dateien können entsprechende Formate eingereicht werden. Hochgeladene Dokumente dürfen nicht mit technischen Schutzmaßnahmen versehen sein.</p>
+
+<h3 id="frage8">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</h3>
+
+<p>Um eine langfristige Archivierung zu ermöglich, müssen Dateien oftmals umgespeichert und in andere Systeme überführt werden. Daher ist es wichtig, dass die Dateien weder verschlüsselt noch passwortgeschützt sind.</p>
+
+<h3 id="frage9">Was ist eine CC-Lizenz?</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<p>Die Creative Commons (CC) ist eine Non-Profit-Organisation, welche vorgefertigte Lizenzverträge zur Freigabe rechtlich geschützter Inhalte anbietet. Insgesamt gibt es sechs dieser Standard-Lizenzverträge, auch CC-Lizenzen genannt.</p>
+
+<ul>
+	<li><img alt="" src="BY.jpg" />  Namensnennung/BY: Der Name des Urhebers muss genannt werden. (In allen Lizenzen enthalten)</li>
+	<li><img alt="" src="NC.jpg" />  Keine Bearbeitung/ND: Es dürfen keine Veränderungen am Werk vorgenommen werden (no derivatives).</li>
+	<li><img alt="" src="ND.jpg" /> Nicht Kommerziell/NC: Das Werk darf nicht für kommerzielle Zwecke verwendet werden (non-comercial).</li>
+	<li><img alt="" src="SA.jpg" /> Weitergabe unter gleichen Bedingungen/SA: Das Werk bzw. ein aus ihm entstehendes neues Werk muss unter den gleichen Bedingungen weitergegeben werden (share alike).</li>
+</ul>
+
+<p>Mehr zu CC-Lizenzen unter:  <a href="http://de.creativecommons.org/was-ist-cc/" shape="rect">http://de.creativecommons.org/was-ist-cc/</a>  und  <a href="http://creativecommons.org/licenses/" shape="rect">http://creativecommons.org/licenses/</a></p>
+</div>
+
+<div class="col-md-4">
+<figure>
+<div class="img-thumbnail" style="padding:30px;"><img alt="" src="CC-BY.jpg" style="margin-bottom:4px;" /><br />
+<img alt="" src="CC-BY-NC.jpg" style="margin-bottom:4px;" /><br />
+<img alt="" src="CC-BY-NC-ND.jpg" style="margin-bottom:4px;" /><br />
+<img alt="" src="CC-BY-NC-SA.png" style="margin-bottom:4px;" /><br />
+<img alt="" src="CC-BY-ND.png" style="margin-bottom:4px;" /><br />
+<img alt="" src="CC-BY-SA.png" /></div>
+<figcaption>Abb.2: CC-Lizenzen</figcaption></figure>
+</div>
+
+<div class="col-md-8">
+<h3 id="frage10">Wozu dient die Einverständniserklärung und was beinhaltet sie?</h3>
+
+<p>Die „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ dient der rechtlichen Absicherung seitens der FernUniversität und ist maßgebend für eine rechtlich einwandfreie Bereitstellung und Archivierung der Dokumente. Näheres zu den Inhalten der Einverständniserklärung finden Sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p>
+
+<h3 id="frage11">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<p>Wenn Ihnen bei der Eingabe der Metadaten ein Fehler unterlaufen ist oder Sie weitere Metadaten ergänzen möchten, klicken Sie oben rechts auf „Aktionen“. Es öffnet sich ein Drop-Down-Menü. Wählen Sie „Bearbeiten des Dokuments“ aus. Daraufhin öffnet sich das Eingabeformular für die Metadaten, welches Sie vom Publikationsprozess her kennen. Hier können Sie Ihre Metadaten ändern und ergänzen. Klicken Sie zum Abspeichern der Änderungen auf „Speichern“ oder auf „Abbrechen“, um die Änderungen zu verwerfen.</p>
+
+<p><u>Bitte beachten Sie:</u>  Eigene Änderungen können Sie nur so lange durchführen, bis die Redaktion Ihr Dokument bearbeitet. Die Redaktion schaut sich alle Eingaben genau an und korrigiert bzw. ergänzt ggf. die Metadaten des Dokuments. Ist etwas fehlerhaft oder unvollständig wird dies also in jedem Fall korrigiert. Gern können Sie sich bei Fragen jederzeit per E-Mail (<a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>) an uns wenden und/oder uns auf Fehler hinweisen.</p>
+</div>
+
+<div class="col-md-4">
+<figure><img alt="" src="Screenshot_Dokument-bearbeiten.jpg" style="margin-bottom:4px;" /><figcaption>Abb.3: Dokument bearbeiten</figcaption></figure>
+</div>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8" style="margin-top:20px">
+<p align="right"><a href="#" shape="rect">Zurück nach oben</a></p>
+
+<hr style="margin-top:0px" /></div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Nutzen:</h2>
+
+<h3 id="frage12">Wie kann ich nach Publikationen in deposit_hagen suchen?</h3>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<p>Es gibt verschiedene Möglichkeiten auf deposit_hagen zu suchen:</p>
+
+<p>Bei der einfachen Suche (Suchschlitz im blauen Menübalken) werden die eingegebenen Begriffe oder Phrasen gemeinsam über alle Suchfelder (Titel, Autor, Schlagwort usw.) gesucht.</p>
+
+<p>Bei der Erweiterten Suche (über<em>Suche -&gt; Erweitert</em>) kann die Suche auf bestimmte Felder eingeschränkt werden. Hier ist die Suche im Titel, im Namen, in den Metadaten und in den Dateien möglich. Die Suche in den Dateien entspricht dabei einer Volltextsuche. Die Erweiterte Suche kann zudem auf die Einrichtung eingeschränkt werden, in der das Dokument erschienen ist.</p>
+
+<p>Bei der Expertensuche können Sie Ihre Suche noch weiter spezifizieren. Sie können Ihre Suche beispielsweise zusätzlich auf einen bestimmten Dokumenttyp oder einen Zeitraum, in dem das Dokument erschienen ist, einschränken.</p>
+
+<p>Zudem ist das Browsen im Bestand nach den Einrichtungen der FernUniversität, den Dokumenttypen, den vergebenen Sachgruppen oder nach Personen möglich.</p>
+
+<figure><img alt="" src="Browsen.jpg" style="width: 593px; height: 465px;" /><figcaption>Abb.3: Browsen nach Einrichtungen</figcaption></figure>
+
+<p> </p>
+
+<p>Gefundene Dokumente, die für Sie von Interesse sind, können Sie auf eine Merkliste setzen. In der Trefferliste gibt es neben jedem Dokument ein kleines Rädchen „Aktionen“. Über „auf die Merkliste“ wird das Dokument auf Ihre Merkliste geschoben. Auf der Detailseite eines Dokuments befindet sich dazu oben rechts ein blauer Button „+auf die Merkliste“. Die Merkliste selbst können Sie über das Lesezeichensymbol im blauen Menübalken aufrufen. Diese können Sie in verschiedenen Datenformaten exportieren.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<h3 id="frage13">Dürfen Dokumente ausgedruckt werden?</h3>
+
+<p>Die Dokumente dürfen i.d.R ausgedruckt werden.</p>
+
+<h3 id="frage14">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</h3>
+
+<p>Für Dokumente, welche in elektronischer Form über Datennetze angeboten werden, gelten die gleichen gesetzlichen Urheberrechtsbestimmungen wie für gedruckte Publikationen. Zwar können die Dokumente auf lokale Rechner kopiert, heruntergeladen und abgespeichert werden, für sie gilt dennoch uneingeschränkt das Urheberrechtsgesetz (UrhG), welches u.a. besagt,</p>
+
+<ul>
+	<li>dass einzelne Vervielfältigungen wie Kopien und Ausdrucke ausschließlich zum privaten oder sonstigen eigenen Gebrauch angefertigt werden und keinem kommerziellen Zweck dienen dürfen (§ 53 UrhG).</li>
+	<li>dass die Herstellung weiterer Vervielfältigung immer der Zustimmung des Urhebers bedarf.</li>
+</ul>
+
+<p>Für die Einhaltung der Rechtsvorschriften sind die NutzerInnen selbst verantwortlich.</p>
+
+<h3 id="frage15">Was mache ich, wenn ich mein Passwort vergessen habe?</h3>
+
+<p>Wenn Sie Ihr Passwort vergessen haben, schreiben Sie uns bitte eine kurze E-Mail mit Ihrem Benutzernamen an <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>. Wir schicken Ihnen ein neues, vorläufiges Passwort zu, mit dem Sie sich anmelden können. Bitte ersetzen Sie dieses nach dem ersten Anmelden umgehend durch ein eigenes.</p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8" style="margin-top:20px;">
+<p align="right"><a href="#" shape="rect">Zurück nach oben</a></p>
+</div>
+</div>
+</div></section><meta><log lastEditor="muelleradmin" date="2016-09-23" time="11:05" /></meta></MyCoReWebPage>

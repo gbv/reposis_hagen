@@ -1,2 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Informationen für Autoren"><div><h1>Informationen für Autoren</h1><div class="row"><div class="col-md-8"><h2>Wer kann Dokumente einreichen?</h2><p>Dokumente können von allen Angehörigen und Mitgliedern der FernUniversität in Hagen eingereicht werden.</p><h2>Welche Dokumente dürfen veröffentlicht werden?</h2><p>Alle Arten von wissenschaftlichen Publikationen (Artikel, Beiträge, Serientitel, Research Paper etc.) und Qualifizierungsarbeiten (Dissertationen, Habilitationen, Bachelor- und Masterarbeiten, Studienleistungen)</p><p>Bei Qualifizierungsarbeiten, insbesondere bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der Qualitätssicherung zur Veröffentlichung einer <a href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">Zustimmungserklärung</a>  der Prüfenden.</p><h2>Welche Dokumentformate können eingereicht werden?</h2><ul><li>Bevorzugt werden PDF-Formate</li><li>Für Audio- und Video-Dateien können entsprechende Formate eingereicht werden.</li><li>Hochgeladene Dokumente dürfen nicht mit technischen Schutzmaßnahmen versehen sein.</li></ul><h2>Rechtliches:</h2><h3>Einverständniserklärung<span id="cke_bm_1346E" style="display: none;"> </span></h3><p>Für jedes Ihrer hochgeladenen Dokumente müssen Sie eine <a href="/content/brand/Autorenvertrag.pdf">Einverständniserklärung </a>unterschreiben, die Ihnen nach dem Publikationsprozess auf deposit_hagen automatisch via E-Mail zugesandt wird. In dieser Einverständniserklärung räumen Sie der FernUniversität in Hagen das dauerhafte einfache Nutzungsrecht ein, Ihr Dokument im Internet öffentlich wiederzugeben, Ausdrucke und Datenträger mit dem Dokument zu erstellen und nötige Datenänderungen im Zuge der technischen Entwicklungen vorzunehmen. Weiterhin versichern Sie, dass mit der Veröffentlichung keine Rechte Dritter verletzt werden. Die Einverständniserklärung muss unterschrieben an die Bibliothek zurückgesandt werden (als Ausdruck auf dem Postweg oder als Scan via E-Mail).</p><h3>Zweitveröffentlichung</h3><p>Es gibt allgemein die Möglichkeit, nach Ablauf einer bestimmten Frist bereits erschienene Dokumente in Open Access zweit zu veröffentlichen.</p><p>Allgemeine Informationen zum Urheberrecht und zum Zweitveröffentlichungsrecht finden Sie u.a. hier:</p><ul><li><a href="https://open-access.net/informationen-zu-open-access/rechtsfragen/urheberrecht/" shape="rect">open-access.net</a></li><li><a href="http://www.allianzinitiative.de/de/handlungsfelder/rechtliche-rahmenbedingungen/faq-zvr.html" shape="rect">FAQ zum Zweitveröffentlichungsrecht der Allianz Initiative</a></li><li><a href="http://irights.info/artikel/open-access-policy-paper-zum-zweitveroeffentlichungsrecht-fuer-wissenschaftler-veroeffentlicht/25264" shape="rect">Zweitveröffentlichungsrecht für Wissenschaftler – geltende Rechtslage und Handlungsempfehlungen</a></li></ul><p>Bei offenen Fragen zum Zweitveröffentlichungsrecht wenden Sie sich gern an uns.</p><h3>Rechtevergabe</h3><p>Sie haben die Möglichkeit beim Einstellen Ihres Dokuments zwischen verschiedenen rechtlichen Bedingungen zu wählen. Voreingestellt ist „Alle Rechte vorbehalten“. Sie können Ihr Dokument aber auch mit einer CC-Lizenz versehen. Näheres zu CC-Lizenzen finden Sie im  <a href="https://ub-deposit.fernuni-hagen.de/content/social/questions.xml#frage9">FAQ</a>.</p></div></div></div></section><meta><log lastEditor="administrator" date="2016-01-27" time="14:17" /></meta></MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Informationen für Autoren"><div>
+<h1>Informationen für Autoren</h1>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Wer kann Dokumente einreichen?</h2>
+
+<p>Dokumente können von allen Angehörigen und Mitgliedern der FernUniversität in Hagen eingereicht werden.</p>
+
+<h2>Welche Dokumente dürfen veröffentlicht werden?</h2>
+
+<p>Alle Arten von wissenschaftlichen Publikationen (Artikel, Beiträge, Serientitel, Research Paper etc.) und Qualifizierungsarbeiten (Dissertationen, Habilitationen, Bachelor- und Masterarbeiten, Studienleistungen)</p>
+
+<p>Bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der Qualitätssicherung zur Veröffentlichung einer <a href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">Zustimmungserklärung</a>  der Prüfenden.</p>
+
+<h2>Welche Dokumentformate können eingereicht werden?</h2>
+
+<ul>
+	<li>Bevorzugt werden PDF-Formate</li>
+	<li>Für Audio- und Video-Dateien können entsprechende Formate eingereicht werden.</li>
+	<li>Hochgeladene Dokumente dürfen nicht mit technischen Schutzmaßnahmen versehen sein.</li>
+</ul>
+
+<h2>Rechtliches:</h2>
+
+<h3>Einverständniserklärung<span id="cke_bm_1346E" style="display: none;"> </span></h3>
+
+<p>Für jedes Ihrer hochgeladenen Dokumente müssen Sie eine <a href="/content/brand/Autorenvertrag.pdf">Einverständniserklärung </a>unterschreiben, die Ihnen nach dem Publikationsprozess auf deposit_hagen automatisch via E-Mail zugesandt wird. In dieser Einverständniserklärung räumen Sie der FernUniversität in Hagen das dauerhafte einfache Nutzungsrecht ein, Ihr Dokument im Internet öffentlich wiederzugeben, Ausdrucke und Datenträger mit dem Dokument zu erstellen und nötige Datenänderungen im Zuge der technischen Entwicklungen vorzunehmen. Weiterhin versichern Sie, dass mit der Veröffentlichung keine Rechte Dritter verletzt werden. Die Einverständniserklärung muss unterschrieben an die Bibliothek zurückgesandt werden (als Ausdruck auf dem Postweg oder als Scan via E-Mail).</p>
+
+<h3>Zweitveröffentlichung</h3>
+
+<p>Es gibt allgemein die Möglichkeit, nach Ablauf einer bestimmten Frist bereits erschienene Dokumente in Open Access zweit zu veröffentlichen.</p>
+
+<p>Allgemeine Informationen zum Urheberrecht und zum Zweitveröffentlichungsrecht finden Sie u.a. hier:</p>
+
+<ul>
+	<li><a href="https://open-access.net/informationen-zu-open-access/rechtsfragen/urheberrecht/" shape="rect">open-access.net</a></li>
+	<li><a href="http://www.allianzinitiative.de/de/handlungsfelder/rechtliche-rahmenbedingungen/faq-zvr.html" shape="rect">FAQ zum Zweitveröffentlichungsrecht der Allianz Initiative</a></li>
+	<li><a href="http://irights.info/artikel/open-access-policy-paper-zum-zweitveroeffentlichungsrecht-fuer-wissenschaftler-veroeffentlicht/25264" shape="rect">Zweitveröffentlichungsrecht für Wissenschaftler – geltende Rechtslage und Handlungsempfehlungen</a></li>
+</ul>
+
+<p>Bei offenen Fragen zum Zweitveröffentlichungsrecht wenden Sie sich gern an uns.</p>
+
+<h3>Rechtevergabe</h3>
+
+<p>Sie haben die Möglichkeit beim Einstellen Ihres Dokuments zwischen verschiedenen rechtlichen Bedingungen zu wählen. Voreingestellt ist „Alle Rechte vorbehalten“. Sie können Ihr Dokument aber auch mit einer CC-Lizenz versehen. Näheres zu CC-Lizenzen finden Sie im  <a href="https://ub-deposit.fernuni-hagen.de/content/social/questions.xml#frage9">FAQ</a>.</p>
+</div>
+</div>
+</div></section><meta><log lastEditor="FrerichsAdmin" date="2017-02-06" time="10:49" /></meta></MyCoReWebPage>

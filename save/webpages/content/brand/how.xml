@@ -1,2 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Wie veröffentliche ich"><div><div><div><div><div><div><div><div><div><div><div><h1>Wie veröffentliche ich?</h1><div class="row"><div class="col-md-12"><div class="row"><div class="col-md-8"><p>Um auf deposit_hagen ein Dokument zu publizieren, müssen Sie sich zunächst anmelden. Dazu müssen Sie sich über den Menüpunkt  <em>Registrierung</em>  einen Benutzeraccount anlegen. In einer E-Mail wird Ihnen ein Bestätigungslink zugesandt, welchen Sie anklicken müssen. Nach der Bestätigung der Registrierung, können Sie sich auf dem Dokumentenserver anmelden. (Bitte beachten Sie unsere  <a href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">Datenschutzerklärung</a>.)</p><p>Nach der Anmeldung können Sie über  <em>Publizieren -&gt; Dokument einreichen</em>  Ihre Dokumente veröffentlichen. Benutzen Sie während des Publikationsprozesses bitte <u>nicht</u> die Browserpfeile.</p><p>Die Publikation eines Dokuments erfolgt in drei Schritten:</p><ol><li><a href="#schritt1">Dokumenttyp festlegen</a></li><li><a href="#schritt2">Metadaten eingeben</a></li><li><a href="#schritt3">Datei(en) hochladen</a></li></ol></div></div><h2 id="schritt1">Im 1. Schritt wird der Dokumenttyp festgelegt.</h2><div class="row"><div class="col-md-8"><p>In einem Drop-Down-Menü können Sie zwischen verschieden Dokumenttypen auswählen. Handelt es sich um eine in einem anderen Werk erschienene Publikation, können Sie den Dokumenttyp im unteren Feld weiter spezifizieren.</p></div></div><div class="row"><div class="col-md-8"><figure><img alt="" class="img-thumbnail" src="Dokument_einreichen.jpg" style="margin-bottom: 3px; margin-top: 30px; padding: 30px; width: 615px; height: 289px;" /><figcaption>Abb.1: Auswahl des Publikationstyps</figcaption></figure></div></div><div class="row" style="margin-top:25px"><div class="col-md-8"><p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p><hr /></div></div><h2 id="schritt2">Im 2. Schritt werden die Metadaten über ein Eingabeformular erfasst.</h2><div class="row"><div class="col-md-8"><p>Das Eingabeformular ist abhängig vom gewählten Dokumenttyp und bietet verschiedene Felder zur Erfassung der Metadaten. Hier müssen Sie mindestens die durch * gekennzeichneten Pflichtfelder ausfüllen. Mit dem Button  <em>Abrechen</em>  wird der gesamte Publikationsprozess beendet. Über den Button <em>Speichern und hochladen</em> gelangen Sie zum Dateiupload.</p></div></div><div class="row"><div class="col-md-8"><figure><img alt="" class="img-thumbnail" src="Eingabeformular.jpg" style="margin-bottom: 3px; padding: 20px; width: 899px; height: 481px;" /></figure></div></div></div></div></div></div></div></div></div></div></div></div></div></div></div><figcaption>Abb.2: Eingabeformular</figcaption><div class="row" style="margin-top:25px"><div class="col-md-8"><p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p><hr /></div></div><h2 id="schritt3">Im 3. Schritt werden das Dokument und mögliche dazugehörende Dateien hochgeladen.</h2><div class="row"><div class="col-md-8"><p>Ziehen Sie die hochzuladende Datei in das Upload-Feld oder durchsuchen Sie über den Button  <em>Durchsuchen</em> Ihre Festplatte und wählen das gewünschte Dokument aus. Bitte achten Sie hierbei auf eine möglichst aussagekräftige Benennung Ihrer Datei (z.B. nach dem Schema  <em>Nachname_Titelstichwort_Jahr</em>).</p><p>Über  <em>Abschicken</em>  wird das Dokument auf den Server geladen. Über den Button  <em>Fertig</em>  gelangen Sie zur Übersicht Ihrer eingegebenen Daten und können diese, falls Ihnen Fehler auffallen, über  <em>Aktionen -&gt; Bearbeiten des Dokuments</em>  korrigieren.</p><p>Nach dem Abspeichern bekommen Sie per E-Mail einen Link zur automatisch erstellten „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ (<a href="/content/brand/Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken Sie bitte unterschrieben per E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek zurück. Näheres zur Einverständniserklärung finden Sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p><p>Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben hinsichtlich formaler Kriterien, ändert und ergänzt ggf. Metadaten und vergibt ggf. einen URN. Nach Kontrolle der Metadaten und dem Eintreffen der unterschriebenen Einverständniserklärung, wird das Dokument freigeschaltet und ist damit auf deposit_hagen veröffentlicht. Wenn Ihr Dokument von der Redaktion bearbeitet wird, können Sie Ihre Aufnahme nicht mehr verändern. Die Bestätigung der Veröffentlichung Ihres Dokuments wird Ihnen per E-Mail zugesandt.</p><p><u>Bitte beachten Sie</u>: Bei Bachelor- und Masterarbeiten, sowie Studienarbeiten benötigen wir zur Qualitätskontrolle neben der Einverständniserklärung auch eine schriftliche Bestätigung Ihrer Prüfenden. Hierzu können Sie <a href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">folgendes Formular</a>  verwenden.</p><p><u>HINWEIS</u>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere Exemplare in Printform abgegeben werden. Näheres hierzu regelt Ihre jeweilige Promotionsordnung.</p></div></div><div class="row" style="margin-top:25px"><div class="col-md-8"><p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p><hr /></div></div></section><meta><log lastEditor="muelleradmin" date="2016-03-16" time="08:56" /></meta></MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Wie veröffentliche ich"><div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<div>
+<h1>Wie veröffentliche ich?</h1>
+
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-8">
+<p>Um auf deposit_hagen ein Dokument zu publizieren, müssen Sie sich zunächst anmelden. Dazu müssen Sie sich über den Menüpunkt  <em>Registrierung</em>  einen Benutzeraccount anlegen. In einer E-Mail wird Ihnen ein Bestätigungslink zugesandt, welchen Sie anklicken müssen. Nach der Bestätigung der Registrierung, können Sie sich auf dem Dokumentenserver anmelden. (Bitte beachten Sie unsere  <a href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">Datenschutzerklärung</a>.)</p>
+
+<p>Nach der Anmeldung können Sie über  <em>Publizieren -&gt; Dokument einreichen</em>  Ihre Dokumente veröffentlichen. Benutzen Sie während des Publikationsprozesses bitte <u>nicht</u> die Browserpfeile.</p>
+
+<p>Die Publikation eines Dokuments erfolgt in drei Schritten:</p>
+
+<ol>
+	<li><a href="#schritt1">Dokumenttyp festlegen</a></li>
+	<li><a href="#schritt2">Metadaten eingeben</a></li>
+	<li><a href="#schritt3">Datei(en) hochladen</a></li>
+</ol>
+</div>
+</div>
+
+<h2 id="schritt1">Im 1. Schritt wird der Dokumenttyp festgelegt.</h2>
+
+<div class="row">
+<div class="col-md-8">
+<p>In einem Drop-Down-Menü können Sie zwischen verschieden Dokumenttypen auswählen. Handelt es sich um eine in einem anderen Werk erschienene Publikation, können Sie den Dokumenttyp im unteren Feld weiter spezifizieren.</p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<figure><img alt="" src="Dokument_einreichen.jpg" style="width: 615px; height: 289px;" /><figcaption>Abb.1: Auswahl des Publikationstyps</figcaption></figure>
+</div>
+</div>
+
+<div class="row" style="margin-top:25px">
+<div class="col-md-8">
+<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+
+<hr /></div>
+</div>
+
+<h2 id="schritt2">Im 2. Schritt werden die Metadaten über ein Eingabeformular erfasst.</h2>
+
+<div class="row">
+<div class="col-md-8">
+<p>Das Eingabeformular ist abhängig vom gewählten Dokumenttyp und bietet verschiedene Felder zur Erfassung der Metadaten. Hier müssen Sie mindestens die durch * gekennzeichneten Pflichtfelder ausfüllen. Mit dem Button  <em>Abrechen</em>  wird der gesamte Publikationsprozess beendet. Über den Button  <em>Speichern und hochladen</em>  gelangen Sie zum Dateiupload.</p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-8">
+<figure><img alt="" src="Eingabeformular.jpg" style="width: 899px; height: 481px;" /></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><figcaption>Abb.2: Eingabeformular</figcaption><div class="row" style="margin-top:25px">
+<div class="col-md-8">
+<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+
+<hr /></div>
+</div><h2 id="schritt3">Im 3. Schritt werden das Dokument und mögliche dazugehörende Dateien hochgeladen.</h2><div class="row">
+<div class="col-md-8">
+<p>Ziehen Sie die hochzuladende Datei in das Upload-Feld oder durchsuchen Sie über den Button  <em>Durchsuchen</em> Ihre Festplatte und wählen das gewünschte Dokument aus. Bitte achten Sie hierbei auf eine möglichst aussagekräftige Benennung Ihrer Datei (z.B. nach dem Schema  <em>Nachname_Titelstichwort_Jahr</em>)</p>
+
+<p>Über  <em>Abschicken</em>  wird das Dokument auf den Server geladen. Über den Button  <em>Fertig</em>  gelangen Sie zurück zur Übersicht Ihrer eingegebenen Daten und können diese, falls Ihnen Fehler auffallen, über  <em>Aktionen -&gt; Bearbeiten dieses Dokumentes</em>  korrigieren.</p>
+
+<p>Nach dem Abspeichern bekommen Sie per E-Mail einen Link zur automatisch erstellten „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ (<a href="/content/brand/Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken Sie bitte unterschrieben per E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek zurück. Näheres zur Einverständniserklärung finden Sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p>
+
+<p>Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben hinsichtlich formaler Kriterien, ändert und ergänzt ggf. Metadaten und vergibt ggf. einen URN. Nach Kontrolle der Metadaten und dem Eintreffen der unterschriebenen Einverständniserklärung, wird das Dokument freigeschaltet und ist damit auf deposit_hagen veröffentlicht. Wenn Ihr Dokument von der Redaktion bearbeitet wird, können Sie Ihre Aufnahme nicht mehr verändern. Die Bestätigung der Veröffentlichung Ihres Dokuments wird Ihnen per E-Mail zugesandt.</p>
+
+<p><u>Bitte beachten Sie</u>: Bei Bachelor- und Masterarbeiten, sowie Studienarbeiten benötigen wir zur Qualitätssicherung neben der Einverständniserklärung auch eine schriftliche Bestätigung Ihrer Prüfenden. Hierzu können Sie das Formular <a href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf"><em>Einverständniserklärung der Prüfenden</em></a>  verwenden.</p>
+
+<p><u>HINWEIS</u>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere Exemplare in Printform abgegeben werden. Näheres hierzu regelt Ihre jeweilige Promotionsordnung.</p>
+</div>
+</div><div class="row" style="margin-top:25px">
+<div class="col-md-8">
+<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+
+<hr /></div>
+</div></section><meta><log lastEditor="muelleradmin" date="2016-11-03" time="13:36" /></meta></MyCoReWebPage>

@@ -1,2 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Ansprechpersonen"><div><h1>Ansprechpersonen</h1><div class="row"><div class="col-md-8"><h2>Team Wissenschaftliches Publizieren</h2><p>E-Mail: <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a></p><h2>Allgemeine Information, Datenformate, Procedere etc.</h2><dl class="contact"><dt>Maria Müller</dt><dd>Tel. 0 23 31 / 9 87 - 11 62</dd><dd>AVZ, C 040</dd><dd><a href="mailto:maria.mueller90@fernuni-hagen.de">maria.mueller90@fernuni-hagen.de</a></dd><dt>Gabriele Schneider</dt><dd>Tel. 0 23 31 / 9 87 - 2893</dd><dd>AVZ, C 240</dd><dd><a href="mailto:gabriele.schneider@fernuni-hagen.de">gabriele.schneider@fernuni-hagen.de</a></dd></dl><h2>Hilfestellung bei Dissertationen und Abschlussarbeiten</h2><dl class="contact"><dt>Annette Frerichs</dt><dd>Tel.: 0 23 31 / 9 87 - 28 92</dd><dd>AVZ, C 247</dd><dd><a href="mailto:annette.frerichs@fernuni-hagen.de">annette.frerichs@fernuni-hagen.de</a></dd></dl><hr /><p>Bei allgemeinen Fragen zum Publizieren in Ihrem Fachbereich können Sie sich auch gern jederzeit an Ihr jeweiliges Fachreferat wenden.</p><h3>Allgemeines, Rechtswissenschaft:</h3><dl class="contact"><dt>Dr. Eric Steinhauer</dt><dd>Tel.: 0 23 31 / 9 87 - 28 90</dd><dd><a href="mailto:eric.steinhauer@fernuni-hagen.de">eric.steinhauer@fernuni-hagen.de</a></dd></dl><h3>Bildungswissenschaft, Psychologie, Soziologie:</h3><dl class="contact"><dt>Dr. Sandra Caviola</dt><dd>Tel.: 0 23 31 / 9 87 - 29 25</dd><dd><a href="mailto:sandra.caviola@fernuni-hagen.de">sandra.caviola@fernuni-hagen.de</a></dd></dl><h3>Elektro- und Informationstechnik, Informatik, Technik, Naturwissenschaften:</h3><dl class="contact"><dt>Martin Roos</dt><dd>Tel.: 0 23 31 / 9 87 - 29 26</dd><dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd></dl><h3>Geschichte, Literaturwissenschaft, Philosophie:</h3><dl class="contact"><dt>Dr. Jeanine Tuschling</dt><dd>Tel.: 0 23 31 / 9 87 - 29 35</dd><dd><a href="mailto:jeanine.tuschling@fernuni-hagen.de">jeanine.tuschling@fernuni-hagen.de</a></dd></dl><h3>Mathematik:</h3><dl class="contact"><dt>Achim Schneider</dt><dd>Tel.: 0 23 31 / 9 87 - 29 21</dd><dd><a href="mailto:achim.schneider@fernuni-hagen.de">achim.schneider@fernuni-hagen.de</a></dd></dl><h3>Politikwissenschaft:</h3><dl class="contact"><dt>Doris Maria Haberl</dt><dd>Tel.: 0 23 31 / 9 87 - 14 70</dd><dd><a href="mailto:doris.haberl@fernuni-hagen.de">doris.haberl@fernuni-hagen.de</a></dd></dl><h3>Wirtschaftswissenschaft:</h3><dl class="contact"><dt>Achim Baecker</dt><dd>Tel.: 0 23 31 / 9 87 - 29 34</dd><dd><a href="mailto:achim.baecker@fernuni-hagen.de">achim.baecker@fernuni-hagen.de</a></dd></dl></div></div></div></section><meta><log lastEditor="muelleradmin" date="2016-02-24" time="11:42" /></meta></MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Ansprechpersonen"><div>
+<h1>Ansprechpersonen</h1>
+
+<div class="row">
+<div class="col-md-8">
+<h2>Team Wissenschaftliches Publizieren</h2>
+
+<p>E-Mail: <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a></p>
+
+<h2>Allgemeine Information, Datenformate, Procedere etc.</h2>
+
+<dl class="contact">
+	<dt>Gabriele Schneider</dt>
+	<dd>Tel. 0 23 31 / 9 87 - 2893</dd>
+	<dd>AVZ, C 240</dd>
+	<dd><a href="mailto:gabriele.schneider@fernuni-hagen.de">gabriele.schneider@fernuni-hagen.de</a></dd>
+</dl>
+
+<h2>Hilfestellung bei Dissertationen und Abschlussarbeiten</h2>
+
+<dl class="contact">
+	<dt>Annette Frerichs</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 28 92</dd>
+	<dd>AVZ, C 247</dd>
+	<dd><a href="mailto:annette.frerichs@fernuni-hagen.de">annette.frerichs@fernuni-hagen.de</a></dd>
+</dl>
+
+<hr />
+<p>Bei allgemeinen Fragen zum Publizieren in Ihrem Fachbereich können Sie sich auch gern jederzeit an Ihr jeweiliges Fachreferat wenden.</p>
+
+<h3>Allgemeines, Rechts- und Staatswissenschaft, Literaturwissenschaft:</h3>
+
+<dl class="contact">
+	<dt>Dr. Eric Steinhauer</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 28 90</dd>
+	<dd><a href="mailto:eric.steinhauer@fernuni-hagen.de">eric.steinhauer@fernuni-hagen.de</a></dd>
+</dl>
+
+<h3>Bildungswissenschaft, Psychologie, Soziologie:</h3>
+
+<dl class="contact">
+	<dt>Dr. Sandra Caviola</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 29 25</dd>
+	<dd><a href="mailto:sandra.caviola@fernuni-hagen.de">sandra.caviola@fernuni-hagen.de</a></dd>
+</dl>
+
+<h3>Elektro- und Informationstechnik, Informatik, Technik, Naturwissenschaften:</h3>
+
+<dl class="contact">
+	<dt>Martin Roos</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
+	<dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
+</dl>
+
+<h3>Mathematik:</h3>
+
+<dl class="contact">
+	<dt>i.V. Martin Roos</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
+	<dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
+</dl>
+
+<h3>Geschichte, Philosophie, Politikwissenschaft:</h3>
+
+<dl class="contact">
+	<dt>Doris Haberl</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 14 70</dd>
+	<dd><a href="mailto:doris.haberl@fernuni-hagen.de">doris.haberl@fernuni-hagen.de</a></dd>
+</dl>
+
+<h3>Wirtschaftswissenschaft:</h3>
+
+<dl class="contact">
+	<dt>Achim Baecker</dt>
+	<dd>Tel.: 0 23 31 / 9 87 - 29 34</dd>
+	<dd><a href="mailto:achim.baecker@fernuni-hagen.de">achim.baecker@fernuni-hagen.de</a></dd>
+</dl>
+</div>
+</div>
+</div></section><meta><log lastEditor="muelleradmin" date="2017-02-15" time="15:03" /></meta></MyCoReWebPage>

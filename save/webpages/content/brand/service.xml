@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Unser Service"><div><h1>Unser Service</h1><div class="row"><div class="col-md-8"><p style="margin-bottom:20px;">Der Dokumentenserver deposit_hagen der FernUniversität in Hagen ist eine Dienstleistung der Universitätsbibliothek mit dem Ziel, Mitgliedern und Angehörigen der FernUniversität die Veröffentlichung ihrer wissenschaftlichen Publikationen zu ermöglichen. Darüber hinaus bietet die FernUniversität über den Dokumentenserver ihre digitalen Sammlungen an.</p><p>Beim Veröffentlichen übernimmt deposit_hagen für Sie:</p><ul><li>die qualitätsgesicherte elektronische Langzeitarchivierung und die damit einhergehende dauerhafte Zitierfähigkeit Ihrer Erst- und Zweitveröffentlichungen</li><li>die Verzeichnung Ihrer Qualifizierungsarbeiten und wissenschaftlichen Veröffentlichungen im Katalog der Universitätsbibliothek</li><li>die Meldung Ihrer Erstveröffentlichungen an die Deutsche Nationalbibliothek</li></ul><p>Ihre Vorteile:</p><ul><li>Beratung und Betreuung bei allen Fragen rund um das Thema elektronische Veröffentlichungen und Hybridpublikationen (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li><li>Verbesserung der Such- und Auffindbarkeit Ihrer Dokumente durch Suchmaschinen</li><li>Steigerung der Sichtbarkeit Ihrer wissenschaftlichen Publikationen</li><li>Abgabe weniger gedruckter Pflichtexemplare bei Dissertationen</li><li>Möglichkeit der Publikation hervorragender studentischer Arbeiten auf Empfehlung der Prüfenden</li></ul></div></div></div></section><meta><log lastEditor="muelleradmin" date="2016-01-15" time="08:36" /></meta></MyCoReWebPage>
+<MyCoReWebPage><section xml:lang="de" title="Unser Service"><div>
+<h1>Unser Service</h1>
+
+<div class="row">
+<div class="col-md-8">
+<p style="margin-bottom:20px;">Der Dokumentenserver deposit_hagen der FernUniversität in Hagen ist eine Dienstleistung der Universitätsbibliothek mit dem Ziel, Mitgliedern und Angehörigen der FernUniversität die Veröffentlichung ihrer wissenschaftlichen Publikationen zu ermöglichen. Darüber hinaus bietet die FernUniversität über den Dokumentenserver ihre digitalen Sammlungen an.</p>
+
+<p>Beim Veröffentlichen übernimmt deposit_hagen für Sie:</p>
+
+<ul>
+	<li>die qualitätsgesicherte elektronische Langzeitverfügbarkeit und die damit einhergehende dauerhafte Zitierfähigkeit Ihrer Erst- und Zweitveröffentlichungen</li>
+	<li>die Verzeichnung Ihrer Online-Dissertation im Katalog der Universitätsbibliothek</li>
+	<li>die Meldung Ihrer Erstveröffentlichungen an die Deutsche Nationalbibliothek</li>
+</ul>
+
+<p>Ihre Vorteile:</p>
+
+<ul>
+	<li>Beratung und Betreuung bei allen Fragen rund um die Themen "elektronische Veröffentlichungen" und "Hybridpublikationen" (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li>
+	<li>Verbesserung der Such- und Auffindbarkeit Ihrer Dokumente durch Suchmaschinen</li>
+	<li>Steigerung der Sichtbarkeit Ihrer wissenschaftlichen Publikationen</li>
+	<li>Einsparung gedruckter Pflichtexemplare bei Dissertationen</li>
+	<li>Möglichkeit der Veröffentlichung hervorragender studentischer Arbeiten auf Empfehlung der Prüfenden</li>
+</ul>
+</div>
+</div>
+</div></section><meta><log lastEditor="muelleradmin" date="2016-09-14" time="13:42" /></meta></MyCoReWebPage>
