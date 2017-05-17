@@ -12,18 +12,18 @@
     <xfdf>
       <fields>
         <xsl:if test="mcrxsl:isCurrentUserInRole('admin') or service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby'] = $CurrentUser">
-          <field name="Titel">
+          <field name="Titel der Veröffentlichung">
             <value>
               <xsl:value-of select="metadata/def.modsContainer/modsContainer/mods:mods/mods:titleInfo/mods:title" />
             </value>
           </field>
           <xsl:variable  name="user" select="document(concat('user:',service/servflags[@class='MCRMetaLangText']/servflag[@type='createdby']))" />
-          <field name="Rechteinhaber">
+          <field name="Autor o sonstiger Rechteinhaber">
             <value>
               <xsl:value-of select="$user/user/realName"/>
             </value>
           </field>
-          <field name="Zugehörigkeit">
+          <field name="Fakultät Fachrichtung Institut">
             <value>
               <xsl:value-of select="$user/user/attributes/attribute[@name='institution']/@value"/>
             </value>
