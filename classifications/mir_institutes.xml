@@ -41,7 +41,7 @@
           <label xml:lang="de" text="Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" />
         </category>
         <category ID="EmpBilFor">
-          <label xml:lang="de" text="Empirische Bildungsforschung (Dr. Boris Becker)" />
+          <label xml:lang="de" text="Empirische Bildungsforschung (Dr. Sarah Widany)" />
         </category>
         <category ID="LebLanLer">
           <label xml:lang="de" text="Lebenslanges Lernen (Prof. Dr. Uwe Elsholz)" />
@@ -158,7 +158,7 @@
           <label xml:lang="de" text="Gesundheitspsychologie (Prof. Dr. Christel Salewski)" />
         </category>
         <category ID="PerPsyDiaBer">
-          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung (Dr. Jörg-Tobias Kuhn)" />
+          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung (Lehrstuhlvertretung Dr. Sylwia Neidhardt)" />
         </category>
         <category ID="PsyErw">
           <label xml:lang="de" text="Psychologie des Erwachsenenalters (Prof. Dr. Ingrid Josephs)" />
@@ -529,6 +529,9 @@
         </category>
         <category ID="RewiLehrAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="fd7135b3-b594-4c2a-8ef6-2614a68203fc">
+            <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafprozessrecht und juristische Zeitgeschichte (Prof. Dr. Dr. Thomas Vormbaum)" />
+          </category>
         </category>
       </category>
       <category ID="rewiInst">
@@ -571,7 +574,7 @@
       <url xlink:href="http://www.fernuni-hagen.de/" xlink:type="locator" />
     </category>
     <category ID="UBHagen">
-      <label xml:lang="de" text="Universitätsbibliothek Hagen (digitale Sammlungen)" />
+      <label xml:lang="de" text="Universitätsbibliothek Hagen (Digitale Sammlungen)" />
       <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
       <category ID="dfsd">
         <label xml:lang="de" text="Deutsche Fernstudiendokumentation (dfsd)" />

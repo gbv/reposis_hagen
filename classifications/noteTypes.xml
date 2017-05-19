@@ -3,6 +3,16 @@
   <label xml:lang="de" text="Kommentartyp" />
   <label xml:lang="en" text="Type of note" />
   <categories>
+    <category ID="with">
+      <label xml:lang="de" text="enthaltene Werke" description="Weitere Werke, die in der physikalischen Einheit mit veröffentlicht wurden." />
+      <label xml:lang="x-access" text="guest" />
+      <label xml:lang="en" text="issued with" description="Bibliographical works which are contained in the physical item at the time of publishing." />
+    </category>
+    <category ID="mrc_extern">
+      <label xml:lang="en" text="comment" />
+      <label xml:lang="x-access" text="guest" />
+      <label xml:lang="de" text="Kommentar" />
+    </category>
     <category ID="thesis">
       <label xml:lang="en" text="Dissertation note" />
       <label xml:lang="x-access" text="guest" />
