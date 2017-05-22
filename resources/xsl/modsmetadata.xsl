@@ -900,6 +900,42 @@
         </xsl:otherwise>
       </xsl:choose>
       <xsl:text disable-output-escaping="yes">&lt;br /></xsl:text>
+      
+      <!--
+      <xsl:variable name="dateIssued">
+        <xsl:choose>
+           <xsl:when test="../../mods:originInfo[@eventType='publication']/mods:dateIssued">
+            <xsl:copy-of select="../../mods:originInfo[@eventType='publication']/mods:dateIssued" />
+          </xsl:when>
+          <xsl:when test="../mods:originInfo[@eventType='publication']/mods:dateIssued">
+            <xsl:copy-of select="../mods:originInfo[@eventType='publication']/mods:dateIssued" />
+          </xsl:when>
+          <xsl:when test="mods:originInfo[@eventType='publication']/mods:dateIssued">
+            <xsl:copy-of select="mods:originInfo[@eventType='publication']/mods:dateIssued" />
+          </xsl:when>
+          <xsl:when test="mods:part/mods:date">
+            <xsl:copy-of select="mods:part/mods:date" />
+          </xsl:when>
+          
+          <xsl:otherwise>
+            <xsl:value-of select="'test'" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
+       -->
+      <xsl:variable name="dateIssued2">
+        <xsl:choose>
+          <xsl:when test="string-length(normalize-space(.))=4">
+            <xsl:value-of select="'yyyy'" />
+          </xsl:when>
+          <xsl:when test="string-length(normalize-space(.))=7">
+            <xsl:value-of select="'MM.yyyy'" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="'dd.MM.yyyy'" />
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:variable>
       <!-- Volume -->
       <xsl:if test="mods:part/mods:detail[@type='volume']/mods:number">
         <xsl:value-of
@@ -913,19 +949,15 @@
         <xsl:value-of
           select="concat('H. ',mods:part/mods:detail[@type='issue']/mods:number)" />
       </xsl:if>
-      <xsl:if test="mods:part/mods:detail[@type='issue']/mods:number and (mods:part/mods:date or mods:originInfo[@eventType='publication']/mods:dateIssued)">
+      <!-- <xsl:if test="mods:part/mods:detail[@type='issue']/mods:number and not($dateIssued='')">
         <xsl:text> </xsl:text>
       </xsl:if>
-      <xsl:if test="mods:part/mods:date or mods:originInfo[@eventType='publication']/mods:dateIssued">
-        <xsl:choose>
-          <xsl:when test="mods:part/mods:date"><xsl:value-of select="concat(' (',mods:part/mods:date,')')" /></xsl:when>
-          <xsl:otherwise>
-            <xsl:text>(</xsl:text>
-            <xsl:apply-templates select="mods:originInfo[@eventType='publication']/mods:dateIssued" mode="formatDate" />
-            <xsl:text>)</xsl:text>
-          </xsl:otherwise>
-        </xsl:choose>
-      </xsl:if>
+      <xsl:if test="not($dateIssued='')">
+       -->
+        <xsl:text>(</xsl:text>
+        <xsl:apply-templates select="$dateIssued2" mode="formatDate" />
+        <xsl:text>)</xsl:text>
+      <!-- </xsl:if>  -->
       <!-- Pages -->
       <xsl:if test="mods:part/mods:extent[@unit='pages']">
         <xsl:text>, </xsl:text>
