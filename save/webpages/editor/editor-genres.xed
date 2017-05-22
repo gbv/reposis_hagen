@@ -131,6 +131,11 @@
     <xed:include uri="webapp:editor/editor-genres.xed" ref="other_thesis.common" />
   </xed:template>
 
+  <xed:template id="thesis2">
+    <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
+    <xed:include uri="webapp:editor/editor-genres.xed" ref="other_thesis.common" />
+  </xed:template>
+
   <xed:template id="master_thesis">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="titles.thesis" />
     <xed:include uri="webapp:editor/editor-genres.xed" ref="other_thesis.common" />
