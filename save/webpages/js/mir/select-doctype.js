@@ -24,7 +24,7 @@ function changeHostOptions(){
 	}
 }
 
-function createGenreOptions(category,level) {
+function createGenreOption(category,level) {
     if (level > 8) return ("");
 	var Option="";
 	var Title = category.children('label[xml\\:lang="de"]').attr('text');
@@ -32,21 +32,24 @@ function createGenreOptions(category,level) {
 	var xEditorDisable = category.children('label[xml\\:lang="x-disable"]').attr('text');
 	var id = category.attr('ID');
 	var space = "";
+	var space2 = "";
 	for (i = 0; i < level; i++) space+="&nbsp;&nbsp;&nbsp;";
+	for (i = 0; i < level; i++) space2+="   ";
 	if (xEditorGroup == "true") {
 		if (category.find('category').length > 0) {
-			Option+='<option disabled> '+Title+'</option>';
+			Option+='<optgroup label="'+ space2 +Title+'"></optgroup>';
+			//Option+='<option disabled><b> ' + space + Title + '</b></option>';
 		}
 	} else {
 		if (xEditorDisable == "true") {
-			Option+='<option value="'+id+'" disabled>' + Title + '</option>';
+			Option+='<option value="'+id+'" disabled>' + space + Title + '</option>';
 		} else {
-			Option+='<option value="'+id+'">' + Title + '</option>';
+			Option+='<option value="'+id+'">' + space + Title + '</option>';
 		}
 	}
-	category.find('category').each(function(){
-		Options+=createGenreOption($(this),level+1);
-	}
+	category.children('category').each(function(){
+		Option+=createGenreOption($(this),level+1);
+	});
 	return Option;
 	
 }
@@ -55,18 +58,6 @@ function createGenreOptions() {
 	var Options="";
   	$(GenreXML).find('categories > category').each(function(){
   	    Options+=createGenreOption($(this),1);
-		
-		$(this).find('category').each(function(){
-	  		var Title = $(this).children('label[xml\\:lang="de"]').attr('text');
-			var disable = $(this).children('label[xml\\:lang="x-disable"]').attr('text');
-	  		var id = $(this).attr('ID');
-			if (disable == "true") {
-				Options+='<option value="'+id+'" disabled>&nbsp;&nbsp;&nbsp;' + Title + '</option>';
-			}
-			else {
-				Options+='<option value="'+id+'">&nbsp;&nbsp;&nbsp;' + Title + '</option>';
-			}
-	  	});
 	});
 	$('#genre').append(Options);
 }
