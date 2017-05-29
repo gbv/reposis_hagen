@@ -473,3 +473,8 @@ ul.names li.active a {
 .has-error iframe {
     border: solid thin red;
 }
+
+.result_body .result_list #hit_list .hit_item .hit_license {
+    float: left;
+    margin-left: 5px;
+}
