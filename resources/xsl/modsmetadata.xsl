@@ -916,6 +916,7 @@
           </xsl:when>
         </xsl:choose>
       </xsl:variable>
+      <xsl:variable name="genre" select="substring-after(mods:genre[contains(@authorityURI,'mir_genres')]/@valueURI,'#')"/>
       <!-- Volume -->
       <xsl:if test="mods:part/mods:detail[@type='volume']/mods:number">
         <xsl:value-of
@@ -932,7 +933,7 @@
       <xsl:if test="mods:part/mods:detail[@type='issue']/mods:number and string-length($dateIssued) &gt; 0">
         <xsl:text> </xsl:text>
       </xsl:if>
-      <xsl:if test="string-length($dateIssued) &gt; 0">
+      <xsl:if test="string-length($dateIssued) &gt; 0 and $genre='journal'">
         <xsl:text>(</xsl:text>
         <xsl:value-of select="$dateIssued" />
         <xsl:text>)</xsl:text>
