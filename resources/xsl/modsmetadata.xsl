@@ -900,6 +900,7 @@
         </xsl:otherwise>
       </xsl:choose>
       <xsl:text disable-output-escaping="yes">&lt;br /></xsl:text>
+      <xsl:variable name="genre" select="substring-after(mods:genre[contains(@authorityURI,'mir_genres')]/@valueURI,'#')"/>
       <xsl:variable name="dateIssued">
         <xsl:choose>
           <xsl:when test="not($genre='journal')">
@@ -919,7 +920,6 @@
           </xsl:when>
         </xsl:choose>
       </xsl:variable>
-      <xsl:variable name="genre" select="substring-after(mods:genre[contains(@authorityURI,'mir_genres')]/@valueURI,'#')"/>
       <!-- Volume -->
       <xsl:if test="mods:part/mods:detail[@type='volume']/mods:number">
         <xsl:value-of
