@@ -902,6 +902,9 @@
       <xsl:text disable-output-escaping="yes">&lt;br /></xsl:text>
       <xsl:variable name="dateIssued">
         <xsl:choose>
+          <xsl:when test="not($genre='journal')">
+            <xsl:value-of select="''" />
+          </xsl:when>
           <xsl:when test="../../mods:originInfo[@eventType='publication']/mods:dateIssued">
             <xsl:apply-templates select="../../mods:originInfo[@eventType='publication']/mods:dateIssued" mode="formatDate"/>
           </xsl:when>
@@ -933,14 +936,16 @@
       <xsl:if test="mods:part/mods:detail[@type='issue']/mods:number and string-length($dateIssued) &gt; 0">
         <xsl:text> </xsl:text>
       </xsl:if>
-      <xsl:if test="string-length($dateIssued) &gt; 0 and $genre='journal'">
+      <xsl:if test="string-length($dateIssued) &gt; 0 ">
         <xsl:text>(</xsl:text>
         <xsl:value-of select="$dateIssued" />
         <xsl:text>)</xsl:text>
       </xsl:if>
       <!-- Pages -->
       <xsl:if test="mods:part/mods:extent[@unit='pages']">
-        <xsl:text>, </xsl:text>
+        <xsl:if test="mods:part/mods:detail[@type='issue']/mods:number and string-length($dateIssued) &gt; 0">
+          <xsl:text>, </xsl:text>
+        </xsl:if>
         <xsl:for-each select="mods:part/mods:extent[@unit='pages']">
           <xsl:call-template name="printMetaDate.mods.extent" />
         </xsl:for-each>
