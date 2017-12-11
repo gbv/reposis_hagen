@@ -535,7 +535,7 @@
       </xsl:when>
       <xsl:when test="mods:identifier[@type='hdl' or @type='handle']">
         <dc:identifier xsi:type="hdl:hdl">
-          <xsl:value-of select="mods:identifier[@type='hdl' or @type='handle'][1]" />
+           <xsl:value-of select="mods:identifier[@type='hdl' or @type='handle'][1]" />
         </dc:identifier>
       </xsl:when>
     </xsl:choose>  
