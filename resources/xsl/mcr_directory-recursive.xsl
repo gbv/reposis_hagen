@@ -9,7 +9,7 @@
         <xsl:value-of select="concat(substring-after(substring-after(uri, ':'), ':'),'/')" />
         <xsl:variable name="derId" select="substring-before(substring-after(uri,':/'), ':')" />
         <xsl:variable name="filePath" select="substring-after(substring-after(uri, ':'), ':')" />
-        <xsl:variable name="suburi" select="concat('ifs:',$derId,$filePath)" />
+         <xsl:variable name="suburi" select="concat('ifs:',$derId,$filePath)" />
         <xsl:apply-templates select="document($suburi)/mcr_directory/children/child" />
       </path>
     </xsl:copy>
