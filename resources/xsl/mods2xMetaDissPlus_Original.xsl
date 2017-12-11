@@ -538,7 +538,7 @@
           <xsl:value-of select="mods:identifier[@type='hdl' or @type='handle'][1]" />
         </dc:identifier>
       </xsl:when>
-    </xsl:choose> 
+    </xsl:choose>  
   </xsl:template>
 
   <xsl:template mode="format" match="mods:mods">
