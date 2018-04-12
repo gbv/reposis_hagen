@@ -29,8 +29,8 @@
     </category>
     <category ID="book">
       <label xml:lang="de" text="Buch (Monographie)" />
-      <label xml:lang="x-hosts" text="standalone series" />
       <label xml:lang="x-mapping" text="marcgt:book diniPublType:book" />
+      <label xml:lang="x-hosts" text="standalone series" />
       <label xml:lang="en" text="Book" />
     </category>
     <category ID="thesis">
@@ -50,29 +50,36 @@
         <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:doctoralThesis XMetaDissPlusThesisLevel:thesis.habilitation" />
         <label xml:lang="en" text="Habilitation" />
       </category>
-      <category ID="diploma_thesis">
-        <label xml:lang="x-hosts" text="standalone" />
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:Diplom" />
-        <label xml:lang="en" text="Diploma thesis" />
-        <label xml:lang="de" text="Diplomarbeit" />
-      </category>
-      <category ID="master_thesis">
-        <label xml:lang="en" text="Master thesis" />
-        <label xml:lang="de" text="Abschlussarbeit (Master)" />
+      <category ID="thesis2">
+        <label xml:lang="en" text="Thesis" />
+        <label xml:lang="x-group" text="true" />
+        <label xml:lang="de" text="Abschlussarbeit" />
         <label xml:lang="x-hosts" text="standalone series" />
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:master" />
-      </category>
-      <category ID="bachelor_thesis">
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:bachelorThesis XMetaDissPlusThesisLevel:bachelor" />
-        <label xml:lang="de" text="Abschlussarbeit (Bachelor)" />
-        <label xml:lang="en" text="Bachelor thesis" />
-        <label xml:lang="x-hosts" text="standalone series" />
-      </category>
-      <category ID="magister_thesis">
-        <label xml:lang="x-hosts" text="standalone" />
-        <label xml:lang="en" text="Magister thesis" />
-        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:M.A." />
-        <label xml:lang="de" text="Magisterarbeit" />
+        <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:workingPaper XMetaDissPlusThesisLevel:other" />
+        <category ID="diploma_thesis">
+          <label xml:lang="x-hosts" text="standalone" />
+          <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:Diplom" />
+          <label xml:lang="en" text="Diploma thesis" />
+          <label xml:lang="de" text="Diplomarbeit" />
+        </category>
+        <category ID="master_thesis">
+          <label xml:lang="en" text="Master thesis" />
+          <label xml:lang="de" text="Abschlussarbeit (Master)" />
+          <label xml:lang="x-hosts" text="standalone series" />
+          <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:master" />
+        </category>
+        <category ID="bachelor_thesis">
+          <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:bachelorThesis XMetaDissPlusThesisLevel:bachelor" />
+          <label xml:lang="de" text="Abschlussarbeit (Bachelor)" />
+          <label xml:lang="en" text="Bachelor thesis" />
+          <label xml:lang="x-hosts" text="standalone series" />
+        </category>
+        <category ID="magister_thesis">
+          <label xml:lang="x-hosts" text="standalone" />
+          <label xml:lang="en" text="Magister thesis" />
+          <label xml:lang="x-mapping" text="marcgt:thesis diniPublType:masterThesis XMetaDissPlusThesisLevel:M.A." />
+          <label xml:lang="de" text="Magisterarbeit" />
+        </category>
       </category>
       <category ID="student_resarch_project">
         <label xml:lang="x-hosts" text="standalone" />
@@ -112,8 +119,8 @@
     </category>
     <category ID="journal">
       <label xml:lang="x-hosts" text="standalone" />
-      <label xml:lang="en" text="Journal" />
       <label xml:lang="de" text="Zeitschrift" />
+      <label xml:lang="en" text="Journal" />
       <label xml:lang="x-mapping" text="marcgt:journal diniPublType:Periodical" />
     </category>
     <category ID="newspaper">
