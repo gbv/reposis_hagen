@@ -12,7 +12,6 @@
 @text-color: #4d4d4d;
 @link-hover-color: #f39c12;
 @font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-size-base: 14px;
 @font-size-h1: floor((@font-size-base * 1.9));
 @font-size-h2: floor((@font-size-base * 1.6));
 @font-size-h3: ceil((@font-size-base * 1.25));
@@ -69,11 +68,13 @@
 @nav-tabs-justified-link-border-color: @gray-lighter;
 @pagination-color: #ffffff;
 @pagination-bg: @brand-primary;
+@pagination-active-bg: lighten(@brand-primary, 20%);
+@pagination-disabled-color: @gray-lighter;
 @pagination-border: transparent;
 @pagination-hover-color: #ffffff;
 @pagination-hover-border: transparent;
 @pagination-active-border: transparent;
-@pagination-disabled-bg: lighten(@brand-primary, 10%);
+@pagination-disabled-bg: darken(@brand-primary, 10%);
 @pagination-disabled-border: transparent;
 @pager-disabled-color: #ffffff;
 @state-success-text: #ffffff;
