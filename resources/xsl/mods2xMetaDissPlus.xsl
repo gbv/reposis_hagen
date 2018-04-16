@@ -104,7 +104,7 @@
         <dc:identifier xsi:type="hdl:hdl">
           <xsl:value-of select="mods:identifier[@type='hdl' or @type='handle'][1]" />
         </dc:identifier>
-      </xsl:when>
+      </xsl:when> 
     </xsl:choose>
     <xsl:variable name="deriv" select="//structure/derobjects/derobject/@xlink:href" />
     <xsl:if test="mcrurn:hasURNDefined($deriv)">
