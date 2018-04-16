@@ -8,8 +8,8 @@ function OASInline (element,providerurl,oasid,from,until,counttype) {
   this.counttype = counttype;
   this.state = "";
   this.errortext ="";
-  this.from = (isNaN(Date.parse(from)) == false) ? from : "2010-01-01";
-  this.until = (isNaN(Date.parse(until)) == false) ? until : new Date().toJSON().substring(0,10); 
+  this.from = (isNaN(Date.parse(from)) === false) ? from : "2010-01-01";
+  this.until = (isNaN(Date.parse(until)) === false) ? until : new Date().toJSON().substring(0,10); 
   this.granularity = "total";
 };
 
@@ -20,21 +20,21 @@ OASInline.prototype= {
     this.state="waiting";
     this.render();
     $.ajax({
-		method : "GET",
-		url : this.providerurl 
-		    + "jsonloader.php?identifier="+this.oasid
-		    + "&from=" + this.from + "&until=" + this.until
-		    + "&formatExtension=xml&granularity=total",
-		dataType : "xml",
-		context: this
-	}).done(function(data) {
-		OASInline.receiveData(this, data)
-	}).error(function(e) {
-	    this.state="error";
-	    this.errortext="Fehler beim Holen der Daten vom Graphprovider";
-	    this.render();
-		console.log("Fehler beim Holen der Daten vom Graphprovider");
-	});
+      method : "GET",
+      url : this.providerurl 
+        + "jsonloader.php?identifier="+this.oasid
+        + "&from=" + this.from + "&until=" + this.until
+        + "&formatExtension=xml&granularity=total",
+      dataType : "xml",
+      context: this
+      }).done(function(data) {
+        OASInline.receiveData(this, data)
+      }).fail(function(e) {
+        this.state="error";
+        this.errortext="Fehler beim Holen der Daten vom Graphprovider";
+        this.render();
+        console.log("Fehler beim Holen der Daten vom Graphprovider");
+    });
   }
   
   ,render: function () {
@@ -65,11 +65,11 @@ OASInline.prototype= {
 OASInline.receiveData = function(oasinline,xml) {
   
   if (xml) {
-    nodes = $(xml).find("access");
+    var nodes = $(xml).find("access");
     nodes.each (function () {
-      type=$($(this).children( "type" )[0]).text();
+      var type=$($(this).children( "type" )[0]).text();
       if (type==oasinline.getCounttype()) {
-        count=$($(this).children( "count" )[0]).text();
+        var count=$($(this).children( "count" )[0]).text();
         oasinline.setCount(count);
       }
     });
@@ -90,9 +90,10 @@ function OASGraph (element,providerurl,oasid,from,until,granularity) {
   this.state = "";
   this.errortext ="";
   this.granularity = (isNaN(this.granularity)) ? "month" : granularity;
-  this.from = (isNaN(Date.parse(from)) == false) ? from : "auto";
-  this.until = (isNaN(Date.parse(until)) == false) ? until : new Date().toJSON().substring(0,10);
+  this.from = (isNaN(Date.parse(from)) === false) ? from : "auto";
+  this.until = (isNaN(Date.parse(until)) === false) ? until : new Date().toJSON().substring(0,10);
   this.data = [];
+  this.barchart = "";
 };
 
 OASGraph.prototype= {
@@ -102,27 +103,27 @@ OASGraph.prototype= {
     this.state="waiting";
     this.render();
     $.ajax({
-		method : "GET",
-		url : this.providerurl 
-		    + "jsonloader.php?identifier="+this.oasid
-		    + "&from=" + this.calculateFrom() + "&until=" + this.until
-		    + "&formatExtension=json&granularity="+this.granularity,
-		dataType : "json",
-		context: this
-	}).done(function(data) {
-		OASGraph.receiveData(this, data)
-	}).error(function(e) {
-	    this.state="error";
-	    this.errortext="Fehler beim Holen der Daten vom Graphprovider";
-	    this.render();
-		console.log("Fehler beim Holen der Daten vom Graphprovider");
-	});
+      method : "GET",
+      url : this.providerurl 
+        + "jsonloader.php?identifier="+this.oasid
+        + "&from=" + this.calculateFrom() + "&until=" + this.until
+        + "&formatExtension=json&granularity="+this.granularity,
+      dataType : "json",
+      context: this
+      }).done(function(data) {
+        OASGraph.receiveData(this, data);
+      }).fail(function(e) {
+        this.state="error";
+        this.errortext="Fehler beim Holen der Daten vom Graphprovider";
+        this.render();
+        console.log("Fehler beim Holen der Daten vom Graphprovider");
+    });
   }
   
   ,render: function () {
     switch(this.state) {
       case "error":
-        html='<div style="with:100%;text-align:center;">';
+        var html='<div style="with:100%;text-align:center;">';
         html+="<i class='fa fa-exclamation-triangle' data-toggle='tooltip' title='"+this.errortext+"'/>";
         html+=this.errortext;
         html+="</div>";
@@ -133,25 +134,25 @@ OASGraph.prototype= {
         break;
       case "success":
         console.log("Render barchart");
-        this.$element.html(" <div id='oasGraphic' style='height:80%'> </div> \
-            <div style='text-align:center'> \
-              nach \
-              <input type='radio' id='grday' name='granularity' value='day' /> \
-              <label for='grday'>Tag</label> \
-              <input type='radio' id='grweek' name='granularity' value='week'/> \
-              <label for='grweek'>Woche</label> \
-              <input type='radio' id='grmonth' name='granularity' value='month'/> \
-              <label for='grmonth'>Monat</label> \
-            </div> \
-        ");
-        oasElement = this;
+        this.$element.html(" <div id='oasGraphic' style='height:80%'> </div> " +
+            "<div style='text-align:center'> " +
+            "  nach " +
+            "  <input type='radio' id='grday' name='granularity' value='day' /> " +
+            "  <label for='grday'>Tag</label> " +
+            "  <input type='radio' id='grweek' name='granularity' value='week'/> " +
+            "  <label for='grweek'>Woche</label> " +
+            "  <input type='radio' id='grmonth' name='granularity' value='month'/> " +
+            "  <label for='grmonth'>Monat</label> " +
+            "</div> " 
+        );
+        var oasElement = this;
         $("input[name='granularity'][value='"+this.granularity+"']").attr("checked","checked");  // Check the right radiobutton
         $("input[name='granularity']").on("change",null,function() {
           oasElement.granularity=this.value;
           oasElement.from="auto";
           oasElement.requestData();
         });
-        new Morris.Bar({
+        this.barchart = new Morris.Bar({
           element: "oasGraphic",
           data: this.data,
           xkey: 'date',
@@ -167,8 +168,8 @@ OASGraph.prototype= {
   
   ,calculateFrom: function () {
     if (this.from == "auto") {
-      today=new Date();
-      from=new Date();
+      var today=new Date();
+      var from=new Date();
       switch (this.granularity) {
         case "day":
           from.setDate(today.getDate() - 14);
@@ -187,14 +188,6 @@ OASGraph.prototype= {
       return this.from;
     }
   } 
-  
-  /*,setCount: function (count) {
-    this.count=count;
-  }
-  
-  ,getCounttype: function (counttype) {
-    return(this.counttype);
-  }*/
 };
 
 OASGraph.receiveData = function(oasgraph,json) {
@@ -212,12 +205,13 @@ OASGraph.receiveData = function(oasgraph,json) {
 
 $(document).ready(function() {
   $('[data-oaselementtype]').each(function(index, element) {
-    oasElementtype=$(element).data('oaselementtype');
-    oasProviderurl=$(element).data('oasproviderurl');
-    oasIdentifier=$(element).data('oasidentifier');
-    oasCounttype=$(element).data('oascounttype');
-    oasFrom=$(element).data('oasfrom');
-    oasUntil=$(element).data('oasuntil');
+    var oasElementtype=$(element).data('oaselementtype');
+    var oasProviderurl=$(element).data('oasproviderurl');
+    var oasIdentifier=$(element).data('oasidentifier');
+    var oasCounttype=$(element).data('oascounttype');
+    var oasFrom=$(element).data('oasfrom');
+    var oasUntil=$(element).data('oasuntil');
+    var oasElement;
     if (oasElementtype == "OASInline" ) {
       oasElement = new OASInline(element,oasProviderurl,oasIdentifier,oasFrom,oasUntil,oasCounttype);
       oasElement.requestData();
