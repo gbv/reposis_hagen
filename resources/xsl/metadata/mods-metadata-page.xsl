@@ -3,9 +3,9 @@
   xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:ex="http://exslt.org/dates-and-times" exclude-result-prefixes="mods mcrxsl i18n ex"
 >
   <xsl:include href="layout-utils.xsl" />
-  
-  <xsl:param name="MIR.oas" select="'hide'" />
-  
+
+  <xsl:param name="MIR.OAS" select="'hide'" />
+
   <xsl:template match="/site">
     <xsl:copy>
       <xsl:copy-of select="@*" />
@@ -98,11 +98,9 @@
             <!-- Start: METADATA -->
               <xsl:apply-templates select="div[@id='mir-metadata']" mode="newMetadata" />
             <!-- End: METADATA -->
-              <xsl:if test="contains(div[@id='mir-metadata'], '°, ')">
-                <script type="text/javascript" src="//www.openstreetmap.org/openlayers/OpenLayers.js"></script>
-                <script type="text/javascript" src="//www.openstreetmap.org/openlayers/OpenStreetMap.js"></script>
-                <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/geo-coords.js"></script>
-              </xsl:if>
+              <link rel="stylesheet" type="text/css" href="https://openlayers.org/en/v4.3.3/css/ol.css" />
+              <script type="text/javascript" src="https://openlayers.org/en/v4.3.3/build/ol.js" />
+              <script type="text/javascript" src="{$WebApplicationBaseURL}js/mir/geo-coords.min.js"></script>
             </div>
           </xsl:if>
 
@@ -126,14 +124,14 @@
             </div>
           </xsl:if>
 <!-- OAS statistics -->
-          <xsl:if test="$MIR.oas = 'show'">  
+          <xsl:if test="$MIR.OAS = 'show' and div[@id='mir-oastatistics']">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">Zugriffsstatistik</h3>
+                <h3 class="panel-title">
+                  <xsl:value-of select="i18n:translate('mir.oas.panelheading')" />
+                </h3>
               </div>
-              <div class="panel-body" style="background-image:url(https://reposis-test.gbv.de/hagen/content/images/oaslogobg.png);
-                background-repeat: no-repeat; background-position: center center;
-              ">
+              <div class="panel-body" id="mir_oas">
                 <xsl:apply-templates select="div[@id='mir-oastatistics']" mode="copyContent" />
               </div>
             </div>
@@ -208,9 +206,9 @@
 <!--  end: detail row -->
       </div>
       <script src="{$WebApplicationBaseURL}assets/jquery/plugins/shariff/shariff.min.js"></script>
-      <script src="{$WebApplicationBaseURL}assets/moment/moment.js"></script>
+      <script src="{$WebApplicationBaseURL}assets/moment/min/moment.min.js"></script>
       <script src="{$WebApplicationBaseURL}assets/handlebars/handlebars.min.js"></script>
-      <script src="{$WebApplicationBaseURL}js/mir/derivate-fileList.js"></script>
+      <script src="{$WebApplicationBaseURL}js/mir/derivate-fileList.min.js"></script>
       <link rel="stylesheet" href="{$WebApplicationBaseURL}rsc/stat/{@ID}.css"/>
     </xsl:copy>
   </xsl:template>
