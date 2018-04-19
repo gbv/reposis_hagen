@@ -3,7 +3,7 @@
 >
   <servlet>
     <servlet-name>MirFillPdfFormServlet</servlet-name>
-    <servlet-class>org.mycore.mir.authorization.MirFillPdfFormServlet</servlet-class>
+    <servlet-class>org.mycore.fillPdfForm.MirFillPdfFormServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MirFillPdfFormServlet</servlet-name>
