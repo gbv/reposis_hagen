@@ -228,7 +228,7 @@
       </div>
 
       <div class="col-xs-12 col-sm-8 result_list">
-        <xsl:copy-of select="$ResultPages" />
+        <xsl:copy-of select="$ResultPages2" />
         <xsl:comment>
           RESULT LIST START
         </xsl:comment>
