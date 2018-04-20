@@ -449,6 +449,9 @@ html body #powered_by {
   padding-right: 40px;
 }
 
+.pagination_box {
+  margin-bottom:10px;
+}
 .mycoreViewer .navbar {
     background-color: #ECECEC;
     border-radius: 0px;
