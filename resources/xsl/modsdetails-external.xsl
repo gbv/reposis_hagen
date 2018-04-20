@@ -398,6 +398,9 @@
     <xsl:variable name="adminEditURL">
       <xsl:value-of select="actionmapping:getURLforID('update-admin',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
     </xsl:variable>
+    <xsl:variable name="adminShortEditURL">
+      <xsl:value-of select="actionmapping:getURLforID('update-admin-short',$id,true())" xmlns:actionmapping="xalan://org.mycore.wfc.actionmapping.MCRURLRetriever" />
+    </xsl:variable>
     <xsl:variable name="editURL_allMods">
       <xsl:call-template name="mods.getObjectEditURL">
         <xsl:with-param name="id" select="$id" />
@@ -467,6 +470,13 @@
                       <li>
                         <a href="{$adminEditURL}&amp;id={$id}">
                           <xsl:value-of select="i18n:translate('mir.admineditor')" />
+                        </a>
+                      </li>
+                    </xsl:if>
+                    <xsl:if test="string-length($adminShortEditURL) &gt; 0">
+                      <li>
+                        <a href="{$adminShortEditURL}&amp;id={$id}">
+                          <xsl:value-of select="i18n:translate('mir.admineditorshort')" />
                         </a>
                       </li>
                     </xsl:if>
