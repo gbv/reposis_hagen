@@ -29,7 +29,7 @@
     <action action="update-admin">
       <when condition="(group = admin) or (group = editor)" url="/servlets/MCRLockServlet?url=/editor/editor-admins.xed" />
     </action>
-    <action action="update-admin">
+    <action action="update-admin-short">
       <when condition="(group = admin) or (group = editor)" url="/servlets/MCRLockServlet?url=/editor/editor-admins-short.xed" />
     </action>
     <action action="update-xml">
