@@ -98,7 +98,7 @@
         <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="modal.body" />
         
         <xed:include uri="webapp:editor/editor-includes.xed" ref="cleanup-rules" />
-        <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules.identifier" />
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="validation-rules" />
 
       </xed:bind>
     </xed:bind>
