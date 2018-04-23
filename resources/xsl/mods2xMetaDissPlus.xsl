@@ -12,6 +12,7 @@
   xmlns:mcrxsl="xalan://org.mycore.common.xml.MCRXMLFunctions"
   xmlns:mcrurn="xalan://org.mycore.urn.MCRXMLFunctions"
   xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation"
+  xmlns:piUtil="xalan://org.mycore.mir.pi.MCRPIUtil"
   xmlns:xalan="http://xml.apache.org/xalan"
 
   xmlns:cmd="http://www.cdlib.org/inside/diglib/copyrightMD"
@@ -29,7 +30,7 @@
   xmlns:dini="http://www.d-nb.de/standards/xmetadissplus/type/"
   xmlns:sub="http://www.d-nb.de/standards/subject/"
 
-  exclude-result-prefixes="xalan mcrxsl mcrurn cc dc dcmitype dcterms pc urn thesis ddb dini xlink exslt mods i18n xsl gndo rdf cmd"
+  exclude-result-prefixes="xalan mcrxsl mcrurn cc dc dcmitype dcterms pc urn thesis ddb dini xlink exslt mods i18n xsl gndo rdf cmd piUtil"
   xsi:schemaLocation="http://www.d-nb.de/standards/xmetadissplus/  http://files.dnb.de/standards/xmetadissplus/xmetadissplus.xsd">
 
   <xsl:include href="mods2xMetaDissPlus_Original.xsl" />
@@ -107,12 +108,11 @@
       </xsl:when> 
     </xsl:choose>
     <xsl:variable name="deriv" select="//structure/derobjects/derobject/@xlink:href" />
-    <xsl:if test="mcrurn:hasURNDefined($deriv)">
+    <xsl:variable name="piServiceInformation" select="piUtil:getPIServiceInformation(/mycoreobject/@ID)" />
+    <xsl:if test="$piServiceInformation[@type='dnbUrn'][@inscribed='true']">
       <xsl:element name="dc:identifier">
         <xsl:attribute name="xsi:type">urn:nbn</xsl:attribute>
-        <xsl:variable name="derivlink" select="concat('mcrobject:',$deriv)" />
-        <xsl:variable name="derivate" select="document($derivlink)" />
-        <xsl:value-of select="$derivate/mycorederivate/derivate/fileset/@urn" />
+        <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='urn']" />
       </xsl:element>
     </xsl:if>
   </xsl:template>
