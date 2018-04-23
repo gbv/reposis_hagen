@@ -181,7 +181,7 @@
       </body>
     </html>
   </xsl:template>
-  <xsl:template match="/*[not(local-name()='site')]">
+  <!-- <xsl:template match="/*[not(local-name()='site')]">
     <xsl:message terminate="yes">This is not a site document, fix your properties.</xsl:message>
-  </xsl:template>
+  </xsl:template> -->
 </xsl:stylesheet>
