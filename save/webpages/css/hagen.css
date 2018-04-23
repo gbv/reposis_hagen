@@ -481,3 +481,13 @@ ul.names li.active a {
     float: left;
     margin-left: 5px;
 }
+
+/*Hack to get elippsis function from LTS 2017*/
+a.readmore {
+	display:inline;
+}
+
+.detail_block .ellipsis.expand {
+    height: auto;
+    max-height: none;
+}
