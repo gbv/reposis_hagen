@@ -1,5 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700);
 
+a {
+  color: #494999;
+}
+
+p > a {
+  color: #3838c2;
+}
+
 .mir-main-nav {
   box-shadow: none;
 }
