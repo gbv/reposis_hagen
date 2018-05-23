@@ -14,6 +14,7 @@
       <xed:bind xpath="metadata/def.modsContainer[@class='MCRMetaXML'][@notinherit='true']/modsContainer/mods:mods">
         <xed:include uri="webapp:editor/editor-includes.xed" ref="failed-validation-messages" />
         <xed:bind xpath="mods:typeOfResource/@mcr:categId" initially="typeOfResource:text"/>
+        <xed:include uri="webapp:editor/editor-includes.xed" ref="cancel.submit" />
         <xed:bind xpath="../../../../service">
           <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="status" />
         </xed:bind>
