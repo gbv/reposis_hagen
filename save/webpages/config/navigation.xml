@@ -162,7 +162,7 @@
                 <label xml:lang="de">WebCLI</label>
                 <label xml:lang="en">WebCLI</label>
             </item>
-            <item href="modules/webtools/session/sessionListing.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/webtools/session/sessionListing.xml" type="extern" replaceMenu="false" constrainPopUp="false">
                 <label xml:lang="de">Aktive Sitzungen</label>
                 <label xml:lang="en">Session Management</label>
             </item>
