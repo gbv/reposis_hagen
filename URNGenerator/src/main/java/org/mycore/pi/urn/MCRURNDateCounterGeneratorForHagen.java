@@ -70,7 +70,7 @@ public class MCRURNDateCounterGeneratorForHagen extends MCRDNBURNGenerator {
     
     private static final Logger LOGGER = LogManager.getLogger();
 
-    public MCRURNDateCounterGenerator(String generatorID) {
+    public MCRURNDateCounterGeneratorForHagen(String generatorID) {
         super(generatorID);
 
         String pattern = getProperties().get("Pattern");
@@ -103,9 +103,8 @@ public class MCRURNDateCounterGeneratorForHagen extends MCRDNBURNGenerator {
         }
         
         String Pattern = "urn:nbn:de:" + getProperties().get("Namespace")+"([0-9]+)[0-9]";
-        
         counter=getCount(Pattern);
-        LOGGER.info("[MCRURNDateCounterGenerator] getCounter: " + counter + " (pattern:"+ Pattern + ")");
+        LOGGER.info("[MCRURNDateCounterGeneratorForHagen] initCounter via getCounter: " + counter + " (pattern:"+ Pattern + ")");
     }
 
     @Override
@@ -125,11 +124,6 @@ public class MCRURNDateCounterGeneratorForHagen extends MCRDNBURNGenerator {
             }
         }
         
-String Pattern = "urn:nbn:de:" + getProperties().get("Namespace")+"([0-9]+)[0-9]";
-        
-        counter=getCount(Pattern);
-        LOGGER.info("[MCRURNDateCounterGenerator] getCounter: " + counter + " (pattern:"+ Pattern + ")");
-
         if (fmtCount != null) {
             sb.append(fmtCount.format(counter++));
         }
