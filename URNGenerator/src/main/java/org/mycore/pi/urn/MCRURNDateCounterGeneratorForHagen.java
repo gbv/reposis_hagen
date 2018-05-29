@@ -8,8 +8,23 @@ import java.util.GregorianCalendar;
 import java.util.Locale;
 import java.util.TimeZone;
 
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Objects;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Predicate;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.mycore.pi.MCRPIRegistrationInfo;
 import org.mycore.pi.MCRPersistentIdentifierGenerator;
+import org.mycore.pi.MCRPersistentIdentifierManager;
+import org.mycore.pi.exceptions.MCRPersistentIdentifierException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * Builds a new, unique NISS based on the current date and/or time
@@ -41,7 +56,7 @@ import org.mycore.pi.MCRPersistentIdentifierGenerator;
  * 
  * 2018-05-28 edited by Paul Borchert get counter by DB
  */
-public class MCRURNDateCounterGenerator extends MCRDNBURNGenerator {
+public class MCRURNDateCounterGeneratorForHagen extends MCRDNBURNGenerator {
 
     private DecimalFormat fmtCount;
 
@@ -50,6 +65,10 @@ public class MCRURNDateCounterGenerator extends MCRDNBURNGenerator {
     private String lastDate;
 
     private int counter = 1;
+    
+    private static final Map<String, AtomicInteger> PATTERN_COUNT_MAP = new HashMap<>();
+    
+    private static final Logger LOGGER = LogManager.getLogger();
 
     public MCRURNDateCounterGenerator(String generatorID) {
         super(generatorID);
@@ -86,6 +105,7 @@ public class MCRURNDateCounterGenerator extends MCRDNBURNGenerator {
         String Pattern = "urn:nbn:de:" + getProperties().get("Namespace")+"([0-9]+)[0-9]";
         
         counter=getCount(Pattern);
+        LOGGER.info("[MCRURNDateCounterGenerator] getCounter: " + counter + " (pattern:"+ Pattern + ")");
     }
 
     @Override
@@ -104,6 +124,11 @@ public class MCRURNDateCounterGenerator extends MCRDNBURNGenerator {
                 counter = 1; // reset counter, new date
             }
         }
+        
+String Pattern = "urn:nbn:de:" + getProperties().get("Namespace")+"([0-9]+)[0-9]";
+        
+        counter=getCount(Pattern);
+        LOGGER.info("[MCRURNDateCounterGenerator] getCounter: " + counter + " (pattern:"+ Pattern + ")");
 
         if (fmtCount != null) {
             sb.append(fmtCount.format(counter++));

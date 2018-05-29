@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <parent>
+    <groupId>org.mycore</groupId>
+    <artifactId>mycore-parent</artifactId>
+    <version>29</version>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   
-  <artifactId>mycore-fillPdfForm-module</artifactId>
+  <artifactId>hagen-URN-Generator</artifactId>
   <groupId>org.mycore</groupId>
   <version>2017.06.0.1</version>
-  <name>MyCoRe FillPdfForm</name>
+  <name>MyCoRe URN Gernator</name>
   
   <properties>
     <mycore.version>2017.06.0.1-SNAPSHOT</mycore.version>
