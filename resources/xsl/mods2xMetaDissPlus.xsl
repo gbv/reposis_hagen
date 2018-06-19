@@ -96,23 +96,17 @@
           <xsl:value-of select="mods:identifier[@type='doi'][1]" />
         </dc:identifier>
       </xsl:when>
-      <xsl:when test="mods:identifier[@type='urn' and starts-with(text(), 'urn:nbn')]">
-        <dc:identifier xsi:type="urn:nbn">
-          <xsl:value-of select="mods:identifier[@type='urn' and starts-with(text(), 'urn:nbn')][1]" />
-        </dc:identifier>
-      </xsl:when>
       <xsl:when test="mods:identifier[@type='hdl' or @type='handle']">
         <dc:identifier xsi:type="hdl:hdl">
           <xsl:value-of select="mods:identifier[@type='hdl' or @type='handle'][1]" />
         </dc:identifier>
       </xsl:when> 
     </xsl:choose>
-    <xsl:variable name="deriv" select="//structure/derobjects/derobject/@xlink:href" />
     <xsl:variable name="piServiceInformation" select="piUtil:getPIServiceInformation(/mycoreobject/@ID)" />
     <xsl:if test="$piServiceInformation[@type='dnbUrn'][@inscribed='true']">
       <xsl:element name="dc:identifier">
         <xsl:attribute name="xsi:type">urn:nbn</xsl:attribute>
-        <xsl:value-of select="./metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='urn']" />
+        <xsl:value-of select="//mods:mods/mods:identifier[@type='urn']" />
       </xsl:element>
     </xsl:if>
   </xsl:template>
