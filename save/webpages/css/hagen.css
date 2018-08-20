@@ -336,10 +336,6 @@ html body #powered_by {
   color: #808080;
 }
 
-.detail_block .ellipsis {
-  margin-bottom: 20px;
-}
-
 .mir-relatedItem-body{
   margin-top:15px;
   border-style: solid;
@@ -487,14 +483,4 @@ ul.names li.active a {
 .result_body .result_list #hit_list .hit_item .hit_license {
     float: left;
     margin-left: 5px;
-}
-
-/*Hack to get elippsis function from LTS 2017*/
-a.readmore {
-	display:inline;
-}
-
-.detail_block .ellipsis.expand {
-    height: auto;
-    max-height: none;
 }
