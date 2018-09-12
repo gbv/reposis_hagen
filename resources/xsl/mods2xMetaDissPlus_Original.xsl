@@ -108,7 +108,6 @@
     <xsl:apply-templates select="$mods" mode="date" />
     <xsl:apply-templates select="$mods" mode="type" />
     <xsl:apply-templates select="$mods" mode="urn" />
-    <xsl:apply-templates select="$mods" mode="doi" />
     <xsl:apply-templates select="$mods" mode="format" />
     <xsl:apply-templates select="$mods" mode="publisher" />
     <xsl:apply-templates select="$mods" mode="relatedItem2source" />
@@ -117,6 +116,7 @@
     <xsl:apply-templates select="$mods" mode="degree" />
     <xsl:call-template name="file" />
     <xsl:apply-templates select="." mode="frontpage" />
+    <xsl:apply-templates select="$mods" mode="doi" />
     <xsl:call-template name="rights">
       <xsl:with-param name="derivateID" select="structure/derobjects/derobject/@xlink:href" />
     </xsl:call-template>
