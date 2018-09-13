@@ -282,7 +282,14 @@
             </pc:organisationName>
           </xsl:when>
           <xsl:when test="mods:namePart[@type='family'] and mods:namePart[@type='given']">
-            <xsl:apply-templates select="mods:namePart[@type='given']" mode="pc-person" />
+            <xsl:variable name="forname">
+              <xsl:foreach select="mods:namePart[@type='given']">
+                <xsl:value-of select="concat(.,'')"/>
+              </xsl:foreach>
+            </xsl:variable>
+            <pc:surName>
+              <xsl:value-of select="normalize-space($forname)" />
+            </pc:surName>
             <xsl:apply-templates select="mods:namePart[@type='family']" mode="pc-person" />
           </xsl:when>
           <xsl:when test="contains(mods:displayForm, ',')">
@@ -309,11 +316,11 @@
     </pc:surName>
   </xsl:template>
 
-  <xsl:template mode="pc-person" match="mods:namePart[@type='given']">
+  <!--  <xsl:template mode="pc-person" match="mods:namePart[@type='given']">
     <pc:foreName>
       <xsl:value-of select="." />
     </pc:foreName>
-  </xsl:template>
+  </xsl:template>-->
 
   <xsl:template mode="subject" match="mods:mods">
     <xsl:for-each select="mods:classification[@authority='sdnb']">
