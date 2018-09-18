@@ -209,6 +209,10 @@
         </xsl:choose>
       </xsl:attribute>
       <xsl:apply-templates mode="mods.title" select="." />
+      <xsl:if test="mods:titleInfo[not(@type='uniform' or @type='abbreviated' or @type='alternative' or @type='translated')]/mods:subTitle">
+        <xsl:text> : </xsl:text>
+        <xsl:apply-templates mode="mods.subtitle" select="." />
+      </xsl:if>
     </dc:title>
 
     <xsl:if test="mods:titleInfo[@type='translated']">
@@ -315,12 +319,6 @@
       <xsl:value-of select="normalize-space(.)" />
     </pc:surName>
   </xsl:template>
-
-  <!--  <xsl:template mode="pc-person" match="mods:namePart[@type='given']">
-    <pc:foreName>
-      <xsl:value-of select="." />
-    </pc:foreName>
-  </xsl:template>-->
 
   <xsl:template mode="subject" match="mods:mods">
     <xsl:for-each select="mods:classification[@authority='sdnb']">
