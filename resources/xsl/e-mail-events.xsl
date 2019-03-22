@@ -27,7 +27,8 @@
       <xsl:value-of select="$action" />
     </xsl:message>
     <email>
-      <from><xsl:value-of select="$MCR.mir-module.MailSender" /></from>
+      <from>dms@lists.gbv.de</from>
+      <replyTo>publizieren.ub@fernuni-hagen.de</replyTo>
       <xsl:apply-templates select="/*" mode="email" />
     </email>
   </xsl:template>

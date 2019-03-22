@@ -8,7 +8,8 @@
 
   <xsl:template match="/">
     <email>
-      <from><xsl:value-of select="$MCR.mir-module.MailSender" /></from>
+      <from>dms@lists.gbv.de</from>
+      <replyTo>publizieren.ub@fernuni-hagen.de</replyTo>
       <xsl:apply-templates select="/*" mode="email" />
     </email>
   </xsl:template>
@@ -18,7 +19,6 @@
       <xsl:value-of select="eMail/text()" />
     </to>
     <to>paul.borchert@gbv.de</to>
-    <to>publizieren.ub@fernuni-hagen.de</to>
     <subject>
       Ihre Benutzerkennung wurde angelegt!
     </subject>
