@@ -130,8 +130,9 @@
                 <h3 class="panel-title">
                   <xsl:value-of select="i18n:translate('mir.oas.panelheading')" />
                 </h3>
+                <div class="float-right"><img src="{$WebApplicationBaseURL}images/open_access_statistic/epustalogo_small.png" /></div>
               </div>
-              <div class="panel-body" id="mir_oas">
+              <div class="panel-body">
                 <xsl:apply-templates select="div[@id='mir-oastatistics']" mode="copyContent" />
               </div>
             </div>
