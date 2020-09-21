@@ -27,6 +27,10 @@
             <label xml:lang="de">Datenschutz</label>
             <label xml:lang="en">Privacy</label>
         </item>
+        <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Barrierefreiheit</label>
+            <label xml:lang="en">Accessibility</label>
+        </item>
         <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Impressum</label>
             <label xml:lang="en">Impressum</label>
