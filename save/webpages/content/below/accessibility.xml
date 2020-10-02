@@ -18,6 +18,11 @@
           Der Publikationsserver ist mit dem Behindertengleichstellungsgesetz Nordrhein-Westfalen
           (BGG NRW) und der Barrierefreie-Informationstechnik-Verordnung Nordrhein-Westfalen (BITV NRW) teilweise vereinbar.
         </p>
+        <p>
+          Beim BITV-Test über die funktionale Teile und das Design sind unterschiedlichste <span lang="en">Issues</span>
+          identifiziert worden, die eine barrierefreie Nutzung der Webseite erschweren. Diese sind in dem 
+          <a href="accessibility_test_mir.xml">Protokoll</a> vom Test aufgelistet und werden sukzessive behoben. 
+        </p>
         <h2> 
           Nicht barrierefreie Inhalte
         </h2>
@@ -41,11 +46,19 @@
           Der Publikationsserver richtet sich an Wissenschafler aus den jeweiligen Fachbereichen. Auf Grund der komplexen Inhalte 
           kann eine einfache Sprachgestaltung nicht umgesetzt werden und es werden gängige Fachbegriffe und Abkürzungen genutzt.
         </p>
+        <p>
+          Das Formular zur Erfassung von Dokumenten kann für Blinde oder sehbehinderte Personen, die ein 
+          <span lang="en">Screenreader</span> nutzen, schwer zu benutzen sein. Diese können sich über Kontakt an
+          Mitarbeiter der Bibliothek wenden, die die Aufnahme dann übernehmen.  
+        </p>
+        
         <h2>
           Erstellung dieser Erklärung zur Barrierefreiheit
         </h2>
         <p>
-          Diese Erklärung wurde am 23.09.2020 erstellt. Die Einschätzung basiert auf Selbstbewertung. 
+          Diese Erklärung wurde am 2.10.2020 erstellt. Die Einschätzung basiert auf einer Selbstbewertung. Teil davon
+          ist ein <a href="accessibility_test_mir.xml">Protokoll</a> von einem BITV-Test über die funktionale
+          Teile und das Design der Webseite. 
         </p>
         <h2>
           Kontakt und Feedback

@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="BITV-Test">
+    <div class="row">
+      <div class="col-md-10" lang="de">
+        <h1>Protokoll über die Prüfung Design der Webseite, Menü, Eingabeformulare</h1>
+        <p>
+          Datum der Prüfung: 22.9.2020 
+        </p>
+        <h2>Gegenstand der Prüfung</h2>
+        <p>
+          Die geprüften Seiten sind:
+          <ul>
+            <li>Desing der Webseite</li>
+            <li>Menüs</li>
+            <li>Von den Gästen nutzbare Formulare</li>
+            <li>Von den Autoren nutzbare Formulare</li>
+          </ul>
+        </p>
+        <h2>Protoll</h2>
+        <h3>1.1.1a - Alternativtexte für Bedienelemente: </h3>
+        <p>
+          Die Alternativtexte fehlen bei:
+          <ul>
+            <li>Einschlitzsuche</li>
+            <li>mehre Eingabefelder für komplexe Suche</li>
+            <li>Captcha bei der Selbstregistrierung</li>
+            <li>Bestätigung der Datenschutzerklärung bei der Selbstregistrierung</li>
+            <li>Paginierungsbuttons in der Suchergebnisse</li>
+          </ul>
+        </p>
+        <h3>1.1.1b Alternativtexte für Grafiken und Objekte: teilweise erfüllt</h3>
+        <p>
+          <ul>
+            <li>Wie veröffentliche ich?</li>
+            <li>FAQ</li>
+          </ul>
+        </p>
+        <h3>1.1.1c Leere alt-Attribute für Layoutgrafiken</h3>
+        <p>
+          <ul>
+            <li>Logo im Footer sollte leeres alt-Atribute haben</li>
+          </ul>
+        </p>
+        <h3>1.1.1d Alternativen für CAPTCHAs: eher nicht erfüllt</h3>
+        <p>
+          Für die Selbstregirierung wird reCaptcha von Google genutzt. Derzeit in einer nicht barrierefreien Form.
+        </p>
+        <h3>1.2.1a Alternativen für Audiodateien und stumme Videos: Nicht anwendbar</h3>
+        <p>
+          Es gibt keine Audio und Videodateien auf der Webseite.
+        </p>
+        <h3>1.2.2a Aufgezeichnete Videos mit Untertiteln: Nicht anwendbar</h3>
+        <p>
+          Es gibt keine Audio und Videodateien auf der Webseite.
+        </p>
+        <h3>1.2.3a Audiodeskription oder Volltext-Alternative für Videos: nicht anwendbar</h3>
+        <p>
+          Es gibt keine Audio und Videodateien auf der Webseite.
+        </p>
+        <h3>1.2.4a Videos (live) mit Untertiteln: nicht anwendbar</h3>
+        <p>
+          Es gibt keine Audio und Videodateien auf der Webseite.
+        </p>
+        <h3>1.2.5a Audiodeskription für Videos: nicht anwendbar</h3>
+        <p>
+          Es gibt keine Audio und Videodateien auf der Webseite.
+        </p>
+        <h3>1.3.1a HTML-Strukturelemente für Überschriften: erfüllt</h3>
+        <h3>1.3.1b HTML-Strukturelemente für Listen: erfüllt</h3>
+        <h3>1.3.1c HTML-Strukturelemente für Zitate: nicht anwendbar</h3>
+        <p>
+          Es werden keine Zitate auf der Webseite verwendet.
+        </p>
+        <h3>1.3.1d Inhalte gegliedert: Teilweise erfüllt.</h3>
+        <p>
+          <ul>
+            <li>In der Seite "Wie veröffentliche ich?" gibt es leere Absätze.</li>
+          </ul>
+        </p>
+        <h3>1.3.1e Datentabellen richtig aufgebaut: nicht anwendbar</h3>
+        <p>
+          Es werden keine Datentabellen verwendet.
+        </p>
+        <h3>1.3.1f Zuordnung von Tabellenzellen: nicht anwendbar</h3>
+        <h3>1.3.1g Kein Strukturmarkup für Layouttabellen: nicht anwendbar</h3>
+        <p>
+          Es werden keine Tabellen zu Layoutzweken verwendet.
+        </p>
+        <h3>1.3.1.h Beschriftung von Formularelementen programmatisch ermittelbar: eher erfüllt</h3>
+        <p>
+          Die Erfassungsformulare für die Autoren haben die Felbschriftungen kein for-Attribute. Da
+          der Kreis der Betroffen klein und der Aufwand das Problem zu beheben sehr groß ist, wird eine
+          Beseitigung angestrebt aber vorerst nicht umgesetzt. 
+        </p>
+        <h3>1.3.2a Sinnvolle Reihenfolge: erfüllt</h3>
+        <h3>1.3.3a Ohne Bezug auf sensorische Merkmale nutzbar: erfüllt</h3>
+        <h3>1.3.4a Keine Beschränkung der Bildschirmausrichtung: erfüllt</h3>
+        <h3>1.3.5a Eingabefelder zu Nutzerdaten vermitteln den Zweck: nicht erfüllt</h3>
+        <p>
+          Es sind keine Formularfelder mit einem autocomplete-Attribut versehen.
+          Formulare bei denen es sinnvoll wäre sind folgende:
+          <ul>
+            <li>Login</li>
+            <li>Selbstregistrierung</li>
+            <li>Bearbeiten der eigen Nutzerdaten</li>
+          </ul>
+        </p>
+        <h3>1.4.1a Ohne Farben nutzbar: erfüllt</h3>
+        <p>
+          Bei Formulareingaben und Workflowschritten wird mittel Farbgebung der Nutzer informiert, ob
+          es fehlende Einträg gibt oder Aktionen (z.B.) Speichern fehlgeschlagen sind. Diese sind jedoch stets
+          mit einer aussagekräftigen Textmeldung versehen.
+        </p>
+        <h3>1.4.2a Ton abschaltbar: nicht anwendbar</h3>
+        <p>
+          Das Abspielen von Audiodaten muss immer vom Nutzer initiert werden.
+        </p>
+        <h3>1.4.3a Kontraste von Texten ausreichend: teilweise erfüllt</h3>
+        <p>
+          Nicht erfüllt:
+          <ul>
+            <li>Link zur Anmeldung oben recht</li>
+            <li>Textteile in der Suchergebnissliste: aus (erschienen in), Erscheinungsort</li>
+            <li>Klappbuttons und Anzahl der Dokuemnte beim Browsen nach Einrichtung, Dokumenttyp, Sachgruppe</li>
+            <li>Personensuche: Buchstabenbutton, "Suchen"-button</li>
+            <li>Abbrechenbutton bei der Selbstregistrierung</li>
+          </ul>
+        </p>
+        <h3>1.4.4a Text auf 200% vergrößerbar: eher erfüllt</h3>
+        <p>
+          Die Links im Footer brechen um, was zu einer verwirrenden Anzeige führt.
+        </p>
+        <h3>1.4.5a Verzicht auf Schriftgrafiken:erfüllt</h3>
+        <h3>1.4.10a Inhalte brechen um: erfüllt</h3>
+        <h3>1.4.11a Kontraste von Grafiken und Bedienelementen ausreichend: erfüllt</h3>
+        <h3>1.4.12a Textabstände anpassbar: eher erfüllt</h3>
+        <p>
+          Die Links im Footer brechen um, was zu einer verwirrenden Anzeige führt.
+        </p>
+        <h3>1.4.13a Eingeblendete Inhalte bedienbar: erfüllt</h3>
+        <h3>2.1.1a Ohne Maus nutzbar:erfüllt</h3>
+        <h3>2.1.2a Keine Tastaturfalle: erfüllt</h3>
+        <h3>2.1.4a Tastatur-Kurzbefehle abschaltbar oder anpassbar:erfüllt</h3>
+        <p>
+          Keine Taste bis auf die Funktionstasten bewirken eine Reaktion/Aktion
+          der Webseite.
+        </p>
+        <h3>2.2.1a Zeitbegrenzungen anpassbar: erfüllt</h3>
+        <h3>2.2.2a Bewegte Inhalte abschaltbar</h3>
+        <p>
+          Bis auf Videoinhalte gibt es keine bewegten Inhalte.
+        </p>
+        <h3>2.3.1a Verzicht auf Flackern</h3>
+        <p>
+          Es gibt keine flackernden Inhalte oder Bedinelemente.
+        </p>
+        <h3>2.4.1a Bereiche überspringbar: eher nicht erfüllt</h3>
+        <p>
+          Die Tags nav und main werden auf der Webseite nicht verwendet. 
+          Ebenso sind keine Sprunglinks vorhanden.
+        </p>
+        <h3>2.4.2a Sinnvolle Dokumenttitel: eher erfüllt</h3>
+        <p>
+          Jede Seite, bis auf die Suchergebnisse, hat einen individuellen aussagekräftigen 
+          Titel. Eine allgemeine Bezeichnung des Webauftritts ist bisher nicht Teil des Titel.
+        </p>
+        <h3>2.4.3a Schlüssige Reihenfolge bei der Tastaturbedienung: eher erfüllt</h3>
+        <p>
+          Nach dem Breadcrumb springt der Fokus auf die Merkliste/Aktionen und nicht auf die Badges.
+          <ul>
+            <li>In der Suchergebnissseite ist der Button "Alle Treffier dieser Seite merken" nicht erreichbar</li>
+            <li>In der Suchergebnissseite bekommen die Facten den Fokus vor den Suchergebnissen. </li>
+          </ul>
+        </p>
+        <h3>2.4.4a Aussagekräftige Linktexte: teilweise erfüllt</h3>
+        <p>
+          <ul>
+            <li>Link zum Auf und Zuklappen des Abtracts</li>
+            <li>Sprachenlinks in den Tabs vom Abstrakt</li>
+            <li> GND Links in den Suchergebnissen und der Detailansicht </li>
+            <li> Namenslinks in der Detailansicht </li>
+            <li> Badges in der Detailansicht </li>
+          </ul>
+        </p>
+        <h3>2.4.5a Alternative Zugangswege: erfüllt</h3>
+        <p>
+          Das Repository bietet dem der Suche weiter Zugangsmöglichkeiten wie das Browsen nach Instiuten,
+          Personen oder Fachgebieten. 
+        </p>
+        <h3>2.4.6a Aussagekräftige Überschriften und Beschriftungen: erfüllt</h3>
+        <p>
+          Die redaktionen Inhaltseiten werden in einem gesonderter Protoll geprüft.
+        </p>
+        <h3>2.4.7a Aktuelle Position des Fokus deutlich: eher nicht erfüllt</h3>
+        <p>
+          Nicht erkennabrer Fokus:
+          <ul>
+            <li>Link auf die Startseite: Logo links oben.</li>
+            <li>Menu im Header</li>
+            <li>Zitierlink kopiere in der Detailansicht</li>
+          </ul>
+        </p>
+        <h3>2.5.1a Alternativen für komplexe Zeiger-Gesten: nicht anwendbar</h3>
+        <h3>2.5.2a Zeigergesten-Eingaben können abgebrochen oder widerrufen werden: teilweise erfüllt</h3>
+        <p>
+          Die Testsergebnisse zu diesem Punkt waren wiedersprüchlich und hingen vom verwendeten Browser ab. 
+          Sie sollten zu einem späteren Zeitpunkt wiederholt werden. 
+        </p>
+        <h3>2.5.3a Sichtbare Beschriftung Teil des zugänglichen Namens: nicht erfüllt</h3>
+        <p>
+          Die meisten Bedienelemente haben nicht ihre sichtbare Beschriftung im Namen/Titel/ o.a. 
+        </p>
+        <h3>2.5.4a Alternativen für Bewegungsaktivierung: nicht anwendbar</h3>
+        <h3>3.1.1a Hauptsprache angegeben:erfüllt</h3>
+        <p>
+          Es wird je nachdem welche Sprache ausgewählt wird diese als Hauptsprache ausgegeben.
+        </p>
+        <h3>3.1.2a Anderssprachige Wörter und Abschnitte ausgezeichnet: nicht erfüllt</h3>
+        <p>
+          Die Auszeichnung von andersprachigen Wörtern im Inhalt der redaktionellen Seiten und 
+          in den Metadaten wird in einem anderen Protokoll dokumentiert.
+        </p>
+        <p>
+          
+          <ul>
+            <li>"Browsen" in dem Headmenü.</li>
+            <li>In der Detailansicht wird die Sprache des Titel, des Abstracts nicht mit angegeben.</li>
+            <li>Die Sprache der Schlagwörter ist nicht erfassbar.</li>
+          </ul>
+        </p>
+        <h3>3.2.1a Keine unerwartete Kontextänderung bei Fokus: erfüllt</h3>
+        <h3>3.2.2a Keine unerwartete Kontextänderung bei Eingabe: erfüllt</h3>
+        <h3>3.2.3a Konsistente Navigation: erfüllt</h3>
+        <h3>3.2.4a Konsistente Bezeichnung: erfüllt</h3>
+        <h3>3.3.1a Fehlererkennung: nicht erfüllt</h3>
+        <p>
+          Angaben in Formularen werden vor dem Abschicken nicht automatisch überprüft, sondern serverseitig
+          validiert. 
+        </p>
+        <h3>3.3.2a Beschriftungen von Formularelementen vorhanden: erfüllt</h3>
+        <p>
+          Die Formularelemente alle ordnungsgemaß beschriftet.
+        </p>
+        <h3>4.1.1a Korrekte Syntax: nicht efüllt</h3>
+        <p>
+          Die Webseite ist nicht 100% valide.
+          <ul>
+            <li>Fehlendes Namespaceattribute im html-Tag</li>
+            <li>Die Link-Tags im head sind nicht geschlossen.</li>
+          </ul>
+        </p>
+        <h3>4.1.2a Name, Rolle, Wert verfügbar</h3>
+        <p>
+          Folgende Formularelemente sind keine Standartelemente und werden nicht WAI-ARIA Attribute gekennzeichnet.
+          <ul>
+            <li>Die Datumseingabe in den Autorenformularen</li>
+          </ul>
+          In den Inhaltsseiten werden die mailto Links durch Javascript erzeugt. Dies ist eine Sicherheitsmaßnahme
+          um Spamern das automatische Harvesten der Mailadressen zu erschweren. Für Menschen ist auch ohne Javascript
+          ersichtlich, dass es sich um eine Mailadresse handelt. 
+        </p>
+        <h3>4.1.3a Statusmeldungen programmatisch verfügbar</h3>
+        <p>
+          Es erfolgt weder visuell noch im Screenreader ein Hinweis das, das ein Dokument auf die Merkliste
+          gesetzt wurde. Die entsprechende "Role" wird im Rahmen eines Updates ergänzt.
+        </p>
+        
+        <p> Sternchen in de Formulare durch CSS (1.3.1d)</p>
+        <p> Bei 320px Breite sind die Unterpunkte der Menüs weiß.</p>
+        <p> MyCoRe Bild auf der Softwareseite</p>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2018-11-27" time="12:30" />
+  </meta>
+</MyCoReWebPage>
