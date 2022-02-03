@@ -100,7 +100,8 @@
                         <xsl:if test="position()!=1">
                           <xsl:value-of select="'; '" />
                         </xsl:if>
-                        <xsl:apply-templates select="." mode="nameLink" />
+                        <!--  <xsl:apply-templates select="." mode="nameLink" /> -->
+                        <xsl:apply-templates select="." mode="nameString" />
                       </xsl:for-each>
                         <xsl:if test="$mods/mods:name/mods:etal">
                             <em>et.al.</em>
