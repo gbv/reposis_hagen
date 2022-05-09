@@ -33,6 +33,7 @@ import javax.servlet.http.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jdom2.Element;
 import org.jdom2.output.DOMOutputter;
@@ -78,7 +79,7 @@ import org.xml.sax.InputSource;
  */
 public class MirFillPdfFormServlet extends MCRServlet {
 
-    private static final Logger LOGGER = Logger.getLogger(MirFillPdfFormServlet.class);
+    private static final Logger LOGGER = LogManager.getLogger(MirFillPdfFormServlet.class);
 
     private static PDDocument _pdfDocument;
     
