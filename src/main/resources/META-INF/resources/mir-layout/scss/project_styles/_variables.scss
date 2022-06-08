@@ -1,0 +1,67 @@
+// **************************************************
+//  Variables
+// **************************************************
+
+// --------------------------------------------------
+//  modifies bootstrap/bootswatch settings
+// --------------------------------------------------
+//  You can't use bootstrap variables here,
+//  they are unknown yet.
+//  But if you set them here, you will overwrite
+//  the bootstrap defaults! in this way
+
+// --------------------------------------------------
+//  project settings
+// --------------------------------------------------
+
+$hagenBlue:       #004c97;
+$hagenBlueLight:  #6791be;  // info back
+$hagenGrayLight:  #e4e4e4;  // card back
+$hagenGrayMedium: #ddd;     // footer back
+$hagenGrayDark:   #b1b3b3;  // ?
+
+
+// --------------------------------------------------
+//  overwrite bootstrap
+// --------------------------------------------------
+
+$primary: $hagenBlue;
+
+$web-font-path: "https://webfonts.gbv.de/css?family=Roboto:ital,wght@0,400;0,500;0,700;1,500";
+$font-family-sans-serif: Roboto, sans-serif;
+
+$link-color: $primary;
+$link-hover-color: $primary;
+
+$navbar-dark-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-active-color: white;
+
+$font-size-base: 1rem;
+
+$dropdown-border-radius: 0;
+$dropdown-inner-border-radius: 0;
+$dropdown-border-color: $link-color;
+$dropdown-link-color: $link-color;
+$dropdown-link-hover-color: $link-color;
+$dropdown-link-hover-bg: white;
+$dropdown-link-active-color: $link-color;
+$dropdown-link-active-bg: white;
+
+$pagination-border-width: 1px;
+
+$pagination-color: white;
+$pagination-bg: $primary;
+$pagination-border-color: $primary;
+
+$pagination-hover-color: $primary;
+$pagination-hover-bg: white;
+$pagination-hover-border-color: $primary;
+
+$pagination-active-color: $primary;
+$pagination-active-bg: white;
+$pagination-active-border-color: $primary;
+
+$pagination-disabled-color: $hagenGrayDark;
+$pagination-disabled-bg: $hagenGrayLight;
+$pagination-disabled-border-color: $hagenGrayLight;
