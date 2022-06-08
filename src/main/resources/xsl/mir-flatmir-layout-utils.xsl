@@ -62,33 +62,30 @@
               </xsl:for-each>
               <xsl:call-template name="mir.basketMenu" />
             </ul>
-
-            <form
-              action="{$WebApplicationBaseURL}servlets/solr/find"
-              class="searchfield_box form-inline my-2 my-lg-0"
-              role="search">
-              <input
-                name="condQuery"
-                placeholder="{i18n:translate('mir.navsearch.placeholder')}"
-                class="form-control mr-sm-2 search-query"
-                id="searchInput"
-                type="text"
-                aria-label="Search" />
-              <xsl:choose>
-                <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
-                  <input name="owner" type="hidden" value="createdby:*" />
-                </xsl:when>
-                <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
-                  <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
-                </xsl:when>
-              </xsl:choose>
-              <button type="submit" class="btn btn-primary my-2 my-sm-0">
-                <i class="fas fa-search"></i>
-              </button>
-            </form>
-
           </div>
-
+          <form
+            action="{$WebApplicationBaseURL}servlets/solr/find"
+            class="searchfield_box form-inline my-2 my-lg-0"
+            role="search">
+            <input
+              name="condQuery"
+              placeholder="{i18n:translate('mir.navsearch.placeholder')}"
+              class="form-control mr-sm-2 search-query"
+              id="searchInput"
+              type="text"
+              aria-label="Search" />
+            <xsl:choose>
+              <xsl:when test="contains($isSearchAllowedForCurrentUser, 'true')">
+                <input name="owner" type="hidden" value="createdby:*" />
+              </xsl:when>
+              <xsl:when test="not(mcrxsl:isCurrentUserGuestUser())">
+                <input name="owner" type="hidden" value="createdby:{$CurrentUser}" />
+              </xsl:when>
+            </xsl:choose>
+            <button type="submit" class="btn btn-primary my-2 my-sm-0">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
         </nav>
       </div>
     </div>

@@ -6,6 +6,9 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  #header_box {
+    margin: 2rem auto 2rem auto;
+  }
   #project_logo_box {
     img {
       width: 500px;

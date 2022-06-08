@@ -16,12 +16,20 @@
 }
 
 .mir-main-nav {
+  .navbar-toggler {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-color: white;
+  }
   .navbar {
     padding: 0;
   }
   #basket-list-item,
   .nav-item {
     padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.125rem;
     &:hover {
       background-color: $hagenBlueLight;
     }
@@ -29,6 +37,7 @@
   .dropdown-menu {
     margin-top: -1px;
     .dropdown-item {
+      text-transform: none;
       &:hover {
         text-decoration: underline;
       }
@@ -48,6 +57,18 @@
 // Medium devices (tablets) and below: <= 992px
 @include media-breakpoint-down(md) {
   // add/overwrite styles for responsive level md and lower
+  .mir-main-nav {
+    .mir-main-nav__entries {
+      order: 4;
+    }
+    .bs-search {
+      margin-left: auto;
+      order: 3;
+      .form-control {
+        width: auto;
+      }
+    }
+  }
 }
 
 // Small devices (landscape phones) and below: <= 768px
@@ -58,4 +79,11 @@
 // Extra small devices (portrait phones): <= 576px
 @include media-breakpoint-down(xs) {
   // add/overwrite styles for responsive level xs
+
+  .mir-main-nav {
+    .form-control {
+      width: auto;
+    }
+  }
+
 }
