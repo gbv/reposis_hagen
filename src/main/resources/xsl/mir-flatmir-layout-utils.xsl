@@ -52,6 +52,9 @@
                   <xsl:when test="@id='brand'"/>
                   <xsl:when test="@id='below'"/>
                   <xsl:when test="@id='user'"/>
+                  <xsl:when test="@id='rights'"/>
+                  <xsl:when test="@id='contact'"/>
+                  <xsl:when test="@id='technical'"/>
                   <xsl:otherwise>
                     <xsl:apply-templates select="."/>
                   </xsl:otherwise>
