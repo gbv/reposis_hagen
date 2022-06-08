@@ -8,6 +8,12 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+  .hagen-project-name {
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
 
 
 // Large devices (desktops) and below: <= 1200px
