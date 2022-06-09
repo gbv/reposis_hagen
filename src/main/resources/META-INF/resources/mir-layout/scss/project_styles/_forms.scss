@@ -6,7 +6,16 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
-
+  .searchfield_box {
+    input {
+      height: auto;
+    }
+    input,
+    button {
+      padding-top: .2rem;
+      padding-bottom: .2rem;
+    }
+  }
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
