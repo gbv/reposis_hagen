@@ -1,0 +1,54 @@
+/*  common settings
+ *  - for very basic settings
+ *  - and for styles with no extra file available
+ *  - at best, this file is nearly empty :)
+ */
+
+// Extra large devices (large desktops)
+// set the defaults for all responsive levels here
+// no (xl) media query necessary (desktop first)
+
+  .hagen-project-name {
+    -ms-hyphens: none;
+    -moz-hyphens: none;
+    -webkit-hyphens: none;
+    hyphens: none;
+  }
+
+  // use global space for bread crumb row
+  .breadcrumb {
+    // gloabl space has 6 rem
+    // we want a space of 1.875 to the top
+    margin-top: -4.125rem;
+    // bread crumb row has a height of 2.625 rem
+    // so we need to add some space to the bottom for the same distance
+    margin-bottom: 1.5rem; // 1.875 + 2.625 + 1.5 = 6
+    background-color: transparent;
+    padding-left: 0;
+  }
+  .breadcrumb-item {
+    font-size: .75rem;
+    &.active {
+      color: $body-color;
+    }
+  }
+
+// Large devices (desktops) and below: <= 1200px
+@include media-breakpoint-down(lg) {
+  // add/overwrite styles for responsive level lg and lower
+}
+
+// Medium devices (tablets) and below: <= 992px
+@include media-breakpoint-down(md) {
+  // add/overwrite styles for responsive level md and lower
+}
+
+// Small devices (landscape phones) and below: <= 768px
+@include media-breakpoint-down(sm) {
+  // add/overwrite styles for responsive level sm and lower
+}
+
+// Extra small devices (portrait phones): <= 576px
+@include media-breakpoint-down(xs) {
+  // add/overwrite styles for responsive level xs
+}
