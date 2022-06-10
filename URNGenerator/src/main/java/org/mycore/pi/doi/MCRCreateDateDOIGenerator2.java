@@ -24,7 +24,7 @@ import org.mycore.pi.MCRPersistentIdentifier;
 import org.mycore.pi.MCRPersistentIdentifierGenerator;
 import org.mycore.pi.MCRPersistentIdentifierManager;
 
-public class MCRCreateDateDOIGenerator extends MCRPersistentIdentifierGenerator<MCRDigitalObjectIdentifier> {
+public class MCRCreateDateDOIGenerator2 extends MCRPersistentIdentifierGenerator<MCRDigitalObjectIdentifier> {
 
     private static final String DATE_PATTERN = "yyyyMMdd-HHmmss";
 
