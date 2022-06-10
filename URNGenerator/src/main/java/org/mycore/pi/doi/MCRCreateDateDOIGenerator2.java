@@ -38,7 +38,7 @@ public class MCRCreateDateDOIGenerator2 extends MCRPersistentIdentifierGenerator
 
     private String prefix = MCRConfiguration.instance().getString("MCR.DOI.Prefix2");
 
-    public MCRCreateDateDOIGenerator(String generatorID) {
+    public MCRCreateDateDOIGenerator2(String generatorID) {
         super(generatorID);
         mcrdoiParser = new MCRDOIParser();
     }
