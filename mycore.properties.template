@@ -187,6 +187,16 @@ MCR.ContentTransformer.mcr_error.Stylesheet=xsl/errorPage.xsl,%MCR.LayoutTransfo
   MCR.PI.Inscriber.MODSDOI=org.mycore.mods.identifier.MCRMODSDOIPersistentIdentifierInscriber
   MCR.PI.Parsers.doi=org.mycore.pi.doi.MCRDOIParser
   
+  MCR.DOI.Prefix2=10.57813
+  MCR.PI.Registration.Datacite2=org.mycore.pi.doi.MCRDOIRegistrationService2
+  MCR.PI.Registration.Datacite2.Inscriber=MODSDOI
+  MCR.PI.Registration.Datacite2.Generator=DateDOI
+  MCR.PI.Registration.Datacite2.RegisterBaseURL=https://ub-deposit.fernuni-hagen.de
+  MCR.PI.Registration.Datacite2.Username=STIY
+  MCR.PI.Registration.Datacite2.Password=Y1amis-Cerd#St!Sivelymp
+  MCR.PI.Registration.Datacite2.Transformer=datacite
+  MCR.PI.Registration.Datacite2.UseTestPrefix=true
+  
 ##############################################################################
 # Temp 
 ##############################################################################
