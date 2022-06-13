@@ -67,10 +67,6 @@
             <label xml:lang="de">Erweitert</label>
             <label xml:lang="en">Advanced</label>
         </item>
-        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
-            <label xml:lang="de">intern</label>
-            <label xml:lang="en">intern</label>
-        </item>
         <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
             <label xml:lang="de">Experte</label>
             <label xml:lang="en">expert</label>
