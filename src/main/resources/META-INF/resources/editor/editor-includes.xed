@@ -4,7 +4,7 @@
               xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
   <xsl:param name="MIR.PPN.DatabaseList" select="gvk"/>
-  
+
   <xed:template id="in.out">
     <xed:source uri="xslStyle:PPN-mods-simple,mir-PPN-import,mycoreobject-migrate-nameIdentifier,editor/mods2xeditor:http://unapi.gbv.de/?id={$MIR.PPN.DatabaseList}:ppn:{$ppn}&amp;format=mods36" />
     <xed:source uri="xslStyle:RDF-mods-journal,editor/mods2xeditor:http://ld.zdb-services.de/data/{$zdbid}.rdf" />
@@ -27,7 +27,7 @@
     <xed:cancel url="../index.html?XSL.Status.Message=mir.editstatus.canceled&amp;XSL.Status.Style=danger" />
     <xed:post-processor xsl="editor/xeditor2mods.xsl" />
   </xed:template>
-  
+
   <xed:template id="mycore.common">
     <xed:choose>
       <xed:when test="string-length($origin) &gt; 0">
@@ -196,7 +196,7 @@
       </xed:bind>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="title.original.nonrequired">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -204,7 +204,7 @@
       </legend>
       <xed:bind xpath="mods:titleInfo">
         <div class="mir-fieldset-content">
-          <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}" 
+          <mir:textfield xpath="mods:title" label="mir.title" placeholder="{i18n:mir.placeholder.title.main}"
               />
           <mir:textfield xpath="mods:subTitle" label="mir.title.subTitle" help-text="{i18n:mir.help.title.subTitle}"/>
         </div>
@@ -302,7 +302,7 @@
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="author.repeated.nonrequired">
     <fieldset>
       <legend class="mir-fieldset-legend">
@@ -324,37 +324,37 @@
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="editor.repeated.required">
     <fieldset>
       <legend class="mir-fieldset-legend">
         Herausgeber
       </legend>
       <div class="mir-fieldset-content">
-        <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}" 
+        <mir:role.repeated role="edt" label="mir.role.editor" help-text="{i18n:mir.help.role.editor}"
         class="mir-form-group required" required="true" required-i18n="mir.validation.editor"/>
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="honoree.repeated">
     <fieldset>
       <legend class="mir-fieldset-legend">
         Gefeierte Personen
       </legend>
-      <div class="mir-fieldset-content"> 
-        <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
+      <div class="mir-fieldset-content">
+        <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}"
         class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
       </div>
     </fieldset>
   </xed:template>
-  
+
   <xed:template id="honoree.repeated.relItem">
     <div class="col-md-10 mir-form-group-head">
       Gefeierte Personen
     </div>
-    <div class="mir-form-group-body"> 
-      <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}" 
+    <div class="mir-form-group-body">
+      <mir:role.repeated role="hnr" label="mir.role.honoree" help-text="{i18n:mir.help.role.honoree}"
       class="mir-form-group required" required="true" required-i18n="mir.validation.honoree"/>
     </div>
   </xed:template>
@@ -611,7 +611,7 @@
       </xed:bind>
     </div>
     <!-- ========== LSF subselect ==========
-    <button type="submit" class="btn btn-default" xed:target="subselect" xed:href="../lsfSearch.html?lastName={mods:namePart[@type='family']}">
+    <button type="submit" class="btn btn-primary" xed:target="subselect" xed:href="../lsfSearch.html?lastName={mods:namePart[@type='family']}">
       <xed:output i18n="button.selectPerson" />
     </button>
     <xed:if test="mods:namePart">
@@ -747,39 +747,39 @@
   <xed:template id="conference.itemsearch">
     <mir:itemsearch searchengine="conference" responsefield="mods.name.conference" xpath="mods:name[@type='conference']/mods:namePart" label="mir.conference"  help-text="{i18n:mir.help.conference}" placeholder="{i18n:mir.placeholder.conference}" />
   </xed:template>
-  
+
   <xed:template id="year.issued.modspart">
     <mir:textfield xpath="../mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" class="required mir-modspart"
       placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
   <xed:template id="year.issued">
-    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
       class="required" placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
-  
+
   <xed:template id="year.issued.nonrequired">
-    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
       placeholder="{i18n:mir.placeholder.year}"/>
   </xed:template>
-    
+
   <xed:template id="year.issued.relItem">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.4" help-text="{i18n:mir.help.date.issued.4}"
       class="required mir-modspart" placeholder="{i18n:mir.placeholder.year}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
   <xed:template id="date.issued">
-    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
       class="required datetimepicker" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
-  
+
   <xed:template id="date.issued.nonrequired">
-    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
       class="datetimepicker" placeholder="{i18n:mir.placeholder.date}"/>
   </xed:template>
-  
+
   <xed:template id="date.issued.relItem">
-    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:dateIssued[@encoding='w3cdtf']" label="mir.date.issued.10" help-text="{i18n:mir.help.date.issued.10}"
       class="required datetimepicker mir-modspart" placeholder="{i18n:mir.placeholder.date}" required="true" required-i18n="mir.validation.dateIssued"/>
   </xed:template>
 
@@ -848,7 +848,7 @@
   </xed:template>
 
   <xed:template id="date.created">
-    <mir:textfield xpath="mods:originInfo[@eventType='creation']/mods:dateCreated[@encoding='w3cdtf']" label="mir.date.created" help-text="{i18n:mir.help.date.created}" 
+    <mir:textfield xpath="mods:originInfo[@eventType='creation']/mods:dateCreated[@encoding='w3cdtf']" label="mir.date.created" help-text="{i18n:mir.help.date.created}"
       class="required" placeholder="{i18n:mir.placeholder.date}"/>
   </xed:template>
 
@@ -1248,11 +1248,11 @@
   <xed:template id="place">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.place" help-text="{i18n:mir.help.place}" />
   </xed:template>
-  
+
   <xed:template id="publisherplace">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.publisherplace" help-text="{i18n:mir.help.place}" />
   </xed:template>
-  
+
   <xed:template id="country">
     <mir:textfield xpath="mods:originInfo[@eventType='publication']/mods:place/mods:placeTerm[@type='text']" label="mir.place.country" help-text="{i18n:mir.help.place.country}" />
   </xed:template>
@@ -1339,7 +1339,7 @@
       <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
     </div>
   </xed:template>
-  
+
   <xed:template id="host.pages.required">
     <xed:bind xpath="mods:part/mods:extent[@unit='pages']/mods:list">
       <div class="form-group mir-modspart required {$xed-validation-marker}">
@@ -1353,12 +1353,12 @@
         </div>
         <mir:help-pmud help-text="{i18n:mir.help.host.pages}" />
       </div>
-      <xed:validate test="string-length(.) > 0" display="global"> 
-        Bitte Seitenangaben eintragen. 
+      <xed:validate test="string-length(.) > 0" display="global">
+        Bitte Seitenangaben eintragen.
       </xed:validate>
     </xed:bind>
   </xed:template>
-  
+
   <xed:template id="host.order">
     <div class="form-group mir-modspart">
       <label class="col-md-3 control-label">
@@ -1505,7 +1505,7 @@
       <xed:validate xpath="//mods:mods/mods:accessCondition[@type='use and reproduction']" required="true" i18n="mir.validation.rights" display="global" />
     </xed:bind>
   </xed:template>
-  
+
   <xed:template id="rights.preselected">
     <xed:bind xpath="mods:accessCondition[@type='use and reproduction']" initially="">
       <div class="form-group {$xed-validation-marker}">
@@ -1586,7 +1586,7 @@
       <mir:help-pmud help-text="{i18n:mir.help.institutes}" />
     </div>
   </xed:template>
-  
+
   <xed:template id="institutes.required">
     <xed:load-resource name="mir_institutes" uri="classification:metadata:-1:children:mir_institutes" />
     <xed:bind xpath="mods:name[@type='corporate'][@authorityURI=$mir_institutes/label[@xml:lang='x-uri']/@text]">
@@ -1731,13 +1731,13 @@
     <mir:textfield xpath="mods:subject/mods:cartographics/mods:coordinates" label="mir.cartographics.coordinates" help-text="{i18n:mir.help.cartographics.coordinates}" />
     <div class="form-group openstreetmap">
       <div class="col-md-2 col-md-offset-3">
-        <button type="button" class="show_openstreetmap btn btn-default" data-lat="{$MIR.editor.start.coordinates.lat}" data-lon="{$MIR.editor.start.coordinates.lon}">
+        <button type="button" class="show_openstreetmap btn btn-primary" data-lat="{$MIR.editor.start.coordinates.lat}" data-lon="{$MIR.editor.start.coordinates.lon}">
           OpenStreetMap
         </button>
       </div>
       <div class="col-md-6 col-md-offset-3 collapse openstreetmap-container">
         <label>
-          <xed:output i18n="mir.cartographics.coordinates.geoType" /> 
+          <xed:output i18n="mir.cartographics.coordinates.geoType" />
         </label>
         <select id="type" class="form-control" name="">
           <option value="Point">
@@ -1780,7 +1780,7 @@
       </div>
     </xed:bind>
   </xed:template>
-  
+
   <xed:template id="sdnb.nopreselect">
     <xed:bind xpath="mods:classification[@authority='sdnb'][@displayLabel='sdnb']">
       <div class="form-group {$xed-validation-marker}">
@@ -2157,7 +2157,7 @@
   <xed:template id="cancel.submit">
     <div class="form-group" id="editor-buttons">
       <div class="col-md-offset-2 col-md-6">
-        <button type="submit" class="btn btn-default" xed:target="cancel">
+        <button type="submit" class="btn btn-primary" xed:target="cancel">
           <xed:output i18n="button.cancel" />
         </button>
         <xed:choose>
@@ -2180,8 +2180,8 @@
   <xed:template id="debug.cancel.submit">
     <div class="form-group" id="editor-buttons">
       <div class="col-md-offset-2 col-md-6">
-        <button type="submit" class="btn btn-default" xed:target="debug">Debug</button>
-        <button type="submit" class="btn btn-default" xed:target="cancel">
+        <button type="submit" class="btn btn-primary" xed:target="debug">Debug</button>
+        <button type="submit" class="btn btn-primary" xed:target="cancel">
           <xed:output i18n="button.cancel" />
         </button>
         <xed:choose>
@@ -2204,7 +2204,7 @@
   <xed:template id="cancel.redirect.submit">
     <div class="form-group" id="editor-buttons">
       <div class="col-md-offset-2 col-md-6">
-        <button type="submit" class="btn btn-default" xed:target="cancel">
+        <button type="submit" class="btn btn-primary" xed:target="cancel">
           <xed:output i18n="button.cancel" />
         </button>
         <xed:choose>
@@ -2242,42 +2242,42 @@
 
   <xed:template id="validation-rules.identifier">
     <!--<xed:validate xpath="//mods:identifier[@type='isbn']" matches="^((978|979)-?)?([\d -]{12}|\d{9})(\d|X)$" display="global" >
-       <xed:output i18n="mir.validation.isbn" /> 
+       <xed:output i18n="mir.validation.isbn" />
     </xed:validate>-->
     <xed:validate xpath="//mods:identifier[@type='issn']" matches="[\dX]{4}\-[\dX]{4}" display="global" >
-       <xed:output i18n="mir.validation.issn" /> 
+       <xed:output i18n="mir.validation.issn" />
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='doi']" matches="10\.\d+.*" display="global" >
-       <xed:output i18n="mir.validation.doi" /> 
+       <xed:output i18n="mir.validation.doi" />
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='hdl']" matches="\S+/\S+" display="global" >
-       <xed:output i18n="mir.validation.hdl" /> 
+       <xed:output i18n="mir.validation.hdl" />
     </xed:validate>
     <xed:validate xpath="//mods:identifier[@type='urn']" matches="urn:nbn:[a-z]{2}:\S*" display="global" >
-       <xed:output i18n="mir.validation.urn" /> 
+       <xed:output i18n="mir.validation.urn" />
     </xed:validate>
   </xed:template>
-  
+
   <xed:template id="validation-rules.relItem.host">
     <xed:validate xpath="//mods:relatedItem/mods:titleInfo/mods:title" test="(substring-after(../../@xlink:href,'mods_') > '00000000') or ((string-length(.) > 0) and ((substring-after(../../@xlink:href,'mods_') = '00000000') or (string-length(../../@xlink:href,'mods_') = 0)))" display="global" >
-      <xed:output i18n="mir.validation.relItem.title" /> 
+      <xed:output i18n="mir.validation.relItem.title" />
     </xed:validate>
   </xed:template>
-  
+
   <xed:template id="validation-rules.title.proceedings">
     <xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" test="string-length(.) > 0 or string-length(../../mods:name[@type='conference']/mods:namePart) > 0" display="global" >
-      <xed:output i18n="mir.validation.titleconference.proceedings" /> 
-    </xed:validate> 
+      <xed:output i18n="mir.validation.titleconference.proceedings" />
+    </xed:validate>
     <xed:validate xpath="//mods:mods/mods:name[@type='conference']/mods:namePart" test="string-length(.) > 0 or string-length(../../mods:titleInfo/mods:title)" display="global" />
   </xed:template>
-  
+
   <xed:template id="validation-rules">
     <!--<xed:validate xpath="//mods:mods/mods:titleInfo/mods:title" required="true" i18n="mir.validation.title" display="global" />-->
     <!-- don't validate author, date issued and rights for journal etc.  -->
     <!--<xed:if test="//mods:mods/mods:genre[@valueURIxEditor!='journal'][@valueURIxEditor!='series']">
       <xed:choose>
         <xed:when test="//mods:mods/mods:genre[@valueURIxEditor='collection' or @valueURIxEditor='proceedings']">
-          
+
           <xed:validate xpath="//mods:mods/mods:name[mods:role/mods:roleTerm[@authority='marcrelator'][@type='code']='edt']/mods:displayForm"
             required="true" i18n="mir.validation.editor" display="global" />
         </xed:when>
