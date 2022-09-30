@@ -11,6 +11,14 @@
     <xed:add ref="tel" />
   </xed:modify>
 
+  <xed:modify ref="editor4changeAdmins">
+    <xed:add ref="institution" />
+    <xed:add ref="street" />
+    <xed:add ref="city" />
+    <xed:add ref="postalcode" />
+    <xed:add ref="tel" />
+  </xed:modify>
+  
   <xed:template id="institution">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='institution']/@value" id="institution" i18n="noa.user2.admin.institution" maxlength="64" />
   </xed:template>
