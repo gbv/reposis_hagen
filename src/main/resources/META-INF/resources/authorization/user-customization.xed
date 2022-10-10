@@ -1,22 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mir="http://www.mycore.de/mir">
+<xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
 
   
   <xed:modify ref="editor4currentUser">
-    <xed:add ref="institution" />
-    <xed:add ref="street" />
-    <xed:add ref="city" />
-    <xed:add ref="postalcode" />
-    <xed:add ref="tel" />
+    <xed:add ref="institution" after="email" />
+    <xed:add ref="street" after="institution" />
+    <xed:add ref="city" after="street" />
+    <xed:add ref="postalcode" after="postalcode" />
+    <xed:add ref="tel" after="postalcode" />
   </xed:modify>
 
+  <xed:modify ref="editor4newAdmins">
+    <xed:add ref="institution" after="email" />
+    <xed:add ref="street" after="institution" />
+    <xed:add ref="city" after="street" />
+    <xed:add ref="postalcode" after="postalcode" />
+    <xed:add ref="tel" after="postalcode" /> 
+  </xed:modify>
+  
   <xed:modify ref="editor4changeAdmins">
-    <xed:add ref="institution" />
-    <xed:add ref="street" />
-    <xed:add ref="city" />
-    <xed:add ref="postalcode" />
-    <xed:add ref="tel" />
+    <xed:add ref="institution" after="email" />
+    <xed:add ref="street" after="institution" />
+    <xed:add ref="city" after="street" />
+    <xed:add ref="postalcode" after="postalcode" />
+    <xed:add ref="tel" after="postalcode" />
   </xed:modify>
   
   <xed:template id="institution">
