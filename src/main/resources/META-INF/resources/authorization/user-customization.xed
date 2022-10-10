@@ -2,49 +2,48 @@
 
 <xed:template xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
 
-  
   <xed:modify ref="editor4currentUser">
-    <xed:add ref="institution" after="email" />
-    <xed:add ref="street" after="institution" />
-    <xed:add ref="city" after="street" />
-    <xed:add ref="postalcode" after="postalcode" />
-    <xed:add ref="tel" after="postalcode" />
+    <xed:add ref="hagen_institution" after="email" />
+    <xed:add ref="hagen_street" after="hagen_institution" />
+    <xed:add ref="hagen_city" after="hagen_street" />
+    <xed:add ref="hagen_postalcode" after="hagen_city" />
+    <xed:add ref="hagen_tel" after="hagen_postalcode" />
   </xed:modify>
 
   <xed:modify ref="editor4newAdmins">
-    <xed:add ref="institution" after="email" />
-    <xed:add ref="street" after="institution" />
-    <xed:add ref="city" after="street" />
-    <xed:add ref="postalcode" after="postalcode" />
-    <xed:add ref="tel" after="postalcode" /> 
+    <xed:add ref="hagen_institution" after="email" />
+    <xed:add ref="hagen_street" after="hagen_institution" />
+    <xed:add ref="hagen_city" after="hagen_street" />
+    <xed:add ref="hagen_postalcode" after="hagen_city" />
+    <xed:add ref="hagen_tel" after="hagen_postalcode" />
   </xed:modify>
-  
+
   <xed:modify ref="editor4changeAdmins">
-    <xed:add ref="institution" after="email" />
-    <xed:add ref="street" after="institution" />
-    <xed:add ref="city" after="street" />
-    <xed:add ref="postalcode" after="postalcode" />
-    <xed:add ref="tel" after="postalcode" />
+    <xed:add ref="hagen_institution" after="email" />
+    <xed:add ref="hagen_street" after="hagen_institution" />
+    <xed:add ref="hagen_city" after="hagen_street" />
+    <xed:add ref="hagen_postalcode" after="hagen_city" />
+    <xed:add ref="hagen_tel" after="hagen_postalcode" />
   </xed:modify>
-  
-  <xed:template id="institution">
+
+  <xed:template id="hagen_institution">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='institution']/@value" id="institution" i18n="noa.user2.admin.institution" maxlength="64" />
   </xed:template>
 
-  <xed:template id="street">
+  <xed:template id="hagen_street">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='street']/@value" id="street" i18n="noa.user2.admin.street" maxlength="64" />
   </xed:template>
 
-  <xed:template id="city">
+  <xed:template id="hagen_city">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='city']/@value" id="city" i18n="noa.user2.admin.city" maxlength="20" />
   </xed:template>
 
-  <xed:template id="postalcode">
+  <xed:template id="hagen_postalcode">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='postalcode']/@value" id="postalcode" i18n="noa.user2.admin.postalcode" maxlength="5" />
   </xed:template>
 
-  <xed:template id="tel">
+  <xed:template id="hagen_tel">
     <mcruser:template name="textInput" xpath="attributes/attribute[@name='tel']/@value" id="tel" i18n="noa.user2.admin.tel" maxlength="20" />
   </xed:template>
-  
+    
 </xed:template>
