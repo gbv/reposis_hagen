@@ -478,7 +478,7 @@
                         </a>
                       </li>
                     </xsl:if>
-                    <xsl:if test="normalize-space($MIR.Workflow.Menu)='true'">
+                    <xsl:if test="normalize-space($MIR.Workflow.Menu)='true'" class="dropdown-item">
                       <xsl:call-template name="listStatusChangeOptions">
                         <xsl:with-param name="class" select="'dropdown-item'"/>
                       </xsl:call-template>
