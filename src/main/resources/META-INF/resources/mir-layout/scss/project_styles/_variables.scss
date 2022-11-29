@@ -14,11 +14,12 @@
 //  project settings
 // --------------------------------------------------
 
-$hagenBlue:       #004c97;
-$hagenBlueLight:  #6791be;  // info back
-$hagenGrayLight:  #e4e4e4;  // card back
-$hagenGrayMedium: #ddd;     // footer back
-$hagenGrayDark:   #b1b3b3;  // ?
+$hagenBlue:         #004c97;
+$hagenBlueLight:    #6791be;  // info back
+$hagenGrayLight:    #e4e4e4;  // card back
+$hagenGrayMedium:   #ddd;     // footer back
+$hagenGrayDark:     #b1b3b3;  // ?
+$hagenGraySubline:  #808080;
 
 
 // --------------------------------------------------
@@ -38,7 +39,11 @@ $navbar-dark-hover-color: white;
 $navbar-dark-active-color: white;
 
 $font-size-base: 1rem;
+
+$h1-font-size: 1.8rem;
 $h2-font-size: 1.55rem;
+$h3-font-size: 1.3rem;
+$h4-font-size: 1.2rem;
 
 $dropdown-border-radius: 0;
 $dropdown-inner-border-radius: 0;
