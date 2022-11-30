@@ -5,6 +5,9 @@
 // set the defaults for all responsive levels here
 // no (xl) media query necessary (desktop first)
 
+.subtitle {
+  color: $hagenGraySubline;
+}
 
 // Large devices (desktops) and below: <= 1200px
 @include media-breakpoint-down(lg) {
