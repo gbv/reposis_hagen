@@ -473,12 +473,12 @@
                     </xsl:if>
                     <xsl:if test="string-length($adminShortEditURL) &gt; 0">
                       <li>
-                        <a href="{$adminShortEditURL}&amp;id={$id}">
+                        <a href="{$adminShortEditURL}&amp;id={$id}"  class="dropdown-item">
                           <xsl:value-of select="i18n:translate('mir.admineditorshort')" />
                         </a>
                       </li>
                     </xsl:if>
-                    <xsl:if test="normalize-space($MIR.Workflow.Menu)='true'" class="dropdown-item">
+                    <xsl:if test="normalize-space($MIR.Workflow.Menu)='true'">
                       <xsl:call-template name="listStatusChangeOptions">
                         <xsl:with-param name="class" select="'dropdown-item'"/>
                       </xsl:call-template>
