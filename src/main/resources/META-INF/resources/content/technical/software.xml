@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Software">
+    <div>
+      <h1>Software</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p>
+            Die Open Source Software <a href="http://www.mycore.de/"> <em>MyCoRe</em></a> stellt die Grundfunktionen
+            des Dokumenten- und Publikationsservers von 
+            <span style="-ms-hyphens: none; -moz-hyphens: none; -webkit-hyphens: none; hyphens: none;">deposit_hagen</span>
+            bereit. Die Suchfunktion wird mit <a href="http://lucene.apache.org/solr/"><em>Apache Solr</em></a> realisiert.
+          </p>
+          <p>
+            Sowohl die Repository Software als auch die Suchmaschine nutzen <em>Apache Tomcat</em> als Anwendungsserver,
+            welcher in einer virtuellen Maschine mit <em>Linux</em> als Betriebssystem läuft. Die virtuelle Maschine ist Teil
+            des <em>VMware</em>-Clusters des <a href="http://www.gbv.de">GBV</a>.</p><p>Um die Verfügbarkeit des Dienstes zu 
+            erhöhen, wird der Tomcat-Anwendungsserver lokal über die Javawrapper Software <em>YAJSW</em> und aus der Ferne mittels
+            <em>Nagios</em> überwacht.</p><p>Die Metadaten der Dokumente sowie die Dokumente selbst werden als Dateien in dem 
+            Dateisystem der virtuellen Maschine gespeichert. Zusätzlich werden die Metadaten durch <em>Apache Subversion</em> 
+            versioniert und sämtliche Dateien täglich durch ein Backup gesichert.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2022-11-21" time="13:46" />
+  </meta>
+</MyCoReWebPage>

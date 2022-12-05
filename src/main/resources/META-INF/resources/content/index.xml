@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Willkommen bei deposit_hagen">
+    <div>
+      <div>
+        <div class="row">
+
+          <div class="col-md-8" lang="de">
+            <div class="result_body">
+              <h2>Neueste Dokumente</h2>
+              <div class="result_list">
+                <div id="hit_list">
+                  <h1> </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4" lang="de">
+            <div class="mb-5 text-left">
+              <img alt="deposit_hagen" src="images/deposit_hagen_logo_gross.png" title="desposit_hagen-Logo" />
+            </div>
+
+            <!--
+            <div class="alert alert-warning" role="alert">
+              Wegen eines technischen Problems ist deposit_hagen vorübergehend
+              nicht nutzbar. Wir bitten diesen Umstand zu entschuldigen!
+              Wir sind dabei, die Website schnellstmöglich für Sie wieder
+              einsatzfähig zu machen.<br />
+              <br />
+              Mit freundlichen Grüßen<br />
+              <br />
+              Ihr Team Wissenschaftliches Publizieren der FernUniversität in Hagen
+            </div>
+            -->
+
+            <p>
+              Auf dem Dokumentenserver
+              <span class="hagen-project-name">deposit_hagen</span> der
+              FernUniversität in Hagen werden qualifizierte wissenschaftliche
+              Publikationen von Angehörigen der FernUniversität, sowie digitale
+              Sammlungen der Universitätsbibliothek Hagen der weltweiten
+              Fachöffentlichkeit kostenfrei, ohne Zugriffsbeschränkung online
+              zugänglich gemacht (Open Access).
+            </p>
+
+            <p>
+              Nach einer einmaligen Registrierung haben Sie die Möglichkeit,
+              Ihre Dokumente selbstständig einzustellen.
+            </p>
+
+            <p>
+              <span class="hagen-project-name">deposit_hagen</span> 
+              ist ein Service der Abteilung Wissenschaftliches Publizieren der
+              Universitätsbibliothek. Gerne beantworten wir Ihnen Ihre Fragen rund um den
+              Publikationsprozess.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="index.js" xml:space="preserve"></script>
+      <div class="jumbotwo">
+        <!-- marks this page as home but is not needed here for other reasons -->
+      </div>
+    </div>
+  </section>
+  <meta>
+    <log lastEditor="administrator" date="2017-06-13" time="14:06" />
+  </meta>
+</MyCoReWebPage>
