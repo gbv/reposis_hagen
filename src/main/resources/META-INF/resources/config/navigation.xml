@@ -128,62 +128,62 @@
         <label xml:lang="de">Nutzermenü</label>
         <label xml:lang="en">User menu</label>
         <group id="thisuser">
-            <item href="/authorization/change-password.xed?action=password" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/servlets/MCRUserServlet?action=changeMyPassword" type="extern">
                 <label xml:lang="de">Passwort ändern</label>
                 <label xml:lang="en">Change Password</label>
             </item>
-            <item href="/servlets/MCRUserServlet?action=show" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/servlets/MCRUserServlet?action=show" type="extern">
                 <label xml:lang="de">Benutzerdaten anzeigen</label>
                 <label xml:lang="en">Show User Data</label>
             </item>
-            <item href="/authorization/change-current-user.xed?action=saveCurrentUser" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/authorization/change-current-user.xed?action=saveCurrentUser" type="extern">
                 <label xml:lang="de">Kontaktdaten ändern</label>
                 <label xml:lang="en">Change user contact</label>
             </item>
         </group>
         <group id="contentadmin">
-            <item href="/modules/classeditor/classificationEditor.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+      <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true" type="extern">
                 <label xml:lang="de">Klassifikationseditor</label>
                 <label xml:lang="en">Edit Classifications</label>
             </item>
-            <item href="/rsc/ACLE/start" type="extern" replaceMenu="false" constrainPopUp="false">
+      <item href="/rsc/ACLE/start" type="extern">
                 <label xml:lang="de">ACL-Editor</label>
                 <label xml:lang="en">ACL Editor</label>
             </item>
         </group>
         <group id="useradmin">
-            <item href="/servlets/MCRUserServlet" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/servlets/MCRUserServlet" type="extern">
                 <label xml:lang="de">Nutzerverwaltung</label>
                 <label xml:lang="en">Admin Users</label>
             </item>
-            <item href="/authorization/new-user.xed?action=save" type="intern" replaceMenu="false" constrainPopUp="false">
+            <item href="/authorization/new-user.xed?action=save" type="intern">
                 <label xml:lang="de">Nutzer anlegen</label>
                 <label xml:lang="en">Create User</label>
             </item>
-            <item href="/authorization/roles-editor.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/authorization/roles-editor.xml" type="extern">
                 <label xml:lang="de">Rollen administrieren</label>
                 <label xml:lang="en">Manage roles</label>
             </item>
         </group>
         <group id="miscadmin">
-            <item href="/modules/webcli/launchpad.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/webcli/launchpad.xml" type="extern">
                 <label xml:lang="de">WebCLI</label>
                 <label xml:lang="en">WebCLI</label>
             </item>
-            <item href="/modules/webtools/session/sessionListing.xml" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/webtools/session/sessionListing.xml" type="intern">
                 <label xml:lang="de">Aktive Sitzungen</label>
                 <label xml:lang="en">Session Management</label>
             </item>
-            <item href="/modules/webtools/processing/processing.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/webtools/processing/processing.xml" type="intern">
                 <label xml:lang="de">Aktive Prozesse</label>
                 <label xml:lang="en">Processing</label>
             </item>
-            <item href="/modules/wcms2/wcms2.xml?XSL.useMT=false" type="extern" replaceMenu="false" constrainPopUp="false">
+            <item href="/modules/wcms2/wcms2.xml?XSL.useMT=false" type="intern">
                 <label xml:lang="de">WCMS</label>
                 <label xml:lang="en">WCMS</label>
             </item>
         </group>
-        <item href="/servlets/logout" type="extern" replaceMenu="false" constrainPopUp="false">
+        <item href="/servlets/logout?url=../content/index.xml" type="intern">
             <label xml:lang="de">Abmelden</label>
             <label xml:lang="en">Logout</label>
         </item>
