@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<navigation hrefStartingPage="/content/index.xml" dir="/content" template="undefined">
+    <menu id="brand" dir="/content/brand">
+        <label xml:lang="de">Über uns</label>
+        <label xml:lang="en">About</label>
+        <item href="/content/brand/service.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Unser Service</label>
+            <label xml:lang="en">Our Service</label>
+        </item>
+        <item href="/content/brand/autinfo.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
+            <label xml:lang="de">Autoreninformation</label>
+            <label xml:lang="en">Author's Info</label>
+        </item>
+        <item href="/content/brand/how.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
+            <label xml:lang="de">Wie veröffentliche ich?</label>
+            <label xml:lang="en">How to publish</label>
+        </item>
+    </menu>
+    <menu id="rights" dir="/content/rights">
+        <label xml:lang="de">Rechtliches</label>
+        <label xml:lang="en">Rights</label>
+        <item href="/content/rights/rights.xml" replaceMenu="false" constrainPopUp="false" template="undefined">
+            <label xml:lang="de">Urheberrecht</label>
+            <label xml:lang="en">Rights</label>
+        </item>
+        <item href="/content/rights/privacy.xml" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Datenschutz</label>
+            <label xml:lang="en">Privacy</label>
+        </item>
+        <item href="/content/below/accessibility.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Barrierefreiheit</label>
+            <label xml:lang="en">Accessibility</label>
+        </item>
+        <item href="/content/rights/impressum.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Impressum</label>
+            <label xml:lang="en">Impressum</label>
+        </item>
+    </menu>
+    <menu id="technical" dir="/content/technical">
+        <label xml:lang="de">Technisches</label>
+        <label xml:lang="en">Technical</label>
+        <item href="/content/technical/hosting.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Betrieb &amp; Grundlagen</label>
+            <label xml:lang="en">Hosting &amp; Basics</label>
+        </item>
+        <item href="/content/technical/software.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Software</label>
+            <label xml:lang="en">Software</label>
+        </item>
+    </menu>
+    <menu id="contact" dir="/content/social">
+        <label xml:lang="de">Kontakt</label>
+        <label xml:lang="en">Contact</label>
+        <item href="/content/social/contact.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Ansprechpersonen</label>
+            <label xml:lang="en">Persons</label>
+        </item>
+        <item href="/content/social/questions.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Häufig gestellte Fragen (FAQ)</label>
+            <label xml:lang="en">FAQ</label>
+        </item>
+    </menu>
+    <menu id="search">
+        <label xml:lang="de">Suche</label>
+        <label xml:lang="en">Search</label>
+        <item href="/content/search/simple.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Erweitert</label>
+            <label xml:lang="en">Advanced</label>
+        </item>
+        <item href="/content/search/simple_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Erweitert-Intern</label>
+            <label xml:lang="en">Advanced-Intern</label>
+        </item>
+        <item href="/content/search/complex.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Experte</label>
+            <label xml:lang="en">expert</label>
+        </item>
+        <item href="/content/search/complex_intern.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Experte-Intern</label>
+            <label xml:lang="en">Expert-Intern</label>
+        </item>
+        <item href="/search/search-expert.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">expert</label>
+            <label xml:lang="en">expert</label>
+        </item>
+    </menu>
+    <menu id="browse">
+        <label xml:lang="de">Browsen</label>
+        <label xml:lang="en">Browse</label>
+        <item href="/content/browse/institutes.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Einrichtung</label>
+            <label xml:lang="en">Institutions</label>
+        </item>
+        <item href="/content/browse/genres.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Dokumenttyp</label>
+            <label xml:lang="en">Genre</label>
+        </item>
+        <item href="/content/browse/sdnb.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Sachgruppe</label>
+            <label xml:lang="en">SNDB</label>
+        </item>
+        <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="extern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">nach Personen</label>
+            <label xml:lang="en">Persons</label>
+        </item>
+    </menu>
+    <menu id="publish" dir="/content/publish">
+        <label xml:lang="de">Publizieren</label>
+        <label xml:lang="en">Publish</label>
+        <item href="/content/publish/index.xml" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Dokument einreichen</label>
+            <label xml:lang="en">Submit Document</label>
+        </item>
+        <item href="/editor/editor-admins.xed" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Admineditor</label>
+            <label xml:lang="en">Admineditor</label>
+        </item>
+    </menu>
+    <menu id="publish" dir="/content/publish">
+        <label xml:lang="de">Registrierung</label>
+        <label xml:lang="en">Register</label>
+        <item href="/authorization/new-author.xed?action=register" type="intern" replaceMenu="false" constrainPopUp="false">
+            <label xml:lang="de">Registrierung</label>
+            <label xml:lang="en">Register</label>
+        </item>
+    </menu>
+    <menu id="user">
+        <label xml:lang="de">Nutzermenü</label>
+        <label xml:lang="en">User menu</label>
+        <group id="thisuser">
+            <item href="/servlets/MCRUserServlet?action=changeMyPassword" type="extern">
+                <label xml:lang="de">Passwort ändern</label>
+                <label xml:lang="en">Change Password</label>
+            </item>
+            <item href="/servlets/MCRUserServlet?action=show" type="extern">
+                <label xml:lang="de">Benutzerdaten anzeigen</label>
+                <label xml:lang="en">Show User Data</label>
+            </item>
+            <item href="/authorization/change-current-user.xed?action=saveCurrentUser" type="extern">
+                <label xml:lang="de">Kontaktdaten ändern</label>
+                <label xml:lang="en">Change user contact</label>
+            </item>
+        </group>
+        <group id="contentadmin">
+      <item href="/modules/classeditor/classificationEditor.xml?XSL.classeditor.showId=true" type="extern">
+                <label xml:lang="de">Klassifikationseditor</label>
+                <label xml:lang="en">Edit Classifications</label>
+            </item>
+      <item href="/rsc/ACLE/start" type="extern">
+                <label xml:lang="de">ACL-Editor</label>
+                <label xml:lang="en">ACL Editor</label>
+            </item>
+        </group>
+        <group id="useradmin">
+            <item href="/servlets/MCRUserServlet" type="extern">
+                <label xml:lang="de">Nutzerverwaltung</label>
+                <label xml:lang="en">Admin Users</label>
+            </item>
+            <item href="/authorization/new-user.xed?action=save" type="intern">
+                <label xml:lang="de">Nutzer anlegen</label>
+                <label xml:lang="en">Create User</label>
+            </item>
+            <item href="/authorization/roles-editor.xml" type="extern">
+                <label xml:lang="de">Rollen administrieren</label>
+                <label xml:lang="en">Manage roles</label>
+            </item>
+        </group>
+        <group id="miscadmin">
+            <item href="/modules/webcli/launchpad.xml" type="extern">
+                <label xml:lang="de">WebCLI</label>
+                <label xml:lang="en">WebCLI</label>
+            </item>
+            <item href="/modules/webtools/session/sessionListing.xml" type="intern">
+                <label xml:lang="de">Aktive Sitzungen</label>
+                <label xml:lang="en">Session Management</label>
+            </item>
+            <item href="/modules/webtools/processing/processing.xml" type="intern">
+                <label xml:lang="de">Aktive Prozesse</label>
+                <label xml:lang="en">Processing</label>
+            </item>
+            <item href="/modules/wcms2/wcms2.xml?XSL.useMT=false" type="intern">
+                <label xml:lang="de">WCMS</label>
+                <label xml:lang="en">WCMS</label>
+            </item>
+        </group>
+        <item href="/servlets/logout?url=../content/index.xml" type="intern">
+            <label xml:lang="de">Abmelden</label>
+            <label xml:lang="en">Logout</label>
+        </item>
+    </menu>
+</navigation>

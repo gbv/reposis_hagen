@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="state">
+  <label xml:lang="de" text="Objektstatus" />
+  <label xml:lang="en" text="Object state" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/state" />
+  <categories>
+    <category ID="new">
+      <label xml:lang="de" text="erstellt" />
+      <label xml:lang="en" text="new" />
+    </category>
+    <category ID="submitted">
+      <label xml:lang="de" text="eingereicht" />
+      <label xml:lang="en" text="submitted" />
+    </category>
+    <category ID="imported">
+      <label xml:lang="de" text="importiert" />
+      <label xml:lang="en" text="imported" />
+    </category>
+    <category ID="review">
+      <label xml:lang="en" text="in review" />
+      <label xml:lang="de" text="wird bearbeitet" />
+    </category>
+    <category ID="published">
+      <label xml:lang="en" text="published" />
+      <label xml:lang="de" text="veröffentlicht" />
+    </category>
+    <category ID="blocked">
+      <label xml:lang="en" text="blocked" />
+      <label xml:lang="de" text="gesperrt" />
+    </category>
+    <category ID="deleted">
+      <label xml:lang="en" text="deleted" />
+      <label xml:lang="de" text="gelöscht" />
+    </category>
+  </categories>
+</mycoreclass>
