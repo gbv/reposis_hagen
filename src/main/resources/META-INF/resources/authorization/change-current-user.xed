@@ -18,6 +18,8 @@
 
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="editor4currentUser" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-includes.xed" ref="address4user" />
+            <xed:cleanup-rule xpath="//attribute" relevant-if="string-length(@value) &gt; 0 and string-length(@name) &gt; 0" />
+            <xed:cleanup-rule xpath="//attributes" relevant-if="count(//attribute) &gt; 0" />
           </div>
           <div class="panel-footer clearfix">
             <div class="pull-right">

@@ -49,7 +49,7 @@
               </div>
             </xed:bind>
 
-            <xed:cleanup-rule xpath="//attribute" relevant-if="string-length(@value) &gt; 0 and string-length(@name) &gt; 0" />
+            <xed:cleanup-rule xpath="//attribute[not(@name='recaptchaParam')]" relevant-if="string-length(@value) &gt; 0 and string-length(@name) &gt; 0" />
             <xed:cleanup-rule xpath="//attributes" relevant-if="count(//attribute) &gt; 0" />
           </div>
           <div class="card-footer d-flex justify-content-end">
