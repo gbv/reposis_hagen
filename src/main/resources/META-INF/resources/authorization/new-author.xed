@@ -21,18 +21,11 @@
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
       <xed:bind xpath="user">
-        <xed:bind xpath="@disabled" initially="true" />
-        <xed:bind xpath="roles/role/@name" initially="submitter" />
         <xed:bind xpath="attributes/attribute[@name='mailtoken']/@value" initially="{xed:generate-id()}" />
 
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">
-
-            </h3>
-          </div>
-          <div class="panel-body">
-            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="failed-validation-messages" />
+        <div class="card">
+          <div class="card-body">
+            <xed:include uri="webapp:editor/editor-includes.xed" ref="failed-validation-messages" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="userAccount" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="realName" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="email" />
@@ -56,11 +49,8 @@
               </div>
             </xed:bind>
           </div>
-          <div class="panel-footer clearfix">
-            <!--<button type="submit" class="btn btn-default" xed:target="debug">Debug</button>-->
-            <div class="pull-right">
-              <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="buttons" />
-            </div>
+          <div class="card-footer d-flex justify-content-end">
+            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="buttons" />
           </div>
         </div>
       </xed:bind>
