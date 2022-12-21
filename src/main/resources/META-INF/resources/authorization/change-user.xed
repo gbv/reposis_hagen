@@ -21,6 +21,7 @@
             <xed:include ref="editor4changeAdmins" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-includes.xed" ref="address4user" />
           </div>
+          <xed:cleanup-rule xpath="//attribute[not(@name='recaptchaParam')]" relevant-if="string-length(@value) &gt; 0 and string-length(@name) &gt; 0" />
           <xed:cleanup-rule xpath="//attributes" relevant-if="count(//attribute) &gt; 0" />
           <div class="card-footer">
             <div class="float-right">
