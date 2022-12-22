@@ -8,11 +8,12 @@
           <div class="col-md-8" lang="de">
             <div class="result_body">
               <h2>Neueste Dokumente</h2>
-              <div class="result_list">
+              <!-- <div class="result_list">
                 <div id="hit_list">
                   <h1> </h1>
                 </div>
-              </div>
+              </div> -->
+              <recent_documents />
             </div>
           </div>
 
