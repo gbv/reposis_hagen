@@ -6,14 +6,16 @@
                 exclude-result-prefixes="">
 
   <xsl:variable name="Find">
-    <xsl:choose>
+    <xsl:copy-of select="concat('../servlets/solr/', 'find')"/>
+    <!-- does not work atm -->
+    <!--  xsl:choose>
       <xsl:when test="mcrxsl:isCurrentUserInRole('editor') or mcrxsl:isCurrentUserInRole('admin')">
         <xsl:copy-of select="concat('../servlets/solr/', 'find')"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:copy-of select="concat('../servlets/solr/', 'findPublic')" />
       </xsl:otherwise>
-    </xsl:choose>
+    </xsl:choose -->
   </xsl:variable>
 
   <xsl:template match="recent_documents">
