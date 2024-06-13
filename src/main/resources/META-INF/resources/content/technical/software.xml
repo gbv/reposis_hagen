@@ -5,25 +5,58 @@
       <h1>Software</h1>
       <div class="row">
         <div class="col-md-8">
-          <p>
-            Die Open Source Software <a href="http://www.mycore.de/"> <em>MyCoRe</em></a> stellt die Grundfunktionen
-            des Dokumenten- und Publikationsservers von 
-            <span style="-ms-hyphens: none; -moz-hyphens: none; -webkit-hyphens: none; hyphens: none;">deposit_hagen</span>
-            bereit. Die Suchfunktion wird mit <a href="http://lucene.apache.org/solr/"><em>Apache Solr</em></a> realisiert.
-          </p>
-          <p>
-            Sowohl die Repository Software als auch die Suchmaschine nutzen <em>Apache Tomcat</em> als Anwendungsserver,
-            welcher in einer virtuellen Maschine mit <em>Linux</em> als Betriebssystem läuft. Die virtuelle Maschine ist Teil
-            des <em>VMware</em>-Clusters des <a href="http://www.gbv.de">GBV</a>.</p><p>Um die Verfügbarkeit des Dienstes zu 
-            erhöhen, wird der Tomcat-Anwendungsserver lokal über die Javawrapper Software <em>YAJSW</em> und aus der Ferne mittels
-            <em>Nagios</em> überwacht.</p><p>Die Metadaten der Dokumente sowie die Dokumente selbst werden als Dateien in dem 
-            Dateisystem der virtuellen Maschine gespeichert. Zusätzlich werden die Metadaten durch <em>Apache Subversion</em> 
-            versioniert und sämtliche Dateien täglich durch ein Backup gesichert.
-          </p>
+          <p> Die Open Source Software <a href="http://www.mycore.de/">
+              <em>MyCoRe</em>
+            </a> stellt die Grundfunktionen des Dokumenten- und
+            Publikationsservers von  <span
+              style="-ms-hyphens: none; -moz-hyphens: none; -webkit-hyphens: none; hyphens: none;">
+            deposit_hagen</span> bereit. Die Suchfunktion wird mit <a
+              href="http://lucene.apache.org/solr/">
+              <em>Apache Solr</em>
+            </a> realisiert. </p>
+          <p> Sowohl die Repository Software als auch die Suchmaschine nutzen <em>Apache Tomcat</em> als
+            Anwendungsserver, welcher in einer virtuellen Maschine mit <em>Linux</em> als
+            Betriebssystem läuft. Die virtuelle Maschine ist Teil des <em>VMware</em>-Clusters des <a
+              href="http://www.gbv.de">GBV</a>.</p>
+          <p>Um die Verfügbarkeit des Dienstes zu erhöhen, wird der Tomcat-Anwendungsserver lokal
+            über die Javawrapper Software <em>YAJSW</em> und aus der Ferne mittels <em>Nagios</em>
+             überwacht.</p>
+          <p>Die Metadaten der Dokumente sowie die Dokumente selbst werden als Dateien in dem
+            Dateisystem der virtuellen Maschine gespeichert. Zusätzlich werden die Metadaten durch <em>Apache
+            Subversion</em>  versioniert und sämtliche Dateien täglich durch ein Backup gesichert. </p>
         </div>
       </div>
     </div>
   </section>
+
+  <section xml:lang="en" title="Software">
+    <h1>Software</h1>
+    <div class="row">
+      <div class="col-md-8">
+        <p>The open source software <a href="http://www.mycore.de/">
+            <em>MyCoRe</em>
+          </a> provides the basic functions of the <span
+            style="-ms-hyphens: none; -moz-hyphens: none; -webkit-hyphens: none; hyphens: none;">
+            <i>deposit_hagen</i>
+          </span> document and publication server. The search
+          function is implemented using <a
+            href="http://lucene.apache.org/solr/">
+            <em>Apache Solr</em>
+          </a>.</p>
+        <p> Both the repository software and the search engine use <em>Apache Tomcat</em> as the
+          application server, which runs in a virtual machine with <em>Linux</em> providing the
+          operating system. The virtual machine is part of the <a href="http://www.gbv.de/">GBV</a>
+          <em> VMware
+          cluster</em>. </p>
+        <p>To enhance the availability of the service, the Tomcat application server is monitored
+          locally via the Java wrapper software <em>YAJSW</em> and remotely using <em>Nagios</em>.</p>
+        <p>The metadata of the documents and the documents themselves are saved as files in the file
+          system of the virtual machine. In addition, the metadata is versioned by <em>Apache
+          Subversion</em> and all files are backed up daily.</p>
+      </div>
+    </div>
+  </section>
+
   <meta>
     <log lastEditor="administrator" date="2022-11-21" time="13:46" />
   </meta>

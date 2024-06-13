@@ -1,35 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Unser Service"><div>
-<h1>Unser Service</h1>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Unser Service">
+    <div>
+      <h1>Unser Service</h1>
 
-<div class="row">
-<div class="col-md-8">
-<p style="margin-bottom:20px;">Der Dokumentenserver deposit_hagen der FernUniversität in Hagen ist eine Dienstleistung der Universitätsbibliothek mit dem Ziel, Mitgliedern und Angehörigen der FernUniversität die Veröffentlichung ihrer wissenschaftlichen Publikationen zu ermöglichen. Darüber hinaus bietet die FernUniversität über den Dokumentenserver ihre digitalen Sammlungen an.</p>
+      <div class="row">
+        <div class="col-md-8">
+          <p style="margin-bottom:20px;">Der Dokumentenserver deposit_hagen der FernUniversität in
+            Hagen ist eine Dienstleistung der Universitätsbibliothek mit dem Ziel, Mitgliedern und
+            Angehörigen der FernUniversität die Veröffentlichung ihrer wissenschaftlichen
+            Publikationen zu ermöglichen. Darüber hinaus bietet die FernUniversität über den
+            Dokumentenserver ihre digitalen Sammlungen an.</p>
 
-<p>Beim Veröffentlichen übernimmt deposit_hagen für Sie:</p>
+          <p>Beim Veröffentlichen übernimmt deposit_hagen für Sie:</p>
 
-<ul>
-	<li>die qualitätsgesicherte elektronische Langzeitverfügbarkeit und die damit einhergehende dauerhafte Zitierfähigkeit Ihrer Erst- und Zweitveröffentlichungen</li>
-	<li>die Verzeichnung Ihrer Online-Dissertation im Katalog der Universitätsbibliothek</li>
-	<li>die Meldung Ihrer Erstveröffentlichungen an die Deutsche Nationalbibliothek</li>
-</ul>
+          <ul>
+            <li>die qualitätsgesicherte elektronische Langzeitverfügbarkeit und die damit
+              einhergehende dauerhafte Zitierfähigkeit Ihrer Erst- und Zweitveröffentlichungen</li>
+            <li>die Verzeichnung Ihrer Online-Dissertation im Katalog der Universitätsbibliothek</li>
+            <li>die Meldung Ihrer Erstveröffentlichungen an die Deutsche Nationalbibliothek</li>
+          </ul>
 
-<p>Ihre Vorteile:</p>
+          <p>Ihre Vorteile:</p>
 
-<ul>
-	<li>Beratung und Betreuung bei allen Fragen rund um die Themen "elektronische Veröffentlichungen" und "Hybridpublikationen" (gleichzeitige Veröffentlichung von Print- und Onlineversion)</li>
-	<li>Verbesserung der Such- und Auffindbarkeit Ihrer Dokumente durch Suchmaschinen</li>
-	<li>Steigerung der Sichtbarkeit Ihrer wissenschaftlichen Publikationen</li>
-	<li>Einsparung gedruckter Pflichtexemplare bei Dissertationen</li>
-	<li>Möglichkeit der Veröffentlichung hervorragender studentischer Arbeiten auf Empfehlung der Prüfenden</li>
-</ul>
+          <ul>
+            <li>Beratung und Betreuung bei allen Fragen rund um die Themen "elektronische
+              Veröffentlichungen" und "Hybridpublikationen" (gleichzeitige Veröffentlichung von
+              Print- und Onlineversion)</li>
+            <li>Verbesserung der Such- und Auffindbarkeit Ihrer Dokumente durch Suchmaschinen</li>
+            <li>Steigerung der Sichtbarkeit Ihrer wissenschaftlichen Publikationen</li>
+            <li>Einsparung gedruckter Pflichtexemplare bei Dissertationen</li>
+            <li>Möglichkeit der Veröffentlichung hervorragender studentischer Arbeiten auf
+              Empfehlung der Prüfenden</li>
+          </ul>
 
-<p>Die deposit_hagen-Infobroschüre zum Herunterladen:</p>
+          <p>Die deposit_hagen-Infobroschüre zum Herunterladen:</p>
 
-<ul>
-	<li><a href="https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf">https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf</a></li>
-</ul>
-</div>
-</div>
-</div>
-</section><meta><log lastEditor="ihrigadmin" date="2017-11-06" time="15:36" /></meta></MyCoReWebPage>
+          <ul>
+            <li>
+              <a href="https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf">
+                https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="Our Service">
+    <div>
+      <h1>Our Service</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p style="margin-bottom:20px;">The <i>deposit_hagen</i> document server operated by the
+            FernUniversität in Hagen is a service provided by the University Library with the aim of enabling
+            members and affiliates of the FernUniversität to publish their scientific publications. In
+            addition, the FernUniversität offers its digital collections via the document server.</p>
+          <p>Publishing via <i>deposit_hagen</i> provides you with the following:</p>
+          <ul>
+            <li>quality-assured long-term electronic availability and the associated permanent citation capability
+              of your primary and secondary publications</li>
+            <li>the indexing of your online dissertation in the University Library catalog</li>
+            <li>notification of your first publications to the German National Library</li>
+          </ul>
+          <p>The advantages for you:</p>
+          <ul>
+            <li>Advice and support on all issues relating to “electronic publications” and ”hybrid
+              publications” (simultaneous publication of print and online versions)</li>
+            <li>Improved searchability and findability of your documents through search engines</li>
+            <li>Increased visibility of your scientific publications</li>
+            <li>Savings on the costs of printed deposit copies of dissertations</li>
+            <li>Possibility of publishing outstanding student work on the recommendation of the examiners</li>
+          </ul>
+          <p>Download the <i>deposit_hagen</i> information brochure:</p>
+          <ul>
+            <li><a
+                href="https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf">https://www.ub.fernuni-hagen.de/download/3438_Flyer_deposit-web.pdf</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="ihrigadmin" date="2017-11-06" time="15:36" />
+  </meta>
+</MyCoReWebPage>

@@ -1,217 +1,613 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Häufige Fragen"><div>
-<div>
-<h1>Häufig gestellte Fragen (FAQ)</h1>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Häufige Fragen">
+    <div>
+      <div>
+        <h1>Häufig gestellte Fragen (FAQ)</h1>
 
-<div class="row">
-<div class="col-md-8">
-<p>Allgemein:</p>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Allgemein:</p>
 
-<ul>
-	<li><a href="#frage1" shape="rect">Was bedeutet Open Access?</a></li>
-	<li><a href="#frage2" shape="rect">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</a></li>
-	<li><a href="#frage3" shape="rect">Können veröffentlichte Dokumente wieder gelöscht werden?</a></li>
-	<li><a href="#frage4" shape="rect">Sind die Publikationen zitierfähig?</a></li>
-</ul>
+            <ul>
+              <li>
+                <a href="#frage1" shape="rect">Was bedeutet Open Access?</a>
+              </li>
+              <li>
+                <a href="#frage2" shape="rect">Wie lange bleiben die Dokumente auf deposit_hagen
+                  verfügbar?</a>
+              </li>
+              <li>
+                <a href="#frage3" shape="rect">Können veröffentlichte Dokumente wieder gelöscht
+                  werden?</a>
+              </li>
+              <li>
+                <a href="#frage4" shape="rect">Sind die Publikationen zitierfähig?</a>
+              </li>
+            </ul>
 
-<p>Veröffentlichen:</p>
+            <p>Veröffentlichen:</p>
 
-<ul>
-	<li><a href="#frage5" shape="rect">Welche Dokumente können veröffentlicht werden?</a></li>
-	<li><a href="#frage6" shape="rect">Wie können Dokumente veröffentlicht werden?</a></li>
-	<li><a href="#frage7" shape="rect">Welche Dateiformate können eingereicht werden?</a></li>
-	<li><a href="#frage8" shape="rect">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</a></li>
-	<li><a href="#frage9" shape="rect">Was ist eine CC-Lizenz?</a></li>
-	<li><a href="#frage10" shape="rect">Wozu dient die Einverständniserklärung und was beinhaltet sie?</a></li>
-	<li><a href="#frage11" shape="rect">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</a></li>
-</ul>
+            <ul>
+              <li>
+                <a href="#frage5" shape="rect">Welche Dokumente können veröffentlicht werden?</a>
+              </li>
+              <li>
+                <a href="#frage6" shape="rect">Wie können Dokumente veröffentlicht werden?</a>
+              </li>
+              <li>
+                <a href="#frage7" shape="rect">Welche Dateiformate können eingereicht werden?</a>
+              </li>
+              <li>
+                <a href="#frage8" shape="rect">Warum dürfen die eingereichten Dokumente nicht mit
+                  technischen Schutzmaßnahmen versehen werden?</a>
+              </li>
+              <li>
+                <a href="#frage9" shape="rect">Was ist eine CC-Lizenz?</a>
+              </li>
+              <li>
+                <a href="#frage10" shape="rect">Wozu dient die Einverständniserklärung und was
+                  beinhaltet sie?</a>
+              </li>
+              <li>
+                <a href="#frage11" shape="rect">Wie kann ich eingegebene Metadaten ändern bzw.
+                  ergänzen?</a>
+              </li>
+            </ul>
 
-<p>Nutzen:</p>
+            <p>Nutzen:</p>
 
-<ul>
-	<li><a href="#frage12" shape="rect">Wie kann ich nach Publikationen in deposit_hagen suchen?</a></li>
-	<li><a href="#frage13" shape="rect">Dürfen Dokumente ausgedruckt werden?</a></li>
-	<li><a href="#frage14" shape="rect">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</a></li>
-	<li><a href="#frage15" shape="rect">Was mache ich, wenn ich mein Passwort vergessen habe?</a></li>
-</ul>
+            <ul>
+              <li>
+                <a href="#frage12" shape="rect">Wie kann ich nach Publikationen in deposit_hagen
+                  suchen?</a>
+              </li>
+              <li>
+                <a href="#frage13" shape="rect">Dürfen Dokumente ausgedruckt werden?</a>
+              </li>
+              <li>
+                <a href="#frage14" shape="rect">Dürfen Dokumente heruntergeladen, dauerhaft
+                  gespeichert und kopiert werden?</a>
+              </li>
+              <li>
+                <a href="#frage15" shape="rect">Was mache ich, wenn ich mein Passwort vergessen
+                  habe?</a>
+              </li>
+            </ul>
 
-<hr /></div>
-</div>
+            <hr />
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Allgemein:</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Allgemein:</h2>
 
-<h3 id="frage1">Was bedeutet Open Access?</h3>
+            <h3 id="frage1">Was bedeutet Open Access?</h3>
 
-<p>Mit Open Access ist der uneingeschränkte und kostenlose Zugang zu wissenschaftlichen Informationen gemeint. Ziel ist es neben dem möglichst von technischen, rechtlichen und monetären Barrieren freiem Zugang zu wissenschaftlicher Literatur und wissenschaftlichen Materialien, die Maximierung der Verbreitung von wissenschaftlicher Information. (<a href="https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/" shape="rect">https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/</a>)</p>
+            <p>Mit Open Access ist der uneingeschränkte und kostenlose Zugang zu wissenschaftlichen
+              Informationen gemeint. Ziel ist es neben dem möglichst von technischen, rechtlichen
+              und monetären Barrieren freiem Zugang zu wissenschaftlicher Literatur und
+              wissenschaftlichen Materialien, die Maximierung der Verbreitung von wissenschaftlicher
+              Information. (<a
+                href="https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/"
+                shape="rect">
+              https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/</a>)</p>
 
-<p>Gründe für Open Access sind u.a. :</p>
+            <p>Gründe für Open Access sind u.a. :</p>
 
-<ul>
-	<li>der öffentliche Zugang zu öffentlich finanzierten Forschungsergebnissen,</li>
-	<li>die erhöhte Sichtbarkeit und Zitierfähigkeit von Dokumenten,</li>
-	<li>die gute Auffindbarkeit über Suchmaschinen und Nachweisdienste,</li>
-	<li>die Förderung der internationalen und interdisziplinären Zusammenarbeit,</li>
-	<li>die Förderung der Forschungseffizienz und</li>
-	<li>der Verbleib der Verwertungsrechte bei den AutorInnen.</li>
-</ul>
+            <ul>
+              <li>der öffentliche Zugang zu öffentlich finanzierten Forschungsergebnissen,</li>
+              <li>die erhöhte Sichtbarkeit und Zitierfähigkeit von Dokumenten,</li>
+              <li>die gute Auffindbarkeit über Suchmaschinen und Nachweisdienste,</li>
+              <li>die Förderung der internationalen und interdisziplinären Zusammenarbeit,</li>
+              <li>die Förderung der Forschungseffizienz und</li>
+              <li>der Verbleib der Verwertungsrechte bei den AutorInnen.</li>
+            </ul>
 
-<p>Weiterführende Informationen zu Open Access finden Sie auf <a href="https://open-access.net/" shape="rect">https://open-access.net/</a> </p>
+            <p>Weiterführende Informationen zu Open Access finden Sie auf <a
+                href="https://open-access.net/" shape="rect">https://open-access.net/</a> </p>
 
-<h3 id="frage2">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</h3>
+            <h3 id="frage2">Wie lange bleiben die Dokumente auf deposit_hagen verfügbar?</h3>
 
-<p>Die Dokumente bleiben mindestens fünf Jahre auf deposit_hagen verfügbar.</p>
+            <p>Die Dokumente bleiben mindestens fünf Jahre auf deposit_hagen verfügbar.</p>
 
-<h3 id="frage3">Können veröffentlichte Dokumente wieder gelöscht werden?</h3>
+            <h3 id="frage3">Können veröffentlichte Dokumente wieder gelöscht werden?</h3>
 
-<p>Dokumente, die bereits veröffentlicht wurden, können <u>nicht</u>  gelöscht oder nachträglich geändert werden. Dies garantiert die Authentizität der Dokumente und macht sie mit gedruckten Publikationen vergleichbar. Geänderte Dokumente müssen neu eingebracht werden und erhalten einen neuen Persistent Identifier (URN).</p>
+            <p>Dokumente, die bereits veröffentlicht wurden, können <u>nicht</u>  gelöscht oder
+              nachträglich geändert werden. Dies garantiert die Authentizität der Dokumente und
+              macht sie mit gedruckten Publikationen vergleichbar. Geänderte Dokumente müssen neu
+              eingebracht werden und erhalten einen neuen Persistent Identifier (URN).</p>
 
-<h3 id="frage4">Sind die Publikationen zitierfähig?</h3>
+            <h3 id="frage4">Sind die Publikationen zitierfähig?</h3>
 
-<p>Publikationen des deposit_hagen sind gedruckten Veröffentlichungen gleichwertig und damit auch zitierfähig. Die Zitierfähigkeit wird durch einen Persistent Identifier garantiert. deposit_hagen nutzt hierzu URNs (Uniform Ressource Name). Näheres zu URN: <a href="http://www.dnb.de/urnservice.html" shape="rect" title="urnservice">http://www.dnb.de/urnservice</a></p>
-</div>
-</div>
+            <p>Publikationen des deposit_hagen sind gedruckten Veröffentlichungen gleichwertig und
+              damit auch zitierfähig. Die Zitierfähigkeit wird durch einen Persistent Identifier
+              garantiert. deposit_hagen nutzt hierzu URNs (Uniform Ressource Name). Näheres zu URN: <a
+                href="http://www.dnb.de/urnservice.html" shape="rect" title="urnservice">
+              http://www.dnb.de/urnservice</a></p>
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-md-8" style="margin-top:20px">
-<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+        <div class="row">
+          <div class="col-md-8" style="margin-top:20px">
+            <p class="text-right">
+              <a href="#" shape="rect">Zurück nach oben</a>
+            </p>
 
-<hr style="margin-top:0px" /></div>
-</div>
+            <hr style="margin-top:0px" />
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Veröffentlichen:</h2>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Veröffentlichen:</h2>
 
-<h3 id="frage5">Welche Dokumente können veröffentlicht werden?</h3>
+            <h3 id="frage5">Welche Dokumente können veröffentlicht werden?</h3>
 
-<p>Auf deposit_hagen können wissenschaftliche Veröffentlichungen jeglicher Art veröffentlicht werden, z.B. Artikel, Beiträge, Research Paper, Dissertationen etc. Bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der Qualitätssicherung zur Veröffentlichung der Zustimmung der Prüfenden.</p>
+            <p>Auf deposit_hagen können wissenschaftliche Veröffentlichungen jeglicher Art
+              veröffentlicht werden, z.B. Artikel, Beiträge, Research Paper, Dissertationen etc. Bei
+              Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der
+              Qualitätssicherung zur Veröffentlichung der Zustimmung der Prüfenden.</p>
 
-<h3 id="frage6">Wie können Dokumente veröffentlicht werden?</h3>
+            <h3 id="frage6">Wie können Dokumente veröffentlicht werden?</h3>
 
-<p>Eine ausführliche Beschreibung des Publikationsprozesses finden Sie unter dem Punkt  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">Wie veröffentliche ich?</a></p>
+            <p>Eine ausführliche Beschreibung des Publikationsprozesses finden Sie unter dem Punkt  <a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">Wie veröffentliche
+              ich?</a></p>
 
-<h3 id="frage7">Welche Dateiformate können eingereicht werden?</h3>
+            <h3 id="frage7">Welche Dateiformate können eingereicht werden?</h3>
 
-<p>Dokumente sind i.d.R. in einem PDF-Format einzureichen. Für Audio- und Video-Dateien können entsprechende Formate eingereicht werden. Hochgeladene Dokumente dürfen nicht mit technischen Schutzmaßnahmen versehen sein.</p>
+            <p>Dokumente sind i.d.R. in einem PDF-Format einzureichen. Für Audio- und Video-Dateien
+              können entsprechende Formate eingereicht werden. Hochgeladene Dokumente dürfen nicht
+              mit technischen Schutzmaßnahmen versehen sein.</p>
 
-<h3 id="frage8">Warum dürfen die eingereichten Dokumente nicht mit technischen Schutzmaßnahmen versehen werden?</h3>
+            <h3 id="frage8">Warum dürfen die eingereichten Dokumente nicht mit technischen
+              Schutzmaßnahmen versehen werden?</h3>
 
-<p>Um eine langfristige Archivierung zu ermöglich, müssen Dateien oftmals umgespeichert und in andere Systeme überführt werden. Daher ist es wichtig, dass die Dateien weder verschlüsselt noch passwortgeschützt sind.</p>
+            <p>Um eine langfristige Archivierung zu ermöglich, müssen Dateien oftmals umgespeichert
+              und in andere Systeme überführt werden. Daher ist es wichtig, dass die Dateien weder
+              verschlüsselt noch passwortgeschützt sind.</p>
 
-<h3 id="frage9">Was ist eine CC-Lizenz?</h3>
-</div>
-</div>
+            <h3 id="frage9">Was ist eine CC-Lizenz?</h3>
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-md-8">
-<p>Die Creative Commons (CC) ist eine Non-Profit-Organisation, welche vorgefertigte Lizenzverträge zur Freigabe rechtlich geschützter Inhalte anbietet. Insgesamt gibt es sechs dieser Standard-Lizenzverträge, auch CC-Lizenzen genannt.</p>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Die Creative Commons (CC) ist eine Non-Profit-Organisation, welche vorgefertigte
+              Lizenzverträge zur Freigabe rechtlich geschützter Inhalte anbietet. Insgesamt gibt es
+              sechs dieser Standard-Lizenzverträge, auch CC-Lizenzen genannt.</p>
 
-<ul>
-	<li><img alt="" src="BY.jpg" />  Namensnennung/BY: Der Name des Urhebers muss genannt werden. (In allen Lizenzen enthalten)</li>
-	<li><img alt="" src="NC.jpg" />  Keine Bearbeitung/ND: Es dürfen keine Veränderungen am Werk vorgenommen werden (no derivatives).</li>
-	<li><img alt="" src="ND.jpg" /> Nicht Kommerziell/NC: Das Werk darf nicht für kommerzielle Zwecke verwendet werden (non-comercial).</li>
-	<li><img alt="" src="SA.jpg" /> Weitergabe unter gleichen Bedingungen/SA: Das Werk bzw. ein aus ihm entstehendes neues Werk muss unter den gleichen Bedingungen weitergegeben werden (share alike).</li>
-</ul>
+            <ul>
+              <li><img alt="" src="BY.jpg" />  Namensnennung/BY: Der Name des Urhebers muss genannt
+                werden. (In allen Lizenzen enthalten)</li>
+              <li><img alt="" src="NC.jpg" />  Keine Bearbeitung/ND: Es dürfen keine Veränderungen
+                am Werk vorgenommen werden (no derivatives).</li>
+              <li><img alt="" src="ND.jpg" /> Nicht Kommerziell/NC: Das Werk darf nicht für
+                kommerzielle Zwecke verwendet werden (non-comercial).</li>
+              <li><img alt="" src="SA.jpg" /> Weitergabe unter gleichen Bedingungen/SA: Das Werk
+                bzw. ein aus ihm entstehendes neues Werk muss unter den gleichen Bedingungen
+                weitergegeben werden (share alike).</li>
+            </ul>
 
-<p>Mehr zu CC-Lizenzen unter:  <a href="http://de.creativecommons.org/was-ist-cc/" shape="rect">http://de.creativecommons.org/was-ist-cc/</a>  und  <a href="http://creativecommons.org/licenses/" shape="rect">http://creativecommons.org/licenses/</a></p>
-</div>
+            <p>Mehr zu CC-Lizenzen unter:  <a href="http://de.creativecommons.org/was-ist-cc/"
+                shape="rect">http://de.creativecommons.org/was-ist-cc/</a>  und  <a
+                href="http://creativecommons.org/licenses/" shape="rect">
+              http://creativecommons.org/licenses/</a></p>
+          </div>
 
-<div class="col-md-4">
-<figure>
-<div class="img-thumbnail" style="padding:30px;"><img alt="" src="CC-BY.jpg" style="margin-bottom:4px;" /><br />
-<img alt="" src="CC-BY-NC.jpg" style="margin-bottom:4px;" /><br />
-<img alt="" src="CC-BY-NC-ND.jpg" style="margin-bottom:4px;" /><br />
-<img alt="" src="CC-BY-NC-SA.png" style="margin-bottom:4px;" /><br />
-<img alt="" src="CC-BY-ND.png" style="margin-bottom:4px;" /><br />
-<img alt="" src="CC-BY-SA.png" /></div>
-<figcaption>Abb.2: CC-Lizenzen</figcaption></figure>
-</div>
+          <div class="col-md-4">
+            <figure>
+              <div class="img-thumbnail" style="padding:30px;">
+                <img alt="" src="CC-BY.jpg" style="margin-bottom:4px;" />
+                <br />
+                <img alt="" src="CC-BY-NC.jpg" style="margin-bottom:4px;" />
+                <br />
+                <img alt="" src="CC-BY-NC-ND.jpg" style="margin-bottom:4px;" />
+                <br />
+                <img alt="" src="CC-BY-NC-SA.png" style="margin-bottom:4px;" />
+                <br />
+                <img alt="" src="CC-BY-ND.png" style="margin-bottom:4px;" />
+                <br />
+                <img alt="" src="CC-BY-SA.png" />
+              </div>
+              <figcaption>Abb.2: CC-Lizenzen</figcaption>
+            </figure>
+          </div>
 
-<div class="col-md-8">
-<h3 id="frage10">Wozu dient die Einverständniserklärung und was beinhaltet sie?</h3>
+          <div class="col-md-8">
+            <h3 id="frage10">Wozu dient die Einverständniserklärung und was beinhaltet sie?</h3>
 
-<p>Die „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ dient der rechtlichen Absicherung seitens der FernUniversität und ist maßgebend für eine rechtlich einwandfreie Bereitstellung und Archivierung der Dokumente. Näheres zu den Inhalten der Einverständniserklärung finden Sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p>
+            <p>Die „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“
+              dient der rechtlichen Absicherung seitens der FernUniversität und ist maßgebend für
+              eine rechtlich einwandfreie Bereitstellung und Archivierung der Dokumente. Näheres zu
+              den Inhalten der Einverständniserklärung finden Sie unter  <a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">
+              Autoreninformation</a>.</p>
 
-<h3 id="frage11">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</h3>
-</div>
-</div>
+            <h3 id="frage11">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</h3>
+          </div>
+        </div>
 
-<div class="row">
-<div class="col-md-8">
-<p>Wenn Ihnen bei der Eingabe der Metadaten ein Fehler unterlaufen ist oder Sie weitere Metadaten ergänzen möchten, klicken Sie oben rechts auf „Aktionen“. Es öffnet sich ein Drop-Down-Menü. Wählen Sie „Bearbeiten des Dokuments“ aus. Daraufhin öffnet sich das Eingabeformular für die Metadaten, welches Sie vom Publikationsprozess her kennen. Hier können Sie Ihre Metadaten ändern und ergänzen. Klicken Sie zum Abspeichern der Änderungen auf „Speichern“ oder auf „Abbrechen“, um die Änderungen zu verwerfen.</p>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Wenn Ihnen bei der Eingabe der Metadaten ein Fehler unterlaufen ist oder Sie weitere
+              Metadaten ergänzen möchten, klicken Sie oben rechts auf „Aktionen“. Es öffnet sich ein
+              Drop-Down-Menü. Wählen Sie „Bearbeiten des Dokuments“ aus. Daraufhin öffnet sich das
+              Eingabeformular für die Metadaten, welches Sie vom Publikationsprozess her kennen.
+              Hier können Sie Ihre Metadaten ändern und ergänzen. Klicken Sie zum Abspeichern der
+              Änderungen auf „Speichern“ oder auf „Abbrechen“, um die Änderungen zu verwerfen.</p>
 
-<p><u>Bitte beachten Sie:</u>  Eigene Änderungen können Sie nur so lange durchführen, bis die Redaktion Ihr Dokument bearbeitet. Die Redaktion schaut sich alle Eingaben genau an und korrigiert bzw. ergänzt ggf. die Metadaten des Dokuments. Ist etwas fehlerhaft oder unvollständig wird dies also in jedem Fall korrigiert. Gern können Sie sich bei Fragen jederzeit per E-Mail (<a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>) an uns wenden und/oder uns auf Fehler hinweisen.</p>
-</div>
+            <p><u>Bitte beachten Sie:</u>  Eigene Änderungen können Sie nur so lange durchführen,
+              bis die Redaktion Ihr Dokument bearbeitet. Die Redaktion schaut sich alle Eingaben
+              genau an und korrigiert bzw. ergänzt ggf. die Metadaten des Dokuments. Ist etwas
+              fehlerhaft oder unvollständig wird dies also in jedem Fall korrigiert. Gern können Sie
+              sich bei Fragen jederzeit per E-Mail (<a href="mailto:publizieren.ub@fernuni-hagen.de">
+              publizieren.ub@fernuni-hagen.de</a>) an uns wenden und/oder uns auf Fehler hinweisen.</p>
+          </div>
 
-<div class="col-md-4">
-<figure><img alt="" src="Screenshot_Dokument-bearbeiten.jpg" style="margin-bottom:4px;" /><figcaption>Abb.3: Dokument bearbeiten</figcaption></figure>
-</div>
-</div>
-</div>
+          <div class="col-md-4">
+            <figure>
+              <img alt="" src="Screenshot_Dokument-bearbeiten.jpg" style="margin-bottom:4px;" />
+              <figcaption>Abb.3: Dokument bearbeiten</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8" style="margin-top:20px">
-<p align="right"><a href="#" shape="rect">Zurück nach oben</a></p>
+      <div class="row">
+        <div class="col-md-8" style="margin-top:20px">
+          <p align="right">
+            <a href="#" shape="rect">Zurück nach oben</a>
+          </p>
 
-<hr style="margin-top:0px" /></div>
-</div>
+          <hr style="margin-top:0px" />
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Nutzen:</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Nutzen:</h2>
 
-<h3 id="frage12">Wie kann ich nach Publikationen in deposit_hagen suchen?</h3>
-</div>
-</div>
+          <h3 id="frage12">Wie kann ich nach Publikationen in deposit_hagen suchen?</h3>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<p>Es gibt verschiedene Möglichkeiten auf deposit_hagen zu suchen:</p>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Es gibt verschiedene Möglichkeiten auf deposit_hagen zu suchen:</p>
 
-<p>Bei der einfachen Suche (Suchschlitz im blauen Menübalken) werden die eingegebenen Begriffe oder Phrasen gemeinsam über alle Suchfelder (Titel, Autor, Schlagwort usw.) gesucht.</p>
+          <p>Bei der einfachen Suche (Suchschlitz im blauen Menübalken) werden die eingegebenen
+            Begriffe oder Phrasen gemeinsam über alle Suchfelder (Titel, Autor, Schlagwort usw.)
+            gesucht.</p>
 
-<p>Bei der Erweiterten Suche (über<em>Suche -&gt; Erweitert</em>) kann die Suche auf bestimmte Felder eingeschränkt werden. Hier ist die Suche im Titel, im Namen, in den Metadaten und in den Dateien möglich. Die Suche in den Dateien entspricht dabei einer Volltextsuche. Die Erweiterte Suche kann zudem auf die Einrichtung eingeschränkt werden, in der das Dokument erschienen ist.</p>
+          <p>Bei der Erweiterten Suche (über<em>Suche -&gt; Erweitert</em>) kann die Suche auf
+            bestimmte Felder eingeschränkt werden. Hier ist die Suche im Titel, im Namen, in den
+            Metadaten und in den Dateien möglich. Die Suche in den Dateien entspricht dabei einer
+            Volltextsuche. Die Erweiterte Suche kann zudem auf die Einrichtung eingeschränkt werden,
+            in der das Dokument erschienen ist.</p>
 
-<p>Bei der Expertensuche können Sie Ihre Suche noch weiter spezifizieren. Sie können Ihre Suche beispielsweise zusätzlich auf einen bestimmten Dokumenttyp oder einen Zeitraum, in dem das Dokument erschienen ist, einschränken.</p>
+          <p>Bei der Expertensuche können Sie Ihre Suche noch weiter spezifizieren. Sie können Ihre
+            Suche beispielsweise zusätzlich auf einen bestimmten Dokumenttyp oder einen Zeitraum, in
+            dem das Dokument erschienen ist, einschränken.</p>
 
-<p>Zudem ist das Browsen im Bestand nach den Einrichtungen der FernUniversität, den Dokumenttypen, den vergebenen Sachgruppen oder nach Personen möglich.</p>
+          <p>Zudem ist das Browsen im Bestand nach den Einrichtungen der FernUniversität, den
+            Dokumenttypen, den vergebenen Sachgruppen oder nach Personen möglich.</p>
 
-<figure><img alt="" src="Browsen.jpg" style="width: 593px; height: 465px;" /><figcaption>Abb.3: Browsen nach Einrichtungen</figcaption></figure>
+          <figure>
+            <img alt="" src="Browsen.jpg" style="width: 593px; height: 465px;" />
+            <figcaption>Abb.3: Browsen nach Einrichtungen</figcaption>
+          </figure>
 
-<p> </p>
+          <p> </p>
 
-<p>Gefundene Dokumente, die für Sie von Interesse sind, können Sie auf eine Merkliste setzen. In der Trefferliste gibt es neben jedem Dokument ein kleines Rädchen „Aktionen“. Über „auf die Merkliste“ wird das Dokument auf Ihre Merkliste geschoben. Auf der Detailseite eines Dokuments befindet sich dazu oben rechts ein blauer Button „+auf die Merkliste“. Die Merkliste selbst können Sie über das Lesezeichensymbol im blauen Menübalken aufrufen. Diese können Sie in verschiedenen Datenformaten exportieren.</p>
-</div>
-</div>
+          <p>Gefundene Dokumente, die für Sie von Interesse sind, können Sie auf eine Merkliste
+            setzen. In der Trefferliste gibt es neben jedem Dokument ein kleines Rädchen „Aktionen“.
+            Über „auf die Merkliste“ wird das Dokument auf Ihre Merkliste geschoben. Auf der
+            Detailseite eines Dokuments befindet sich dazu oben rechts ein blauer Button „+auf die
+            Merkliste“. Die Merkliste selbst können Sie über das Lesezeichensymbol im blauen
+            Menübalken aufrufen. Diese können Sie in verschiedenen Datenformaten exportieren.</p>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<h3 id="frage13">Dürfen Dokumente ausgedruckt werden?</h3>
+      <div class="row">
+        <div class="col-md-8">
+          <h3 id="frage13">Dürfen Dokumente ausgedruckt werden?</h3>
 
-<p>Die Dokumente dürfen i.d.R ausgedruckt werden.</p>
+          <p>Die Dokumente dürfen i.d.R ausgedruckt werden.</p>
 
-<h3 id="frage14">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert werden?</h3>
+          <h3 id="frage14">Dürfen Dokumente heruntergeladen, dauerhaft gespeichert und kopiert
+            werden?</h3>
 
-<p>Für Dokumente, welche in elektronischer Form über Datennetze angeboten werden, gelten die gleichen gesetzlichen Urheberrechtsbestimmungen wie für gedruckte Publikationen. Zwar können die Dokumente auf lokale Rechner kopiert, heruntergeladen und abgespeichert werden, für sie gilt dennoch uneingeschränkt das Urheberrechtsgesetz (UrhG), welches u.a. besagt,</p>
+          <p>Für Dokumente, welche in elektronischer Form über Datennetze angeboten werden, gelten
+            die gleichen gesetzlichen Urheberrechtsbestimmungen wie für gedruckte Publikationen.
+            Zwar können die Dokumente auf lokale Rechner kopiert, heruntergeladen und abgespeichert
+            werden, für sie gilt dennoch uneingeschränkt das Urheberrechtsgesetz (UrhG), welches
+            u.a. besagt,</p>
 
-<ul>
-	<li>dass einzelne Vervielfältigungen wie Kopien und Ausdrucke ausschließlich zum privaten oder sonstigen eigenen Gebrauch angefertigt werden und keinem kommerziellen Zweck dienen dürfen (§ 53 UrhG).</li>
-	<li>dass die Herstellung weiterer Vervielfältigung immer der Zustimmung des Urhebers bedarf.</li>
-</ul>
+          <ul>
+            <li>dass einzelne Vervielfältigungen wie Kopien und Ausdrucke ausschließlich zum
+              privaten oder sonstigen eigenen Gebrauch angefertigt werden und keinem kommerziellen
+              Zweck dienen dürfen (§ 53 UrhG).</li>
+            <li>dass die Herstellung weiterer Vervielfältigung immer der Zustimmung des Urhebers
+              bedarf.</li>
+          </ul>
 
-<p>Für die Einhaltung der Rechtsvorschriften sind die NutzerInnen selbst verantwortlich.</p>
+          <p>Für die Einhaltung der Rechtsvorschriften sind die NutzerInnen selbst verantwortlich.</p>
 
-<h3 id="frage15">Was mache ich, wenn ich mein Passwort vergessen habe?</h3>
+          <h3 id="frage15">Was mache ich, wenn ich mein Passwort vergessen habe?</h3>
 
-<p>Wenn Sie Ihr Passwort vergessen haben, schreiben Sie uns bitte eine kurze E-Mail mit Ihrem Benutzernamen an <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>. Wir schicken Ihnen ein neues, vorläufiges Passwort zu, mit dem Sie sich anmelden können. Bitte ersetzen Sie dieses nach dem ersten Anmelden umgehend durch ein eigenes.</p>
-</div>
-</div>
+          <p>Wenn Sie Ihr Passwort vergessen haben, schreiben Sie uns bitte eine kurze E-Mail mit
+            Ihrem Benutzernamen an <a href="mailto:publizieren.ub@fernuni-hagen.de">
+            publizieren.ub@fernuni-hagen.de</a>. Wir schicken Ihnen ein neues, vorläufiges Passwort
+            zu, mit dem Sie sich anmelden können. Bitte ersetzen Sie dieses nach dem ersten Anmelden
+            umgehend durch ein eigenes.</p>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8" style="margin-top:20px;">
-<p align="right"><a href="#" shape="rect">Zurück nach oben</a></p>
-</div>
-</div>
-</div></section><meta><log lastEditor="muelleradmin" date="2016-09-23" time="11:05" /></meta></MyCoReWebPage>
+      <div class="row">
+        <div class="col-md-8" style="margin-top:20px;">
+          <p align="right">
+            <a href="#" shape="rect">Zurück nach oben</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="Frequently Asked Questions (FAQs)">
+    <div>
+      <div>
+        <h1>Frequently Asked Questions (FAQs)</h1>
+
+        <div class="row">
+          <div class="col-md-8">
+            <p>General:</p>
+            <ul>
+              <li><a href="#frage1"
+                  shape="rect">What does Open Access mean?</a></li>
+              <li><a href="#frage2" shape="rect">How
+                  long do the documents remain available on <i>deposit_hagen</i>?</a></li>
+              <li><a href="#frage3" shape="rect">Can
+                  documents be deleted after they have already been published?</a></li>
+              <li><a href="#frage4" shape="rect">Are
+                  the publications citable?</a></li>
+            </ul>
+            <p>Publishing:</p>
+            <ul>
+              <li><a href="#frage5"
+                  shape="rect">Which documents can be published?</a></li>
+              <li><a href="#frage6" shape="rect">How
+                  can documents be published?</a></li>
+              <li><a href="#frage7"
+                  shape="rect">Which file formats can be submitted?</a></li>
+              <li><a href="#frage8" shape="rect">Why
+                  can’t the submitted documents be provided with technical protection measures?</a></li>
+              <li><a href="#frage9"
+                  shape="rect">What is a CC license?</a></li>
+              <li><a href="#frage10"
+                  shape="rect">What is the purpose of the declaration of consent and what does it contain?</a></li>
+              <li><a href="#frage11"
+                  shape="rect">How can I edit or add to the metadata I have entered?</a></li>
+            </ul>
+            <p>Usage:</p>
+            <ul>
+              <li><a href="#frage12"
+                  shape="rect">How can I search for publications on <i>deposit_hagen</i>?</a></li>
+              <li><a href="#frage13" shape="rect">Is
+                  it possible to print out documents?</a></li>
+              <li><a href="#frage14"
+                  shape="rect">Can I download, permanently save and/or copy documents?</a></li>
+              <li><a href="#frage15"
+                  shape="rect">What do I do if I have forgotten my password?</a></li>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>General:</h2>
+            <h3 id="frage1">What does Open Access mean?</h3>
+            <p>Open Access means unrestricted and free access to scientific and academic information. In addition to
+              ensuring that access to scientific literature and materials is as free as possible from technical,
+              legal and monetary barriers, the aim is to maximize the dissemination of scientific information. (<a
+                href="https://open-access.net/informationen-zu-open-access/was-bedeutet-open-access/"
+                shape="rect">https://open-access.network/en/information/open-access-primers/what-does-open-access-mean</a>)
+            </p>
+            <p>The reasons for Open Access include :</p>
+            <ul>
+              <li>public access to publicly funded research results,</li>
+              <li>increased visibility and citation of documents,</li>
+              <li>good retrievability via search engines and verification services,</li>
+              <li>the promotion of international and interdisciplinary cooperation,</li>
+              <li>the promotion of research efficiency and</li>
+              <li>the retention of license rights by the authors.</li>
+            </ul>
+            <p>You can find out more about Open Access at <a href="https://open-access.net/"
+                shape="rect">https://open-access.network/en/home</a> </p>
+            <h3 id="frage2">How long do the documents remain available on <i>deposit_hagen</i>?</h3>
+            <p>Documents remain available on <i>deposit_hagen</i> for at least five years.</p>
+            <h3 id="frage3">Can documents be deleted after they have already been published?</h3>
+            <p>Documents that have already been published <u>cannot</u> be deleted or subsequently
+              changed. This guarantees the authenticity of the documents and makes them comparable with printed
+              publications. New versions of documents must be re-uploaded and are given a new persistent identifier
+              (URN).</p>
+            <h3 id="frage4">Are the publications citable?</h3>
+            <p>Publications on <i>deposit_hagen</i> are equivalent to printed publications and can therefore also be
+              cited. Citation is guaranteed by a persistent identifier. <i>deposit_hagen</i> uses URNs (uniform
+              resource names) for this purpose. You can find more information on URNs at: <a
+                href="http://www.dnb.de/urnservice.html" shape="rect"
+                title="urnservice">http://www.dnb.de/EN/urnservice</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8" style="margin-top:20px">
+            <p class="text-right"><a href="#"
+                shape="rect">Back to top</a></p>
+            <hr style="margin-top:0px"/>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Publishing:</h2>
+            <h3 id="frage5">Which documents can be published?</h3>
+            <p>Scientific publications of any kind can be published on <i>deposit_hagen</i>. This includes articles,
+              essays, research papers, dissertations, etc. In the case of Bachelor’s and Master’s theses
+              and coursework, the consent of the examiners is required for publication for reasons of quality
+              assurance.</p>
+            <h3 id="frage6">How can documents be published?</h3>
+            <p>You can find a detailed description of the publication process under <a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">How do I publish?</a></p>
+            <h3 id="frage7">Which file formats can be submitted?</h3>
+            <p>Generally speaking, documents must be submitted in PDF format. Appropriate formats can be submitted
+              for audio and video files. Uploaded documents may not be protected using technical protection
+              measures.</p>
+            <h3 id="frage8">Why can’t the submitted documents be provided with technical protection measures?
+            </h3>
+            <p>To enable long-term archiving, files often have to be re-saved and transferred to other systems. It
+              is therefore important that the files are neither encrypted nor password-protected.</p>
+            <h3 id="frage9">What is a CC license?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <p>Creative Commons (CC) is a non-profit organization that offers ready-made license agreements for the
+              release of legally protected content. There are a total of six of these standard license agreements,
+              also known as CC licenses.</p>
+            <ul>
+              <li><img alt="" src="BY.jpg"/>  Attribution/BY: Credit must be given to the
+                creator. (included in all licenses)</li>
+              <li><img alt="" src="NC.jpg"/>  NoDerivatives/ND: No derivatives or
+                adaptations of the work are permitted.</li>
+              <li><img alt="" src="ND.jpg"/>  NonCommercial/NC: Only noncommercial uses
+                of the work are permitted.</li>
+              <li><img alt="" src="SA.jpg"/>  ShareAlike/SA: If you remix, transform, or
+                build upon the material, you must distribute your contributions under the same license as the
+                original.</li>
+            </ul>
+            <p>You can find out more about CC licenses at:  <a href="http://de.creativecommons.org/was-ist-cc/"
+                shape="rect">https://creativecommons.org/about/</a> and  <a
+                href="http://creativecommons.org/licenses/"
+                shape="rect">https://creativecommons.org/share-your-work/cclicenses/</a></p>
+          </div>
+          <div class="col-md-4">
+            <figure>
+              <div class="img-thumbnail" style="padding:30px;"><img alt="" src="CC-BY.jpg"
+                  style="margin-bottom:4px;"/><br/> <img alt="" src="CC-BY-NC.jpg"
+                  style="margin-bottom:4px;"/><br/> <img alt="" src="CC-BY-NC-ND.jpg"
+                  style="margin-bottom:4px;"/><br/> <img alt="" src="CC-BY-NC-SA.png"
+                  style="margin-bottom:4px;"/><br/> <img alt="" src="CC-BY-ND.png"
+                  style="margin-bottom:4px;"/><br/> <img alt="" src="CC-BY-SA.png"/></div>
+              <figcaption>Fig. 2: CC licenses</figcaption>
+            </figure>
+          </div>
+          <div class="col-md-8">
+            <h3 id="frage10">What is the purpose of the declaration of consent and what does it contain?</h3>
+            <p>The  “Declaration of consent for electronic publishing on <i>deposit_hagen</i>” serves as
+              legal protection on the part of the FernUniversität and is decisive for the legally flawless
+              provision and archiving of documents. You can find more information on the contents of the declaration
+              of consent under <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Author
+                information</a>.</p>
+            <h3 id="frage11">How can I edit or add to the metadata I have entered?</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <p>If you have made a mistake when entering the metadata or you would like to add additional metadata,
+              click on  “Actions” in the top right-hand corner. This opens a drop-down menu. Select the
+              option  “Edit the document.” This will open the metadata input form, which you should
+              already be familiar with from the publication process. You can edit and add to your metadata here.
+              Click on  “Save” to save your changes or  “Cancel” to discard them.</p>
+            <p><u>Please note:</u>  You can only work on your own changes until the editorial team edits your
+              document. The editorial team takes a close look at all entries and corrects or adds to the
+              document’s metadata if necessary. If they find anything incorrect or incomplete, it will be
+              corrected. Please feel free to contact us at any time by email <a
+                href="mailto:publizieren.ub@fernuni-hagen.de">(publizieren.ub@fernuni-hagen.de)</a> if you have any
+              questions and/or to point out any errors you may have found.</p>
+          </div>
+          <div class="col-md-4">
+            <figure><img alt="" src="Screenshot_Dokument-bearbeiten.jpg"
+                style="margin-bottom:4px;"/>
+              <figcaption>Fig. 3: Editing a Document</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8" style="margin-top:20px">
+          <p align="right"><a href="#"
+              shape="rect">Back to top</a></p>
+          <hr style="margin-top:0px"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Usage:</h2>
+          <h3 id="frage12">How can I search for publications on <i>deposit_hagen</i>?</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <p>There are a number of ways to search on <i>deposit_hagen</i>:</p>
+          <p>In a simple search (search slot in the blue menu bar), the terms or phrases you enter are searched for
+            together across all search fields (title, author, keyword, etc.).</p>
+          <p>In the advanced search (via <em>Search -&gt; Advanced</em>), the search can be restricted to certain
+            fields. Via this function, you can carry out a targeted search in the title, in the name, in the
+            metadata and in the files. The search in the files corresponds to a full text search. The advanced
+            search can also be restricted to the institution in which the document was published.</p>
+          <p>You can narrow down your search even further by using the expert search. For example, you can also
+            restrict your search to a specific document type or a time period in which the document was published.
+          </p>
+          <p>It is also possible to browse the stock by the faculties/institutions of the FernUniversität, the
+            document type, the subject groups assigned or by specific persons.</p>
+          <figure><img alt="" src="Browsen.jpg" style="width: 593px; height: 465px;"/>
+            <figcaption>Fig. 3: Browsing by Faculties/Insitutions</figcaption>
+          </figure>
+          <p> </p>
+          <p>If you find any documents that are of interest to you, you can add them to a watch list. There is a
+            small  “Actions” wheel next to each document in the hit list. Click  “Add to
+            watchlist” to add the document to your watchlist. On the details page of a document, there is a
+            blue button  “+Add to watchlist” at the top right. You can call up the watch list itself via
+            the bookmark symbol in the blue menu bar. You can export it in various data formats.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h3 id="frage13">Is it possible to print out documents?</h3>
+          <p>Generally speaking, you may print out documents.</p>
+          <h3 id="frage14">Can I download, permanently save and/or copy documents?</h3>
+          <p>The same statutory copyright provisions apply to documents offered in electronic form via data networks
+            as to printed publications. Documents can be copied, downloaded and saved on local computers, however,
+            they are still subject to German copyright law (<i>Urheberrechtsgesetz</i> UrHG) without restriction,
+            which states, among other things, that</p>
+          <ul>
+            <li>individual reproductions such as copies and printouts are made exclusively for private or other
+              personal use and may not serve any commercial purpose (Section 53 UrhG).</li>
+            <li>the production of further copies may only be carried out with the author’s express consent.
+            </li>
+          </ul>
+          <p>Users are personally responsible for compliance with all legal provisions.</p>
+          <h3 id="frage15">What do I do if I have forgotten my password?</h3>
+          <p>If you have forgotten your password, please send us a short email stating your user name to <a
+              href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>. We will send you a
+            new, temporary password which you can use to log in. Please replace this with a new password of your own
+            choosing immediately after logging in for the first time.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8" style="margin-top:20px;">
+          <p align="right">
+            <a href="#" shape="rect">Back to top</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="muelleradmin" date="2016-09-23" time="11:05" />
+  </meta>
+</MyCoReWebPage>

@@ -102,25 +102,33 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-sm-3">
-            <h4>Über uns</h4>
+            <h4>
+              <xsl:value-of select="$loaded_navigation_xml/menu[@id='brand']/label[@xml:lang=$CurrentLang]" />
+            </h4>
             <ul class="internal_links">
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" mode="footerMenu" />
             </ul>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <h4>Rechtliches</h4>
+            <h4>
+              <xsl:value-of select="$loaded_navigation_xml/menu[@id='rights']/label[@xml:lang=$CurrentLang]" />
+            </h4>
             <ul class="internal_links">
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='rights']/*" mode="footerMenu" />
             </ul>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <h4>Kontakt</h4>
+            <h4>
+              <xsl:value-of select="$loaded_navigation_xml/menu[@id='contact']/label[@xml:lang=$CurrentLang]" />
+            </h4>
             <ul class="social_links">
                 <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='contact']/*" mode="footerMenu" />
             </ul>
           </div>
           <div class="col-xs-6 col-sm-3">
-            <h4>Technisches</h4>
+            <h4>
+              <xsl:value-of select="$loaded_navigation_xml/menu[@id='technical']/label[@xml:lang=$CurrentLang]" />
+            </h4>
             <ul class="internal_links">
               <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='technical']/*" mode="footerMenu" />
             </ul>

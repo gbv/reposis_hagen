@@ -1,125 +1,287 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Wie veröffentliche ich"><div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<div>
-<h1>Wie veröffentliche ich?</h1>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Wie veröffentliche ich">
+    <div>
+      <h1>Wie veröffentliche ich?</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Um auf deposit_hagen ein Dokument zu publizieren, müssen Sie sich zunächst anmelden.
+            Dazu müssen Sie sich über den Menüpunkt  <em>Registrierung</em>  einen Benutzeraccount
+            anlegen. In einer E-Mail wird Ihnen ein Bestätigungslink zugesandt, welchen Sie
+            anklicken müssen. Nach der Bestätigung der Registrierung, können Sie sich auf dem
+            Dokumentenserver anmelden. (Bitte beachten Sie unsere  <a
+              href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">
+            Datenschutzerklärung</a>.)</p>
 
-<div class="row">
-<div class="col-md-12">
-<div class="row">
-<div class="col-md-8">
-<p>Um auf deposit_hagen ein Dokument zu publizieren, müssen Sie sich zunächst anmelden. Dazu müssen Sie sich über den Menüpunkt  <em>Registrierung</em>  einen Benutzeraccount anlegen. In einer E-Mail wird Ihnen ein Bestätigungslink zugesandt, welchen Sie anklicken müssen. Nach der Bestätigung der Registrierung, können Sie sich auf dem Dokumentenserver anmelden. (Bitte beachten Sie unsere  <a href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">Datenschutzerklärung</a>.)</p>
+          <p>Nach der Anmeldung können Sie über  <em>Publizieren
+              -&gt; Dokument einreichen</em>  Ihre Dokumente veröffentlichen. Benutzen Sie während
+            des Publikationsprozesses bitte <u>nicht</u> die Browserpfeile.</p>
 
-<p>Nach der Anmeldung können Sie über  <em>Publizieren -&gt; Dokument einreichen</em>  Ihre Dokumente veröffentlichen. Benutzen Sie während des Publikationsprozesses bitte <u>nicht</u> die Browserpfeile.</p>
+          <p>Die Publikation eines Dokuments erfolgt in
+            drei Schritten:</p>
 
-<p>Die Publikation eines Dokuments erfolgt in drei Schritten:</p>
+          <ol>
+            <li>
+              <a href="#schritt1">Dokumenttyp festlegen</a>
+            </li>
+            <li>
+              <a href="#schritt2">Metadaten eingeben</a>
+            </li>
+            <li>
+              <a href="#schritt3">Datei(en) hochladen</a>
+            </li>
+          </ol>
+        </div>
+      </div>
 
-<ol>
-	<li><a href="#schritt1">Dokumenttyp festlegen</a></li>
-	<li><a href="#schritt2">Metadaten eingeben</a></li>
-	<li><a href="#schritt3">Datei(en) hochladen</a></li>
-</ol>
-</div>
-</div>
+      <h2 id="schritt1">Im 1. Schritt wird der Dokumenttyp
+        festgelegt.</h2>
 
-<h2 id="schritt1">Im 1. Schritt wird der Dokumenttyp festgelegt.</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>In einem Drop-Down-Menü können Sie zwischen
+            verschieden Dokumenttypen auswählen. Handelt
+            es sich um eine in einem anderen Werk
+            erschienene Publikation, können Sie den
+            Dokumenttyp im unteren Feld weiter
+            spezifizieren.</p>
 
-<div class="row">
-<div class="col-md-8">
-<p>In einem Drop-Down-Menü können Sie zwischen verschieden Dokumenttypen auswählen. Handelt es sich um eine in einem anderen Werk erschienene Publikation, können Sie den Dokumenttyp im unteren Feld weiter spezifizieren.</p>
+          <p> </p>
+        </div>
+      </div>
 
-<p> </p>
-</div>
-</div>
+      <div class="row">
+        <div class="col-md-8">
+          <figure>
+            <img alt="" src="Dokument_einreichen.jpg"
+              style="width: 615px; height: 289px;" />
+            <figcaption>Abb.1: Auswahl des
+              Publikationstyps</figcaption>
+          </figure>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<figure><img alt="" src="Dokument_einreichen.jpg" style="width: 615px; height: 289px;" /><figcaption>Abb.1: Auswahl des Publikationstyps</figcaption></figure>
-</div>
-</div>
+      <div class="row" style="margin-top:25px">
+        <div class="col-md-8">
+          <p class="text-right">
+            <a href="#" shape="rect">Zurück nach oben</a>
+          </p>
 
-<div class="row" style="margin-top:25px">
-<div class="col-md-8">
-<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+          <hr />
+        </div>
+      </div>
 
-<hr /></div>
-</div>
+      <h2 id="schritt2">Im 2. Schritt werden die Metadaten
+        über ein Eingabeformular erfasst.</h2>
 
-<h2 id="schritt2">Im 2. Schritt werden die Metadaten über ein Eingabeformular erfasst.</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Das Eingabeformular ist abhängig vom gewählten Dokumenttyp und bietet verschiedene
+            Felder zur Erfassung der Metadaten. Hier müssen Sie mindestens die durch *
+            gekennzeichneten Pflichtfelder ausfüllen. Mit dem Button  <em>Abrechen</em>  wird der
+            gesamte Publikationsprozess beendet. Über den Button  <em>Speichern und
+              hochladen</em>  gelangen Sie zum Dateiupload.</p>
 
-<div class="row">
-<div class="col-md-8">
-<p>Das Eingabeformular ist abhängig vom gewählten Dokumenttyp und bietet verschiedene Felder zur Erfassung der Metadaten. Hier müssen Sie mindestens die durch * gekennzeichneten Pflichtfelder ausfüllen. Mit dem Button  <em>Abrechen</em>  wird der gesamte Publikationsprozess beendet. Über den Button  <em>Speichern und hochladen</em>  gelangen Sie zum Dateiupload.</p>
+          <p> </p>
+        </div>
+      </div>
 
-<p> </p>
-</div>
-</div>
+      <div class="row">
+        <div class="col-md-8">
+          <figure>
+            <img alt="" src="Eingabeformular.jpg"
+              style="width: 899px; height: 481px;" />
+          </figure>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<figure><img alt="" src="Eingabeformular.jpg" style="width: 899px; height: 481px;" /></figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><figcaption>Abb.2: Eingabeformular</figcaption><div class="row" style="margin-top:25px">
-<div class="col-md-8">
-<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+    </div>
+    <figcaption>Abb.2: Eingabeformular</figcaption>
+    <div class="row" style="margin-top:25px">
+      <div class="col-md-8">
+        <p class="text-right">
+          <a href="#" shape="rect">Zurück nach oben</a>
+        </p>
 
-<hr /></div>
-</div><h2 id="schritt3">Im 3. Schritt werden das Dokument und mögliche dazugehörende Dateien hochgeladen.</h2><div class="row">
-<div class="col-md-8">
-<p>Ziehen Sie die hochzuladende Datei in das Upload-Feld oder durchsuchen Sie über den Button  <em>Durchsuchen</em> Ihre Festplatte und wählen das gewünschte Dokument aus. Bitte achten Sie hierbei auf eine möglichst aussagekräftige Benennung Ihrer Datei (z.B. nach dem Schema  <em>Nachname_Titelstichwort_Jahr</em>)</p>
+        <hr />
+      </div>
+    </div>
+    <h2 id="schritt3">Im 3. Schritt werden das Dokument und mögliche dazugehörende Dateien
+      hochgeladen.</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <p>Ziehen Sie die hochzuladende Datei in das Upload-Feld oder durchsuchen Sie über den
+          Button  <em>Durchsuchen</em> Ihre Festplatte und wählen das gewünschte Dokument aus. Bitte
+          achten Sie hierbei auf eine möglichst aussagekräftige Benennung Ihrer Datei (z.B. nach dem
+          Schema  <em>Nachname_Titelstichwort_Jahr</em>)</p>
 
-<p>Über  <em>Abschicken</em>  wird das Dokument auf den Server geladen. Über den Button  <em>Fertig</em>  gelangen Sie zurück zur Übersicht Ihrer eingegebenen Daten und können diese, falls Ihnen Fehler auffallen, über  <em>Aktionen -&gt; Bearbeiten dieses Dokumentes</em>  korrigieren.</p>
+        <p>Über  <em>Abschicken</em>  wird das Dokument auf den Server geladen. Über den Button  <em>
+          Fertig</em>  gelangen Sie zurück zur Übersicht Ihrer eingegebenen Daten und können diese,
+          falls Ihnen Fehler auffallen, über  <em>Aktionen -&gt; Bearbeiten dieses Dokumentes</em> 
+          korrigieren.</p>
 
-<p>Nach dem Abspeichern bekommen Sie per E-Mail einen Link zur automatisch erstellten „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ (<a href="/content/brand/Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken Sie bitte unterschrieben per E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek zurück. Näheres zur Einverständniserklärung finden Sie unter  <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>.</p>
+        <p>Nach dem Abspeichern bekommen Sie per E-Mail einen Link zur automatisch erstellten
+          „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ (<a
+            href="/content/brand/Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken
+          Sie bitte unterschrieben per E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek
+          zurück. Näheres zur Einverständniserklärung finden Sie unter  <a
+            href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>
+          .</p>
 
-<p>Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben hinsichtlich formaler Kriterien, ändert und ergänzt ggf. Metadaten und vergibt ggf. einen URN. Nach Kontrolle der Metadaten und dem Eintreffen der unterschriebenen Einverständniserklärung, wird das Dokument freigeschaltet und ist damit auf deposit_hagen veröffentlicht. Wenn Ihr Dokument von der Redaktion bearbeitet wird, können Sie Ihre Aufnahme nicht mehr verändern. Die Bestätigung der Veröffentlichung Ihres Dokuments wird Ihnen per E-Mail zugesandt.</p>
+        <p>Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben
+          hinsichtlich formaler Kriterien, ändert und ergänzt ggf. Metadaten und vergibt ggf. einen
+          URN. Nach Kontrolle der Metadaten und dem Eintreffen der unterschriebenen
+          Einverständniserklärung, wird das Dokument freigeschaltet und ist damit auf deposit_hagen
+          veröffentlicht. Wenn Ihr Dokument von der Redaktion bearbeitet wird, können Sie Ihre
+          Aufnahme nicht mehr verändern. Die Bestätigung der Veröffentlichung Ihres Dokuments wird
+          Ihnen per E-Mail zugesandt.</p>
 
-<p><u>Bitte beachten Sie</u>: Bei Bachelor- und Masterarbeiten, sowie Studienarbeiten benötigen wir zur Qualitätssicherung neben der Einverständniserklärung auch eine schriftliche Bestätigung Ihrer Prüfenden. Hierzu können Sie das Formular <a href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf"><em>Einverständniserklärung der Prüfenden</em></a>  verwenden.</p>
+        <p><u>Bitte beachten Sie</u>: Bei Bachelor- und Masterarbeiten, sowie Studienarbeiten
+          benötigen wir zur Qualitätssicherung neben der Einverständniserklärung auch eine
+          schriftliche Bestätigung Ihrer Prüfenden. Hierzu können Sie das Formular <a
+            href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">
+            <em>Einverständniserklärung der Prüfenden</em>
+          </a>  verwenden.</p>
 
-<p><u>HINWEIS</u>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere Exemplare in Printform abgegeben werden. Näheres hierzu regelt Ihre jeweilige Promotionsordnung.</p>
-</div>
-</div><div class="row" style="margin-top:25px">
-<div class="col-md-8">
-<p class="text-right"><a href="#" shape="rect">Zurück nach oben</a></p>
+        <p><u>HINWEIS</u>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere
+          Exemplare in Printform abgegeben werden. Näheres hierzu regelt Ihre jeweilige
+          Promotionsordnung.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top:25px">
+      <div class="col-md-8">
+        <p class="text-right">
+          <a href="#" shape="rect">Zurück nach oben</a>
+        </p>
 
-<hr /></div>
-</div></section><meta><log lastEditor="muelleradmin" date="2016-11-03" time="13:36" /></meta></MyCoReWebPage>
+        <hr />
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="How do I publish?">
+    <div>
+      <h1>How do I publish?</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Before you can publish a document on <i>deposit_hagen</i>,
+            you need to register. To do this, you must create a user
+            account via the menu option <em>Registration</em>. A
+            confirmation link will be sent to you in an email. You must
+            click on this link to complete registration. After confirming
+            your registration, you can log in to the document server.
+            (Please note our  <a
+              href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">privacy
+              policy</a>.)</p>
+          <p>After logging in, you can publish your documents via
+             <em>Publish -&gt; Submit document</em>.
+            Please <u>do not</u> use the browser arrows during
+            the publication process.</p>
+          <p>The publication of a document takes place in three steps:</p>
+          <ol>
+            <li><a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt1">Set
+                document type</a></li>
+            <li><a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt2">Enter
+                metadata</a></li>
+            <li><a
+                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt3">Upload
+                file(s)</a></li>
+          </ol>
+        </div>
+      </div>
+      <h2 id="schritt1">In the 1st step, you need to define the document
+        type.</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Use the drop-down menu to choose between different document
+            types. If it is a publication published in another work, you
+            can further specify the document type in the field below.</p>
+          <p> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <figure><img alt=""
+              src="Dokument_einreichen.jpg"
+              style="width: 615px; height: 289px;"/>
+            <figcaption>Fig. 1: Selecting the publication type
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="row" style="margin-top:25px">
+        <div class="col-md-8">
+          <p class="text-right"><a
+              href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#"
+              shape="rect">Back to top</a></p>
+           <hr/>
+        </div>
+      </div>
+      <h2 id="schritt2">In step 2, use the input form to add metadata.
+      </h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>The input form varies depending on the document type you have
+            selected and offers various fields for entering metadata. You
+            must fill in the mandatory fields (marked with *). Use the
+            <em>Cancel</em> button to abort the entire publication
+            process. Click the <em>Save and upload</em> button to
+            proceed to the file upload function.</p>
+          <p> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <figure><img alt=""
+              src="Eingabeformular.jpg"
+              style="width: 899px; height: 481px;"/></figure>
+        </div>
+      </div>
+      <figcaption>Fig. 2: Input form</figcaption>
+      <div class="row" style="margin-top:25px">
+        <div class="col-md-8">
+          <p class="text-right"><a href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#" shape="rect">Back
+              to top</a></p>
+           <hr/>
+        </div>
+      </div>
+      <h2 id="schritt3">In the 3rd step, you can upload your document and any associated files.</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Drag your file into the upload field or browse your hard disk using the <em>Browse</em> button and select
+            the desired document. Please make sure that the name of your file is as informative as possible (e.g.
+            following the pattern <em>last name_title keyword_year</em>)</p>
+          <p>Click on <em>Send</em> to upload your document to the server. Clicking the <em>Done</em> button will take
+            you back to the overview of the data you have entered. If you notice any errors, you can correct them
+            via <em>Actions -&gt; Edit this document</em>.</p>
+          <p>After saving, you will receive an email with a link to the automatically generated “Declaration of
+            consent for electronic publishing on deposit_hagen” <a
+              href="https://ub-deposit.fernuni-hagen.de/content/brand/Autorenvertrag.pdf">(author contract</a>).
+            Please sign this and return it to the University Library by email (as a scan) or as a printout. You can
+            find more information on the declaration of consent under <a
+              href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Author information</a>.</p>
+          <p>After you have uploaded your document, the University Library’s editorial team will check whether
+            the information you have entered complies with the formal criteria. They will change and add metadata as
+            required and assign a URN if necessary. Once the metadata has been checked and the signed declaration of
+            consent has been received, the document will be activated and published on <i>deposit_hagen</i>. Once your
+            document has been edited by the editorial team, you can no longer change it. A confirmation of the
+            publication of your document will be sent to you by email.</p>
+          <p><u>Please note</u>: For quality assurance purposes, we require a written confirmation from your examiners
+            (in addition to the declaration of consent) for Bachelor’s and Master’s theses, as well as
+            student research projects. You can use the form <a
+              href="https://ub-deposit.fernuni-hagen.de/content/brand/Formular_Einverst%C3%A4ndniserkl%C3%A4rung%20der%20Pr%C3%BCfenden.pdf"><em>Declaration
+                of examiners’ consent</em></a>.</p>
+          <p><u>NOTE</u>: In the case of dissertations, additional print copies must be submitted in addition to the
+            electronic version. Further details in this respect can be found in your respective doctoral degree
+            regulations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="muelleradmin" date="2016-11-03" time="13:36" />
+  </meta>
+</MyCoReWebPage>

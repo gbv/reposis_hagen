@@ -1,2 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Urheberrecht"><div><h1>Urheberrecht</h1><div class="row"><div class="col-md-8"><p>Alle Dokumente auf dem Dokumentenserver deposit_hagen der FernUniversität in Hagen unterliegen den Urheberrechtsbestimmungen des Urheberrechtsgesetzes (UrhG). Hat der Autor / die Autorin eines Dokumentes nichts anderes in einer Lizenz (CC-Lizenz) bestimmt, so liegen alle Rechte beim Autor / bei der Autorin.</p><p>Das Urheberrecht für die auf den Internetseiten der Universitätsbibliothek publizierten Inhalte steht allein den Autoren zu. Sie dürfen von Dritten ohne ausdrückliche Zustimmung weder verwendet noch vervielfältigt werden. Die Universitätsbibliothek Hagen ist ihrerseits bemüht, bei allen Veröffentlichungen auf ihrem Server die Rechte Dritter nicht zu verletzen. Falls dennoch eine unbeabsichtigte Urheberrechtsverletzung nachgewiesen werden kann, verpflichtet sich die Bibliothek, diese nach der Benachrichtigung unverzüglich zu entfernen.</p></div></div></div></section><meta><log lastEditor="muelleradmin" date="2016-01-11" time="10:07" /></meta></MyCoReWebPage>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Urheberrecht">
+    <div>
+      <h1>Urheberrecht</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p>Alle Dokumente auf dem Dokumentenserver deposit_hagen der FernUniversität in Hagen
+            unterliegen den Urheberrechtsbestimmungen des Urheberrechtsgesetzes (UrhG). Hat der
+            Autor / die Autorin eines Dokumentes nichts anderes in einer Lizenz (CC-Lizenz)
+            bestimmt, so liegen alle Rechte beim Autor / bei der Autorin.</p>
+          <p>Das Urheberrecht für die auf den Internetseiten der Universitätsbibliothek publizierten
+            Inhalte steht allein den Autoren zu. Sie dürfen von Dritten ohne ausdrückliche
+            Zustimmung weder verwendet noch vervielfältigt werden. Die Universitätsbibliothek Hagen
+            ist ihrerseits bemüht, bei allen Veröffentlichungen auf ihrem Server die Rechte Dritter
+            nicht zu verletzen. Falls dennoch eine unbeabsichtigte Urheberrechtsverletzung
+            nachgewiesen werden kann, verpflichtet sich die Bibliothek, diese nach der
+            Benachrichtigung unverzüglich zu entfernen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="Copyright">
+    <div>
+      <h1>Copyright</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <p>All of the documents on the <i>deposit_hagen</i> document server of the FernUniversität in Hagen
+            are subject to the copyright provisions of the German Copyright Act (UrhG). If the author of a document
+            has not specified otherwise in a license (CC license), all rights remain with the author.</p>
+          <p>The copyright for the content published on the University Library’s website belongs solely to the
+            authors. Content may not be used or reproduced by third parties without express permission. For its
+            part, Hagen University Library makes every effort not to infringe the rights of third parties in all of
+            the publications on its server. If, despite our efforts, an unintentional copyright infringement can be
+            proven, the library undertakes to remove it immediately after notification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="muelleradmin" date="2016-01-11" time="10:07" />
+  </meta>
+</MyCoReWebPage>

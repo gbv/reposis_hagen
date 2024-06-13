@@ -1,83 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Ansprechpersonen"><div>
-<h1>Ansprechpersonen</h1>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Ansprechpersonen">
+    <div>
+      <h1>Ansprechpersonen</h1>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Team Wissenschaftliches Publizieren</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Team Wissenschaftliches Publizieren</h2>
 
-<p>E-Mail: <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a></p>
+          <p>E-Mail: <a href="mailto:publizieren.ub@fernuni-hagen.de">
+            publizieren.ub@fernuni-hagen.de</a></p>
 
-<h2>Allgemeine Information, Datenformate, Procedere etc.</h2>
+          <h2>Allgemeine Information, Datenformate, Procedere etc.</h2>
 
-<dl class="contact">
-	<dt>Hartmuth Ihrig</dt>
-	<dd>Tel. 0 23 31 / 9 87 - 2897</dd>
-	<dd>AVZ, C 041</dd>
-	<dd><a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>Hartmuth Ihrig</dt>
+            <dd>Tel. 0 23 31 / 9 87 - 2897</dd>
+            <dd>AVZ, C 041</dd>
+            <dd>
+              <a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h2>Hilfestellung bei Dissertationen und Abschlussarbeiten</h2>
+          <h2>Hilfestellung bei Dissertationen und Abschlussarbeiten</h2>
 
-<dl class="contact">
-	<dt>Hartmuth Ihrig</dt>
-	<dd>Tel. 0 23 31 / 9 87 - 2897</dd>
-	<dd>AVZ, C 041</dd>
-	<dd><a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a></dd>
-	<dd> </dd>
-</dl>
+          <dl class="contact">
+            <dt>Hartmuth Ihrig</dt>
+            <dd>Tel. 0 23 31 / 9 87 - 2897</dd>
+            <dd>AVZ, C 041</dd>
+            <dd>
+              <a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a>
+            </dd>
+            <dd> </dd>
+          </dl>
 
-<hr />
-<p>Bei allgemeinen Fragen zum Publizieren in Ihrem Fachbereich können Sie sich auch gern jederzeit an Ihr jeweiliges Fachreferat wenden.</p>
+          <hr />
+          <p>Bei allgemeinen Fragen zum Publizieren in Ihrem Fachbereich können Sie sich auch gern
+            jederzeit an Ihr jeweiliges Fachreferat wenden.</p>
 
-<h3>Allgemeines, Philosophie, Rechts- und Staatswissenschaft:</h3>
+          <h3>Allgemeines, Philosophie, Rechts- und Staatswissenschaft:</h3>
 
-<dl class="contact">
-	<dt>Prof. Dr. Eric Steinhauer</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 28 90</dd>
-	<dd><a href="mailto:eric.steinhauer@fernuni-hagen.de">eric.steinhauer@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>Prof. Dr. Eric Steinhauer</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 28 90</dd>
+            <dd>
+              <a href="mailto:eric.steinhauer@fernuni-hagen.de">eric.steinhauer@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h3>Bildungswissenschaft, Politikwissenschaft, Psychologie, Soziologie:</h3>
+          <h3>Bildungswissenschaft, Politikwissenschaft, Psychologie, Soziologie:</h3>
 
-<dl class="contact">
-	<dt>Dr. Sandra Caviola</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 29 25</dd>
-	<dd><a href="mailto:sandra.caviola@fernuni-hagen.de">sandra.caviola@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>Dr. Sandra Caviola</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 29 25</dd>
+            <dd>
+              <a href="mailto:sandra.caviola@fernuni-hagen.de">sandra.caviola@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h3>Elektro- und Informationstechnik, Informatik, Technik, Naturwissenschaften:</h3>
+          <h3>Elektro- und Informationstechnik, Informatik, Technik, Naturwissenschaften:</h3>
 
-<dl class="contact">
-	<dt>Martin Roos</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
-	<dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>Martin Roos</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
+            <dd>
+              <a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h3>Mathematik:</h3>
+          <h3>Mathematik:</h3>
 
-<dl class="contact">
-	<dt>i.V. Martin Roos</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
-	<dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>i.V. Martin Roos</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 29 26</dd>
+            <dd>
+              <a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h3>Geschichtswissenschaft, Literaturwissenschaft:</h3>
+          <h3>Geschichtswissenschaft, Literaturwissenschaft:</h3>
 
-<dl class="contact">
-	<dt>Dr. Jeanine Tuschling-Langewand</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 29 35</dd>
-	<dd><a href="mailto:jeanine.tuschling@fernuni-hagen.de">jeanine.tuschling@fernuni-hagen.de</a></dd>
-</dl>
+          <dl class="contact">
+            <dt>Dr. Jeanine Tuschling-Langewand</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 29 35</dd>
+            <dd>
+              <a href="mailto:jeanine.tuschling@fernuni-hagen.de">jeanine.tuschling@fernuni-hagen.de</a>
+            </dd>
+          </dl>
 
-<h3>Wirtschaftswissenschaft:</h3>
+          <h3>Wirtschaftswissenschaft:</h3>
 
-<dl class="contact">
-	<dt>Achim Baecker</dt>
-	<dd>Tel.: 0 23 31 / 9 87 - 29 34</dd>
-	<dd><a href="mailto:achim.baecker@fernuni-hagen.de">achim.baecker@fernuni-hagen.de</a></dd>
-</dl>
-</div>
-</div>
-</div>
-</section><meta><log lastEditor="ihrigadmin" date="2021-05-06" time="10:46" /></meta></MyCoReWebPage>
+          <dl class="contact">
+            <dt>Achim Baecker</dt>
+            <dd>Tel.: 0 23 31 / 9 87 - 29 34</dd>
+            <dd>
+              <a href="mailto:achim.baecker@fernuni-hagen.de">achim.baecker@fernuni-hagen.de</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="Contacts">
+    <div>
+      <h1>Contacts</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Academic Publishing Team</h2>
+          <p>Email: <a href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a></p>
+          <h2>General Information, Data Formats, Procedures, etc.</h2>
+          <dl class="contact">
+            <dt>Hartmuth Ihrig</dt>
+            <dd>Tel. 0 23 31 / 9 87 - 2897</dd>
+            <dd>AVZ Building, C 041</dd>
+            <dd><a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a></dd>
+          </dl>
+          <h2>Assistance with Dissertations and Theses</h2>
+          <dl class="contact">
+            <dt>Hartmuth Ihrig</dt>
+            <dd>Tel. 0 23 31 / 9 87 - 2897</dd>
+            <dd>AVZ Building, C 041</dd>
+            <dd><a href="mailto:hartmuth.ihrig@fernuni-hagen.de">hartmuth.ihrig@fernuni-hagen.de</a></dd>
+            <dd> </dd>
+          </dl>
+          <hr />
+          <p>If you have any general questions about publishing in your subject area, you can contact the relevant
+            department at any time.</p>
+          <h3>General, philosophy, law and political science:</h3>
+          <dl class="contact">
+            <dt>Prof. Dr. Eric Steinhauer</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 28 90</dd>
+            <dd><a href="mailto:eric.steinhauer@fernuni-hagen.de">eric.steinhauer@fernuni-hagen.de</a></dd>
+          </dl>
+          <h3>Educational science, political science, psychology, sociology:</h3>
+          <dl class="contact">
+            <dt>Dr. Sandra Caviola</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 29 25</dd>
+            <dd><a href="mailto:sandra.caviola@fernuni-hagen.de">sandra.caviola@fernuni-hagen.de</a></dd>
+          </dl>
+          <h3>Electrical engineering and information technology, computer science, engineering, natural sciences:
+          </h3>
+          <dl class="contact">
+            <dt>Martin Roos</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 29 26</dd>
+            <dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
+          </dl>
+          <h3>Mathematics:</h3>
+          <dl class="contact">
+            <dt>pp Martin Roos</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 29 26</dd>
+            <dd><a href="mailto:martin.roos@fernuni-hagen.de">martin.roos@fernuni-hagen.de</a></dd>
+          </dl>
+          <h3>History, literary studies:</h3>
+          <dl class="contact">
+            <dt>Dr. Jeanine Tuschling-Langewand</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 29 35</dd>
+            <dd><a href="mailto:jeanine.tuschling@fernuni-hagen.de">jeanine.tuschling@fernuni-hagen.de</a></dd>
+          </dl>
+          <h3>Economics:</h3>
+          <dl class="contact">
+            <dt>Achim Baecker</dt>
+            <dd>Phone: 0 23 31 / 9 87 - 29 34</dd>
+            <dd><a href="mailto:achim.baecker@fernuni-hagen.de">achim.baecker@fernuni-hagen.de</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="ihrigadmin" date="2021-05-06" time="10:46" />
+  </meta>
+</MyCoReWebPage>

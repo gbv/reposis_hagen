@@ -1,60 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MyCoReWebPage><section xml:lang="de" title="Impressum"><div>
-<h1>Impressum</h1>
+<MyCoReWebPage>
+  <section xml:lang="de" title="Impressum">
+    <div>
+      <h1>Impressum</h1>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Anbieterkennzeichnung<br />
-(Informationen nach § 5 Telemediengesetz (TMG) und § 55 Abs. 2 Rundfunkstaatsvertrag (RStV))</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Anbieterkennzeichnung<br /> (Informationen nach § 5 Telemediengesetz (TMG) und § 55
+            Abs. 2 Rundfunkstaatsvertrag (RStV))</h2>
 
-<p>FernUniversität in Hagen<br />
-Körperschaft des öffentlichen Rechts<br />
-Die Rektorin Prof. Dr. Ada Pellert<br />
-Feithstraße 152, 58097 Hagen<br />
-Telefon: 0 23 31 / 9 87-0<br />
-email: <a href="mailto:presse@fernuni-hagen.de?subject=deposit_hagen" shape="rect">presse@fernuni-hagen.de</a><br />
-Umsatzsteueridentifikationsnummer: DE 125 138 511</p>
-</div>
-</div>
+          <p>FernUniversität in Hagen<br /> Körperschaft des öffentlichen Rechts<br /> Die Rektorin
+            Prof. Dr. Ada Pellert<br /> Feithstraße 152, 58097 Hagen<br /> Telefon: 0 23 31 / 9 87-0<br />
+            email: <a href="mailto:presse@fernuni-hagen.de?subject=deposit_hagen" shape="rect">
+            presse@fernuni-hagen.de</a><br /> Umsatzsteueridentifikationsnummer: DE 125 138 511</p>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Verantwortliche i.S.d. § 55 II RStV:</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Verantwortliche i.S.d. § 55 II RStV:</h2>
 
-<p>Der Direktor der UB Hagen<br />
-Prof. Dr. Eric Steinhauer<br />
-Telefon: 02331 / 987-2910<br />
-Fax: 02331 / 987-346<br />
-email: <a href="mailto:sekretariat.ub@FernUni-Hagen.de?subject=deposit_hagen" shape="rect">sekretariat.ub@FernUni-Hagen.de</a></p>
-</div>
-</div>
+          <p>Der Direktor der UB Hagen<br /> Prof. Dr. Eric Steinhauer<br /> Telefon: 02331 /
+            987-2910<br /> Fax: 02331 / 987-346<br /> email: <a
+              href="mailto:sekretariat.ub@FernUni-Hagen.de?subject=deposit_hagen" shape="rect">
+            sekretariat.ub@FernUni-Hagen.de</a></p>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Inhaltliche Zuständigkeiten</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Inhaltliche Zuständigkeiten</h2>
 
-<p>Abteilung Wissenschaftliches Publizieren der Universitätsbibliothek<br />
-Hartmuth Ihrig<br />
-E-Mail:  <a href="mailto:publizieren.ub@fernuni-hagen.de?subject=deposit_hagen" shape="rect">publizieren.ub@fernuni-hagen.de</a></p>
-</div>
-</div>
+          <p>Abteilung Wissenschaftliches Publizieren der Universitätsbibliothek<br /> Hartmuth
+            Ihrig<br /> E-Mail:  <a
+              href="mailto:publizieren.ub@fernuni-hagen.de?subject=deposit_hagen" shape="rect">
+            publizieren.ub@fernuni-hagen.de</a></p>
+        </div>
+      </div>
 
-<div class="row">
-<div class="col-md-8">
-<h2>Haftung</h2>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Haftung</h2>
 
-<p>Die Universitätsbibliothek Hagen steht nicht für die Korrektheit, Vollständigkeit oder Aktualität ihrer Internetseiten ein. Für Schäden, die durch die Nutzung der Internetseiten verursacht werden, haftet die Bibliothek grundsätzlich nicht, es sei denn, es ist ihr vorsätzliches oder grob fahrlässiges Verschulden nachzuweisen. Die Universitätsbibliothek kann ihre Internetseiten jederzeit ohne gesonderte Ankündigung verändern, ergänzen oder löschen. Die Bibliothek haftet nicht für fremde Internetseiten, auf die sie mit einem Link verweist und die nach der Linksetzung verändert wurden.</p>
-</div>
-</div>
+          <p>Die Universitätsbibliothek Hagen steht nicht für die Korrektheit, Vollständigkeit oder
+            Aktualität ihrer Internetseiten ein. Für Schäden, die durch die Nutzung der
+            Internetseiten verursacht werden, haftet die Bibliothek grundsätzlich nicht, es sei
+            denn, es ist ihr vorsätzliches oder grob fahrlässiges Verschulden nachzuweisen. Die
+            Universitätsbibliothek kann ihre Internetseiten jederzeit ohne gesonderte Ankündigung
+            verändern, ergänzen oder löschen. Die Bibliothek haftet nicht für fremde Internetseiten,
+            auf die sie mit einem Link verweist und die nach der Linksetzung verändert wurden.</p>
+        </div>
+      </div>
 
-<h2>Technischer Betrieb</h2>
+      <h2>Technischer Betrieb</h2>
 
-<div class="row">
-<div class="col-md-12">
-<p>Verbundzentrale des GBV (VZG)<br />
-Platz der Göttinger Sieben 1<br />
-D-37073 Göttingen</p>
-</div>
-</div>
-</div>
-</section><meta><log lastEditor="ihrigadmin" date="2021-05-06" time="10:51" /></meta></MyCoReWebPage>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Verbundzentrale des GBV (VZG)<br /> Platz der Göttinger Sieben 1<br /> D-37073
+            Göttingen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section xml:lang="en" title="Imprint">
+    <div>
+      <h1>Imprint</h1>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Provider identification<br/> (information according to Section 5 of the Telemedia Act (TMG) and Section
+            55 para. 2 of the Interstate Broadcasting Agreement (RStV))</h2>
+          <p>FernUniversität in Hagen<br/> Corporation under public law<br/> President Prof. Dr. Ada Pellert<br/>
+            Feithstraße 152, 58097 Hagen<br/> Telefon: 0 23 31 / 9 87-0<br/> email: <a
+              href="mailto:presse@fernuni-hagen.de?subject=deposit_hagen" shape="rect">presse@fernuni-hagen.de</a>
+            <br/> Sales tax identification number: DE 125 138 511</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Responsible within the meaning of Section 55 II RStV:</h2>
+          <p>The Director of Hagen University Library<br/> Prof. Dr. Eric Steinhauer<br/> Telephone: 02331 /
+            987-2910<br/> Fax: 02331 / 987-346<br/> email: <a
+              href="mailto:sekretariat.ub@FernUni-Hagen.de?subject=deposit_hagen"
+              shape="rect">sekretariat.ub@FernUni-Hagen.de</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Responsibilities in terms of content</h2>
+          <p>Academic Publishing Department of the University Library<br/> Hartmuth Ihrig<br/> Email:  <a
+              href="mailto:publizieren.ub@fernuni-hagen.de?subject=deposit_hagen"
+              shape="rect">publizieren.ub@fernuni-hagen.de</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Liability</h2>
+          <p>Hagen University Library does not vouch for the correctness, completeness or topicality of its Internet
+            pages. The library is not liable for damages caused by the use of the Internet pages, unless it can be
+            proven that it acted with intent or gross negligence. The University Library reserves the right to
+            change, supplement or delete its web pages at any time without prior notice. The library is not liable
+            for external websites to which it refers by means of a link and which were changed after the link was
+            created.</p>
+        </div>
+      </div>
+      <h2>Technical Operation</h2>
+      <div class="row">
+        <div class="col-md-12">
+          <p>Verbundzentrale des GBV (VZG)<br/> Platz der Göttinger Sieben 1<br/> D-37073 Göttingen</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <meta>
+    <log lastEditor="ihrigadmin" date="2021-05-06" time="10:51" />
+  </meta>
+</MyCoReWebPage>
