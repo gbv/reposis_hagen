@@ -130,16 +130,6 @@
         </div>
 
         <div class="row">
-          <div class="col-md-8" style="margin-top:20px">
-            <p class="text-right">
-              <a href="#" shape="rect">Zurück nach oben</a>
-            </p>
-
-            <hr style="margin-top:0px" />
-          </div>
-        </div>
-
-        <div class="row">
           <div class="col-md-8">
             <h2>Veröffentlichen:</h2>
 
@@ -153,7 +143,7 @@
             <h3 id="frage6">Wie können Dokumente veröffentlicht werden?</h3>
 
             <p>Eine ausführliche Beschreibung des Publikationsprozesses finden Sie unter dem Punkt  <a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">Wie veröffentliche
+                href="../brand/how.xml">Wie veröffentliche
               ich?</a></p>
 
             <h3 id="frage7">Welche Dateiformate können eingereicht werden?</h3>
@@ -223,7 +213,7 @@
               dient der rechtlichen Absicherung seitens der FernUniversität und ist maßgebend für
               eine rechtlich einwandfreie Bereitstellung und Archivierung der Dokumente. Näheres zu
               den Inhalten der Einverständniserklärung finden Sie unter  <a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">
+                href="../brand/autinfo.xml">
               Autoreninformation</a>.</p>
 
             <h3 id="frage11">Wie kann ich eingegebene Metadaten ändern bzw. ergänzen?</h3>
@@ -253,16 +243,6 @@
               <figcaption>Abb.3: Dokument bearbeiten</figcaption>
             </figure>
           </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8" style="margin-top:20px">
-          <p align="right">
-            <a href="#" shape="rect">Zurück nach oben</a>
-          </p>
-
-          <hr style="margin-top:0px" />
         </div>
       </div>
 
@@ -343,14 +323,6 @@
             publizieren.ub@fernuni-hagen.de</a>. Wir schicken Ihnen ein neues, vorläufiges Passwort
             zu, mit dem Sie sich anmelden können. Bitte ersetzen Sie dieses nach dem ersten Anmelden
             umgehend durch ein eigenes.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8" style="margin-top:20px;">
-          <p align="right">
-            <a href="#" shape="rect">Zurück nach oben</a>
-          </p>
         </div>
       </div>
     </div>
@@ -442,13 +414,6 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-md-8" style="margin-top:20px">
-            <p class="text-right"><a href="#"
-                shape="rect">Back to top</a></p>
-            <hr style="margin-top:0px"/>
-          </div>
-        </div>
-        <div class="row">
           <div class="col-md-8">
             <h2>Publishing:</h2>
             <h3 id="frage5">Which documents can be published?</h3>
@@ -458,7 +423,7 @@
               assurance.</p>
             <h3 id="frage6">How can documents be published?</h3>
             <p>You can find a detailed description of the publication process under <a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml">How do I publish?</a></p>
+                href="../brand/how.xml">How do I publish?</a></p>
             <h3 id="frage7">Which file formats can be submitted?</h3>
             <p>Generally speaking, documents must be submitted in PDF format. Appropriate formats can be submitted
               for audio and video files. Uploaded documents may not be protected using technical protection
@@ -507,7 +472,7 @@
             <p>The  “Declaration of consent for electronic publishing on <i>deposit_hagen</i>” serves as
               legal protection on the part of the FernUniversität and is decisive for the legally flawless
               provision and archiving of documents. You can find more information on the contents of the declaration
-              of consent under <a href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Author
+              of consent under <a href="../brand/autinfo.xml">Author
                 information</a>.</p>
             <h3 id="frage11">How can I edit or add to the metadata I have entered?</h3>
           </div>
@@ -532,13 +497,6 @@
               <figcaption>Fig. 3: Editing a Document</figcaption>
             </figure>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-8" style="margin-top:20px">
-          <p align="right"><a href="#"
-              shape="rect">Back to top</a></p>
-          <hr style="margin-top:0px"/>
         </div>
       </div>
       <div class="row">
@@ -593,14 +551,6 @@
               href="mailto:publizieren.ub@fernuni-hagen.de">publizieren.ub@fernuni-hagen.de</a>. We will send you a
             new, temporary password which you can use to log in. Please replace this with a new password of your own
             choosing immediately after logging in for the first time.</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-8" style="margin-top:20px;">
-          <p align="right">
-            <a href="#" shape="rect">Back to top</a>
-          </p>
         </div>
       </div>
 

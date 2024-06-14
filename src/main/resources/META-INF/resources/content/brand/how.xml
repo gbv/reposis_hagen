@@ -10,7 +10,7 @@
             anlegen. In einer E-Mail wird Ihnen ein Bestätigungslink zugesandt, welchen Sie
             anklicken müssen. Nach der Bestätigung der Registrierung, können Sie sich auf dem
             Dokumentenserver anmelden. (Bitte beachten Sie unsere  <a
-              href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">
+              href="../rights/privacy.xml">
             Datenschutzerklärung</a>.)</p>
 
           <p>Nach der Anmeldung können Sie über  <em>Publizieren
@@ -61,16 +61,6 @@
         </div>
       </div>
 
-      <div class="row" style="margin-top:25px">
-        <div class="col-md-8">
-          <p class="text-right">
-            <a href="#" shape="rect">Zurück nach oben</a>
-          </p>
-
-          <hr />
-        </div>
-      </div>
-
       <h2 id="schritt2">Im 2. Schritt werden die Metadaten
         über ein Eingabeformular erfasst.</h2>
 
@@ -97,15 +87,7 @@
 
     </div>
     <figcaption>Abb.2: Eingabeformular</figcaption>
-    <div class="row" style="margin-top:25px">
-      <div class="col-md-8">
-        <p class="text-right">
-          <a href="#" shape="rect">Zurück nach oben</a>
-        </p>
 
-        <hr />
-      </div>
-    </div>
     <h2 id="schritt3">Im 3. Schritt werden das Dokument und mögliche dazugehörende Dateien
       hochgeladen.</h2>
     <div class="row">
@@ -122,10 +104,10 @@
 
         <p>Nach dem Abspeichern bekommen Sie per E-Mail einen Link zur automatisch erstellten
           „Einverständniserklärung für das elektronische Publizieren auf deposit_hagen“ (<a
-            href="/content/brand/Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken
+            href="Autorenvertrag.pdf">Autorenvertrag</a>) zugesandt. Diese schicken
           Sie bitte unterschrieben per E-Mail (Scan) oder als Ausdruck an die Universitätsbibliothek
           zurück. Näheres zur Einverständniserklärung finden Sie unter  <a
-            href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Autoreninformation</a>
+            href="autinfo.xml">Autoreninformation</a>
           .</p>
 
         <p>Die Redaktion der Universitätsbibliothek überprüft nach dem Upload Ihre Angaben
@@ -139,22 +121,13 @@
         <p><u>Bitte beachten Sie</u>: Bei Bachelor- und Masterarbeiten, sowie Studienarbeiten
           benötigen wir zur Qualitätssicherung neben der Einverständniserklärung auch eine
           schriftliche Bestätigung Ihrer Prüfenden. Hierzu können Sie das Formular <a
-            href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">
+            href="Formular_Einverstaendniserklaerung_der_Pruefenden.pdf">
             <em>Einverständniserklärung der Prüfenden</em>
           </a>  verwenden.</p>
 
         <p><u>HINWEIS</u>: Bei Dissertationen müssen zusätzlich zur elektronischen Fassung weitere
           Exemplare in Printform abgegeben werden. Näheres hierzu regelt Ihre jeweilige
           Promotionsordnung.</p>
-      </div>
-    </div>
-    <div class="row" style="margin-top:25px">
-      <div class="col-md-8">
-        <p class="text-right">
-          <a href="#" shape="rect">Zurück nach oben</a>
-        </p>
-
-        <hr />
       </div>
     </div>
   </section>
@@ -171,7 +144,7 @@
             click on this link to complete registration. After confirming
             your registration, you can log in to the document server.
             (Please note our  <a
-              href="https://ub-deposit.fernuni-hagen.de/content/rights/privacy.xml">privacy
+              href="../rights/privacy.xml">privacy
               policy</a>.)</p>
           <p>After logging in, you can publish your documents via
              <em>Publish -&gt; Submit document</em>.
@@ -180,13 +153,13 @@
           <p>The publication of a document takes place in three steps:</p>
           <ol>
             <li><a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt1">Set
+                href="#schritt1">Set
                 document type</a></li>
             <li><a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt2">Enter
+                href="#schritt2">Enter
                 metadata</a></li>
             <li><a
-                href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#schritt3">Upload
+                href="#schritt3">Upload
                 file(s)</a></li>
           </ol>
         </div>
@@ -211,14 +184,6 @@
           </figure>
         </div>
       </div>
-      <div class="row" style="margin-top:25px">
-        <div class="col-md-8">
-          <p class="text-right"><a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#"
-              shape="rect">Back to top</a></p>
-           <hr/>
-        </div>
-      </div>
       <h2 id="schritt2">In step 2, use the input form to add metadata.
       </h2>
       <div class="row">
@@ -240,13 +205,6 @@
         </div>
       </div>
       <figcaption>Fig. 2: Input form</figcaption>
-      <div class="row" style="margin-top:25px">
-        <div class="col-md-8">
-          <p class="text-right"><a href="https://ub-deposit.fernuni-hagen.de/content/brand/how.xml#" shape="rect">Back
-              to top</a></p>
-           <hr/>
-        </div>
-      </div>
       <h2 id="schritt3">In the 3rd step, you can upload your document and any associated files.</h2>
       <div class="row">
         <div class="col-md-8">
@@ -258,10 +216,10 @@
             via <em>Actions -&gt; Edit this document</em>.</p>
           <p>After saving, you will receive an email with a link to the automatically generated “Declaration of
             consent for electronic publishing on deposit_hagen” <a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/Autorenvertrag.pdf">(author contract</a>).
+              href="Autorenvertrag.pdf">(author contract</a>).
             Please sign this and return it to the University Library by email (as a scan) or as a printout. You can
             find more information on the declaration of consent under <a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/autinfo.xml">Author information</a>.</p>
+              href="autinfo.xml">Author information</a>.</p>
           <p>After you have uploaded your document, the University Library’s editorial team will check whether
             the information you have entered complies with the formal criteria. They will change and add metadata as
             required and assign a URN if necessary. Once the metadata has been checked and the signed declaration of
@@ -271,7 +229,7 @@
           <p><u>Please note</u>: For quality assurance purposes, we require a written confirmation from your examiners
             (in addition to the declaration of consent) for Bachelor’s and Master’s theses, as well as
             student research projects. You can use the form <a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/Formular_Einverst%C3%A4ndniserkl%C3%A4rung%20der%20Pr%C3%BCfenden.pdf"><em>Declaration
+              href="Formular_Einverstaendniserklaerung_der_Pruefenden.pdf"><em>Declaration
                 of examiners’ consent</em></a>.</p>
           <p><u>NOTE</u>: In the case of dissertations, additional print copies must be submitted in addition to the
             electronic version. Further details in this respect can be found in your respective doctoral degree

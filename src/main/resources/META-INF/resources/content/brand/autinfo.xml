@@ -19,7 +19,7 @@
 
           <p>Bei Bachelor- und Masterarbeiten sowie Studienleistungen, bedarf es aus Gründen der
             Qualitätssicherung zur Veröffentlichung einer <a
-              href="/content/brand/Formular_Einverständniserklärung der Prüfenden.pdf">
+              href="Formular_Einverstaendniserklaerung_der_Pruefenden.pdf">
             Zustimmungserklärung</a>  der Prüfenden.</p>
 
           <h2>Welche Dokumentformate können eingereicht werden?</h2>
@@ -35,7 +35,7 @@
           <h3>Einverständniserklärung<span id="cke_bm_1346E" style="display: none;"> </span></h3>
 
           <p>Für jedes Ihrer hochgeladenen Dokumente müssen Sie eine <a
-              href="/content/brand/Autorenvertrag.pdf">Einverständniserklärung </a>unterschreiben,
+              href="Autorenvertrag.pdf">Einverständniserklärung </a>unterschreiben,
             die Ihnen nach dem Publikationsprozess auf deposit_hagen automatisch via E-Mail
             zugesandt wird. In dieser Einverständniserklärung räumen Sie der FernUniversität in
             Hagen das dauerhafte einfache Nutzungsrecht ein, Ihr Dokument im Internet öffentlich
@@ -80,7 +80,7 @@
             rechtlichen Bedingungen zu wählen. Voreingestellt ist „Alle Rechte vorbehalten“. Sie
             können Ihr Dokument aber auch mit einer CC-Lizenz versehen. Näheres zu CC-Lizenzen
             finden Sie im  <a
-              href="https://ub-deposit.fernuni-hagen.de/content/social/questions.xml#frage9">FAQ</a>
+              href="../social/questions.xml#frage9">FAQ</a>
             .</p>
         </div>
       </div>
@@ -99,7 +99,7 @@
             qualification work (dissertations, post-doctoral papers, Bachelor’s and Master’s theses,
             coursework)</p>
           <p>For reasons of quality assurance, a <a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/Formular_Einverst%C3%A4ndniserkl%C3%A4rung%20der%20Pr%C3%BCfenden.pdf">declaration
+              href="Formular_Einverstaendniserklaerung_der_Pruefenden.pdf">declaration
               of consent</a> is required from the examiners for the publication of Bachelor’s and
             Master’s theses and coursework.</p>
           <h2>Which file formats can be submitted?</h2>
@@ -111,7 +111,7 @@
           <h2>Legal:</h2>
           <h3>Declaration of consent<span id="cke_bm_1346E" style="display: none;"> </span></h3>
           <p>You must sign a <a
-              href="https://ub-deposit.fernuni-hagen.de/content/brand/Autorenvertrag.pdf">declaration of
+              href="Autorenvertrag.pdf">declaration of
               consent</a> for each of your uploaded documents. This will be sent to you automatically by email
             after the publication process on <i>deposit_hagen</i>. In this declaration of consent, you grant the
             FernUniversität in Hagen a permanent non-exclusive right to publicly reproduce your document on the
@@ -139,7 +139,7 @@
           <p>You have the option of choosing between different legal conditions when posting your document. The
             default setting is “All rights reserved.” However, you can also provide your document with a
             CC license. You can find more information on CC licenses in the <a
-              href="https://ub-deposit.fernuni-hagen.de/content/social/questions.xml#frage9">FAQ</a>.</p>
+              href="../social/questions.xml#frage9">FAQ</a>.</p>
         </div>
       </div>
     </div>
