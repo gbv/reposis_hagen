@@ -8,7 +8,75 @@
     <xed:remove ref="cartographics.repeat" />
     <xed:remove ref="openAIRE" />
   </xed:modify>
-
+  
+  <xed:modify ref="genres.book.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.journal.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.thesis.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.publication.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.report.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.entry">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.preface">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.interview">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.speech">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.patent">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.poster">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.av.common">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.research_data">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.lecture">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.picture">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.blog">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
+  <xed:modify ref="genres.blog_entry">
+    <xed:remove ref="comment" />
+  </xed:modify>
+  
   <xed:template id="genres.issue">
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="title.original" />
     <xed:include uri="xslStyle:editor/mir2xeditor:webapp:editor/editor-includes.xed" ref="author.repeated" />
