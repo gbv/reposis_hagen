@@ -18,10 +18,5 @@
       <label xml:lang="x-access" text="guest" />
       <label xml:lang="de" text="Hochschulvermerk" />
     </category>
-    <category ID="mcr_intern">
-      <label xml:lang="en" text="intern comment" />
-      <label xml:lang="de" text="interner Kommentar" />
-      <label xml:lang="x-access" text="editor admin" />
-    </category>
   </categories>
 </mycoreclass>
