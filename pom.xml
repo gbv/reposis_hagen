@@ -23,10 +23,10 @@
   <parent>
     <groupId>de.gbv.reposis</groupId>
     <artifactId>reposis_mir_parent</artifactId>
-    <version>2022.06-SNAPSHOT</version>
+    <version>2023.06-SNAPSHOT</version>
   </parent>
   <artifactId>reposis_hagen</artifactId>
-  <version>2022.06-SNAPSHOT</version>
+  <version>2023.06-SNAPSHOT</version>
   <name>Deposit Hagen</name>
   <properties>
     <MCR.AppName>hagen</MCR.AppName>
