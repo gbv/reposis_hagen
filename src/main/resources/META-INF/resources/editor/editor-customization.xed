@@ -7,6 +7,7 @@
     <xed:remove ref="geographic.complex" />
     <xed:remove ref="cartographics.repeat" />
     <xed:remove ref="openAIRE" />
+    <xed:remove  ref="related.item.other.search.of.all.items" />
   </xed:modify>
   
   <xed:modify ref="genres.book.common">
