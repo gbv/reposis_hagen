@@ -8,7 +8,7 @@ on:
     branches:
       - 'main'
       - '2021.06.x'
-
+  workflow_dispatch:
 jobs:
   build:
 
