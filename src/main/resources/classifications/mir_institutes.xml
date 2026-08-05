@@ -1,17 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mycoreclass xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MCRClassification.xsd" ID="mir_institutes">
+<mycoreclass ID="mir_institutes"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="MCRClassification.xsd">
   <label xml:lang="de" text="Einrichtungen" description="Liste der Einrichtungen" />
-  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_institutes" />
   <label xml:lang="en" text="Sample Institutions" description="A list of institutions" />
+  <label xml:lang="x-uri" text="http://www.mycore.org/classifications/mir_institutes" />
   <categories>
+    <category ID="psy">
+      <label xml:lang="de" text="Fakultät für Psychologie" />
+      <url xlink:type="locator" xlink:href="www.fernuni-hagen.de/psychologie" />
+      <category ID="33ec5b06-ea2c-4ee1-a51f-6147fc0c8211">
+        <label xml:lang="de" text="Kognition und Lernen Erwachsener (Prof. Dr. Hannes Schröter)" />
+      </category>
+      <category ID="4f2c26c6-5927-42c3-8edd-a1ff7a5df55a">
+        <label xml:lang="de" text="E-Mental Health und Entwicklungspsychologie (Jun.-Prof. Dr. Philip Santangelo)" />
+      </category>
+      <category ID="MedPsy">
+        <label xml:lang="de" text="Medienpsychologie (Prof. Dr. Aileen Oeberst)" />
+        <url xlink:type="locator" xlink:href="https://www.fernuni-hagen.de/medienpsychologie" />
+      </category>
+      <category ID="AllPsyLerMotEmo">
+        <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion (Prof. Dr. Robert Gaschler)" />
+        <url xlink:type="locator" xlink:href="https://www.fernuni-hagen.de/psychologie-lernen-motivation" />
+      </category>
+      <category ID="AllPsyUrtEntHan">
+        <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln (Prof. Dr. Roman Liepelt)" />
+        <url xlink:type="locator" xlink:href="https://www.fernuni-hagen.de/psychologie-urteilen-entscheiden" />
+      </category>
+      <category ID="0fbb0a11-5dff-4cea-b7da-156d541c4252">
+        <label xml:lang="de" text="Arbeits- und Organisationspsychologie (Prof. Dr. Jan Dettmers)" />
+        <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/psychologie/psychologisches_institut/about_institute/departments/aopsy/" />
+      </category>
+      <category ID="BilPsy">
+        <label xml:lang="de" text="Bildungspsychologie (Prof. Dr. Kathrin Jonkmann)" />
+      </category>
+      <category ID="ComPsy">
+        <label xml:lang="de" text="Community Psychology (Prof. Dr. Anette Rohmann)" />
+      </category>
+      <category ID="GesPsy">
+        <label xml:lang="de" text="Gesundheitspsychologie (Prof. Dr. Christel Salewski)" />
+      </category>
+      <category ID="PerPsyDiaBer">
+        <label xml:lang="de" text="Persönlichkeits-, Rechtspsychologie und Diagnostik (Prof. Dr. Andreas Mokros)" />
+      </category>
+      <category ID="PsyErw">
+        <label xml:lang="de" text="Psychologie des Erwachsenenalters (Prof. Dr. Ingrid Josephs)" />
+      </category>
+      <category ID="PsyMetDiaEva">
+        <label xml:lang="de" text="Psychologische Methodenlehre und Evaluation (Prof. Dr. Oliver Christ)" />
+      </category>
+      <category ID="SozPsy">
+        <label xml:lang="de" text="Sozialpsychologie (Prof. Dr. Stefan Stürmer)" />
+      </category>
+    </category>
     <category ID="ksw">
       <label xml:lang="de" text="Fakultät für Kultur- und Sozialwissenschaften" />
       <label xml:lang="en" text="Faculty of Cultural and Social Sciences" />
-      <url xlink:href="www.fernuni-hagen.de/ksw" xlink:type="locator" />
+      <url xlink:type="locator" xlink:href="www.fernuni-hagen.de/ksw" />
+      <category ID="IGB">
+        <label xml:lang="de" text="Institut für Geschichte und Biographie" />
+        <url xlink:type="locator" xlink:href="https://www.fernuni-hagen.de/geschichteundbiographie/" />
+      </category>
       <category ID="InsBilMed">
         <label xml:lang="de" text="Institut für Bildungswissenschaft und Medienforschung" />
         <category ID="AllBilWiss">
-          <label xml:lang="de" text="Allgemeine Bildungswissenschaft (Prof. Dr. Cathleen Grunert)" />
+          <label xml:lang="de" text="Allgemeine Bildungswissenschaft (Dr. Marc Fabian Buck)" />
         </category>
         <category ID="BilDif">
           <label xml:lang="de" text="Bildung und Differenz (Prof. Dr. Katharina Walgenbach)" />
@@ -20,13 +74,16 @@
           <label xml:lang="de" text="Bildungstheorie und Medienpädagogik (Prof. Dr. Claudia de Witt)" />
         </category>
         <category ID="EmpBilFor">
-          <label xml:lang="de" text="Empirische Bildungsforschung (Dr. Boris Becker)" />
+          <label xml:lang="de" text="Empirische Bildungsforschung (Prof. Dr. Julia Schütz)" />
         </category>
         <category ID="LebLanLer">
           <label xml:lang="de" text="Lebenslanges Lernen (Prof. Dr. Uwe Elsholz)" />
         </category>
         <category ID="MedDid">
-          <label xml:lang="de" text="Mediendidaktik (Prof. Dr. Theo Bastiaens)" />
+          <label xml:lang="de" text="Mediendidaktik (Prof. Dr. Sandra Hofhues)" />
+        </category>
+        <category ID="WiWeiH">
+          <label xml:lang="de" text="Erwachsenen- und Weiterbildung (Prof. Dr. Eva Cendon)" />
         </category>
         <category ID="InsBilMedAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
@@ -54,13 +111,16 @@
           <category ID="5cb5f095-daa0-424c-a8e6-b26bc4b188be">
             <label xml:lang="de" text="Methodenlehre des Fernstudiums (Prof. Dr. Dr. h.c. Otto Peters)" />
           </category>
-          <category ID="TheSchUnt">
-            <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
-          </category>
+        </category>
+        <category ID="TheSchUnt">
+          <label xml:lang="de" text="Theorie der Schule und des Unterrichts (Univ.-Prof. Dr. Horst Dichanz)" />
         </category>
       </category>
       <category ID="HistInst">
         <label xml:lang="de" text="Historisches Institut" />
+        <category ID="PubHist">
+          <label xml:lang="de" text="Public History (Prof. Dr. Felix Ackermann)" />
+        </category>
         <category ID="GesGegAlt">
           <label xml:lang="de" text="Geschichte und Gegenwart Alteuropas (Prof. Dr. Felicitas Schmieder)" />
         </category>
@@ -86,14 +146,20 @@
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medientheorie (Prof. Dr. Uwe Steiner)" />
         </category>
         <category ID="NeuDeuLitGesMedkul">
-          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Geschichte der Medienkulturen (Dr. Peter Risthaus)" />
+          <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Mediengeschichte (Dr. Peter Risthaus)" />
         </category>
         <category ID="NeuDeuLitMedaes">
           <label xml:lang="de" text="Neuere deutsche Literaturwissenschaft und Medienästhetik (Prof. Dr. Michael Niehaus)" />
         </category>
+        <category ID="LitMedGen">
+          <label xml:lang="de" text="Junior-Professur für literatur- und medienwissenschaftliche Genderforschung (Jun.-Prof. Dr. Irina Gradinari)" />
+        </category>
       </category>
       <category ID="InsPhil">
         <label xml:lang="de" text="Institut für Philosophie" />
+        <category ID="Phil4">
+          <label xml:lang="de" text="Philosophie IV, Philosophie der Medizin und der Technik (Prof. Dr. Dr. Orsolya Friedrich)" />
+        </category>
         <category ID="Phil1">
           <label xml:lang="de" text="Philosophie I (Prof. Dr. Hubertus Busche)" />
         </category>
@@ -119,7 +185,7 @@
           <label xml:lang="de" text="Politikwissenschaft I: Staat und Regieren (Prof. Dr. Viktoria Kaina)" />
         </category>
         <category ID="Pol2">
-          <label xml:lang="de" text="Politikwissenschaft II: Internationale Politik (PD Dr. Thorsten Hüller)" />
+          <label xml:lang="de" text="Politikwissenschaft II: Internationale Politik (Professor Dr. Susanne Lütz)" />
         </category>
         <category ID="Pol3">
           <label xml:lang="de" text="Politikwissenschaft III: Politikfeldanalyse und Umweltpolitik (Prof. Dr. Annette Elisabeth Töller)" />
@@ -142,37 +208,6 @@
       </category>
       <category ID="InsPsy">
         <label xml:lang="de" text="Institut für Psychologie" />
-        <category ID="AllPsyLerMotEmo">
-          <label xml:lang="de" text="Allgemeine Psychologie: Lernen, Motivation, Emotion (Prof. Dr. Robert Gaschler)" />
-        </category>
-        <category ID="AllPsyUrtEntHan">
-          <label xml:lang="de" text="Allgemeine Psychologie: Urteilen, Entscheiden, Handeln (Prof. Dr. Andreas Glöckner)" />
-        </category>
-        <category ID="0fbb0a11-5dff-4cea-b7da-156d541c4252">
-          <label xml:lang="de" text="Arbeits- und Organisationspsychologie (Dr. Tabea Scheel)" />
-          <url xlink:href="http://www.fernuni-hagen.de/psychologie/psychologisches_institut/about_institute/departments/aopsy/" xlink:type="locator" />
-        </category>
-        <category ID="BilPsy">
-          <label xml:lang="de" text="Bildungspsychologie (Prof. Dr. Kathrin Jonkmann)" />
-        </category>
-        <category ID="ComPsy">
-          <label xml:lang="de" text="Community Psychology (Prof. Dr. Anette Rohmann)" />
-        </category>
-        <category ID="GesPsy">
-          <label xml:lang="de" text="Gesundheitspsychologie (Prof. Dr. Christel Salewski)" />
-        </category>
-        <category ID="PerPsyDiaBer">
-          <label xml:lang="de" text="Persönlichkeitspsychologie, Diagnostik und Beratung (Prof. Dr. Andreas Mokros)" />
-        </category>
-        <category ID="PsyErw">
-          <label xml:lang="de" text="Psychologie des Erwachsenenalters (Prof. Dr. Ingrid Josephs)" />
-        </category>
-        <category ID="PsyMetDiaEva">
-          <label xml:lang="de" text="Psychologische Methodenlehre und Evaluation (Prof. Dr. Oliver Christ)" />
-        </category>
-        <category ID="SozPsy">
-          <label xml:lang="de" text="Sozialpsychologie (Prof. Dr. Stefan Stürmer)" />
-        </category>
         <category ID="InsPsyAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
           <category ID="AllPsy">
@@ -207,7 +242,7 @@
           <label xml:lang="de" text="Soziologie III, Organisationssoziologie und qualitative Methoden (Prof. Dr. Sylvia Wilz)" />
         </category>
         <category ID="StiProSozFamLebNetGem">
-          <label xml:lang="de" text="Ernsting's-family-Junior Stiftungsprofessur für Soziologie familialer Lebensformen, Netzwerke und Gemeinschaften (Jun.-Prof. Dr. Dorett Funcke)" />
+          <label xml:lang="de" text="Ernsting’s-family-Stiftungsprofessur für Mikrosoziologie (Prof. Dr. Dorett Funcke)" />
         </category>
         <category ID="InsSozAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
@@ -239,21 +274,75 @@
       </category>
       <category ID="IFD">
         <label xml:lang="de" text="Institut Frieden und Demokratie" />
-        <url xlink:href="http://www.fernuni-hagen.de/FRIEDEN/" xlink:type="locator" />
+        <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/FRIEDEN/" />
       </category>
     </category>
     <category ID="mathinf">
       <label xml:lang="de" text="Fakultät für Mathematik und Informatik" />
       <label xml:lang="en" text="Faculty of Mathematics and Computer Science" />
-      <url xlink:href="http://www.fernuni-hagen.de/mathinf/" xlink:type="locator" />
+      <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/mathinf/" />
+      <category ID="DatSc">
+        <label xml:lang="de" text="Data Science (Prof. Dr. Christian Beecks)" />
+      </category>
+      <category ID="SofThePr">
+        <label xml:lang="de" text="Softwaretechnik und Theorie der Programmierung (Prof. Dr. Jörg Desel)" />
+      </category>
+      <category ID="KooSys">
+        <label xml:lang="de" text="Kooperative Systeme (Prof. Dr. Jörg M. Haake)" />
+      </category>
+      <category ID="MulInt">
+        <label xml:lang="de" text="Multimedia und Internetanwendungen (Prof. Dr.-Ing. Matthias Hemmje)" />
+      </category>
+      <category ID="DisMatOpt">
+        <label xml:lang="de" text="Diskrete Mathematik und Optimierung (Prof. Dr. Winfried Hochstättler)" />
+      </category>
+      <category ID="JPAlgebra">
+        <label xml:lang="de" text="JP Algebra (Jun.-Prof. Dr. Steffen Kionke)" />
+      </category>
+      <category ID="NumMat">
+        <label xml:lang="de" text="Numerische Mathematik (Prof. Dr. Torsten Linß)" />
+      </category>
+      <category ID="Analysis">
+        <label xml:lang="de" text="Analysis (Prof. Dr. Delio Mugnolo)" />
+      </category>
+      <category ID="TechInf">
+        <label xml:lang="de" text="Technische Informatik (Prof. Dr. Lena Oden)" />
+      </category>
+      <category ID="StoMathPhy">
+        <label xml:lang="de" text="Stochastik und Mathematische Physik (Prof. Dr. Wolfgang Spitzer)" />
+      </category>
+      <category ID="DatInfSys">
+        <label xml:lang="de" text="Datenbanken und Informationssysteme (Prof. Dr. Uta Störl)" />
+      </category>
+      <category ID="Komnet">
+        <label xml:lang="de" text="Kommunikationsnetze (Prof. Dr.-Ing. habil. Herwig Unger)" />
+      </category>
+      <category ID="ParVLSI">
+        <label xml:lang="de" text="Parallelität und VLSI (Prof. Dr. Jörg Keller)" />
+      </category>
+      <category ID="UntSof">
+        <label xml:lang="de" text="Unternehmensweite Softwaresysteme (Prof. Dr. Lars Mönch)" />
+      </category>
+      <category ID="MenComInt">
+        <label xml:lang="de" text="Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)" />
+      </category>
+      <category ID="SofThePro">
+        <label xml:lang="de" text="Theoretische Informatik (Prof. Dr. André Schulz)" />
+      </category>
+      <category ID="ProgSys">
+        <label xml:lang="de" text="Programmiersysteme (Prof. Dr. Friedrich Steimann)" />
+      </category>
+      <category ID="KuenInt">
+        <label xml:lang="de" text="Künstliche Intelligenz (Prof. Dr. Matthias Thimm)" />
+      </category>
+      <category ID="CatComLing">
+        <label xml:lang="de" text="CATALPA / Computerlinguistik (Prof. Dr.-Ing. Torsten Zesch)" />
+      </category>
+      <category ID="InstAD">
+        <label xml:lang="de" text="Ehemalige Institute" />
+      </category>
       <category ID="FachEle">
         <label xml:lang="de" text="Elektrotechnik" />
-        <category ID="EleEne">
-          <label xml:lang="de" text="Elektrische Energietechnik (Prof. Dr. Detlev Hackstein)" />
-        </category>
-        <category ID="Komnet">
-          <label xml:lang="de" text="Kommunikationsnetze (Prof. Dr.-Ing. habil. Herwig Unger)" />
-        </category>
         <category ID="MikNan">
           <label xml:lang="de" text="Mikro- und Nanophotonik (Prof. Dr. Jürgen Jahns)" />
         </category>
@@ -270,6 +359,9 @@
           </category>
           <category ID="BauEleTec">
             <label xml:lang="de" text="Bauelemente der Elektrotechnik (Prof. Dr. Wolfgang Fahrner)" />
+          </category>
+          <category ID="EleEne">
+            <label xml:lang="de" text="Elektrische Energietechnik (Prof. Dr. Detlev Hackstein)" />
           </category>
           <category ID="EleSch">
             <label xml:lang="de" text="Elektronische Schaltungen (Prof. Dr. Ing. Horst Wupper)" />
@@ -296,32 +388,8 @@
         <category ID="DatAnw">
           <label xml:lang="de" text="Datenbanksysteme für neue Anwendungen (Prof. Dr. Ralf Hartmut Güting)" />
         </category>
-        <category ID="KooSys">
-          <label xml:lang="de" text="Kooperative Systeme (Prof. Dr. Jörg M. Haake)" />
-        </category>
-        <category ID="MenComInt">
-          <label xml:lang="de" text="Mensch-Computer-Interaktion (Prof. Dr. Gabriele Peters)" />
-        </category>
-        <category ID="MulInt">
-          <label xml:lang="de" text="Multimedia und Internetanwendungen (Prof. Dr.-Ing. Matthias Hemmje)" />
-        </category>
-        <category ID="ParVLSI">
-          <label xml:lang="de" text="Parallelität und VLSI (Prof. Dr. Jörg Keller)" />
-        </category>
-        <category ID="ProgSys">
-          <label xml:lang="de" text="Programmiersysteme (Prof. Dr. Friedrich Steimann)" />
-        </category>
         <category ID="Recarch">
           <label xml:lang="de" text="Rechnerarchitektur (Prof. Dr. Wolfram Schiffmann)" />
-        </category>
-        <category ID="SofThePr">
-          <label xml:lang="de" text="Softwaretechnik und Theorie der Programmierung (Prof. Dr. Jörg Desel)" />
-        </category>
-        <category ID="SofThePro">
-          <label xml:lang="de" text="Theoretische Informatik (Prof. Dr. André Schulz)" />
-        </category>
-        <category ID="UntSof">
-          <label xml:lang="de" text="Unternehmensweite Softwaresysteme (Prof. Dr. Lars Mönch)" />
         </category>
         <category ID="WisSys">
           <label xml:lang="de" text="Wissensbasierte Systeme (Prof. Dr. Christoph Beierle)" />
@@ -356,26 +424,17 @@
       </category>
       <category ID="FachMat">
         <label xml:lang="de" text="Mathematik" />
-        <category ID="Algebra">
-          <label xml:lang="de" text="Algebra (Prof. Dr. Luise Unger)" />
-        </category>
-        <category ID="AngSto">
-          <label xml:lang="de" text="Angewandte Stochastik (Prof. Dr. Wolfgang Spitzer)" />
-        </category>
-        <category ID="Analysis">
-          <label xml:lang="de" text="Analysis (Prof. Dr. Delio Mugnolo)" />
-        </category>
-        <category ID="DisMatOpt">
-          <label xml:lang="de" text="Diskrete Mathematik und Optimierung (Prof. Dr. Winfried Hochstättler)" />
-        </category>
-        <category ID="NumMat">
-          <label xml:lang="de" text="Numerische Mathematik (Prof. Dr. Torsten Linß)" />
-        </category>
-        <category ID="Stochastik">
-          <label xml:lang="de" text="Stochastik (Prof. Dr. Werner Kirsch)" />
-        </category>
         <category ID="FachMatAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="Stochastik">
+            <label xml:lang="de" text="Stochastik (Prof. Dr. Werner Kirsch)" />
+          </category>
+          <category ID="AngSto">
+            <label xml:lang="de" text="Angewandte Stochastik (Prof. Dr. Wolfgang Spitzer)" />
+          </category>
+          <category ID="Algebra">
+            <label xml:lang="de" text="Algebra (Prof. Dr. Luise Unger)" />
+          </category>
           <category ID="AngMat">
             <label xml:lang="de" text="Angewandte Mathematik (Prof. Dr. Hansjörg Linden)" />
           </category>
@@ -388,11 +447,14 @@
     <category ID="wiwi">
       <label xml:lang="de" text="Fakultät für Wirtschaftswissenschaft" />
       <label xml:lang="en" text="Faculty of Business Administration and Economics" />
-      <url xlink:href="www.fernuni-hagen.de/wiwi" xlink:type="locator" />
+      <url xlink:type="locator" xlink:href="www.fernuni-hagen.de/wiwi" />
       <category ID="bwl">
         <label xml:lang="de" text="Betriebswirtschaftslehre" />
-        <category ID="AngStaMetEmpSoz">
-          <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung (Univ.-Prof. Dr. Hermann Singer)" />
+        <category ID="InfMan">
+          <label xml:lang="de" text="Informationsmanagement (Univ.-Prof. Dr. Till Winkler)" />
+        </category>
+        <category ID="AngSta">
+          <label xml:lang="de" text="Angewandte Statistik (Univ.-Prof. Dr. Robinson Kruse-Becher)" />
         </category>
         <category ID="BaFi">
           <label xml:lang="de" text="Bank- und Finanzwirtschaft (Univ.-Prof. Dr. Rainer Baule)" />
@@ -405,6 +467,9 @@
         </category>
         <category ID="StiLehrDieMan">
           <label xml:lang="de" text="Douglas-Stiftungslehrstuhl für Dienstleistungsmanagement (Univ.-Prof. Dr. Sabine Fließ)" />
+        </category>
+        <category ID="EnWirt">
+          <label xml:lang="de" text="Energiewirtschaft (Jun.-Prof. Dr. Michael Bucksteeg)" />
         </category>
         <category ID="bwlEntInf">
           <label xml:lang="de" text="Entwicklung von Informationssystemen (Univ.-Prof. Dr. Stefan Strecker)" />
@@ -438,6 +503,9 @@
         </category>
         <category ID="bwlAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="AngStaMetEmpSoz">
+            <label xml:lang="de" text="Angewandte Statistik und Methoden der empirischen Sozialforschung (Univ.-Prof. Dr. Hermann Singer)" />
+          </category>
           <category ID="DidWirt">
             <label xml:lang="de" text="Didaktik der Wirtschaftswissenschaft (Univ.-Prof. Dr. Klaus Anderseck Emertius)" />
           </category>
@@ -469,6 +537,18 @@
       </category>
       <category ID="vwl">
         <label xml:lang="de" text="Volkswirtschaftslehre" />
+        <category ID="vwlAD">
+          <label xml:lang="de" text="Ehemalige Lehrstühle" />
+        </category>
+        <category ID="vwlWirPol">
+          <label xml:lang="de" text="Wirtschaftspolitik (Jun.-Prof. Dr. Matthias Westphal [Lehrstuhlvertreter])" />
+        </category>
+        <category ID="vwlMakro">
+          <label xml:lang="de" text="Makroökonomie (Univ.-Prof. Joscha Beckmann)" />
+        </category>
+        <category ID="bwlMikroOek">
+          <label xml:lang="de" text="Mikroökonomie (Univ.-Prof. Dr. Robert Schmidt)" />
+        </category>
         <category ID="Finwis">
           <label xml:lang="de" text="Finanzwissenschaft (Univ.-Prof. Dr. Thomas Eichner)" />
         </category>
@@ -476,7 +556,7 @@
           <label xml:lang="de" text="Internationale Ökonomie (Univ.-Prof. Dr. Hans-Jörg Schmerer)" />
         </category>
         <category ID="Makro">
-          <label xml:lang="de" text="Makroökonomik (Univ.-Prof. Dr. Helmut Wagner)" />
+          <label xml:lang="de" text="Makroökonomie (Univ.-Prof. Dr. Helmut Wagner)" />
         </category>
         <category ID="Wirpol">
           <label xml:lang="de" text="Wirtschaftspolitik (Univ.-Prof. Dr. Joachim Grosser)" />
@@ -487,54 +567,69 @@
       </category>
     </category>
     <category ID="rewi">
-      <label xml:lang="en" text="Faculty of Law" />
       <label xml:lang="de" text="Rechtswissenschaftliche Fakultät" />
-      <url xlink:href="www.fernuni-hagen.de/rewi" xlink:type="locator" />
+      <label xml:lang="en" text="Faculty of Law" />
+      <url xlink:type="locator" xlink:href="www.fernuni-hagen.de/rewi" />
       <category ID="rewiLehr">
         <label xml:lang="de" text="Lehrstühle" />
-        <category ID="LehrBueRecArbRecver">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung (Prof. Dr. Kerstin Tillmanns)" />
+        <category ID="ZiRechLehr">
+          <label xml:lang="de" text="Zivilrechtliche Lehrstühle" />
+          <category ID="LehrBueRecPrivrecges">
+            <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht (Prof. Dr. Andreas Bergmann)" />
+          </category>
+          <category ID="StistuBuerec">
+            <label xml:lang="de" text="W. P. Radt Stiftungslehrstuhl für Bürgerliches Recht, Gewerblichen Rechtsschutz, Internationales Privat- und Zivilprozessrecht (Prof. Dr. Sebastian Kubis, LL.M. (Illinois))" />
+          </category>
+          <category ID="LehrBueRecArbRecver">
+            <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Arbeitsrecht und Rechtsvergleichung (Prof. Dr. Kerstin Tillmanns)" />
+          </category>
+          <category ID="LehrBueRecWirGewRecUrhZiv">
+            <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)" />
+          </category>
+          <category ID="LehrBueRecZivIntPrivRecver">
+            <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Zivilprozessrecht, Internationales Privatrecht und Rechtsvergleichung (Prof. Dr. Karl August Prinz von Sachsen Gessaphe)" />
+          </category>
+          <category ID="LehrBueRecUntRecver">
+            <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung (Prof. Dr. Ulrich Wackerbarth)" />
+          </category>
         </category>
-        <category ID="LehrBueRecPrivrecges">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Privatrechtsgeschichte sowie Handels- und Gesellschaftsrecht (Prof. Dr. Andreas Bergmann)" />
+        <category ID="ÖffRechLehr">
+          <label xml:lang="de" text="Öffentlich-rechtliche Lehrstühle" />
+          <category ID="b34c6d3a-beb5-4710-85cc-c11fa75137dd">
+            <label xml:lang="de" text="Juniorprofessur für Öffentliches Recht mit Schwerpunkt Recht der Digitalisierung/Datenschutzrecht (Jun.-Prof. Dr. Hannah Ruschemeier)" />
+          </category>
+          <category ID="LehrDeuEurVerfVerwVoerec">
+            <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht (Prof. Dr. Andreas Haratsch)" />
+          </category>
+          <category ID="1bbab2b1-cbbf-40fa-8a22-948050e7feea">
+            <label xml:lang="de" text="Lehrstuhl für Gender im Recht (Vertretung: Dr. Anja Böning)" />
+            <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/ls_lembke/index.shtml" />
+          </category>
+          <category ID="LehrOefRecJurRhetRecphil">
+            <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie (Prof. Dr. Katharina Gräfin von Schlieffen) " />
+          </category>
+          <category ID="LehrVerwWirtverwAllSta">
+            <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre (N. N. (Vertretung: Herr Dr. Repkewitz))" />
+          </category>
         </category>
-        <category ID="LehrBueRecUntRecver">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Unternehmensrecht und Rechtsvergleichung (Prof. Dr. Ulrich Wackerbarth)" />
-        </category>
-        <category ID="LehrBueRecWirGewRecUrhZiv">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Wirtschaftsrecht, Gewerblicher Rechtsschutz, Urheberrecht und Zivilprozessrecht (Prof. Dr. Barbara Völzmann-Stickelbrock)" />
-        </category>
-        <category ID="LehrBueRecZivIntPrivRecver">
-          <label xml:lang="de" text="Lehrstuhl für Bürgerliches Recht, Zivilprozessrecht, Internationales Privatrecht und Rechtsvergleichung (Prof. Dr. Karl August Prinz von Sachsen Gessaphe)" />
-        </category>
-        <category ID="LehrDeuEurVerfVerwVoerec">
-          <label xml:lang="de" text="Lehrstuhl für Deutsches und Europäisches Verfassungs- und Verwaltungsrecht sowie Völkerrecht (Prof. Dr. Andreas Haratsch)" />
-        </category>
-        <category ID="1bbab2b1-cbbf-40fa-8a22-948050e7feea">
-          <label xml:lang="de" text="Lehrstuhl für Gender im Recht (Prof. Dr. Ulrike Lembke)" />
-          <url xlink:href="http://www.fernuni-hagen.de/ls_lembke/index.shtml" xlink:type="locator" />
-        </category>
-        <category ID="LehrOefRecJurRhetRecphil">
-          <label xml:lang="de" text="Lehrstuhl für Öffentliches Recht, juristische Rhetorik und Rechtsphilosophie (Prof. Dr. Katharina Gräfin von Schlieffen) " />
-        </category>
-        <category ID="LehrStrafrecGes">
-          <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafrechtsgeschichte und Rechtsphilosophie (Prof. Dr. Stephan Stübinger)" />
-        </category>
-        <category ID="LehrVerwWirtverwAllSta">
-          <label xml:lang="de" text="Lehrstuhl für Verwaltungsrecht, insb. Wirtschaftsverwaltungsrecht sowie Allgemeine Staatslehre (N. N. (Vertretung: Professor Dr. Martin Hochhuth))" />
-        </category>
-        <category ID="80eb2a7f-7f6d-4b03-baff-93c0e14b82c0">
-          <label xml:lang="de" text="Lehrstuhl für Wirtschaftsstrafrecht und Strafprozessrecht (Prof. Dr. Osman Isfen)" />
-          <url xlink:href="http://www.fernuni-hagen.de/ls_isfen/" xlink:type="locator" />
-        </category>
-        <category ID="ArbStrarecStraprorec">
-          <label xml:lang="de" text="Arbeitsbereich für Strafrecht und Strafprozessrecht (Prof. Dr. Gabriele Zwiehoff)" />
-        </category>
-        <category ID="StistuBuerec">
-          <label xml:lang="de" text="W. P. Radt Stiftungslehrstuhl für Bürgerliches Recht, Gewerblichen Rechtsschutz, Internationales Privat- und Zivilprozessrecht (Prof. Dr. Sebastian Kubis, LL.M. (Illinois))" />
+        <category ID="StrafRechLehr">
+          <label xml:lang="de" text="Strafrechtliche Lehrstühle" />
+          <category ID="LehrWirtStraRe">
+            <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafprozessrecht, Wirtschaftsstrafrecht und Internationales Strafrecht (Prof. Dr. Osman Isfen)" />
+          </category>
+          <category ID="LehrStrafrecGes">
+            <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafrechtsgeschichte und Rechtsphilosophie (Prof. Dr. Stephan Stübinger)" />
+          </category>
+          <category ID="ArbStrarecStraprorec">
+            <label xml:lang="de" text="Arbeitsbereich für Strafrecht und Strafprozessrecht (Prof. Dr. Gabriele Zwiehoff)" />
+          </category>
         </category>
         <category ID="RewiLehrAD">
           <label xml:lang="de" text="Ehemalige Lehrstühle" />
+          <category ID="80eb2a7f-7f6d-4b03-baff-93c0e14b82c0">
+            <label xml:lang="de" text="Lehrstuhl für Wirtschaftsstrafrecht und Strafprozessrecht (Prof. Dr. Osman Isfen)" />
+            <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/ls_isfen/" />
+          </category>
           <category ID="fd7135b3-b594-4c2a-8ef6-2614a68203fc">
             <label xml:lang="de" text="Lehrstuhl für Strafrecht, Strafprozessrecht und juristische Zeitgeschichte (Prof. Dr. Dr. Thomas Vormbaum)" />
           </category>
@@ -542,9 +637,6 @@
       </category>
       <category ID="rewiInst">
         <label xml:lang="de" text="Institute" />
-        <category ID="InstMediation">
-          <label xml:lang="de" text="Contarini-Institut für Mediation" />
-        </category>
         <category ID="InstEurVerfass">
           <label xml:lang="de" text="Dimitris-Tsatsos-Institut für Europäische Verfassungswissenschaften" />
         </category>
@@ -562,7 +654,10 @@
         </category>
         <category ID="39930c83-b3ac-4ab8-9fb1-52d1fda556fa">
           <label xml:lang="de" text="Forschungsinstitut für rechtliches Informationsmanagement - Firm GmbH" />
-          <url xlink:href="InstRecInfMan" xlink:type="locator" />
+          <url xlink:type="locator" xlink:href="InstRecInfMan" />
+        </category>
+        <category ID="InstMediation">
+          <label xml:lang="de" text="Contarini-Institut für Mediation" />
         </category>
       </category>
       <category ID="rewiPub">
@@ -574,11 +669,11 @@
     </category>
     <category ID="FeUHagen">
       <label xml:lang="de" text="FernUniversität in Hagen" />
-      <url xlink:href="http://www.fernuni-hagen.de/" xlink:type="locator" />
+      <url xlink:type="locator" xlink:href="http://www.fernuni-hagen.de/" />
     </category>
     <category ID="UBHagen">
       <label xml:lang="de" text="Universitätsbibliothek Hagen (Digitale Sammlungen)" />
-      <url xlink:href="http://www.ub.fernuni-hagen.de/" xlink:type="locator" />
+      <url xlink:type="locator" xlink:href="http://www.ub.fernuni-hagen.de/" />
       <category ID="dfsd">
         <label xml:lang="de" text="Deutsche Fernstudiendokumentation (dfsd)" />
       </category>
