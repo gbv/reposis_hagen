@@ -58,7 +58,7 @@ public class MirFillPdfFormServlet extends MCRServlet {
         }
     }
 
-    private void fillPdfForm(PDDocument pdfDocument, org.jdom2.Document xfdf) throws Exception {
+    private void fillPdfForm(PDDocument pdfDocument, Document xfdf) throws Exception {
         PDDocumentCatalog docCatalog = pdfDocument.getDocumentCatalog();
         PDAcroForm acroForm = docCatalog.getAcroForm();
         if (acroForm == null) {
