@@ -1,0 +1,13 @@
+reload solr configuration main in core main
+update classification from uri resource:classifications/marcrelator.xml
+update classification from uri resource:classifications/mcr-roles.xml
+update classification from uri resource:classifications/mir_genres.xml
+update classification from uri resource:classifications/mir_institutes.xml
+update classification from uri resource:classifications/mir_licenses.xml
+update classification from uri resource:classifications/mir_rights.xml
+update classification from uri resource:classifications/mir_status.xml
+update classification from uri resource:classifications/nameIdentifier.xml
+update classification from uri resource:classifications/noteTypes.xml
+update classification from uri resource:classifications/rfc4646.xml
+update classification from uri resource:classifications/SDNB.xml
+update classification from uri resource:classifications/state.xml

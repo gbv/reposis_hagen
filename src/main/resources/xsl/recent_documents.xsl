@@ -21,7 +21,7 @@
   <xsl:template match="recent_documents">
     <div class="result_list">
       <div id="hit_list">
-        <xsl:copy-of select="document('xslStyle:response2html:xslTransform:response-prepared:solr:q=state:published AND objectType:mods&amp;rows=5&amp;start=0&amp;sort=created+desc')/div/*" />
+        <xsl:copy-of select="document('xslStyle:response2html:xslTransform:response-prepared:solr:q=state:published%20AND%20objectType:mods&amp;rows=5&amp;start=0&amp;sort=created+desc')/div/*" />
       </div>
     </div>
     <div class="text-center">
